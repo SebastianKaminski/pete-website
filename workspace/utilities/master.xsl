@@ -28,11 +28,7 @@
 	<body>
 		<div id="masthead">
 			<h1>
-<<<<<<< HEAD
-				<a href="{$root}"><xsl:value-of select="$website-name"/> Koza</a>
-=======
 				<a href="{$root}"><xsl:value-of select="$website-name"/> KOZA</a>
->>>>>>> FETCH_HEAD
 			</h1>
 			<xsl:apply-templates select="data/navigation"/>
 		</div>
