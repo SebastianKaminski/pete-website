@@ -28,7 +28,7 @@
 	<body>
 		<div id="masthead">
 			<h1>
-				<a href="{$root}"><xsl:value-of select="$website-name"/></a>
+				<a href="{$root}"><xsl:value-of select="$website-name"/> KOZA</a>
 			</h1>
 			<xsl:apply-templates select="data/navigation"/>
 		</div>
@@ -49,10 +49,6 @@
 				<xsl:apply-templates/>
 			</div>
 		</div>
-		<ul id="footer">
-			<li>Orchestrated by <a class="symphony" href="http://getsymphony.com/">Symphony</a></li>
-			<li>Broadcasted via <a class="rss" href="{$root}/rss/">XML Feed</a></li>
-		</ul>
 	</body>
 </html>
 
