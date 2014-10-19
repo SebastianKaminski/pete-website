@@ -28,7 +28,7 @@
 	<body>
 		<div id="masthead">
 			<h1>
-				<a href="{$root}"><xsl:value-of select="$website-name"/></a>
+				<a href="{$root}"><xsl:value-of select="$website-name"/> Koza</a>
 			</h1>
 			<xsl:apply-templates select="data/navigation"/>
 		</div>
