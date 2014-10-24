@@ -8,16 +8,17 @@
 		<remove name="paypal.partner.right.logo" />
         <remove name="tags_popular" />
         <remove name="product_tag_list" />
-		<!-- <remove name="catalog.compare.sidebar" /> -->
+		<remove name="catalog.compare.sidebar" />
         <remove name="checkout.cart.shipping" />
 		<remove name="left.newsletter" />
 		<remove name="right.reports.product.viewed" />
 		<remove name="left.reports.product.viewed" />
-		<!-- <remove name="right.reports.product.compared" /> -->
+		<remove name="right.reports.product.compared" />
         <remove name="cart_sidebar" />
-		<!-- <remove name="currency" /> -->
+		<remove name="currency" />
 		<remove name="sale.reorder.sidebar" />
-		<!-- <remove name="wishlist_sidebar" /> -->
+        <remove name="wishlist_sidebar" />
+		<remove name="linksblock" />
 
 		<reference name="head">
 			<!-- remove some items set in the page.xml we don't need. if you want to add any back in simply remove them. -->
