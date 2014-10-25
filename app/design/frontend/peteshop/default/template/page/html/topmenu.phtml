@@ -2,7 +2,7 @@
 <?php if($_menu): ?>
 <div class="nav-container">
     <ul id="nav">
-    	<li class="home"><a href="<?php echo $this->getUrl('')?>"><?php echo $this->__('Home') ?></a></li>
+    	<li class="home <?php echo !$_anyActive ? 'active' : '' ?>"><a href="<?php echo $this->getUrl('')?>"><?php echo $this->__('Home') ?></a></li>
         <?php echo $_menu ?>
     </ul>
 </div>
