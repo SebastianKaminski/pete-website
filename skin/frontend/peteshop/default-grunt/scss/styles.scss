@@ -7,9 +7,15 @@
 *
 */
 
+// compass
+// --------------------------------------------------
+@import "compass/css3";
+
 // bootstrap
 // --------------------------------------------------
 @import "../node_modules/bootstrap/dist/css/bootstrap";
+
+
 
 // modules
 // --------------------------------------------------
@@ -19,6 +25,24 @@
 
 // partials
 // --------------------------------------------------
+@import "partials/base",
+        "partials/grid",
+        "partials/layout",
+        "partials/header",
+        "partials/footer",
+        "partials/navigation",
+        "partials/global",
+        "partials/blocks",
+        "partials/content",
+        "partials/forms",
+        "partials/messages",
+        "partials/prices",
+        "partials/sidebar",
+        "partials/tables",
+        "partials/toolbar",
+        "partials/tools",
+        "partials/typography",
+        "partials/clears";
 
 // sections
 // --------------------------------------------------
