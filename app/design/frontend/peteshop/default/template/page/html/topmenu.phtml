@@ -2,8 +2,8 @@
 <?php if($_menu): ?>
 <div class="nav-container">
     <ul id="nav">
-    	<li class="home <?php echo !$_anyActive ? 'active' : '' ?>"><a href="<?php echo $this->getUrl('')?>"><?php echo $this->__('Home') ?></a></li>
-        <?php echo $_menu ?>
+		<li class="home<?php if (Mage::helper('core/url')->getCurrentUrl() === Mage::helper('core/url')->getHomeUrl()):?> active<?php endif;?>"><a href="<?php echo $this->getUrl('')?>" title="Home">Home</a></li>
+		<?php echo $_menu ?>
     </ul>
 </div>
 <?php endif ?>
