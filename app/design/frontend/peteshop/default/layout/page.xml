@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <default translate="label" module="page">
+            <block type="page/html_header" name="header" as="header">
+                <block type="core/text_list" name="top.menu" as="topMenu" translate="label">
+                    <label>Navigation Bar</label>
+                    <block type="page/html_topmenu_custom" name="catalog.topnav" template="page/html/topmenu.phtml"/>
+                </block>
+            </block>
+    </default>
+</layout>
