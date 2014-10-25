@@ -46,6 +46,10 @@
             </block>
         </reference>
 
+        <reference name="catalog.topnav">
+            <block type="core/template" name="top.search" as="topSearch" template="catalogsearch/form.mini.phtml"/>
+        </reference>
+
 		<reference name="root">
 			<block type="page/html_head" name="site.bottom.css.js" as="site.bottom.css.js" template="page/html/site-bottom-css-js.phtml">
                 <action method="addItem"><type>skin_js</type><name>js/build/jquery.min.js</name></action>
