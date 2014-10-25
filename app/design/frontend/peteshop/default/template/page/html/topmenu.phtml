@@ -19,8 +19,8 @@
 				<?php echo $_menu ?>
 			</ul>
 			<?php echo $this->getChildHtml('topSearch') ?>
+			<p class="navbar-text navbar-right">Call: <?php echo Mage::getStoreConfig('general/store_information/phone'); ?></p>
 		</div>
-		<p class="navbar-text navbar-right"><a href="tel:00000000">Call: 000 000 000</a></p>
 	</div>
 </nav>
 <?php endif ?>
