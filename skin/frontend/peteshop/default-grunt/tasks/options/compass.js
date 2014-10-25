@@ -5,8 +5,7 @@ module.exports = {
             cssDir: 'css',
             environment: 'development',
             outputStyle: 'expanded',
-            noLineComments: false,
-            require 'sass-css-importer'
+            noLineComments: false
         }
     }
 }
