@@ -12,6 +12,10 @@
 @import "compass/reset",
         "compass/css3";
 
+// bootstrap
+// --------------------------------------------------
+@import "../node_modules/bootstrap/dist/css/bootstrap.css";
+
 // vendor
 // --------------------------------------------------
 @import "vendor/normalize";
