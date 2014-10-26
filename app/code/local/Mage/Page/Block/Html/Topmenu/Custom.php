@@ -128,7 +128,7 @@
 
 	            $html .= '<li ' . $this->_getRenderedMenuItemAttributes($child) . '>';
 	            $html .= '<a href="' . $child->getUrl() . '" ' . $outermostClassCode . '><span>'
-	                . $this->escapeHtml($child->getName()) . '</span></a>';
+	                . $this->escapeHtml($child->getName()) . '</span>' . ($child->hasChildren() ? '<span class="caret"></span>' : '') . '</a>';
 
 	            if ($child->hasChildren()) {
 	                if (!empty($childrenWrapClass)) {
@@ -136,7 +136,6 @@
 	                }
 	                $html .= '<ul class="level' . $childLevel . ' dropdown-menu" role="menu">';
 	                $html .= $this->_getHtml($child, $childrenWrapClass);
-	                $html .= '<span class="caret"></span>';
 	                $html .= '</ul>';
 
 	                if (!empty($childrenWrapClass)) {
