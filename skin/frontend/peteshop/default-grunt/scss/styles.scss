@@ -16,39 +16,58 @@
 @import "../node_modules/bootstrap/dist/css/bootstrap";
 
 
-
 // modules
 // --------------------------------------------------
 @import "modules/variables",
-        "modules/mixins",
-        "modules/functions";
+   "modules/mixins",
+   "modules/functions";
 
 // partials
 // --------------------------------------------------
 @import "partials/base",
-        "partials/grid",
-        "partials/layout",
-        "partials/header",
-        "partials/footer",
-        "partials/navigation",
-        "partials/global",
-        "partials/blocks",
-        "partials/content",
-        "partials/forms",
-        "partials/messages",
-        "partials/prices",
-        "partials/sidebar",
-        "partials/tables",
-        "partials/toolbar",
-        "partials/tools",
-        "partials/typography",
-        "partials/clears";
+   "partials/grid",
+   "partials/layout",
+   "partials/header",
+   "partials/footer",
+   "partials/navigation",
+   "partials/global",
+   "partials/blocks",
+   "partials/content",
+   "partials/forms",
+   "partials/messages",
+   "partials/prices",
+   "partials/sidebar",
+   "partials/tables",
+   "partials/toolbar",
+   "partials/tools",
+   "partials/typography",
+   "partials/clears";
 
 // sections
 // --------------------------------------------------
 @import "sections/home/main",
-        "sections/category/main",
-        "sections/product/main",
-        "sections/cart/main",
-        "sections/checkout/main",
-        "sections/account/main";
+   "sections/category/main",
+   "sections/product/main",
+   "sections/cart/main",
+   "sections/checkout/main",
+   "sections/account/main";
+
+// MY STYLES
+// --------------------------------------------------
+
+$c-grey: #BBB;
+
+.header-container {
+     #header-top {
+          .links {
+               border-bottom: 1px dashed $c-grey;
+               font-size: 12px;
+               letter-spacing: 1px;
+               padding: 10px 0;
+               text-transform: uppercase;
+               a {
+                    color: $c-grey;
+               }
+          }
+     }
+}

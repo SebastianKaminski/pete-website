@@ -10386,36 +10386,23 @@ p.required {
 .success-msg,
 .note-msg,
 .notice-msg {
-  border-style: solid !important;
-  border-width: 1px !important;
-  background-position: 10px 9px !important;
-  background-repeat: no-repeat !important;
-  min-height: 24px !important;
-  padding: 8px 8px 8px 32px !important;
-  font-size: 11px !important;
-  font-weight: bold !important;
+  padding: 15px !important;
 }
 
-/* line 45, ../scss/partials/_messages.scss */
+/* line 38, ../scss/partials/_messages.scss */
 .error-msg {
-  border-color: #f16048;
-  background-color: #faebe7;
-  background-image: url(../images/i_msg-error.gif);
+  background-color: #F2DEDE;
 }
 
-/* line 51, ../scss/partials/_messages.scss */
+/* line 42, ../scss/partials/_messages.scss */
 .success-msg {
-  border-color: #446423;
-  background-color: #eff5ea;
-  background-image: url(../images/i_msg-success.gif);
+  background-color: #DFF0D8;
 }
 
-/* line 58, ../scss/partials/_messages.scss */
+/* line 47, ../scss/partials/_messages.scss */
 .note-msg,
 .notice-msg {
-  border-color: #fcd344;
-  background-color: #fafaec;
-  background-image: url(../images/i_msg-note.gif);
+  background-color: #D9EDF7;
 }
 
 /* line 3, ../scss/partials/_prices.scss */
@@ -13554,4 +13541,17 @@ tr.summary-details-excluded {
   border-top: 0;
   margin: 0;
   padding: 8px 13px;
+}
+
+/* line 62, ../scss/styles.scss */
+.header-container #header-top .links {
+  border-bottom: 1px dashed #bbbbbb;
+  font-size: 12px;
+  letter-spacing: 1px;
+  padding: 10px 0;
+  text-transform: uppercase;
+}
+/* line 68, ../scss/styles.scss */
+.header-container #header-top .links a {
+  color: #bbbbbb;
 }
