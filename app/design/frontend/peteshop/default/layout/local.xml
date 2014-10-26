@@ -37,8 +37,7 @@
             <action method="addItem"><type>skin_js</type><name>js/libs/html5shiv.min.js</name><params/><if>lt IE 9</if></action>
             <action method="addItem"><type>skin_js</type><name>js/libs/respond.min.js</name><params/><if>lt IE 9</if></action>
             <action method="addItem"><type>skin_js</type><name>js/libs/selectivizr.min.js</name><params/><if>lt IE 9</if></action>
-            <action method="addItem"><type>skin_js</type><name>js/build/bootstrap.min.js</name></action>
-		</reference>
+        </reference>
 
         <reference name="header">
             <block type="core/text_list" name="top.menu" as="topMenu" translate="label">
@@ -51,9 +50,10 @@
             <block type="core/template" name="top.search" as="topSearch" template="catalogsearch/form.mini.phtml"/>
         </reference>
 
-		<reference name="root">
-			<block type="page/html_head" name="site.bottom.css.js" as="site.bottom.css.js" template="page/html/site-bottom-css-js.phtml">
+        <reference name="root">
+            <block type="page/html_head" name="site.bottom.css.js" as="site.bottom.css.js" template="page/html/site-bottom-css-js.phtml">
                 <action method="addItem"><type>skin_js</type><name>js/build/jquery.min.js</name></action>
+                <action method="addItem"><type>skin_js</type><name>js/build/bootstrap.min.js</name></action>
             </block>
 		</reference>
 	</default>
