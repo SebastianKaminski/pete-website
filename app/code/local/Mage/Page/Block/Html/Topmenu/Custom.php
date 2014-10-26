@@ -67,35 +67,35 @@
 	     * @param Varien_Data_Tree_Node $item
 	     * @return array
 	     */
-	    // protected function _getMenuItemClasses(Varien_Data_Tree_Node $item)
-	    // {
-	    //     $classes = array();
+	    protected function _getMenuItemClasses(Varien_Data_Tree_Node $item)
+	    {
+	        $classes = array();
 
-	    //     $classes[] = 'level' . $item->getLevel();
-	    //     $classes[] = $item->getPositionClass();
+	        $classes[] = 'level' . $item->getLevel();
+	        $classes[] = $item->getPositionClass();
 
-	    //     if ($item->getIsFirst()) {
-	    //         $classes[] = 'first';
-	    //     }
+	        if ($item->getIsFirst()) {
+	            $classes[] = 'first';
+	        }
 
-	    //     if ($item->getIsActive()) {
-	    //         $classes[] = 'active';
-	    //     }
+	        if ($item->getIsActive()) {
+	            $classes[] = 'active';
+	        }
 
-	    //     if ($item->getIsLast()) {
-	    //         $classes[] = 'last';
-	    //     }
+	        if ($item->getIsLast()) {
+	            $classes[] = 'last';
+	        }
 
-	    //     if ($item->getClass()) {
-	    //         $classes[] = $item->getClass();
-	    //     }
+	        if ($item->getClass()) {
+	            $classes[] = $item->getClass();
+	        }
 
-	    //     if ($item->hasChildren()) {
-	    //         $classes[] = 'dropdown';
-	    //     }
+	        if ($item->hasChildren()) {
+	            $classes[] = 'dropdown';
+	        }
 
-	    //     return $classes;
-	    // }
+	        return $classes;
+	    }
 
 	    protected function _getHtml(Varien_Data_Tree_Node $menuTree, $childrenWrapClass)
 	    {
@@ -122,7 +122,7 @@
 	            $outermostClass = $menuTree->getOutermostClass();
 
 	            if ($childLevel == 0 && $outermostClass) {
-	                $outermostClassCode = ' class="' . $outermostClass . ($child->hasChildren() ? ' dropdown-toggle" data-hover="dropdown" ' : '"');
+	                $outermostClassCode = ' class="' . $outermostClass . ($child->hasChildren() ? ' dropdown-toggle" data-toogle="dropdown" ' : '"');
 	                $child->setClass($outermostClass);
 	            }
 
