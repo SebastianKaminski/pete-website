@@ -1,0 +1,56 @@
+<div id="messages_product_view"><?php echo $this->getMessagesBlock()->getGroupedHtml() ?></div>
+<div class="page-header">
+    <h1><?php echo Mage::helper('contacts')->__('Contact Us') ?></h1>
+</div>
+<form action="<?php echo $this->getFormAction(); ?>" id="contactForm" method="post" role="form" class="form-horizontal">
+    <div class="fieldset">
+        <h2 class="legend"><?php echo Mage::helper('contacts')->__('Contact Information') ?></h2>
+
+        <!-- Name -->
+        <div class="form-group">
+            <label for="name" class="required col-sm-2 control-label"><em>*</em><?php echo Mage::helper('contacts')->__('Name') ?></label>
+            <div class="col-sm-10">
+                <input name="name" id="name" title="<?php echo Mage::helper('contacts')->__('Name') ?>" value="<?php echo $this->escapeHtml($this->helper('contacts')->getUserName()) ?>" class="input-text required-entry form-control" type="text" />
+            </div>
+        </div>
+        <!-- Email address -->
+        <div class="form-group">
+            <label for="email" class="required col-sm-2 control-label"><em>*</em><?php echo Mage::helper('contacts')->__('Email') ?></label>
+            <div class="col-sm-10">
+                <input name="email" id="email" title="<?php echo Mage::helper('contacts')->__('Email') ?>" value="<?php echo $this->escapeHtml($this->helper('contacts')->getUserEmail()) ?>" class="input-text required-entry validate-email form-control" type="text" />
+            </div>
+        </div>
+        <!-- Telephone -->
+        <div class="form-group">
+            <label for="telephone" class="col-sm-2 control-label"><?php echo Mage::helper('contacts')->__('Telephone') ?></label>
+            <div class="col-sm-10">
+                <input name="telephone" id="telephone" title="<?php echo Mage::helper('contacts')->__('Telephone') ?>" value="" class="input-text form-control" type="text" />
+            </div>
+        </div>
+        <!-- Comment -->
+        <div class="form-group">
+            <label for="comment" class="required col-sm-2 control-label"><em>*</em><?php echo Mage::helper('contacts')->__('Comment') ?></label>
+            <div class="class-sm-10">
+                <textarea name="comment" id="comment" title="<?php echo Mage::helper('contacts')->__('Comment') ?>" class="required-entry input-text form-control" cols="5" rows="3"></textarea>
+            </div>
+        </div>
+        <!-- Buttons -->
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <p class="required"><?php echo Mage::helper('contacts')->__('* Required Fields') ?></p>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <input type="text" name="hideit" id="hideit" value="" style="display:none !important;" />
+                <button type="submit" title="<?php echo Mage::helper('contacts')->__('Submit') ?>" class="btn btn-default"><span><span><?php echo Mage::helper('contacts')->__('Submit') ?></span></span></button>
+            </div>
+        </div>
+    </div>
+</form>
+
+<script type="text/javascript">
+//<![CDATA[
+    var contactForm = new VarienForm('contactForm', true);
+//]]>
+</script>
