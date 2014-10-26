@@ -10,7 +10,7 @@
     "use strict";
 
     $(document).ready(function(){
-
-
+    	/* Twitter dropdown */
+    	$('.dropdown-toggle').dropdown();
     });
 })(jQuery);

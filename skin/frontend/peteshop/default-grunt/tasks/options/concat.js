@@ -28,5 +28,11 @@ module.exports = {
             'node_modules/bootstrap/dist/js/bootstrap.js'
         ],
         dest: 'js/build/bootstrap.js'
+    },
+    global: {
+        src: [
+            'js/global.js'
+        ],
+        dest: 'js/build/global.js'
     }
 }

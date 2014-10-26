@@ -18,5 +18,9 @@ module.exports = {
     bootstrap: {
         src: 'js/build/bootstrap.js',
         dest: 'js/build/bootstrap.min.js'
+    },
+    global: {
+        src: 'js/build/global.js',
+        dest: 'js/build/global.min.js'
     }
 }

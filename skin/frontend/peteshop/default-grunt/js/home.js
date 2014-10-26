@@ -10,6 +10,6 @@
     "use strict";
 
     $(document).ready(function(){
-    	$('.dropdown-toggle').dropdown()
+    	console.log("Homepage")
     });
 })(jQuery);

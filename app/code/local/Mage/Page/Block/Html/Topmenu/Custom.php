@@ -122,13 +122,13 @@
 	            $outermostClass = $menuTree->getOutermostClass();
 
 	            if ($childLevel == 0 && $outermostClass) {
-	                $outermostClassCode = ' class="' . $outermostClass . ($child->hasChildren() ? ' dropdown-toggle" data-toogle="dropdown" ' : '"');
+	                $outermostClassCode = ' class="' . $outermostClass . ($child->hasChildren() ? ' dropdown-toggle" data-toggle="dropdown" ' : '"');
 	                $child->setClass($outermostClass);
 	            }
 
 	            $html .= '<li ' . $this->_getRenderedMenuItemAttributes($child) . '>';
-	            $html .= '<a href="' . $child->getUrl() . '" ' . $outermostClassCode . '><span>'
-	                . $this->escapeHtml($child->getName()) . '</span>' . ($child->hasChildren() ? '<span class="caret"></span>' : '') . '</a>';
+	            $html .= '<a href="' . $child->getUrl() . '" ' . $outermostClassCode . '>'
+	                . $this->escapeHtml($child->getName()) . ' ' . ($child->hasChildren() ? '<span class="caret"></span>' : '') . '</a>';
 
 	            if ($child->hasChildren()) {
 	                if (!empty($childrenWrapClass)) {
