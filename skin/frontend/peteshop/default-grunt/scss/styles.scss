@@ -61,14 +61,14 @@ $c-grey: #BBB;
 .header-container {
      #header-top {
           .links {
+               float: left;
                border-bottom: 1px dashed $c-grey;
                font-size: 12px;
                letter-spacing: 1px;
                padding: 10px 0;
                text-transform: uppercase;
-               a {
-                    color: $c-grey;
-               }
+               a { color: $c-grey; }
+               ul { margin-bottom: 0; }
           }
      }
 }
