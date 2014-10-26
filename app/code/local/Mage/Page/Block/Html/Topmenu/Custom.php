@@ -1,15 +1,8 @@
 <?php
 	class Mage_Page_Block_Html_Topmenu_Custom extends Mage_Page_Block_Html_Topmenu
 	{
-    /**
-     * Recursively generates top menu html from data that is specified in $menuTree
-     *
-     * @param Varien_Data_Tree_Node $menuTree
-     * @param string $childrenWrapClass
-     * @return string
-     * @deprecated since 1.8.2.0 use child block catalog.topnav.renderer instead
-     */
-	    protected function _getHtml(Varien_Data_Tree_Node $menuTree, $childrenWrapClass)
+
+	  protected function _getHtml(Varien_Data_Tree_Node $menuTree, $childrenWrapClass)
 	    {
 	        $html = '';
 
@@ -34,21 +27,26 @@
 	            $outermostClass = $menuTree->getOutermostClass();
 
 	            if ($childLevel == 0 && $outermostClass) {
-	                $outermostClassCode = ' class="' . $outermostClass . '" ';
+
+	                $outermostClassCode = ' class="' . $outermostClass . ($child->hasChildren() ? ' dropdown-toggle" data-hover="dropdown" ' : '"');
+
 	                $child->setClass($outermostClass);
 	            }
 
 	            $html .= '<li ' . $this->_getRenderedMenuItemAttributes($child) . '>';
-	            $html .= '<a href="' . $child->getUrl() . '" ' . $outermostClassCode . '><span>'
+	            $html .= '<a href="' . $child->getUrl() . '" ' . $outermostClassCode . $dataDropdown . '><span>'
 	                . $this->escapeHtml($child->getName()) . '</span></a>';
 
 	            if ($child->hasChildren()) {
 	                if (!empty($childrenWrapClass)) {
 	                    $html .= '<div class="' . $childrenWrapClass . '">';
 	                }
-	                $html .= '<ul class="level' . $childLevel . '">';
-	                $html .= $this->_getHtml($child, $childrenWrapClass);
-	                $html .= '</ul>';
+
+	               if($childLevel < 1) {
+	                    $html .= '<ul class="level' . $childLevel . ' dropdown-menu">';
+	                    $html .= $this->_getHtml($child, $childrenWrapClass);
+	                    $html .= '</ul>';
+	                }
 
 	                if (!empty($childrenWrapClass)) {
 	                    $html .= '</div>';
@@ -60,6 +58,42 @@
 	        }
 
 	        return $html;
+	    }
+
+	    /**
+	     * Returns array of menu item's classes
+	     *
+	     * @param Varien_Data_Tree_Node $item
+	     * @return array
+	     */
+	    protected function _getMenuItemClasses(Varien_Data_Tree_Node $item)
+	    {
+	        $classes = array();
+
+	        $classes[] = 'level' . $item->getLevel();
+	        $classes[] = $item->getPositionClass();
+
+	        if ($item->getIsFirst()) {
+	            $classes[] = 'first';
+	        }
+
+	        if ($item->getIsActive()) {
+	            $classes[] = 'active';
+	        }
+
+	        if ($item->getIsLast()) {
+	            $classes[] = 'last';
+	        }
+
+	        if ($item->getClass()) {
+	            $classes[] = $item->getClass();
+	        }
+
+	        if ($item->hasChildren()) {
+	            $classes[] = 'dropdown';
+	        }
+
+	        return $classes;
 	    }
 	}
 ?>
