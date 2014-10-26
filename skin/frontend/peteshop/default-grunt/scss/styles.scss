@@ -25,7 +25,6 @@
 // partials
 // --------------------------------------------------
 @import
-     "partials/base",
      "partials/grid",
      "partials/layout",
      "partials/header",
@@ -71,5 +70,13 @@ $c-grey: #BBB;
                a { color: $c-grey; }
                ul { margin-bottom: 0; }
           }
+     }
+}
+
+footer {
+     .footer-container {
+          background: #333;
+          color: #FFF;
+          padding: 20px 20px 0 20px;
      }
 }
