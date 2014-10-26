@@ -147,7 +147,7 @@
     <!-- Contact page -->
     <contacts_index_index>
         <reference name="root">
-            <action method="setTemplate"><template>page/1columns.phtml</template></action>
+            <action method="setTemplate"><template>page/1column.phtml</template></action>
         </reference>
     </contacts_index_index>
 </layout>
