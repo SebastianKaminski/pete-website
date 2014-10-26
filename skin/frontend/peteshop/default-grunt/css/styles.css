@@ -10325,26 +10325,7 @@ p.control input.radio {
   padding: 12px 7px 0 0;
 }
 
-/* line 395, ../scss/partials/_forms.scss */
-.fieldset {
-  border: 1px solid #bbafa0;
-  background: #fbfaf6;
-  padding: 22px 25px 12px 33px;
-  margin: 28px 0;
-}
-/* line 401, ../scss/partials/_forms.scss */
-.fieldset .legend {
-  float: left;
-  font-weight: bold;
-  font-size: 13px;
-  border: 1px solid #f19900;
-  background: #f9f3e3;
-  margin: -33px 0 0 -10px;
-  padding: 0 8px;
-  position: relative;
-}
-
-/* line 416, ../scss/partials/_forms.scss */
+/* line 398, ../scss/partials/_forms.scss */
 .validation-advice {
   clear: both;
   min-height: 13px;
@@ -10356,16 +10337,85 @@ p.control input.radio {
   background: url(../images/validation_advice_bg.gif) 2px 0 no-repeat;
 }
 
-/* line 427, ../scss/partials/_forms.scss */
+/* line 409, ../scss/partials/_forms.scss */
 .validation-failed {
   border: 1px dashed #eb340a !important;
   background: #faebe7 !important;
 }
 
-/* line 432, ../scss/partials/_forms.scss */
+/* line 414, ../scss/partials/_forms.scss */
 p.required {
   font-size: 11px;
   text-align: right;
+}
+
+/* line 3, ../scss/partials/_messages.scss */
+.success {
+  font-weight: bold;
+}
+
+/* line 7, ../scss/partials/_messages.scss */
+.error {
+  font-weight: bold;
+}
+
+/* line 12, ../scss/partials/_messages.scss */
+.messages,
+.messages ul {
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* line 18, ../scss/partials/_messages.scss */
+.messages {
+  width: 100%;
+  overflow: hidden;
+}
+/* line 22, ../scss/partials/_messages.scss */
+.messages li {
+  margin: 0 0 10px !important;
+}
+/* line 25, ../scss/partials/_messages.scss */
+.messages li li {
+  margin: 0 0 3px !important;
+}
+
+/* line 34, ../scss/partials/_messages.scss */
+.error-msg,
+.success-msg,
+.note-msg,
+.notice-msg {
+  border-style: solid !important;
+  border-width: 1px !important;
+  background-position: 10px 9px !important;
+  background-repeat: no-repeat !important;
+  min-height: 24px !important;
+  padding: 8px 8px 8px 32px !important;
+  font-size: 11px !important;
+  font-weight: bold !important;
+}
+
+/* line 45, ../scss/partials/_messages.scss */
+.error-msg {
+  border-color: #f16048;
+  background-color: #faebe7;
+  background-image: url(../images/i_msg-error.gif);
+}
+
+/* line 51, ../scss/partials/_messages.scss */
+.success-msg {
+  border-color: #446423;
+  background-color: #eff5ea;
+  background-image: url(../images/i_msg-success.gif);
+}
+
+/* line 58, ../scss/partials/_messages.scss */
+.note-msg,
+.notice-msg {
+  border-color: #fcd344;
+  background-color: #fafaec;
+  background-image: url(../images/i_msg-note.gif);
 }
 
 /* line 3, ../scss/partials/_prices.scss */
