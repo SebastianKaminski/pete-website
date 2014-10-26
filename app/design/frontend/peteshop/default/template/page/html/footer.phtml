@@ -2,7 +2,10 @@
 	<div class="container">
 		<div class="footer-content">
 			<div class="row">
-				<div class="col-md-2 col-md-offset-8">
+				<div class="col-md-2">
+					<?php echo Mage::getStoreConfig('general/store_information/address'); ?>
+				</div>
+				<div class="col-md-2 col-md-offset-6">
 					<ul>
 						<li><a href="#">Home</a></li>
 						<li><a href="#">About</a></li>
@@ -19,6 +22,7 @@
 						<li><a href="#">Instagram</a></li>
 						<li><a href="#">Pinterest</a></li>
 						<li><?php echo Mage::getStoreConfig('general/store_information/phone'); ?></li>
+						<li><?php echo Mage::getStoreConfig('trans_email/ident_general/name'); ?></li>
 					</ul>
 				</div>
 			</div>
@@ -30,5 +34,3 @@
 		</div>
 	</div>
 </footer>
-
-<?php var_dump(Mage::getStoreConfig('general/store_information')); ?>
