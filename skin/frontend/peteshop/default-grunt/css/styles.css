@@ -10925,19 +10925,6 @@ p.required {
   display: block;
 }
 
-/* line 8, ../scss/partials/_typography.scss */
-body,
-button,
-input,
-select,
-table,
-textarea {
-  font-family: "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-weight: 400;
-  font-size: 13px;
-  color: #232323;
-}
-
 /* line 54, ../scss/partials/_clears.scss */
 .clearer:after,
 .header-container:after,
@@ -13516,7 +13503,7 @@ tr.summary-details-excluded {
   padding: 8px 13px;
 }
 
-/* line 62, ../scss/styles.scss */
+/* line 61, ../scss/styles.scss */
 .header-container #header-top .links {
   border-bottom: 1px dashed #bbbbbb;
   float: left;
@@ -13526,17 +13513,13 @@ tr.summary-details-excluded {
   text-transform: uppercase;
   width: 100%;
 }
-/* line 70, ../scss/styles.scss */
-.header-container #header-top .links a {
-  color: #bbbbbb;
-}
-/* line 71, ../scss/styles.scss */
+/* line 69, ../scss/styles.scss */
 .header-container #header-top .links ul {
   margin-bottom: 0;
 }
 
-/* line 77, ../scss/styles.scss */
-footer .footer-container {
+/* line 75, ../scss/styles.scss */
+footer .footer-content {
   background: #333;
   color: #FFF;
   padding: 20px 20px 0 20px;

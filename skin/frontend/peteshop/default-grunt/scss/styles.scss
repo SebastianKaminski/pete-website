@@ -40,7 +40,6 @@
      "partials/tables",
      "partials/toolbar",
      "partials/tools",
-     "partials/typography",
      "partials/clears";
 
 // sections
@@ -67,14 +66,13 @@ $c-grey: #BBB;
                padding: 10px 0;
                text-transform: uppercase;
                width: 100%;
-               a { color: $c-grey; }
                ul { margin-bottom: 0; }
           }
      }
 }
 
 footer {
-     .footer-container {
+     .footer-content {
           background: #333;
           color: #FFF;
           padding: 20px 20px 0 20px;
