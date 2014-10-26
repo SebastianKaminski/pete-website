@@ -75,7 +75,7 @@
 	        $classes[] = $item->getPositionClass();
 
 	        if ($item->getIsFirst()) {
-	            $classes[] = '';
+	            $classes[] = 'first';
 	        }
 
 	        if ($item->getIsActive()) {
@@ -83,7 +83,7 @@
 	        }
 
 	        if ($item->getIsLast()) {
-	            $classes[] = '';
+	            $classes[] = 'last';
 	        }
 
 	        if ($item->getClass()) {
@@ -120,9 +120,8 @@
 
 	            $outermostClassCode = '';
 	            $outermostClass = $menuTree->getOutermostClass();
-
 	            if ($childLevel == 0 && $outermostClass) {
-	                $outermostClassCode = ' class="' . ($child->hasChildren() ? ' dropdown-toggle" data-toggle="dropdown" ' : '"');
+	                $outermostClassCode = ' class="' . $outermostClass . ($child->hasChildren() ? ' dropdown-toggle" data-toggle="dropdown" role="button"' : '"');
 	                $child->setClass($outermostClass);
 	            }
 
@@ -134,7 +133,7 @@
 	                if (!empty($childrenWrapClass)) {
 	                    $html .= '<div class="' . $childrenWrapClass . '">';
 	                }
-	                $html .= '<ul class="dropdown-menu" role="menu">';
+	                $html .= '<ul class="level' . $childLevel . ' dropdown-menu" role="menu">';
 	                $html .= $this->_getHtml($child, $childrenWrapClass);
 	                $html .= '</ul>';
 
