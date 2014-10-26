@@ -13543,7 +13543,7 @@ tr.summary-details-excluded {
   padding: 8px 13px;
 }
 
-/* line 62, ../scss/styles.scss */
+/* line 63, ../scss/styles.scss */
 .header-container #header-top .links {
   border-bottom: 1px dashed #bbbbbb;
   font-size: 12px;
@@ -13551,7 +13551,7 @@ tr.summary-details-excluded {
   padding: 10px 0;
   text-transform: uppercase;
 }
-/* line 68, ../scss/styles.scss */
+/* line 69, ../scss/styles.scss */
 .header-container #header-top .links a {
   color: #bbbbbb;
 }
