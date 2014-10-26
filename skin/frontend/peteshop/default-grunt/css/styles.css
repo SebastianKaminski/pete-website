@@ -5908,8 +5908,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 /* line 4094, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
 .navbar-default {
-  background-color: #f8f8f8;
-  border-color: #e7e7e7;
+  background-color: #fff;
+  border-color: #fff;
 }
 
 /* line 4098, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
@@ -5926,7 +5926,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 
 /* line 4106, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
 .navbar-default .navbar-text {
-  color: #777;
+  color: #000;
 }
 
 /* line 4109, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
@@ -5937,7 +5937,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 /* line 4113, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #333;
+  color: #ffa248;
   background-color: transparent;
 }
 
@@ -5945,8 +5945,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  color: #555;
-  background-color: #e7e7e7;
+  color: #ffbc7b;
+  background-color: #eee;
 }
 
 /* line 4125, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
@@ -5976,15 +5976,15 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 /* line 4140, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-  border-color: #e7e7e7;
+  border-color: #fff;
 }
 
 /* line 4145, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
-  color: #555;
-  background-color: #e7e7e7;
+  color: #ffbc7b;
+  background-color: #eee;
 }
 
 @media (max-width: 767px) {
@@ -5996,7 +5996,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   /* line 4154, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #333;
+    color: #ffa248;
     background-color: transparent;
   }
 
@@ -6004,8 +6004,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: #555;
-    background-color: #e7e7e7;
+    color: #ffbc7b;
+    background-color: #eee;
   }
 
   /* line 4166, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
@@ -6023,7 +6023,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 
 /* line 4174, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
 .navbar-default .navbar-link:hover {
-  color: #333;
+  color: #ffa248;
 }
 
 /* line 4177, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
@@ -6034,7 +6034,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 /* line 4181, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
 .navbar-default .btn-link:hover,
 .navbar-default .btn-link:focus {
-  color: #333;
+  color: #ffa248;
 }
 
 /* line 4187, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
@@ -13545,18 +13545,19 @@ tr.summary-details-excluded {
 
 /* line 63, ../scss/styles.scss */
 .header-container #header-top .links {
-  float: left;
   border-bottom: 1px dashed #bbbbbb;
+  float: left;
   font-size: 12px;
   letter-spacing: 1px;
   padding: 10px 0;
   text-transform: uppercase;
+  width: 100%;
 }
-/* line 70, ../scss/styles.scss */
+/* line 71, ../scss/styles.scss */
 .header-container #header-top .links a {
   color: #bbbbbb;
 }
-/* line 71, ../scss/styles.scss */
+/* line 72, ../scss/styles.scss */
 .header-container #header-top .links ul {
   margin-bottom: 0;
 }
