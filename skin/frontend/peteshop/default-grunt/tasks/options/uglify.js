@@ -14,5 +14,9 @@ module.exports = {
     product: {
         src: 'js/build/product.js',
         dest: 'js/build/product.min.js'
+    },
+    bootstrap: {
+        src: 'js/build/bootstrap.js',
+        dest: 'js/build/bootstrap.min.js'
     }
 }

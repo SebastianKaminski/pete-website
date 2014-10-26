@@ -136,6 +136,7 @@
 	                }
 	                $html .= '<ul class="level' . $childLevel . ' dropdown-menu" role="menu">';
 	                $html .= $this->_getHtml($child, $childrenWrapClass);
+	                $html .= '<span class="caret"></span>';
 	                $html .= '</ul>';
 
 	                if (!empty($childrenWrapClass)) {

@@ -22,5 +22,11 @@ module.exports = {
             'js/product.js'
         ],
         dest: 'js/build/product.js'
+    },
+    bootstrap: {
+        src: [
+            'node_modules/bootstrap/dist/js/bootstrap.js'
+        ],
+        dest: 'js/build/bootstrap.js'
     }
 }
