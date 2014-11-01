@@ -18,9 +18,10 @@
 	position:relative; 
 
 	li.item { 
-		float:left; 
-		width:138px; 
-		padding:12px 25px 80px; 
+		border: none;
+		text-align: center;
+		padding:12px 0 80px; 
+		margin-left: 15px;
 
 		&.first { 
 			padding-left: 0;
@@ -33,7 +34,6 @@
 
 	.product-image { 
 		display:block; 
-		width:135px; 
 		height:135px; 
 		margin:0 0 10px; 
 	}
@@ -55,6 +55,7 @@
 	.actions { 
 		position:absolute; 
 		bottom:12px;
+		width: 100%;
 	}
 }
 
