@@ -11391,10 +11391,10 @@ footer:after,
 .product-view .product-img-box .more-views li {
   float: left;
   margin: 0 0 8px 9px;
+  text-align: center;
 }
-/* line 313, ../scss/sections/product/_main.scss */
+/* line 314, ../scss/sections/product/_main.scss */
 .product-view .product-img-box .more-views li a {
-  float: left;
   width: 56px;
   height: 56px;
   overflow: hidden;
