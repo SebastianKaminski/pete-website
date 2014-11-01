@@ -2,8 +2,6 @@
   "name": "example-project",
   "version": "0.1.0",
   "devDependencies": {
-    "bootstrap": "latest",
-    "jquery-ui": "latest",
     "glob": "~3.2.8",
     "grunt": "~0.4.1",
     "grunt-contrib-compass": "^1.0.1",

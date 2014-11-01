@@ -22,12 +22,12 @@
 
 		<reference name="head">
 			<!-- remove some items set in the page.xml we don't need. if you want to add any back in simply remove them. -->
-            <action method="removeItem"><type>skin_css</type><name>css/widgets.css</name></action>
+            <!-- <action method="removeItem"><type>skin_css</type><name>css/widgets.css</name></action> -->
             <action method="removeItem"><type>skin_css</type><name>css/print.css</name></action>
 			<action method="removeItem"><type>skin_css</type><name>css/styles-ie.css</name><params/><if>lt IE 8</if></action>
 			<action method="removeItem"><type>skin_js</type><name>js/ie6.js</name><if>lt IE 7</if></action>
             <action method="removeItem"><type>js</type><name>scriptaculous/builder.js</name></action>
-            <action method="removeItem"><type>js</type><name>scriptaculous/dragdrop.js</name></action>
+            <!-- <action method="removeItem"><type>js</type><name>scriptaculous/dragdrop.js</name></action> -->
             <action method="removeItem"><type>js</type><name>scriptaculous/slider.js</name></action>
             <action method="removeItem"><type>js</type><name>varien/menu.js</name></action>
 			<action method="removeItem"><type>js</type><name>lib/ds-sleight.js</name><params/><if>lt IE 7</if></action>

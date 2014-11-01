@@ -19,8 +19,7 @@ module.exports = {
     },
     product: {
         src: [
-            'js/product.js',
-            'node_modules/jquery-ui/jquery-ui.js'
+            'js/product.js'
         ],
         dest: 'js/build/product.js'
     },
