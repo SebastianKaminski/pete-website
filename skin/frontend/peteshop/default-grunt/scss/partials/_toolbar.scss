@@ -15,10 +15,11 @@
 	}
 
 	.limiter { 
-		float:right;
-
+		float: left;
+		margin-left: 15px;
 		label { 
 			vertical-align:middle;
+			margin-bottom: 0;
 		}	
 	}
 
@@ -42,18 +43,18 @@
 .sorter {
 	font-size:11px;
 	padding:3px 0px;
+	float: right;
 
 	.view-mode { 
 		float:left; 
-		margin:0;
+		margin:0 15px 0 0;
 	}
 	
 	.sort-by { 
 		float:right; 
-		padding-right:36px;
-
 		label { 
 			vertical-align:middle;
+			margin-bottom: 0;
 		}
 	}
 }
@@ -64,8 +65,10 @@
 .toolbar { 
 	clear: both;
 	line-height: 20px;
+	margin-bottom: 15px;
 
 	.pager { 
+		margin: 0;
 		padding:3px 0px;
 	}
 }

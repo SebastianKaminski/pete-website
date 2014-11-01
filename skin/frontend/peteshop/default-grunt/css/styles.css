@@ -10767,53 +10767,58 @@ p.required {
 }
 /* line 17, ../scss/partials/_toolbar.scss */
 .pager .limiter {
-  float: right;
+  float: left;
+  margin-left: 15px;
 }
 /* line 20, ../scss/partials/_toolbar.scss */
 .pager .limiter label {
   vertical-align: middle;
+  margin-bottom: 0;
 }
-/* line 25, ../scss/partials/_toolbar.scss */
+/* line 26, ../scss/partials/_toolbar.scss */
 .pager .pages {
   margin: 0 140px;
 }
-/* line 28, ../scss/partials/_toolbar.scss */
+/* line 29, ../scss/partials/_toolbar.scss */
 .pager .pages ol {
   display: inline;
 }
-/* line 32, ../scss/partials/_toolbar.scss */
+/* line 33, ../scss/partials/_toolbar.scss */
 .pager .pages li {
   display: inline;
   margin: 0 2px;
 }
 
-/* line 42, ../scss/partials/_toolbar.scss */
+/* line 43, ../scss/partials/_toolbar.scss */
 .sorter {
   font-size: 11px;
   padding: 3px 0px;
+  float: right;
 }
-/* line 46, ../scss/partials/_toolbar.scss */
+/* line 48, ../scss/partials/_toolbar.scss */
 .sorter .view-mode {
   float: left;
-  margin: 0;
+  margin: 0 15px 0 0;
 }
-/* line 51, ../scss/partials/_toolbar.scss */
+/* line 53, ../scss/partials/_toolbar.scss */
 .sorter .sort-by {
   float: right;
-  padding-right: 36px;
 }
 /* line 55, ../scss/partials/_toolbar.scss */
 .sorter .sort-by label {
   vertical-align: middle;
+  margin-bottom: 0;
 }
 
-/* line 64, ../scss/partials/_toolbar.scss */
+/* line 65, ../scss/partials/_toolbar.scss */
 .toolbar {
   clear: both;
   line-height: 20px;
+  margin-bottom: 15px;
 }
-/* line 68, ../scss/partials/_toolbar.scss */
+/* line 70, ../scss/partials/_toolbar.scss */
 .toolbar .pager {
+  margin: 0;
   padding: 3px 0px;
 }
 
