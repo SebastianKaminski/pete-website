@@ -208,8 +208,6 @@
 }
 
 .product-collateral { 
-	padding:25px;
-
 	h2 { 
 		font-weight:bold; 
 		font-size:15px; 
@@ -220,6 +218,8 @@
 	.box-collateral { 
 		margin:0 0 25px;
 	}
+
+	.std { font-size: 11px; }
 }
 
 
@@ -229,6 +229,7 @@
 
 	.product-image { 
 		margin:0 0 13px;
+		text-align: center;
 	}
 
 	.product-image-zoom { 
