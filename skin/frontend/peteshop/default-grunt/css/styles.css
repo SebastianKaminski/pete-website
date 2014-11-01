@@ -1483,7 +1483,7 @@ img {
 
 /* line 942, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
 .img-rounded {
-  border-radius: 6px;
+  border-radius: 0;
 }
 
 /* line 945, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
@@ -1496,7 +1496,7 @@ img {
   line-height: 1.42857143;
   background-color: #fff;
   border: 1px solid #ddd;
-  border-radius: 4px;
+  border-radius: 0;
   -webkit-transition: all .2s ease-in-out;
   -o-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
@@ -2043,7 +2043,7 @@ code {
   font-size: 90%;
   color: #c7254e;
   background-color: #f9f2f4;
-  border-radius: 4px;
+  border-radius: 0;
 }
 
 /* line 1353, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
@@ -2052,7 +2052,7 @@ kbd {
   font-size: 90%;
   color: #fff;
   background-color: #333;
-  border-radius: 3px;
+  border-radius: 0;
   -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25);
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
@@ -2077,7 +2077,7 @@ pre {
   word-wrap: break-word;
   background-color: #f5f5f5;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 0;
 }
 
 /* line 1381, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
@@ -3577,7 +3577,7 @@ output {
   background-color: #fff;
   background-image: none;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 0;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
@@ -3758,7 +3758,7 @@ fieldset[disabled] .checkbox label {
   padding: 5px 10px;
   font-size: 12px;
   line-height: 1.5;
-  border-radius: 3px;
+  border-radius: 0;
 }
 
 /* line 2501, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
@@ -3780,7 +3780,7 @@ select[multiple].input-sm {
   padding: 10px 16px;
   font-size: 18px;
   line-height: 1.33;
-  border-radius: 6px;
+  border-radius: 0;
 }
 
 /* line 2517, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
@@ -4085,7 +4085,7 @@ select[multiple].input-lg {
   user-select: none;
   background-image: none;
   border: 1px solid transparent;
-  border-radius: 4px;
+  border-radius: 0;
 }
 
 /* line 2742, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
@@ -4480,7 +4480,7 @@ fieldset[disabled] .btn-link:focus {
   padding: 10px 16px;
   font-size: 18px;
   line-height: 1.33;
-  border-radius: 6px;
+  border-radius: 0;
 }
 
 /* line 3057, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
@@ -4489,7 +4489,7 @@ fieldset[disabled] .btn-link:focus {
   padding: 5px 10px;
   font-size: 12px;
   line-height: 1.5;
-  border-radius: 3px;
+  border-radius: 0;
 }
 
 /* line 3064, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
@@ -4498,7 +4498,7 @@ fieldset[disabled] .btn-link:focus {
   padding: 1px 5px;
   font-size: 12px;
   line-height: 1.5;
-  border-radius: 3px;
+  border-radius: 0;
 }
 
 /* line 3071, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
@@ -4603,7 +4603,7 @@ tbody.collapse.in {
   background-clip: padding-box;
   border: 1px solid #ccc;
   border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+  border-radius: 0;
   -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
 }
@@ -4927,7 +4927,7 @@ tbody.collapse.in {
 
 /* line 3376, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
 .btn-group-vertical > .btn:first-child:not(:last-child) {
-  border-top-right-radius: 4px;
+  border-top-right-radius: 0;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
@@ -4936,7 +4936,7 @@ tbody.collapse.in {
 .btn-group-vertical > .btn:last-child:not(:first-child) {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
-  border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 0;
 }
 
 /* line 3386, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
@@ -5023,7 +5023,7 @@ tbody.collapse.in {
   padding: 10px 16px;
   font-size: 18px;
   line-height: 1.33;
-  border-radius: 6px;
+  border-radius: 0;
 }
 
 /* line 3449, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
@@ -5052,7 +5052,7 @@ select[multiple].input-group-lg > .input-group-btn > .btn {
   padding: 5px 10px;
   font-size: 12px;
   line-height: 1.5;
-  border-radius: 3px;
+  border-radius: 0;
 }
 
 /* line 3472, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
@@ -5105,21 +5105,21 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   text-align: center;
   background-color: #eee;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 0;
 }
 
 /* line 3513, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
 .input-group-addon.input-sm {
   padding: 5px 10px;
   font-size: 12px;
-  border-radius: 3px;
+  border-radius: 0;
 }
 
 /* line 3518, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
 .input-group-addon.input-lg {
   padding: 10px 16px;
   font-size: 18px;
-  border-radius: 6px;
+  border-radius: 0;
 }
 
 /* line 3523, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
@@ -5276,7 +5276,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-right: 2px;
   line-height: 1.42857143;
   border: 1px solid transparent;
-  border-radius: 4px 4px 0 0;
+  border-radius: 0 0 0 0;
 }
 
 /* line 3634, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
@@ -5333,7 +5333,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 /* line 3670, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
 .nav-tabs.nav-justified > li > a {
   margin-right: 0;
-  border-radius: 4px;
+  border-radius: 0;
 }
 
 /* line 3674, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
@@ -5347,7 +5347,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   /* line 3680, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
   .nav-tabs.nav-justified > li > a {
     border-bottom: 1px solid #ddd;
-    border-radius: 4px 4px 0 0;
+    border-radius: 0 0 0 0;
   }
 
   /* line 3684, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
@@ -5364,7 +5364,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 
 /* line 3693, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
 .nav-pills > li > a {
-  border-radius: 4px;
+  border-radius: 0;
 }
 
 /* line 3696, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
@@ -5433,7 +5433,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 /* line 3738, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
 .nav-tabs-justified > li > a {
   margin-right: 0;
-  border-radius: 4px;
+  border-radius: 0;
 }
 
 /* line 3742, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
@@ -5447,7 +5447,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   /* line 3748, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
   .nav-tabs-justified > li > a {
     border-bottom: 1px solid #ddd;
-    border-radius: 4px 4px 0 0;
+    border-radius: 0 0 0 0;
   }
 
   /* line 3752, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
@@ -5642,7 +5642,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   background-color: transparent;
   background-image: none;
   border: 1px solid transparent;
-  border-radius: 4px;
+  border-radius: 0;
 }
 
 /* line 3903, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
@@ -6221,7 +6221,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   display: inline-block;
   padding-left: 0;
   margin: 20px 0;
-  border-radius: 4px;
+  border-radius: 0;
 }
 
 /* line 4314, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
@@ -6247,15 +6247,15 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > li:first-child > a,
 .pagination > li:first-child > span {
   margin-left: 0;
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 /* line 4335, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
 .pagination > li:last-child > a,
 .pagination > li:last-child > span {
-  border-top-right-radius: 4px;
-  border-bottom-right-radius: 4px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 /* line 4340, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
@@ -6305,15 +6305,15 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 /* line 4376, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
 .pagination-lg > li:first-child > a,
 .pagination-lg > li:first-child > span {
-  border-top-left-radius: 6px;
-  border-bottom-left-radius: 6px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 /* line 4381, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
 .pagination-lg > li:last-child > a,
 .pagination-lg > li:last-child > span {
-  border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 /* line 4386, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
@@ -6326,15 +6326,15 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 /* line 4391, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
 .pagination-sm > li:first-child > a,
 .pagination-sm > li:first-child > span {
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 /* line 4396, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
 .pagination-sm > li:last-child > a,
 .pagination-sm > li:last-child > span {
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 /* line 4401, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
@@ -6570,7 +6570,7 @@ a.list-group-item.active > .badge,
 
 /* line 4564, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
 .container .jumbotron {
-  border-radius: 6px;
+  border-radius: 0;
 }
 
 /* line 4567, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
@@ -6605,7 +6605,7 @@ a.list-group-item.active > .badge,
   line-height: 1.42857143;
   background-color: #fff;
   border: 1px solid #ddd;
-  border-radius: 4px;
+  border-radius: 0;
   -webkit-transition: all .2s ease-in-out;
   -o-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
@@ -6636,7 +6636,7 @@ a.thumbnail.active {
   padding: 15px;
   margin-bottom: 20px;
   border: 1px solid transparent;
-  border-radius: 4px;
+  border-radius: 0;
 }
 
 /* line 4616, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
@@ -6774,7 +6774,7 @@ a.thumbnail.active {
   margin-bottom: 20px;
   overflow: hidden;
   background-color: #f5f5f5;
-  border-radius: 4px;
+  border-radius: 0;
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
 }
@@ -6940,15 +6940,15 @@ a.thumbnail.active {
 
 /* line 4831, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
 .list-group-item:first-child {
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 
 /* line 4835, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
 .list-group-item:last-child {
   margin-bottom: 0;
-  border-bottom-right-radius: 4px;
-  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 /* line 4840, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
@@ -7176,7 +7176,7 @@ a.list-group-item-danger.active:focus {
   margin-bottom: 20px;
   background-color: #fff;
   border: 1px solid transparent;
-  border-radius: 4px;
+  border-radius: 0;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
 }
@@ -7190,8 +7190,8 @@ a.list-group-item-danger.active:focus {
 .panel-heading {
   padding: 10px 15px;
   border-bottom: 1px solid transparent;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
+  border-top-left-radius: -1px;
+  border-top-right-radius: -1px;
 }
 
 /* line 5011, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
@@ -7217,8 +7217,8 @@ a.list-group-item-danger.active:focus {
   padding: 10px 15px;
   background-color: #f5f5f5;
   border-top: 1px solid #ddd;
-  border-bottom-right-radius: 3px;
-  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: -1px;
+  border-bottom-left-radius: -1px;
 }
 
 /* line 5030, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
@@ -7235,15 +7235,15 @@ a.list-group-item-danger.active:focus {
 /* line 5037, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
 .panel > .list-group:first-child .list-group-item:first-child {
   border-top: 0;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
+  border-top-left-radius: -1px;
+  border-top-right-radius: -1px;
 }
 
 /* line 5042, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
 .panel > .list-group:last-child .list-group-item:last-child {
   border-bottom: 0;
-  border-bottom-right-radius: 3px;
-  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: -1px;
+  border-bottom-left-radius: -1px;
 }
 
 /* line 5047, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
@@ -7266,8 +7266,8 @@ a.list-group-item-danger.active:focus {
 /* line 5058, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
 .panel > .table:first-child,
 .panel > .table-responsive:first-child > .table:first-child {
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
+  border-top-left-radius: -1px;
+  border-top-right-radius: -1px;
 }
 
 /* line 5063, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
@@ -7279,7 +7279,7 @@ a.list-group-item-danger.active:focus {
 .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:first-child,
 .panel > .table:first-child > tbody:first-child > tr:first-child th:first-child,
 .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:first-child {
-  border-top-left-radius: 3px;
+  border-top-left-radius: -1px;
 }
 
 /* line 5073, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
@@ -7291,14 +7291,14 @@ a.list-group-item-danger.active:focus {
 .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:last-child,
 .panel > .table:first-child > tbody:first-child > tr:first-child th:last-child,
 .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:last-child {
-  border-top-right-radius: 3px;
+  border-top-right-radius: -1px;
 }
 
 /* line 5083, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
 .panel > .table:last-child,
 .panel > .table-responsive:last-child > .table:last-child {
-  border-bottom-right-radius: 3px;
-  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: -1px;
+  border-bottom-left-radius: -1px;
 }
 
 /* line 5088, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
@@ -7310,7 +7310,7 @@ a.list-group-item-danger.active:focus {
 .panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:first-child,
 .panel > .table:last-child > tfoot:last-child > tr:last-child th:first-child,
 .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:first-child {
-  border-bottom-left-radius: 3px;
+  border-bottom-left-radius: -1px;
 }
 
 /* line 5098, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
@@ -7322,7 +7322,7 @@ a.list-group-item-danger.active:focus {
 .panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:last-child,
 .panel > .table:last-child > tfoot:last-child > tr:last-child th:last-child,
 .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:last-child {
-  border-bottom-right-radius: 3px;
+  border-bottom-right-radius: -1px;
 }
 
 /* line 5108, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
@@ -7413,7 +7413,7 @@ a.list-group-item-danger.active:focus {
 /* line 5175, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
 .panel-group .panel {
   margin-bottom: 0;
-  border-radius: 4px;
+  border-radius: 0;
 }
 
 /* line 5179, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
@@ -7649,7 +7649,7 @@ a.list-group-item-danger.active:focus {
   margin-bottom: 20px;
   background-color: #f5f5f5;
   border: 1px solid #e3e3e3;
-  border-radius: 4px;
+  border-radius: 0;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
 }
@@ -7663,13 +7663,13 @@ a.list-group-item-danger.active:focus {
 /* line 5341, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
 .well-lg {
   padding: 24px;
-  border-radius: 6px;
+  border-radius: 0;
 }
 
 /* line 5345, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
 .well-sm {
   padding: 9px;
-  border-radius: 3px;
+  border-radius: 0;
 }
 
 /* line 5349, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
@@ -7760,7 +7760,7 @@ button.close {
   background-clip: padding-box;
   border: 1px solid #999;
   border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 6px;
+  border-radius: 0;
   outline: 0;
   -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
@@ -7919,7 +7919,7 @@ button.close {
   text-align: center;
   text-decoration: none;
   background-color: #000;
-  border-radius: 4px;
+  border-radius: 0;
 }
 
 /* line 5535, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
@@ -8015,7 +8015,7 @@ button.close {
   background-clip: padding-box;
   border: 1px solid #ccc;
   border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 6px;
+  border-radius: 0;
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
@@ -8049,7 +8049,7 @@ button.close {
   line-height: 18px;
   background-color: #f7f7f7;
   border-bottom: 1px solid #ebebeb;
-  border-radius: 5px 5px 0 0;
+  border-radius: -1px -1px 0 0;
 }
 
 /* line 5635, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
