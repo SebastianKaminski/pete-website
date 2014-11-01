@@ -36,8 +36,11 @@
 ?>
 <?php if ($_product->getImage() != 'no_selection' && $_product->getImage()): ?>
 <p class="product-image product-image-zoom">
-    <a href="<?php echo $this->helper('catalog/image')->init($_product, 'image'); ?>" alt="'.$this->escapeHtml($this->getImageLabel()).'" title="'.$this->escapeHtml($this->getImageLabel()).'">
-        <img src="<?php echo $this->helper('catalog/image')->init($this->getProduct(), 'thumbnail', $_image->getFile())->resize(300, 300); ?>" width="300" height="300" alt=""/>
+    <a href="<?php echo $this->helper('catalog/image')->init($_product, 'image'); ?>" title="" rel="lightbox[rotation]">
+        <?php
+            $_img = '<img src="'.$this->helper('catalog/image')->init($_product, 'image').'" alt="'.$this->escapeHtml($this->getImageLabel()).'" title="'.$this->escapeHtml($this->getImageLabel()).'" />';
+            echo $_helper->productAttribute($_product, $_img, 'image');
+        ?>
     </a>
 </p>
 <?php else: ?>
