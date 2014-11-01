@@ -352,15 +352,11 @@
 // --------------------------------------------------
 .product-view .product-shop { 
 	float:right; 
+	text-align: right;
 	width:330px;
 
 	.product-name { 
 		margin:0 0 5px;
-
-		h1 { 
-			margin:0; 
-			font:bold 15px/1.35 Arial, Helvetica, sans-serif;
-		}
 	}
 
 	.availability { 
@@ -370,6 +366,9 @@
 	.short-description { 
 		margin:10px 0; 
 		padding:10px 0 0;
+		.std {
+			font-size: 11px;
+		}
 	}
 
 	.price-box { 
@@ -397,7 +396,6 @@
 // --------------------------------------------------
 .product-options { 
 	margin:20px 0 0; 
-	padding:10px 15px 20px; 
 
 	dt { 
 		padding:10px 0 0; 
@@ -424,7 +422,7 @@
 	}
 
 	dd { 
-		padding:5px 10px 15px; 
+		padding:5px 0px 15px; 
 		margin:0 0 5px; 
 		border-bottom:1px solid #e4e4e4;
 
@@ -499,12 +497,11 @@
 
 	p.required { 
 		margin-bottom:0; 
-		padding:15px 0 0;
 	}
 }
 
 .product-options-bottom { 
-	padding:15px 20px;
+	padding:15px 0px;
 
 	.tier-prices { 
 		margin:0; 
@@ -547,7 +544,7 @@
 	margin:0 0 10px;
 
 	.price-box { 
-		float:none; 
+		float:left; 
 		margin:0 0 5px;
 	}
 
