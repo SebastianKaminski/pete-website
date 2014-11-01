@@ -49,7 +49,7 @@
     <h2><?php echo $this->__('More Views') ?></h2>
     <ul class="list-group row">
     <?php foreach ($this->getGalleryImages() as $_image): ?>
-        <li class="list-group-item col-xs-3 col-sm-4">
+        <li class="list-group-item col-xs-3 col-sm-2">
             <a  href="<?php echo $this->helper('catalog/image')->init($this->getProduct(), 'image', $_image->getFile()); ?>" 
                 rel="lightbox[rotation]" 
                 title="<?php echo $this->escapeHtml($_image->getLabel()); ?>">
