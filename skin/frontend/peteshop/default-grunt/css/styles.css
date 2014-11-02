@@ -13503,7 +13503,7 @@ tr.summary-details-excluded {
   margin-bottom: 0;
 }
 /* line 74, ../scss/styles.scss */
-.header-container .header-middle h3 img {
+.header-container #header-middle h3 img {
   width: 100%;
   max-width: 400px;
 }
