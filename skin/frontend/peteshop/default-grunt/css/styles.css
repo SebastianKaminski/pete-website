@@ -13514,3 +13514,9 @@ footer .footer-content {
 footer .footer-content h3 {
   color: #FFA248;
 }
+
+/* Menu Fix */
+/* line 86, ../scss/styles.scss */
+.navbar .dropdown:hover .dropdown-menu {
+  display: block;
+}

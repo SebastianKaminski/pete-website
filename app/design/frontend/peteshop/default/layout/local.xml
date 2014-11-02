@@ -53,7 +53,7 @@
         <reference name="root">
             <block type="page/html_head" name="site.bottom.css.js" as="site.bottom.css.js" template="page/html/site-bottom-css-js.phtml">
                 <action method="addItem"><type>skin_js</type><name>js/build/jquery.min.js</name></action>
-                <action method="addItem"><type>skin_js</type><name>js/build/bootstrap.js</name></action>
+                <action method="addItem"><type>skin_js</type><name>js/build/bootstrap.min.js</name></action>
                 <action method="addItem"><type>skin_js</type><name>js/build/global.min.js</name></action>
             </block>
 		</reference>

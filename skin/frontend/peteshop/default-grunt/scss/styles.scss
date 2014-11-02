@@ -80,3 +80,10 @@ footer {
           h3 { color: $orange; }
      }
 }
+
+/* Menu Fix */
+.navbar {
+  .dropdown:hover .dropdown-menu {
+      display: block;
+   }
+}
