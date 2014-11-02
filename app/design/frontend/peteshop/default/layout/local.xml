@@ -59,8 +59,6 @@
             <reference name="top.links">
                 <!-- Remove 'My account' link -->
                 <action method="removeLinkByUrl"><url helper="customer/getAccountUrl"/></action>
-                <!-- Remove 'Log in' link -->
-                <action method="removeLinkByUrl"><url helper="customer/account/login"/></action>
             </reference>
 		</reference>
 	</default>
@@ -158,4 +156,18 @@
             <action method="setTemplate"><template>page/1column.phtml</template></action>
         </reference>
     </contacts_index_index>
+
+    <customer_logged_out>
+        <!-- Removes 'Log In' link - Default position: 60 -->
+        <reference name="top.links">
+            <action method="removeLinkByUrl"><url helper="customer/getLoginUrl"/></action>
+        </reference>
+    </customer_logged_out>
+
+    <customer_logged_in>
+        <!-- Removes 'Log Out' link - Default position: 60 -->
+        <reference name="top.links">
+            <action method="removeLinkByUrl"><url helper="customer/getLogoutUrl"/></action>
+        </reference>
+    </customer_logged_in>    
 </layout>
