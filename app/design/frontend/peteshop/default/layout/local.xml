@@ -57,7 +57,10 @@
                 <action method="addItem"><type>skin_js</type><name>js/build/global.min.js</name></action>
             </block>
             <reference name="top.links">
+                <!-- Remove 'My account' link -->
                 <action method="removeLinkByUrl"><url helper="customer/getAccountUrl"/></action>
+                <!-- Remove 'Log in' link -->
+                <action method="removeLinkByUrl"><url helper="customer/getLoginUrl"/></action>
             </reference>
 		</reference>
 	</default>
