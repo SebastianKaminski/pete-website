@@ -56,6 +56,9 @@
                 <action method="addItem"><type>skin_js</type><name>js/build/bootstrap.min.js</name></action>
                 <action method="addItem"><type>skin_js</type><name>js/build/global.min.js</name></action>
             </block>
+            <reference name="top.links">
+                <action method="removeLinkByUrl"><url helper="customer/getAccountUrl"/></action>
+            </reference>
 		</reference>
 	</default>
 
