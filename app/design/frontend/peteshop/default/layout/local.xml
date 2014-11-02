@@ -60,7 +60,7 @@
                 <!-- Remove 'My account' link -->
                 <action method="removeLinkByUrl"><url helper="customer/getAccountUrl"/></action>
                 <!-- Remove 'Log in' link -->
-                <action method="removeLinkByUrl"><url helper="customer/getLoginUrl"/></action>
+                <action method="removeLinkByUrl"><url helper="customer/account/login"/></action>
             </reference>
 		</reference>
 	</default>
