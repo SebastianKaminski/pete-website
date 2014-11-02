@@ -62,7 +62,7 @@
 	            $outermostClass = $menuTree->getOutermostClass();
 
 	            if ($childLevel == 0 && $outermostClass) {
-	                $outermostClassCode = ' class="' . $outermostClass . ($child->hasChildren() ? ' dropdown-toggle" data-toggle="dropdown" role="button"' : '"');
+	                $outermostClassCode = ' class="' . ($child->hasChildren() ? ' dropdown-toggle" data-toggle="dropdown" role="button"' : '"');
 	                $child->setClass($outermostClass);
 	            }
 
