@@ -69,6 +69,14 @@ $c-grey: #BBB;
                ul { margin-bottom: 0; }
           }
      }
+     .header-middle {
+          h3 {
+               img {
+                    width: 100%;
+                    max-width: 400px;
+               }
+          }
+     }
 }
 
 footer {
