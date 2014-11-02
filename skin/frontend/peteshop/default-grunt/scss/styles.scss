@@ -75,6 +75,7 @@ footer {
      .footer-content {
           background: #333;
           color: #FFF;
+          font-family: $fontBase;
           font-size: 12px;
           padding: 0 20px;
           h3 { color: $orange; }
@@ -87,3 +88,5 @@ footer {
       display: block;
    }
 }
+/* Boostrap Grid */
+.container-fluid { padding: 0 !important; }
