@@ -72,12 +72,14 @@ $c-grey: #BBB;
 }
 
 footer {
-     .footer-content {
+     &.container-fluid {
           background: #333;
+          margin-top: 25px;
+     }
+     .footer-content {
           color: #FFF;
           font-family: $fontBase;
           font-size: 12px;
-          padding: 0 20px;
           h3 { color: $orange; }
      }
 }

@@ -1,40 +1,38 @@
-<footer>
-	<div class="container-fluid">
-		<div class="footer-content">
-			<div class="row">
-				<div class="col-md-4">
-					<h3><?php echo Mage::getStoreConfig('general/store_information/name'); ?></h3>
-					<ul class="list-unstyled">
-						<li><?php echo Mage::getStoreConfig('general/store_information/address'); ?></li>
-						<li><?php echo Mage::getStoreConfig('general/store_information/phone'); ?></li>
-						<li><?php echo Mage::getStoreConfig('trans_email/ident_general/email'); ?></li>
-					</ul>
-				</div>
-				<div class="col-md-2 col-md-offset-4">
-					<h3>Links</h3>
-					<ul class="list-unstyled">
-						<li><a href="#">Home</a></li>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Services</a></li>
-						<li><a href="#">Products</a></li>
-						<li><a href="#">FAQ</a></li>
-						<li><a href="#">Contact us</a></li>
-					</ul>
-				</div>
-				<div class="col-md-2">
-					<h3>Social</h3>
-					<ul class="list-unstyled">
-						<li><a href="#">Facebook</a></li>
-						<li><a href="#">Twitter</a></li>
-						<li><a href="#">Instagram</a></li>
-						<li><a href="#">Pinterest</a></li>
-					</ul>
-				</div>
+<footer class="container-fluid">
+	<div class="footer-content container">
+		<div class="row">
+			<div class="col-md-4">
+				<h3><?php echo Mage::getStoreConfig('general/store_information/name'); ?></h3>
+				<ul class="list-unstyled">
+					<li><?php echo Mage::getStoreConfig('general/store_information/address'); ?></li>
+					<li><?php echo Mage::getStoreConfig('general/store_information/phone'); ?></li>
+					<li><?php echo Mage::getStoreConfig('trans_email/ident_general/email'); ?></li>
+				</ul>
 			</div>
-			<div class="row">
-				<div class="col-md-12">
-    				<address><?php echo $this->getCopyright() ?></address>
-				</div>
+			<div class="col-md-2 col-md-offset-4">
+				<h3>Links</h3>
+				<ul class="list-unstyled">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Products</a></li>
+					<li><a href="#">FAQ</a></li>
+					<li><a href="#">Contact us</a></li>
+				</ul>
+			</div>
+			<div class="col-md-2">
+				<h3>Social</h3>
+				<ul class="list-unstyled">
+					<li><a href="#">Facebook</a></li>
+					<li><a href="#">Twitter</a></li>
+					<li><a href="#">Instagram</a></li>
+					<li><a href="#">Pinterest</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<address><?php echo $this->getCopyright() ?></address>
 			</div>
 		</div>
 	</div>
