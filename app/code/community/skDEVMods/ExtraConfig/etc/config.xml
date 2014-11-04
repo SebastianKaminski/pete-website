@@ -2,7 +2,7 @@
 <config>
     <modules>
         <skDEVMods_ExtraConfig>
-            <version>1.0.0</version>
+            <version>0.1.0</version>
         </skDEVMods_ExtraConfig>
     </modules>
     <global>
@@ -15,6 +15,7 @@
     <default>
         <tab1>
             <general>
+                <facebook_field></facebook_field>
             </general>
         </tab1>
     </default>    

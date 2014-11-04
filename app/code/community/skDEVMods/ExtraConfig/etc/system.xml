@@ -2,13 +2,13 @@
 <config>
     <tabs>
         <myconf translate="label">
-            <label>skDEV Configuration</label>
+            <label>My Configuration</label>
             <sort_order>150</sort_order>
         </myconf>        
     </tabs>
     <sections>
         <tab1 translate="label" module="adminhtml">
-            <label>Variables</label>
+            <label>Tab #1</label>
             <tab>myconf</tab>
             <sort_order>10</sort_order>
             <show_in_default>1</show_in_default>
