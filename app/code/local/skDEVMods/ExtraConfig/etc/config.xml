@@ -3,13 +3,14 @@
     <modules>
         <skDEVMods_ExtraConfig>
             <version>1.0.0</version>
-            <depends>
-            <!-- no dependencies -->
-            </depends>
         </skDEVMods_ExtraConfig>
     </modules>
     <global>
-        <models />
+        <models>
+            <skdevmods_extraconfig>
+                <class>skDEVMods_ExtraConfig_Model</class>
+            </skdevmods_extraconfig>
+        </models>
         <resources />
         <extraconfig />
         <blocks />
