@@ -9,7 +9,7 @@
                             <config>
                                 <children>
                                     <tab1>
-                                        <title>Tab #1</title> <!-- Used in resources tree -->
+                                        <title>Variables</title> <!-- Used in resources tree -->
                                     </tab1>
                                 </children>
                             </config>
