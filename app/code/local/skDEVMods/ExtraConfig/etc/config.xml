@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <config>
     <modules>
-        <MyMods_ExtraConfig>
+        <skDEVMods_ExtraConfig>
             <version>1.0.0</version>
             <depends>
             <!-- no dependencies -->
             </depends>
-        </MyMods_ExtraConfig>
+        </skDEVMods_ExtraConfig>
     </modules>
     <global>
         <models />
