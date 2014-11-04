@@ -11,8 +11,11 @@
                 <class>skDEVMods_ExtraConfig_Model</class>
             </skdevmods_extraconfig>
         </models>
-        <resources />
-        <extraconfig />
-        <blocks />
     </global>
+    <default>
+        <tab1>
+            <general>
+            </general>
+        </tab1>
+    </default>    
 </config>
