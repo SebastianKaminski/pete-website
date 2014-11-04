@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <config>
-   <modules>
-      <skDEVMods_ExtraConfig>
-         <active>true</active>
-         <codePool>local</codePool>
-      </skDEVMods_ExtraConfig>     
-   </modules>
+	<modules>
+		<skDEVMods_ExtraConfig>
+			<active>true</active>
+			<codePool>community</codePool>
+		</skDEVMods_ExtraConfig>     
+	</modules>
 </config>
