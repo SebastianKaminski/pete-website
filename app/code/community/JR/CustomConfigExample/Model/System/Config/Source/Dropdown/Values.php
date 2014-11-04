@@ -1,6 +1,6 @@
 <?php
 
-class skDEVMods_ExtraConfig_Model_System_Config_Source_Dropdown_Values
+class JR_CustomConfigExample_Model_System_Config_Source_Dropdown_Values
 {
     public function toOptionArray()
     {

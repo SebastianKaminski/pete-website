@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <JR_CustomConfigExample>
+            <version>0.1.0</version>
+        </JR_CustomConfigExample>
+    </modules>
+    <global>
+        <models>
+            <jr_customconfigexample>
+                <class>JR_CustomConfigExample_Model</class>
+            </jr_customconfigexample>
+        </models>
+    </global>
+    <default>
+        <tab1>
+            <general>
+                <facebook_field>Default value</facebook_field>>
+            </general>
+        </tab1>
+    </default>
+</config>
