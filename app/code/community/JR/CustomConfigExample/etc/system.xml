@@ -7,7 +7,7 @@
         </myconf>
     </tabs>
     <sections>
-        <tab1 translate="label" module="adminhtml">
+        <skdev translate="label" module="adminhtml">
             <label>Variables</label>
             <tab>myconf</tab>
             <sort_order>10</sort_order>
@@ -34,6 +34,6 @@
                     </fields>
                 </general>
             </groups>
-        </tab1>
+        </skdev>
     </sections>
 </config>

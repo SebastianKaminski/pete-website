@@ -8,9 +8,9 @@
                         <children>
                             <config>
                                 <children>
-                                    <tab1>
+                                    <skdev>
                                         <title>Variables</title> <!-- Used in resources tree -->
-                                    </tab1>
+                                    </skdev>
                                 </children>
                             </config>
                         </children>
