@@ -105,13 +105,13 @@
 		overflow:hidden;
 	}
 
-	.block-content: {
+	.block-content {
 		font-size: 12px;
 	}
 
 	.block-subtitle { 
 		line-height:1.35; 
-		border:1px solid #b9ccdd; 
+		border:1px solid $orange; 
 		border-width:1px 0; 
 		text-transform:uppercase; 
 	}
@@ -131,8 +131,14 @@
 	}
 
 	.currently {
+		ol {
+			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+			font-size: 11px;
+			padding-left: 16px;
+		}
+
 		li { 
-			padding:4px 6px 4px 10px;
+			padding:4px 6px 4px 0px;
 		}
 
 		.label, .value {
@@ -142,10 +148,7 @@
 		.label { 
 			color: inherit;
 			text-transform:uppercase;
-		}
-
-		.value {
-			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+			padding: 0;
 		}
 
 		.btn-remove { 
@@ -154,14 +157,7 @@
 	}
 
 	.actions { 
-		font-size:11px; 
-		padding:4px 9px; 
-		background:#cad6e4; 
-		text-align:right;
-
-		a { 
-			float:none;
-		}
+		padding:4px 0px !important; 
 	}
 }
 
