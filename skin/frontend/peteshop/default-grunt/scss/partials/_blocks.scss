@@ -131,17 +131,12 @@
 	}
 
 	.currently {
-		ol {
-			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-			font-size: 11px;
-			padding-left: 16px;
-		}
-
 		li { 
 			padding:4px 6px 4px 0px;
 		}
 
-		.label, .value {
+		ol, .label, .value {
+			font-family: $fontBase2;
 			font-size: 11px;
 		}
 
@@ -157,6 +152,7 @@
 	}
 
 	.actions { 
+		float: right;
 		padding:4px 0px !important; 
 	}
 }
