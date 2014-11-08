@@ -152,8 +152,10 @@
 	}
 
 	.actions { 
-		float: right;
 		padding:4px 0px !important; 
+		a {
+			float: right;
+		}
 	}
 }
 
