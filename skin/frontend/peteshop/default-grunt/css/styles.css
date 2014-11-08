@@ -9625,35 +9625,33 @@ button.close {
 .block-layered-nav dt {
   padding: 7px 10px 0 0px;
   font-weight: bold;
-  text-transform: uppercase;
   margin-bottom: 5px;
 }
-/* line 122, ../scss/partials/_blocks.scss */
+/* line 121, ../scss/partials/_blocks.scss */
 .block-layered-nav dd {
   padding: 0 12px 12px;
-  background: url(../images/bkg_block-layered-dd.gif) 0 100% repeat-x;
 }
-/* line 126, ../scss/partials/_blocks.scss */
+/* line 124, ../scss/partials/_blocks.scss */
 .block-layered-nav dd.last {
   background: none;
 }
-/* line 132, ../scss/partials/_blocks.scss */
+/* line 130, ../scss/partials/_blocks.scss */
 .block-layered-nav .currently li {
   background: #fff url(../images/bkg_block-layered-li.gif) 0 100% repeat-x;
   padding: 4px 6px 4px 10px;
 }
-/* line 137, ../scss/partials/_blocks.scss */
+/* line 135, ../scss/partials/_blocks.scss */
 .block-layered-nav .currently .label {
   font-weight: bold;
   padding-left: 18px;
   background: url(../images/bkg_block-layered-label.gif) 0 3px no-repeat;
   text-transform: uppercase;
 }
-/* line 144, ../scss/partials/_blocks.scss */
+/* line 142, ../scss/partials/_blocks.scss */
 .block-layered-nav .currently .btn-remove {
   margin: 3px 0 0;
 }
-/* line 149, ../scss/partials/_blocks.scss */
+/* line 147, ../scss/partials/_blocks.scss */
 .block-layered-nav .actions {
   font-size: 11px;
   padding: 4px 9px;
@@ -9662,58 +9660,58 @@ button.close {
   border-width: 1px 0;
   text-align: right;
 }
-/* line 157, ../scss/partials/_blocks.scss */
+/* line 155, ../scss/partials/_blocks.scss */
 .block-layered-nav .actions a {
   float: none;
 }
 
-/* line 167, ../scss/partials/_blocks.scss */
+/* line 165, ../scss/partials/_blocks.scss */
 .block-cart .summary {
   padding: 2px 8px 8px;
   margin: -1px 0 0;
   position: relative;
   z-index: 1;
 }
-/* line 174, ../scss/partials/_blocks.scss */
+/* line 172, ../scss/partials/_blocks.scss */
 .block-cart .amount {
   margin: 0;
 }
-/* line 177, ../scss/partials/_blocks.scss */
+/* line 175, ../scss/partials/_blocks.scss */
 .block-cart .amount a {
   font-weight: bold;
 }
-/* line 182, ../scss/partials/_blocks.scss */
+/* line 180, ../scss/partials/_blocks.scss */
 .block-cart .subtotal {
   margin: 5px 0 0;
   padding: 2px 0;
   text-align: center;
 }
-/* line 187, ../scss/partials/_blocks.scss */
+/* line 185, ../scss/partials/_blocks.scss */
 .block-cart .subtotal .price {
   font-weight: bold;
 }
-/* line 192, ../scss/partials/_blocks.scss */
+/* line 190, ../scss/partials/_blocks.scss */
 .block-cart .actions {
   border-bottom: 1px solid #c2c2c2;
 }
 
-/* line 200, ../scss/partials/_blocks.scss */
+/* line 198, ../scss/partials/_blocks.scss */
 .block-compare button.button span {
   border-color: #406a83;
   background: #618499;
 }
 
-/* line 205, ../scss/partials/_blocks.scss */
+/* line 203, ../scss/partials/_blocks.scss */
 .page-popup .link-print {
   padding: 2px 0 2px 25px;
   font-weight: bold;
 }
 
-/* line 210, ../scss/partials/_blocks.scss */
+/* line 208, ../scss/partials/_blocks.scss */
 .compare-table {
   border: 0;
 }
-/* line 213, ../scss/partials/_blocks.scss */
+/* line 211, ../scss/partials/_blocks.scss */
 .compare-table thead tr.first th,
 .compare-table thead tr.first td {
   border: 0;
@@ -9722,18 +9720,18 @@ button.close {
   font-size: 0;
   line-height: 0;
 }
-/* line 222, ../scss/partials/_blocks.scss */
+/* line 220, ../scss/partials/_blocks.scss */
 .compare-table .btn-remove {
   float: right;
   background-image: url(../images/btn_remove2.gif);
   width: 72px;
   height: 15px;
 }
-/* line 230, ../scss/partials/_blocks.scss */
+/* line 228, ../scss/partials/_blocks.scss */
 .compare-table tbody th {
   background: #d9e5ee url(../images/bkg_th-v.gif) 100% 0 repeat-y;
 }
-/* line 234, ../scss/partials/_blocks.scss */
+/* line 232, ../scss/partials/_blocks.scss */
 .compare-table tbody th,
 .compare-table tbody td {
   padding: 10px;
@@ -9741,112 +9739,112 @@ button.close {
   border-top: 1px solid #ccc;
   border-left: 1px solid #ccc;
 }
-/* line 242, ../scss/partials/_blocks.scss */
+/* line 240, ../scss/partials/_blocks.scss */
 .compare-table tbody td.last {
   border-right: 1px solid #ccc;
 }
-/* line 246, ../scss/partials/_blocks.scss */
+/* line 244, ../scss/partials/_blocks.scss */
 .compare-table tbody tr.last th,
 .compare-table tbody tr.last td {
   border-bottom: 1px solid #ccc !important;
 }
-/* line 252, ../scss/partials/_blocks.scss */
+/* line 250, ../scss/partials/_blocks.scss */
 .compare-table tr.add-to-row td {
   background: #fffada;
   text-align: center;
 }
-/* line 257, ../scss/partials/_blocks.scss */
+/* line 255, ../scss/partials/_blocks.scss */
 .compare-table tr.first td {
   text-align: center;
 }
-/* line 261, ../scss/partials/_blocks.scss */
+/* line 259, ../scss/partials/_blocks.scss */
 .compare-table tr.first td .product-name {
   font-size: 13px;
   font-weight: bold;
   margin: 0 0 5px;
 }
-/* line 267, ../scss/partials/_blocks.scss */
+/* line 265, ../scss/partials/_blocks.scss */
 .compare-table tr.first td .ratings {
   width: 69px;
   margin: 0 auto;
 }
-/* line 272, ../scss/partials/_blocks.scss */
+/* line 270, ../scss/partials/_blocks.scss */
 .compare-table tr.first td p,
 .compare-table tr.add-to-row td p {
   margin: 0;
 }
 
-/* line 283, ../scss/partials/_blocks.scss */
+/* line 281, ../scss/partials/_blocks.scss */
 .block-tags .block-content ul {
   font-size: 12px;
   padding: 10px;
 }
-/* line 288, ../scss/partials/_blocks.scss */
+/* line 286, ../scss/partials/_blocks.scss */
 .block-tags .block-content li {
   display: inline;
   padding-right: 4px;
 }
-/* line 294, ../scss/partials/_blocks.scss */
+/* line 292, ../scss/partials/_blocks.scss */
 .block-tags .actions {
   text-align: right;
 }
-/* line 297, ../scss/partials/_blocks.scss */
+/* line 295, ../scss/partials/_blocks.scss */
 .block-tags .actions a {
   float: none;
 }
 
-/* line 307, ../scss/partials/_blocks.scss */
+/* line 305, ../scss/partials/_blocks.scss */
 .block-subscribe .block-content {
   padding: 5px 10px;
 }
-/* line 311, ../scss/partials/_blocks.scss */
+/* line 309, ../scss/partials/_blocks.scss */
 .block-subscribe label {
   font-weight: bold;
 }
-/* line 315, ../scss/partials/_blocks.scss */
+/* line 313, ../scss/partials/_blocks.scss */
 .block-subscribe input.input-text {
   display: block;
   width: 167px;
   margin: 3px 0;
 }
-/* line 321, ../scss/partials/_blocks.scss */
+/* line 319, ../scss/partials/_blocks.scss */
 .block-subscribe .actions {
   background: none;
   padding: 0;
   margin: 3px 0 0;
   text-align: left;
 }
-/* line 327, ../scss/partials/_blocks.scss */
+/* line 325, ../scss/partials/_blocks.scss */
 .block-subscribe .actions button.button {
   float: none;
 }
-/* line 330, ../scss/partials/_blocks.scss */
+/* line 328, ../scss/partials/_blocks.scss */
 .block-subscribe .actions button.button span {
   border-color: #406a83;
   background: #618499;
 }
 
-/* line 342, ../scss/partials/_blocks.scss */
+/* line 340, ../scss/partials/_blocks.scss */
 .block-login .block-content {
   padding: 5px 10px;
 }
-/* line 346, ../scss/partials/_blocks.scss */
+/* line 344, ../scss/partials/_blocks.scss */
 .block-login label {
   font-weight: bold;
 }
-/* line 350, ../scss/partials/_blocks.scss */
+/* line 348, ../scss/partials/_blocks.scss */
 .block-login input.input-text {
   display: block;
   width: 167px;
   margin: 3px 0;
 }
-/* line 356, ../scss/partials/_blocks.scss */
+/* line 354, ../scss/partials/_blocks.scss */
 .block-login .actions {
   background: none;
   padding: 0;
   margin: 3px 0 0;
 }
-/* line 361, ../scss/partials/_blocks.scss */
+/* line 359, ../scss/partials/_blocks.scss */
 .block-login .actions button.button span {
   border-color: #406a83;
   background: #618499;
@@ -10590,55 +10588,45 @@ p.required {
 .block {
   margin: 0 0 15px;
 }
-/* line 6, ../scss/partials/_sidebar.scss */
-.block .block-title {
-  border-bottom: 1px solid #ddd;
-  padding: 0px 9px 2px 0px;
-}
-/* line 10, ../scss/partials/_sidebar.scss */
+/* line 7, ../scss/partials/_sidebar.scss */
 .block .block-title strong {
   display: block;
-  font: bold 12px/16px Arial, Helvetica, sans-serif;
-  min-height: 16px;
-  padding: 1px 0 1px;
   text-transform: uppercase;
 }
-/* line 19, ../scss/partials/_sidebar.scss */
+/* line 13, ../scss/partials/_sidebar.scss */
 .block .block-subtitle {
   margin: 0;
   padding: 5px 0px;
-  font-size: 1em;
-  font-weight: bold;
 }
-/* line 26, ../scss/partials/_sidebar.scss */
+/* line 18, ../scss/partials/_sidebar.scss */
 .block .block-content li.item {
   padding: 7px 9px;
 }
-/* line 30, ../scss/partials/_sidebar.scss */
+/* line 22, ../scss/partials/_sidebar.scss */
 .block .btn-remove {
   float: right;
   margin: 1px 0 2px 5px;
 }
-/* line 35, ../scss/partials/_sidebar.scss */
+/* line 27, ../scss/partials/_sidebar.scss */
 .block .actions {
   padding: 6px 9px;
   text-align: right;
 }
-/* line 39, ../scss/partials/_sidebar.scss */
+/* line 31, ../scss/partials/_sidebar.scss */
 .block .actions a {
   float: left;
 }
-/* line 43, ../scss/partials/_sidebar.scss */
+/* line 35, ../scss/partials/_sidebar.scss */
 .block .actions button.button {
   float: right;
 }
-/* line 48, ../scss/partials/_sidebar.scss */
+/* line 40, ../scss/partials/_sidebar.scss */
 .block .empty {
   margin: 0;
   padding: 5px 0px;
 }
 
-/* line 57, ../scss/partials/_sidebar.scss */
+/* line 49, ../scss/partials/_sidebar.scss */
 .block-cart,
 .block-wishlist,
 .block-subscribe,
@@ -10654,7 +10642,7 @@ p.required {
   line-height: 1.25;
 }
 
-/* line 72, ../scss/partials/_sidebar.scss */
+/* line 64, ../scss/partials/_sidebar.scss */
 .block-cart .block-title strong,
 .block-wishlist .block-title strong,
 .block-subscribe .block-title strong,
