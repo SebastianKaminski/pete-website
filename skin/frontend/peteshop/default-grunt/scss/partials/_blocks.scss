@@ -132,15 +132,20 @@
 
 	.currently {
 		li { 
-			background:#fff url(../images/bkg_block-layered-li.gif) 0 100% repeat-x; 
 			padding:4px 6px 4px 10px;
 		}
 
+		.label, .value {
+			font-size: 11px;
+		}
+
 		.label { 
-			font-weight:bold; 
-			padding-left:18px; 
-			background:url(../images/bkg_block-layered-label.gif) 0 3px no-repeat; 
+			color: inherit;
 			text-transform:uppercase;
+		}
+
+		.value {
+			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 		}
 
 		.btn-remove { 
@@ -152,8 +157,6 @@
 		font-size:11px; 
 		padding:4px 9px; 
 		background:#cad6e4; 
-		border:1px solid #dee5e8; 
-		border-width:1px 0; 
 		text-align:right;
 
 		a { 

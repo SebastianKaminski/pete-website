@@ -9606,6 +9606,7 @@ button.close {
 /* line 98, ../scss/partials/_blocks.scss */
 .block-layered-nav {
   border: 0;
+  .block-content-font-size: 12px;
 }
 /* line 101, ../scss/partials/_blocks.scss */
 .block-layered-nav .block-title {
@@ -9614,104 +9615,107 @@ button.close {
   height: 24px;
   overflow: hidden;
 }
-/* line 108, ../scss/partials/_blocks.scss */
+/* line 112, ../scss/partials/_blocks.scss */
 .block-layered-nav .block-subtitle {
   line-height: 1.35;
   border: 1px solid #b9ccdd;
   border-width: 1px 0;
   text-transform: uppercase;
 }
-/* line 115, ../scss/partials/_blocks.scss */
+/* line 119, ../scss/partials/_blocks.scss */
 .block-layered-nav dt {
   padding: 7px 10px 0 0px;
   font-weight: bold;
   margin-bottom: 5px;
 }
-/* line 121, ../scss/partials/_blocks.scss */
+/* line 125, ../scss/partials/_blocks.scss */
 .block-layered-nav dd {
   padding: 0 12px 12px;
 }
-/* line 124, ../scss/partials/_blocks.scss */
+/* line 128, ../scss/partials/_blocks.scss */
 .block-layered-nav dd.last {
   background: none;
 }
-/* line 130, ../scss/partials/_blocks.scss */
+/* line 134, ../scss/partials/_blocks.scss */
 .block-layered-nav .currently li {
-  background: #fff url(../images/bkg_block-layered-li.gif) 0 100% repeat-x;
   padding: 4px 6px 4px 10px;
 }
-/* line 135, ../scss/partials/_blocks.scss */
-.block-layered-nav .currently .label {
-  font-weight: bold;
-  padding-left: 18px;
-  background: url(../images/bkg_block-layered-label.gif) 0 3px no-repeat;
-  text-transform: uppercase;
+/* line 138, ../scss/partials/_blocks.scss */
+.block-layered-nav .currently .label, .block-layered-nav .currently .value {
+  font-size: 11px;
 }
 /* line 142, ../scss/partials/_blocks.scss */
+.block-layered-nav .currently .label {
+  color: inherit;
+  text-transform: uppercase;
+}
+/* line 147, ../scss/partials/_blocks.scss */
+.block-layered-nav .currently .value {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+/* line 151, ../scss/partials/_blocks.scss */
 .block-layered-nav .currently .btn-remove {
   margin: 3px 0 0;
 }
-/* line 147, ../scss/partials/_blocks.scss */
+/* line 156, ../scss/partials/_blocks.scss */
 .block-layered-nav .actions {
   font-size: 11px;
   padding: 4px 9px;
   background: #cad6e4;
-  border: 1px solid #dee5e8;
-  border-width: 1px 0;
   text-align: right;
 }
-/* line 155, ../scss/partials/_blocks.scss */
+/* line 162, ../scss/partials/_blocks.scss */
 .block-layered-nav .actions a {
   float: none;
 }
 
-/* line 165, ../scss/partials/_blocks.scss */
+/* line 172, ../scss/partials/_blocks.scss */
 .block-cart .summary {
   padding: 2px 8px 8px;
   margin: -1px 0 0;
   position: relative;
   z-index: 1;
 }
-/* line 172, ../scss/partials/_blocks.scss */
+/* line 179, ../scss/partials/_blocks.scss */
 .block-cart .amount {
   margin: 0;
 }
-/* line 175, ../scss/partials/_blocks.scss */
+/* line 182, ../scss/partials/_blocks.scss */
 .block-cart .amount a {
   font-weight: bold;
 }
-/* line 180, ../scss/partials/_blocks.scss */
+/* line 187, ../scss/partials/_blocks.scss */
 .block-cart .subtotal {
   margin: 5px 0 0;
   padding: 2px 0;
   text-align: center;
 }
-/* line 185, ../scss/partials/_blocks.scss */
+/* line 192, ../scss/partials/_blocks.scss */
 .block-cart .subtotal .price {
   font-weight: bold;
 }
-/* line 190, ../scss/partials/_blocks.scss */
+/* line 197, ../scss/partials/_blocks.scss */
 .block-cart .actions {
   border-bottom: 1px solid #c2c2c2;
 }
 
-/* line 198, ../scss/partials/_blocks.scss */
+/* line 205, ../scss/partials/_blocks.scss */
 .block-compare button.button span {
   border-color: #406a83;
   background: #618499;
 }
 
-/* line 203, ../scss/partials/_blocks.scss */
+/* line 210, ../scss/partials/_blocks.scss */
 .page-popup .link-print {
   padding: 2px 0 2px 25px;
   font-weight: bold;
 }
 
-/* line 208, ../scss/partials/_blocks.scss */
+/* line 215, ../scss/partials/_blocks.scss */
 .compare-table {
   border: 0;
 }
-/* line 211, ../scss/partials/_blocks.scss */
+/* line 218, ../scss/partials/_blocks.scss */
 .compare-table thead tr.first th,
 .compare-table thead tr.first td {
   border: 0;
@@ -9720,18 +9724,18 @@ button.close {
   font-size: 0;
   line-height: 0;
 }
-/* line 220, ../scss/partials/_blocks.scss */
+/* line 227, ../scss/partials/_blocks.scss */
 .compare-table .btn-remove {
   float: right;
   background-image: url(../images/btn_remove2.gif);
   width: 72px;
   height: 15px;
 }
-/* line 228, ../scss/partials/_blocks.scss */
+/* line 235, ../scss/partials/_blocks.scss */
 .compare-table tbody th {
   background: #d9e5ee url(../images/bkg_th-v.gif) 100% 0 repeat-y;
 }
-/* line 232, ../scss/partials/_blocks.scss */
+/* line 239, ../scss/partials/_blocks.scss */
 .compare-table tbody th,
 .compare-table tbody td {
   padding: 10px;
@@ -9739,112 +9743,112 @@ button.close {
   border-top: 1px solid #ccc;
   border-left: 1px solid #ccc;
 }
-/* line 240, ../scss/partials/_blocks.scss */
+/* line 247, ../scss/partials/_blocks.scss */
 .compare-table tbody td.last {
   border-right: 1px solid #ccc;
 }
-/* line 244, ../scss/partials/_blocks.scss */
+/* line 251, ../scss/partials/_blocks.scss */
 .compare-table tbody tr.last th,
 .compare-table tbody tr.last td {
   border-bottom: 1px solid #ccc !important;
 }
-/* line 250, ../scss/partials/_blocks.scss */
+/* line 257, ../scss/partials/_blocks.scss */
 .compare-table tr.add-to-row td {
   background: #fffada;
   text-align: center;
 }
-/* line 255, ../scss/partials/_blocks.scss */
+/* line 262, ../scss/partials/_blocks.scss */
 .compare-table tr.first td {
   text-align: center;
 }
-/* line 259, ../scss/partials/_blocks.scss */
+/* line 266, ../scss/partials/_blocks.scss */
 .compare-table tr.first td .product-name {
   font-size: 13px;
   font-weight: bold;
   margin: 0 0 5px;
 }
-/* line 265, ../scss/partials/_blocks.scss */
+/* line 272, ../scss/partials/_blocks.scss */
 .compare-table tr.first td .ratings {
   width: 69px;
   margin: 0 auto;
 }
-/* line 270, ../scss/partials/_blocks.scss */
+/* line 277, ../scss/partials/_blocks.scss */
 .compare-table tr.first td p,
 .compare-table tr.add-to-row td p {
   margin: 0;
 }
 
-/* line 281, ../scss/partials/_blocks.scss */
+/* line 288, ../scss/partials/_blocks.scss */
 .block-tags .block-content ul {
   font-size: 12px;
   padding: 10px;
 }
-/* line 286, ../scss/partials/_blocks.scss */
+/* line 293, ../scss/partials/_blocks.scss */
 .block-tags .block-content li {
   display: inline;
   padding-right: 4px;
 }
-/* line 292, ../scss/partials/_blocks.scss */
+/* line 299, ../scss/partials/_blocks.scss */
 .block-tags .actions {
   text-align: right;
 }
-/* line 295, ../scss/partials/_blocks.scss */
+/* line 302, ../scss/partials/_blocks.scss */
 .block-tags .actions a {
   float: none;
 }
 
-/* line 305, ../scss/partials/_blocks.scss */
+/* line 312, ../scss/partials/_blocks.scss */
 .block-subscribe .block-content {
   padding: 5px 10px;
 }
-/* line 309, ../scss/partials/_blocks.scss */
+/* line 316, ../scss/partials/_blocks.scss */
 .block-subscribe label {
   font-weight: bold;
 }
-/* line 313, ../scss/partials/_blocks.scss */
+/* line 320, ../scss/partials/_blocks.scss */
 .block-subscribe input.input-text {
   display: block;
   width: 167px;
   margin: 3px 0;
 }
-/* line 319, ../scss/partials/_blocks.scss */
+/* line 326, ../scss/partials/_blocks.scss */
 .block-subscribe .actions {
   background: none;
   padding: 0;
   margin: 3px 0 0;
   text-align: left;
 }
-/* line 325, ../scss/partials/_blocks.scss */
+/* line 332, ../scss/partials/_blocks.scss */
 .block-subscribe .actions button.button {
   float: none;
 }
-/* line 328, ../scss/partials/_blocks.scss */
+/* line 335, ../scss/partials/_blocks.scss */
 .block-subscribe .actions button.button span {
   border-color: #406a83;
   background: #618499;
 }
 
-/* line 340, ../scss/partials/_blocks.scss */
+/* line 347, ../scss/partials/_blocks.scss */
 .block-login .block-content {
   padding: 5px 10px;
 }
-/* line 344, ../scss/partials/_blocks.scss */
+/* line 351, ../scss/partials/_blocks.scss */
 .block-login label {
   font-weight: bold;
 }
-/* line 348, ../scss/partials/_blocks.scss */
+/* line 355, ../scss/partials/_blocks.scss */
 .block-login input.input-text {
   display: block;
   width: 167px;
   margin: 3px 0;
 }
-/* line 354, ../scss/partials/_blocks.scss */
+/* line 361, ../scss/partials/_blocks.scss */
 .block-login .actions {
   background: none;
   padding: 0;
   margin: 3px 0 0;
 }
-/* line 359, ../scss/partials/_blocks.scss */
+/* line 366, ../scss/partials/_blocks.scss */
 .block-login .actions button.button span {
   border-color: #406a83;
   background: #618499;
