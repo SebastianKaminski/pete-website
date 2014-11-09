@@ -10981,12 +10981,12 @@ footer:after,
   width: 100%;
 }
 /* line 10, ../scss/sections/category/_main.scss */
-.category-image figure {
+.category-image figcaption {
   height: 300px;
   position: relative;
 }
 /* line 13, ../scss/sections/category/_main.scss */
-.category-image figure figcaption h3 {
+.category-image figcaption h3 {
   background: #FFA248;
   bottom: 0;
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
