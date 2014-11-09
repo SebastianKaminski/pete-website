@@ -7,6 +7,20 @@
 	height: 300px;
 	margin: 0 0 10px; 
 	width: 100%; 
+	figure {
+		height: 300px;
+		position: relative;
+		figcaption {
+			background: $orange;
+			bottom: 0;
+			font-family: $fontBase2;
+			font-size: 3em;
+			font-style: italic;			
+			padding: 10px 20px;
+			position: absolute;
+			right: 0;
+		}
+	}
 }
 
 .category-description { 
