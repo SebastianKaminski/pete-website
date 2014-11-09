@@ -37,7 +37,7 @@
 <?php if ($_product->getImage() != 'no_selection' && $_product->getImage()): ?>
 <p class="product-image product-image-zoom">
     <?php
-        $_img = '<img id="image" heigh="200" src="'.$this->helper('catalog/image')->init($_product, 'image')->resize(265).'" alt="'.$this->escapeHtml($this->getImageLabel()).'" title="'.$this->escapeHtml($this->getImageLabel()).'" />';
+        $_img = '<img id="image" src="'.$this->helper('catalog/image')->init($_product, 'image')->resize(300).'" alt="'.$this->escapeHtml($this->getImageLabel()).'" />';
         echo $_helper->productAttribute($_product, $_img, 'image');
     ?>
 </p>
