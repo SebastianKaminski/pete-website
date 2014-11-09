@@ -11,9 +11,6 @@
 
     $(document).ready(function(){
     	/* Override product zoom function */
-    	Product.Zoom.prototype.initialize = function (imageEl, trackEl, handleEl, zoomInEl, zoomOutEl, hintEl) { 
-    		console.log("zoom init");
-    		return false; 
-    	}
+    	Product.Zoom.prototype.initialize = function (imageEl, trackEl, handleEl, zoomInEl, zoomOutEl, hintEl) {  return false;  }
     });
 })(jQuery);
