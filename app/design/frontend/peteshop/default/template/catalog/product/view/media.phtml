@@ -38,7 +38,7 @@
 <p class="product-image">
     <a href="<?php echo $this->helper('catalog/image')->init($_product, 'image')->resize(500); ?>" title="<?php echo $this->escapeHtml($this->getImageLabel()); ?>" rel="lightbox[rotation]">
         <?php
-            $_img = '<img src="'.$this->helper('catalog/image')->init($_product, 'image')->resize(300).'" alt="'.$this->escapeHtml($this->getImageLabel()).'" />';
+            $_img = '<img id="image" src="'.$this->helper('catalog/image')->init($_product, 'image')->resize(300).'" alt="'.$this->escapeHtml($this->getImageLabel()).'" />';
             echo $_helper->productAttribute($_product, $_img, 'image');
         ?>
     </a>

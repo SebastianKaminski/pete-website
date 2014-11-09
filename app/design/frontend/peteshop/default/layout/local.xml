@@ -136,7 +136,7 @@
         <!-- optional -->
         
         <reference name="site.bottom.css.js">
-            <!-- <action method="addItem"><type>skin_js</type><name>js/build/product.min.js</name></action> -->
+            <action method="addItem"><type>skin_js</type><name>js/build/product.min.js</name></action>
             <action method="addItem"><type>skin_js</type><name>js/plugins/lightbox/lightbox.min.js</name></action>
             <action method="addItem"><type>skin_css</type><name>css/lightbox.css</name></action>
         </reference>
