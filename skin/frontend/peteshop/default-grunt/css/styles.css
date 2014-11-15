@@ -11491,234 +11491,246 @@ footer:after,
 }
 /* line 396, ../scss/sections/product/_main.scss */
 .product-options dt label {
-  font-weight: bold;
+  font-size: 12px;
 }
-/* line 400, ../scss/sections/product/_main.scss */
+/* line 398, ../scss/sections/product/_main.scss */
+.product-options dt label em {
+  margin-right: 5px;
+}
+/* line 401, ../scss/sections/product/_main.scss */
 .product-options dt .qty-holder {
   float: right;
   margin-right: 15px;
 }
-/* line 404, ../scss/sections/product/_main.scss */
+/* line 405, ../scss/sections/product/_main.scss */
 .product-options dt .qty-holder label {
   vertical-align: middle;
 }
-/* line 409, ../scss/sections/product/_main.scss */
+/* line 410, ../scss/sections/product/_main.scss */
 .product-options dt .qty-disabled {
   background: none;
   border: 0;
   padding: 3px;
 }
-/* line 416, ../scss/sections/product/_main.scss */
+/* line 417, ../scss/sections/product/_main.scss */
 .product-options dd {
-  padding: 5px 0px 15px;
+  padding: 0px 0px 15px;
   margin: 0 0 5px;
   border-bottom: 1px solid #e4e4e4;
 }
-/* line 421, ../scss/sections/product/_main.scss */
+/* line 422, ../scss/sections/product/_main.scss */
 .product-options dd input.input-text {
   width: 98%;
 }
-/* line 425, ../scss/sections/product/_main.scss */
+/* line 426, ../scss/sections/product/_main.scss */
 .product-options dd input.datetime-picker {
   width: 150px;
 }
-/* line 429, ../scss/sections/product/_main.scss */
+/* line 430, ../scss/sections/product/_main.scss */
 .product-options dd .time-picker {
   display: -moz-inline-box;
   display: inline-block;
   padding: 2px 0;
   vertical-align: middle;
 }
-/* line 436, ../scss/sections/product/_main.scss */
+/* line 437, ../scss/sections/product/_main.scss */
 .product-options dd textarea {
   width: 98%;
   height: 8em;
 }
-/* line 441, ../scss/sections/product/_main.scss */
+/* line 442, ../scss/sections/product/_main.scss */
 .product-options dd .multiselect option {
   padding: 2px 4px;
 }
-/* line 446, ../scss/sections/product/_main.scss */
+/* line 447, ../scss/sections/product/_main.scss */
 .product-options dl.last dd.last {
   border-bottom: 0;
   padding-bottom: 5px;
   margin-bottom: 0;
 }
-/* line 452, ../scss/sections/product/_main.scss */
+/* line 453, ../scss/sections/product/_main.scss */
 .product-options ul.options-list {
   margin-right: 5px;
 }
-/* line 455, ../scss/sections/product/_main.scss */
+/* line 456, ../scss/sections/product/_main.scss */
 .product-options ul.options-list li {
   line-height: 1.5;
   padding: 2px 0;
 }
-/* line 460, ../scss/sections/product/_main.scss */
+/* line 461, ../scss/sections/product/_main.scss */
 .product-options ul.options-list input.radio {
   float: left;
   margin-top: 3px;
 }
-/* line 465, ../scss/sections/product/_main.scss */
+/* line 466, ../scss/sections/product/_main.scss */
 .product-options ul.options-list input.checkbox {
   float: left;
   margin-top: 3px;
 }
-/* line 470, ../scss/sections/product/_main.scss */
+/* line 471, ../scss/sections/product/_main.scss */
 .product-options ul.options-list .label {
   display: block;
   margin-left: 18px;
   font-weight: normal;
 }
-/* line 477, ../scss/sections/product/_main.scss */
+/* line 478, ../scss/sections/product/_main.scss */
 .product-options ul.validation-failed {
   padding: 0 7px;
 }
-/* line 481, ../scss/sections/product/_main.scss */
+/* line 482, ../scss/sections/product/_main.scss */
 .product-options p.note {
   margin: 0;
   font-size: 11px;
 }
-/* line 486, ../scss/sections/product/_main.scss */
+/* line 487, ../scss/sections/product/_main.scss */
 .product-options p.required {
   margin-bottom: 0;
 }
 
-/* line 491, ../scss/sections/product/_main.scss */
+/* line 492, ../scss/sections/product/_main.scss */
 .product-options-bottom {
   padding: 15px 0px;
 }
-/* line 494, ../scss/sections/product/_main.scss */
+/* line 495, ../scss/sections/product/_main.scss */
 .product-options-bottom .tier-prices {
   margin: 0;
   padding: 0 0 10px;
   border: 0;
   background: 0;
 }
-/* line 500, ../scss/sections/product/_main.scss */
+/* line 501, ../scss/sections/product/_main.scss */
 .product-options-bottom .tier-prices li {
   background: 0;
   padding: 2px 0;
 }
-/* line 506, ../scss/sections/product/_main.scss */
+/* line 507, ../scss/sections/product/_main.scss */
 .product-options-bottom .price-box {
   float: left;
   margin: 0;
   padding: 0;
 }
-/* line 512, ../scss/sections/product/_main.scss */
+/* line 513, ../scss/sections/product/_main.scss */
 .product-options-bottom .price-label {
   float: left;
   padding-right: 5px;
 }
-/* line 517, ../scss/sections/product/_main.scss */
+/* line 518, ../scss/sections/product/_main.scss */
 .product-options-bottom .price-tax {
   float: left;
 }
-/* line 521, ../scss/sections/product/_main.scss */
+/* line 522, ../scss/sections/product/_main.scss */
 .product-options-bottom .add-to-cart {
   float: right;
 }
-/* line 523, ../scss/sections/product/_main.scss */
+/* line 524, ../scss/sections/product/_main.scss */
 .product-options-bottom .add-to-cart button {
   margin-top: -5px;
 }
 
-/* line 527, ../scss/sections/product/_main.scss */
+/* line 528, ../scss/sections/product/_main.scss */
 .col3-layout .product-options-bottom .price-box {
   float: none;
   padding: 0 0 5px;
 }
 
-/* line 532, ../scss/sections/product/_main.scss */
+/* line 533, ../scss/sections/product/_main.scss */
 .product-shop .product-options-bottom {
   margin: 0 0 10px;
 }
-/* line 535, ../scss/sections/product/_main.scss */
+/* line 536, ../scss/sections/product/_main.scss */
 .product-shop .product-options-bottom .price-box {
   float: left;
   margin: 0 0 5px;
 }
-/* line 540, ../scss/sections/product/_main.scss */
+/* line 539, ../scss/sections/product/_main.scss */
+.product-shop .product-options-bottom .price-box .label {
+  color: #000;
+}
+/* line 541, ../scss/sections/product/_main.scss */
+.product-shop .product-options-bottom .price-box .label .configurable-price-from-label {
+  float: left;
+}
+/* line 545, ../scss/sections/product/_main.scss */
 .product-shop .product-options-bottom .price-label {
   float: none;
   padding-right: 0;
 }
-/* line 545, ../scss/sections/product/_main.scss */
+/* line 550, ../scss/sections/product/_main.scss */
 .product-shop .product-options-bottom .price-tax {
   float: none;
 }
-/* line 549, ../scss/sections/product/_main.scss */
+/* line 554, ../scss/sections/product/_main.scss */
 .product-shop .product-options-bottom .add-to-cart-box {
   clear: both;
   float: left;
   padding-top: 12px;
 }
 
-/* line 560, ../scss/sections/product/_main.scss */
+/* line 565, ../scss/sections/product/_main.scss */
 .product-view .box-up-sell h2 {
   padding: 0;
   margin: 0 0 8px;
 }
-/* line 565, ../scss/sections/product/_main.scss */
+/* line 570, ../scss/sections/product/_main.scss */
 .product-view .box-up-sell .products-grid {
   width: 100%;
 }
-/* line 568, ../scss/sections/product/_main.scss */
+/* line 573, ../scss/sections/product/_main.scss */
 .product-view .box-up-sell .products-grid td {
   width: 25%;
   padding: 15px 10px 12px;
   line-height: 1.6em;
 }
-/* line 573, ../scss/sections/product/_main.scss */
+/* line 578, ../scss/sections/product/_main.scss */
 .product-view .box-up-sell .products-grid td.empty {
   border-right: 0;
 }
-/* line 578, ../scss/sections/product/_main.scss */
+/* line 583, ../scss/sections/product/_main.scss */
 .product-view .box-up-sell .products-grid .product-image {
   text-align: center;
 }
-/* line 582, ../scss/sections/product/_main.scss */
+/* line 587, ../scss/sections/product/_main.scss */
 .product-view .box-up-sell .products-grid .ratings .rating-box {
   float: none;
   display: block;
   margin: 0 0 3px;
 }
 
-/* line 593, ../scss/sections/product/_main.scss */
+/* line 598, ../scss/sections/product/_main.scss */
 .product-view .box-tags {
   margin: 0;
 }
-/* line 596, ../scss/sections/product/_main.scss */
+/* line 601, ../scss/sections/product/_main.scss */
 .product-view .box-tags h3 {
   font-size: 13px;
 }
-/* line 600, ../scss/sections/product/_main.scss */
+/* line 605, ../scss/sections/product/_main.scss */
 .product-view .box-tags .product-tags {
   display: block;
   margin: 0 0 15px;
 }
-/* line 604, ../scss/sections/product/_main.scss */
+/* line 609, ../scss/sections/product/_main.scss */
 .product-view .box-tags .product-tags li {
   display: inline;
   padding: 0 7px 0 4px;
 }
-/* line 608, ../scss/sections/product/_main.scss */
+/* line 613, ../scss/sections/product/_main.scss */
 .product-view .box-tags .product-tags li.first {
   padding-left: 0;
 }
-/* line 612, ../scss/sections/product/_main.scss */
+/* line 617, ../scss/sections/product/_main.scss */
 .product-view .box-tags .product-tags li.last {
   background: none;
   padding-right: 0;
 }
-/* line 621, ../scss/sections/product/_main.scss */
+/* line 626, ../scss/sections/product/_main.scss */
 .product-view .box-tags .form-add label {
   display: block;
   font-size: 13px;
   font-weight: bold;
   margin: 0 0 5px;
 }
-/* line 628, ../scss/sections/product/_main.scss */
+/* line 633, ../scss/sections/product/_main.scss */
 .product-view .box-tags .form-add .input-box {
   float: left;
   width: 305px;
@@ -11726,109 +11738,109 @@ footer:after,
   background: url(../images/i_tag_add.gif) 0 2px no-repeat;
   padding: 0 0 0 23px;
 }
-/* line 636, ../scss/sections/product/_main.scss */
+/* line 641, ../scss/sections/product/_main.scss */
 .product-view .box-tags .form-add input.input-text {
   width: 299px;
 }
-/* line 640, ../scss/sections/product/_main.scss */
+/* line 645, ../scss/sections/product/_main.scss */
 .product-view .box-tags .form-add button.button span {
   border-color: #406a83;
   background: #618499;
 }
-/* line 645, ../scss/sections/product/_main.scss */
+/* line 650, ../scss/sections/product/_main.scss */
 .product-view .box-tags .form-add .note {
   margin: 3px 0 0;
   padding: 0 0 0 23px;
   font-size: 11px;
 }
 
-/* line 657, ../scss/sections/product/_main.scss */
+/* line 662, ../scss/sections/product/_main.scss */
 .product-view .box-reviews dl {
   margin: 15px 0;
 }
-/* line 661, ../scss/sections/product/_main.scss */
+/* line 666, ../scss/sections/product/_main.scss */
 .product-view .box-reviews dt a,
 .product-view .box-reviews dt span {
   font-weight: bold;
 }
-/* line 666, ../scss/sections/product/_main.scss */
+/* line 671, ../scss/sections/product/_main.scss */
 .product-view .box-reviews dd {
   margin: 0 0 15px;
 }
-/* line 669, ../scss/sections/product/_main.scss */
+/* line 674, ../scss/sections/product/_main.scss */
 .product-view .box-reviews dd small {
   font-style: italic;
 }
-/* line 674, ../scss/sections/product/_main.scss */
+/* line 679, ../scss/sections/product/_main.scss */
 .product-view .box-reviews .form-add {
   margin: 15px 0 0;
 }
-/* line 677, ../scss/sections/product/_main.scss */
+/* line 682, ../scss/sections/product/_main.scss */
 .product-view .box-reviews .form-add h3 {
   font-size: 13px;
   font-weight: normal;
 }
-/* line 681, ../scss/sections/product/_main.scss */
+/* line 686, ../scss/sections/product/_main.scss */
 .product-view .box-reviews .form-add h3 span {
   font-weight: bold;
 }
-/* line 686, ../scss/sections/product/_main.scss */
+/* line 691, ../scss/sections/product/_main.scss */
 .product-view .box-reviews .form-add h4 {
   font-size: 12px;
 }
-/* line 690, ../scss/sections/product/_main.scss */
+/* line 695, ../scss/sections/product/_main.scss */
 .product-view .box-reviews .form-add .data-table td {
   text-align: center;
 }
-/* line 694, ../scss/sections/product/_main.scss */
+/* line 699, ../scss/sections/product/_main.scss */
 .product-view .box-reviews .form-add .form-list {
   margin: 15px 0 0;
 }
-/* line 697, ../scss/sections/product/_main.scss */
+/* line 702, ../scss/sections/product/_main.scss */
 .product-view .box-reviews .form-add .form-list .input-box {
   width: 360px;
 }
-/* line 701, ../scss/sections/product/_main.scss */
+/* line 706, ../scss/sections/product/_main.scss */
 .product-view .box-reviews .form-add .form-list input.input-text,
 .product-view .box-reviews .form-add .form-list textarea {
   width: 354px;
 }
 
-/* line 713, ../scss/sections/product/_main.scss */
+/* line 718, ../scss/sections/product/_main.scss */
 .send-friend .form-list {
   width: 615px;
   overflow: hidden;
 }
-/* line 717, ../scss/sections/product/_main.scss */
+/* line 722, ../scss/sections/product/_main.scss */
 .send-friend .form-list li {
   margin-right: -15px;
 }
-/* line 720, ../scss/sections/product/_main.scss */
+/* line 725, ../scss/sections/product/_main.scss */
 .send-friend .form-list li p {
   margin: 0 15px 0 0;
 }
-/* line 725, ../scss/sections/product/_main.scss */
+/* line 730, ../scss/sections/product/_main.scss */
 .send-friend .form-list li.wide .input-box {
   width: 612px;
 }
-/* line 729, ../scss/sections/product/_main.scss */
+/* line 734, ../scss/sections/product/_main.scss */
 .send-friend .form-list li.wide textarea {
   width: 609px;
 }
-/* line 735, ../scss/sections/product/_main.scss */
+/* line 740, ../scss/sections/product/_main.scss */
 .send-friend .form-list .field {
   width: 315px;
 }
-/* line 739, ../scss/sections/product/_main.scss */
+/* line 744, ../scss/sections/product/_main.scss */
 .send-friend .form-list .input-box {
   width: 300px;
 }
-/* line 743, ../scss/sections/product/_main.scss */
+/* line 748, ../scss/sections/product/_main.scss */
 .send-friend .form-list input.input-text,
 .send-friend .form-list textarea {
   width: 294px;
 }
-/* line 750, ../scss/sections/product/_main.scss */
+/* line 755, ../scss/sections/product/_main.scss */
 .send-friend .buttons-set .limit {
   float: right;
   margin: 0 7px 0 0;
