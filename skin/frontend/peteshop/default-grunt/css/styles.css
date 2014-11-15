@@ -11702,13 +11702,13 @@ footer:after,
 }
 
 /* line 603, ../scss/sections/product/_main.scss */
-.product-view .block-related ul li {
+.block-related ul li.item {
   margin: 0 0 8px 9px;
   border-style: dashed;
   text-align: center;
 }
 /* line 608, ../scss/sections/product/_main.scss */
-.product-view .block-related ul li .product .price-box .label {
+.block-related ul li.item .product .price-box .label {
   display: none;
 }
 
