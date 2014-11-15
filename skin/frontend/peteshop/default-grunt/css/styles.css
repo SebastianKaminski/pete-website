@@ -9621,7 +9621,7 @@ button.close {
 /* line 112, ../scss/partials/_blocks.scss */
 .block-layered-nav .block-subtitle {
   line-height: 1.35;
-  border: 1px solid #FFA248;
+  border: 1px solid #f0ad4e;
   border-width: 1px 0;
   text-transform: uppercase;
 }
@@ -10291,17 +10291,17 @@ p.control input.radio {
 .validation-advice {
   clear: both;
   min-height: 13px;
-  margin: 3px 0 0;
-  padding-left: 17px;
+  margin: 5px 0 0;
+  padding-right: 17px;
   font-size: 11px;
-  font-weight: bold;
   line-height: 13px;
   background: url(../images/validation_advice_bg.gif) 2px 0 no-repeat;
+  background-position: right;
 }
 
 /* line 409, ../scss/partials/_forms.scss */
 .validation-failed {
-  border: 1px dashed #eb340a !important;
+  border: 1px solid #brandDanger !important;
   background: #faebe7 !important;
 }
 
@@ -10987,7 +10987,7 @@ footer:after,
 }
 /* line 13, ../scss/sections/category/_main.scss */
 .category-image figcaption h3 {
-  background: #FFA248;
+  background: #f0ad4e;
   bottom: 0;
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
   font-size: 3em;
@@ -11653,7 +11653,7 @@ footer:after,
 }
 /* line 545, ../scss/sections/product/_main.scss */
 .product-shop .product-options-bottom .price-box .label .configurable-price-from-label {
-  float: left;
+  display: none;
 }
 /* line 549, ../scss/sections/product/_main.scss */
 .product-shop .product-options-bottom .price-label {
@@ -13543,7 +13543,7 @@ footer .footer-content {
 }
 /* line 91, ../scss/styles.scss */
 footer .footer-content h3 {
-  color: #FFA248;
+  color: #f0ad4e;
 }
 
 /* Menu Fix */
