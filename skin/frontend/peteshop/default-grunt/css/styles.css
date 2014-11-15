@@ -10399,189 +10399,190 @@ p.required {
 .old-price .price {
   font-weight: bold;
   text-decoration: line-through;
+  color: #d9534f;
 }
 
-/* line 44, ../scss/partials/_prices.scss */
+/* line 45, ../scss/partials/_prices.scss */
 .special-price {
   margin: 0;
   padding: 3px 0;
 }
-/* line 48, ../scss/partials/_prices.scss */
+/* line 49, ../scss/partials/_prices.scss */
 .special-price .price-label {
   font-size: 13px;
   font-weight: bold;
   white-space: nowrap;
 }
-/* line 54, ../scss/partials/_prices.scss */
+/* line 55, ../scss/partials/_prices.scss */
 .special-price .price {
   font-size: 13px;
   font-weight: bold;
 }
 
-/* line 63, ../scss/partials/_prices.scss */
+/* line 64, ../scss/partials/_prices.scss */
 .minimal-price {
   margin: 0;
 }
-/* line 66, ../scss/partials/_prices.scss */
+/* line 67, ../scss/partials/_prices.scss */
 .minimal-price .price-label {
   font-weight: bold;
   white-space: nowrap;
 }
 
-/* line 72, ../scss/partials/_prices.scss */
+/* line 73, ../scss/partials/_prices.scss */
 .minimal-price-link {
   display: block;
 }
-/* line 75, ../scss/partials/_prices.scss */
+/* line 76, ../scss/partials/_prices.scss */
 .minimal-price-link .price {
   font-weight: normal;
 }
 
-/* line 83, ../scss/partials/_prices.scss */
+/* line 84, ../scss/partials/_prices.scss */
 .price-excluding-tax {
   display: block;
 }
-/* line 86, ../scss/partials/_prices.scss */
+/* line 87, ../scss/partials/_prices.scss */
 .price-excluding-tax .label {
   white-space: nowrap;
 }
-/* line 90, ../scss/partials/_prices.scss */
+/* line 91, ../scss/partials/_prices.scss */
 .price-excluding-tax .price {
   font-size: 13px;
   font-weight: normal;
 }
 
-/* line 99, ../scss/partials/_prices.scss */
+/* line 100, ../scss/partials/_prices.scss */
 .price-including-tax {
   display: block;
 }
-/* line 102, ../scss/partials/_prices.scss */
+/* line 103, ../scss/partials/_prices.scss */
 .price-including-tax .label {
   white-space: nowrap;
 }
-/* line 106, ../scss/partials/_prices.scss */
+/* line 107, ../scss/partials/_prices.scss */
 .price-including-tax .price {
   font-size: 13px;
   font-weight: bold;
 }
 
-/* line 115, ../scss/partials/_prices.scss */
+/* line 116, ../scss/partials/_prices.scss */
 .weee {
   display: block;
   font-size: 11px;
 }
-/* line 119, ../scss/partials/_prices.scss */
+/* line 120, ../scss/partials/_prices.scss */
 .weee .price {
   font-size: 11px;
   font-weight: normal;
 }
 
-/* line 128, ../scss/partials/_prices.scss */
+/* line 129, ../scss/partials/_prices.scss */
 .price-excl-tax {
   display: block;
 }
-/* line 131, ../scss/partials/_prices.scss */
+/* line 132, ../scss/partials/_prices.scss */
 .price-excl-tax .label {
   display: block;
   white-space: nowrap;
 }
-/* line 136, ../scss/partials/_prices.scss */
+/* line 137, ../scss/partials/_prices.scss */
 .price-excl-tax .price {
   display: block;
 }
 
-/* line 144, ../scss/partials/_prices.scss */
+/* line 145, ../scss/partials/_prices.scss */
 .price-incl-tax {
   display: block;
 }
-/* line 147, ../scss/partials/_prices.scss */
+/* line 148, ../scss/partials/_prices.scss */
 .price-incl-tax .label {
   display: block;
   white-space: nowrap;
 }
-/* line 152, ../scss/partials/_prices.scss */
+/* line 153, ../scss/partials/_prices.scss */
 .price-incl-tax .price {
   display: block;
   font-weight: bold;
 }
 
-/* line 161, ../scss/partials/_prices.scss */
+/* line 162, ../scss/partials/_prices.scss */
 .price-from {
   margin: 0;
 }
-/* line 164, ../scss/partials/_prices.scss */
+/* line 165, ../scss/partials/_prices.scss */
 .price-from .price-label {
   font-weight: bold;
   white-space: nowrap;
 }
 
-/* line 170, ../scss/partials/_prices.scss */
+/* line 171, ../scss/partials/_prices.scss */
 .price-to {
   margin: 0;
 }
-/* line 173, ../scss/partials/_prices.scss */
+/* line 174, ../scss/partials/_prices.scss */
 .price-to .price-label {
   font-weight: bold;
   white-space: nowrap;
 }
 
-/* line 182, ../scss/partials/_prices.scss */
+/* line 183, ../scss/partials/_prices.scss */
 .price-notice {
   padding-left: 10px;
 }
-/* line 185, ../scss/partials/_prices.scss */
+/* line 186, ../scss/partials/_prices.scss */
 .price-notice .price {
   font-weight: bold;
 }
 
-/* line 193, ../scss/partials/_prices.scss */
+/* line 194, ../scss/partials/_prices.scss */
 .price-as-configured {
   margin: 0;
 }
-/* line 196, ../scss/partials/_prices.scss */
+/* line 197, ../scss/partials/_prices.scss */
 .price-as-configured .price-label {
   font-weight: bold;
   white-space: nowrap;
 }
 
-/* line 202, ../scss/partials/_prices.scss */
+/* line 203, ../scss/partials/_prices.scss */
 .price-box-bundle {
   padding: 0 0 10px 0;
 }
-/* line 205, ../scss/partials/_prices.scss */
+/* line 206, ../scss/partials/_prices.scss */
 .price-box-bundle .price-box {
   margin: 0 !important;
   padding: 0 !important;
 }
 
-/* line 214, ../scss/partials/_prices.scss */
+/* line 215, ../scss/partials/_prices.scss */
 .tier-prices {
   margin: 10px 0;
   padding: 10px;
   background-color: #f4f7f7;
   border: 1px solid #dadddd;
 }
-/* line 220, ../scss/partials/_prices.scss */
+/* line 221, ../scss/partials/_prices.scss */
 .tier-prices li {
   line-height: 1.4;
   background: url(../images/i_tier.gif) no-repeat 0 3px;
   padding: 2px 0 2px 10px;
 }
-/* line 226, ../scss/partials/_prices.scss */
+/* line 227, ../scss/partials/_prices.scss */
 .tier-prices .benefit {
   font-style: italic;
   font-weight: bold;
 }
-/* line 231, ../scss/partials/_prices.scss */
+/* line 232, ../scss/partials/_prices.scss */
 .tier-prices .price {
   font-weight: bold;
 }
 
-/* line 237, ../scss/partials/_prices.scss */
+/* line 238, ../scss/partials/_prices.scss */
 .tier-prices-grouped li {
   padding: 2px 0;
 }
-/* line 240, ../scss/partials/_prices.scss */
+/* line 241, ../scss/partials/_prices.scss */
 .tier-prices-grouped li .price {
   font-weight: bold;
 }
@@ -11704,49 +11705,53 @@ footer:after,
 /* line 603, ../scss/sections/product/_main.scss */
 .block-related ul li.item {
   margin: 0 0 8px 9px;
-  border-style: dashed;
   text-align: center;
+  border: none;
 }
-/* line 608, ../scss/sections/product/_main.scss */
+/* line 607, ../scss/sections/product/_main.scss */
+.block-related ul li.item .product {
+  border: 1px dashed #DDD;
+}
+/* line 609, ../scss/sections/product/_main.scss */
 .block-related ul li.item .product .price-box .label {
   display: none;
 }
 
-/* line 617, ../scss/sections/product/_main.scss */
+/* line 618, ../scss/sections/product/_main.scss */
 .product-view .box-tags {
   margin: 0;
 }
-/* line 620, ../scss/sections/product/_main.scss */
+/* line 621, ../scss/sections/product/_main.scss */
 .product-view .box-tags h3 {
   font-size: 13px;
 }
-/* line 624, ../scss/sections/product/_main.scss */
+/* line 625, ../scss/sections/product/_main.scss */
 .product-view .box-tags .product-tags {
   display: block;
   margin: 0 0 15px;
 }
-/* line 628, ../scss/sections/product/_main.scss */
+/* line 629, ../scss/sections/product/_main.scss */
 .product-view .box-tags .product-tags li {
   display: inline;
   padding: 0 7px 0 4px;
 }
-/* line 632, ../scss/sections/product/_main.scss */
+/* line 633, ../scss/sections/product/_main.scss */
 .product-view .box-tags .product-tags li.first {
   padding-left: 0;
 }
-/* line 636, ../scss/sections/product/_main.scss */
+/* line 637, ../scss/sections/product/_main.scss */
 .product-view .box-tags .product-tags li.last {
   background: none;
   padding-right: 0;
 }
-/* line 645, ../scss/sections/product/_main.scss */
+/* line 646, ../scss/sections/product/_main.scss */
 .product-view .box-tags .form-add label {
   display: block;
   font-size: 13px;
   font-weight: bold;
   margin: 0 0 5px;
 }
-/* line 652, ../scss/sections/product/_main.scss */
+/* line 653, ../scss/sections/product/_main.scss */
 .product-view .box-tags .form-add .input-box {
   float: left;
   width: 305px;
@@ -11754,109 +11759,109 @@ footer:after,
   background: url(../images/i_tag_add.gif) 0 2px no-repeat;
   padding: 0 0 0 23px;
 }
-/* line 660, ../scss/sections/product/_main.scss */
+/* line 661, ../scss/sections/product/_main.scss */
 .product-view .box-tags .form-add input.input-text {
   width: 299px;
 }
-/* line 664, ../scss/sections/product/_main.scss */
+/* line 665, ../scss/sections/product/_main.scss */
 .product-view .box-tags .form-add button.button span {
   border-color: #406a83;
   background: #618499;
 }
-/* line 669, ../scss/sections/product/_main.scss */
+/* line 670, ../scss/sections/product/_main.scss */
 .product-view .box-tags .form-add .note {
   margin: 3px 0 0;
   padding: 0 0 0 23px;
   font-size: 11px;
 }
 
-/* line 681, ../scss/sections/product/_main.scss */
+/* line 682, ../scss/sections/product/_main.scss */
 .product-view .box-reviews dl {
   margin: 15px 0;
 }
-/* line 685, ../scss/sections/product/_main.scss */
+/* line 686, ../scss/sections/product/_main.scss */
 .product-view .box-reviews dt a,
 .product-view .box-reviews dt span {
   font-weight: bold;
 }
-/* line 690, ../scss/sections/product/_main.scss */
+/* line 691, ../scss/sections/product/_main.scss */
 .product-view .box-reviews dd {
   margin: 0 0 15px;
 }
-/* line 693, ../scss/sections/product/_main.scss */
+/* line 694, ../scss/sections/product/_main.scss */
 .product-view .box-reviews dd small {
   font-style: italic;
 }
-/* line 698, ../scss/sections/product/_main.scss */
+/* line 699, ../scss/sections/product/_main.scss */
 .product-view .box-reviews .form-add {
   margin: 15px 0 0;
 }
-/* line 701, ../scss/sections/product/_main.scss */
+/* line 702, ../scss/sections/product/_main.scss */
 .product-view .box-reviews .form-add h3 {
   font-size: 13px;
   font-weight: normal;
 }
-/* line 705, ../scss/sections/product/_main.scss */
+/* line 706, ../scss/sections/product/_main.scss */
 .product-view .box-reviews .form-add h3 span {
   font-weight: bold;
 }
-/* line 710, ../scss/sections/product/_main.scss */
+/* line 711, ../scss/sections/product/_main.scss */
 .product-view .box-reviews .form-add h4 {
   font-size: 12px;
 }
-/* line 714, ../scss/sections/product/_main.scss */
+/* line 715, ../scss/sections/product/_main.scss */
 .product-view .box-reviews .form-add .data-table td {
   text-align: center;
 }
-/* line 718, ../scss/sections/product/_main.scss */
+/* line 719, ../scss/sections/product/_main.scss */
 .product-view .box-reviews .form-add .form-list {
   margin: 15px 0 0;
 }
-/* line 721, ../scss/sections/product/_main.scss */
+/* line 722, ../scss/sections/product/_main.scss */
 .product-view .box-reviews .form-add .form-list .input-box {
   width: 360px;
 }
-/* line 725, ../scss/sections/product/_main.scss */
+/* line 726, ../scss/sections/product/_main.scss */
 .product-view .box-reviews .form-add .form-list input.input-text,
 .product-view .box-reviews .form-add .form-list textarea {
   width: 354px;
 }
 
-/* line 737, ../scss/sections/product/_main.scss */
+/* line 738, ../scss/sections/product/_main.scss */
 .send-friend .form-list {
   width: 615px;
   overflow: hidden;
 }
-/* line 741, ../scss/sections/product/_main.scss */
+/* line 742, ../scss/sections/product/_main.scss */
 .send-friend .form-list li {
   margin-right: -15px;
 }
-/* line 744, ../scss/sections/product/_main.scss */
+/* line 745, ../scss/sections/product/_main.scss */
 .send-friend .form-list li p {
   margin: 0 15px 0 0;
 }
-/* line 749, ../scss/sections/product/_main.scss */
+/* line 750, ../scss/sections/product/_main.scss */
 .send-friend .form-list li.wide .input-box {
   width: 612px;
 }
-/* line 753, ../scss/sections/product/_main.scss */
+/* line 754, ../scss/sections/product/_main.scss */
 .send-friend .form-list li.wide textarea {
   width: 609px;
 }
-/* line 759, ../scss/sections/product/_main.scss */
+/* line 760, ../scss/sections/product/_main.scss */
 .send-friend .form-list .field {
   width: 315px;
 }
-/* line 763, ../scss/sections/product/_main.scss */
+/* line 764, ../scss/sections/product/_main.scss */
 .send-friend .form-list .input-box {
   width: 300px;
 }
-/* line 767, ../scss/sections/product/_main.scss */
+/* line 768, ../scss/sections/product/_main.scss */
 .send-friend .form-list input.input-text,
 .send-friend .form-list textarea {
   width: 294px;
 }
-/* line 774, ../scss/sections/product/_main.scss */
+/* line 775, ../scss/sections/product/_main.scss */
 .send-friend .buttons-set .limit {
   float: right;
   margin: 0 7px 0 0;

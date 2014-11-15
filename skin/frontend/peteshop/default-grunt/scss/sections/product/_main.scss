@@ -602,9 +602,10 @@
 	ul {
 		li.item {
 			margin: 0 0 8px 9px;
-			border-style: dashed;
 			text-align: center;
+			border: none;
 			.product {
+				border: 1px dashed #DDD;
 				.price-box .label { display: none; }
 			}
 		}
