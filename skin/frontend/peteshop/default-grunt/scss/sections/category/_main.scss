@@ -38,7 +38,7 @@
 		border: none;
 		text-align: center;
 		padding:12px 0 50px; 
-		margin-left: 15px;
+		// margin-left: 15px;
 
 		&.first { 
 			padding-left: 0;
@@ -56,9 +56,10 @@
 	}
 	
 	.product-name { 
-		margin:0 0 5px; 
-		font-weight:bold; 
-		font-size:13px;
+		font-family: $fontBase3;
+		font-size: 14px;
+		font-style: italic;
+		margin: 0 0 5px;
 	}
 
 	.price-box { 
