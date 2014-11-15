@@ -596,6 +596,21 @@
 	}
 }
 
+// Block: Related
+// --------------------------------------------------
+.product-view .block-related {
+	ul {
+		li {
+			margin: 0 0 8px 9px;
+			border-style: dashed;
+			text-align: center;
+			.product {
+				.price-box .label { display: none; }
+			}
+		}
+	}
+}
+
 
 // Block: Tags
 // --------------------------------------------------
