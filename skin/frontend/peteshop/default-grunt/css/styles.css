@@ -10379,22 +10379,26 @@ p.required {
 .price-box .price {
   font-weight: bold;
 }
+/* line 14, ../scss/partials/_prices.scss */
+.price-box .configurable-price-from-label {
+  color: #000;
+}
 
-/* line 19, ../scss/partials/_prices.scss */
+/* line 21, ../scss/partials/_prices.scss */
 .regular-price .price {
   font-weight: bold;
   font-size: 13px;
 }
 
-/* line 28, ../scss/partials/_prices.scss */
+/* line 30, ../scss/partials/_prices.scss */
 .old-price {
   margin: 0;
 }
-/* line 31, ../scss/partials/_prices.scss */
+/* line 33, ../scss/partials/_prices.scss */
 .old-price .price-label {
   white-space: nowrap;
 }
-/* line 35, ../scss/partials/_prices.scss */
+/* line 37, ../scss/partials/_prices.scss */
 .old-price .price {
   font-weight: bold;
   text-decoration: line-through;
@@ -10403,187 +10407,187 @@ p.required {
   font-size: 12px;
 }
 
-/* line 47, ../scss/partials/_prices.scss */
+/* line 49, ../scss/partials/_prices.scss */
 .special-price {
   margin: 0;
   padding: 3px 0;
 }
-/* line 51, ../scss/partials/_prices.scss */
+/* line 53, ../scss/partials/_prices.scss */
 .special-price .price-label {
   font-size: 13px;
   font-weight: bold;
   white-space: nowrap;
 }
-/* line 57, ../scss/partials/_prices.scss */
+/* line 59, ../scss/partials/_prices.scss */
 .special-price .price {
   font-size: 13px;
   font-weight: bold;
 }
 
-/* line 66, ../scss/partials/_prices.scss */
+/* line 68, ../scss/partials/_prices.scss */
 .minimal-price {
   margin: 0;
 }
-/* line 69, ../scss/partials/_prices.scss */
+/* line 71, ../scss/partials/_prices.scss */
 .minimal-price .price-label {
   font-weight: bold;
   white-space: nowrap;
 }
 
-/* line 75, ../scss/partials/_prices.scss */
+/* line 77, ../scss/partials/_prices.scss */
 .minimal-price-link {
   display: block;
 }
-/* line 78, ../scss/partials/_prices.scss */
+/* line 80, ../scss/partials/_prices.scss */
 .minimal-price-link .price {
   font-weight: normal;
 }
 
-/* line 86, ../scss/partials/_prices.scss */
+/* line 88, ../scss/partials/_prices.scss */
 .price-excluding-tax {
   display: block;
 }
-/* line 89, ../scss/partials/_prices.scss */
+/* line 91, ../scss/partials/_prices.scss */
 .price-excluding-tax .label {
   white-space: nowrap;
 }
-/* line 93, ../scss/partials/_prices.scss */
+/* line 95, ../scss/partials/_prices.scss */
 .price-excluding-tax .price {
   font-size: 13px;
   font-weight: normal;
 }
 
-/* line 102, ../scss/partials/_prices.scss */
+/* line 104, ../scss/partials/_prices.scss */
 .price-including-tax {
   display: block;
 }
-/* line 105, ../scss/partials/_prices.scss */
+/* line 107, ../scss/partials/_prices.scss */
 .price-including-tax .label {
   white-space: nowrap;
 }
-/* line 109, ../scss/partials/_prices.scss */
+/* line 111, ../scss/partials/_prices.scss */
 .price-including-tax .price {
   font-size: 13px;
   font-weight: bold;
 }
 
-/* line 118, ../scss/partials/_prices.scss */
+/* line 120, ../scss/partials/_prices.scss */
 .weee {
   display: block;
   font-size: 11px;
 }
-/* line 122, ../scss/partials/_prices.scss */
+/* line 124, ../scss/partials/_prices.scss */
 .weee .price {
   font-size: 11px;
   font-weight: normal;
 }
 
-/* line 131, ../scss/partials/_prices.scss */
+/* line 133, ../scss/partials/_prices.scss */
 .price-excl-tax {
   display: block;
 }
-/* line 134, ../scss/partials/_prices.scss */
+/* line 136, ../scss/partials/_prices.scss */
 .price-excl-tax .label {
   display: block;
   white-space: nowrap;
 }
-/* line 139, ../scss/partials/_prices.scss */
+/* line 141, ../scss/partials/_prices.scss */
 .price-excl-tax .price {
   display: block;
 }
 
-/* line 147, ../scss/partials/_prices.scss */
+/* line 149, ../scss/partials/_prices.scss */
 .price-incl-tax {
   display: block;
 }
-/* line 150, ../scss/partials/_prices.scss */
+/* line 152, ../scss/partials/_prices.scss */
 .price-incl-tax .label {
   display: block;
   white-space: nowrap;
 }
-/* line 155, ../scss/partials/_prices.scss */
+/* line 157, ../scss/partials/_prices.scss */
 .price-incl-tax .price {
   display: block;
   font-weight: bold;
 }
 
-/* line 164, ../scss/partials/_prices.scss */
+/* line 166, ../scss/partials/_prices.scss */
 .price-from {
   margin: 0;
 }
-/* line 167, ../scss/partials/_prices.scss */
+/* line 169, ../scss/partials/_prices.scss */
 .price-from .price-label {
   font-weight: bold;
   white-space: nowrap;
 }
 
-/* line 173, ../scss/partials/_prices.scss */
+/* line 175, ../scss/partials/_prices.scss */
 .price-to {
   margin: 0;
 }
-/* line 176, ../scss/partials/_prices.scss */
+/* line 178, ../scss/partials/_prices.scss */
 .price-to .price-label {
   font-weight: bold;
   white-space: nowrap;
 }
 
-/* line 185, ../scss/partials/_prices.scss */
+/* line 187, ../scss/partials/_prices.scss */
 .price-notice {
   padding-left: 10px;
 }
-/* line 188, ../scss/partials/_prices.scss */
+/* line 190, ../scss/partials/_prices.scss */
 .price-notice .price {
   font-weight: bold;
 }
 
-/* line 196, ../scss/partials/_prices.scss */
+/* line 198, ../scss/partials/_prices.scss */
 .price-as-configured {
   margin: 0;
 }
-/* line 199, ../scss/partials/_prices.scss */
+/* line 201, ../scss/partials/_prices.scss */
 .price-as-configured .price-label {
   font-weight: bold;
   white-space: nowrap;
 }
 
-/* line 205, ../scss/partials/_prices.scss */
+/* line 207, ../scss/partials/_prices.scss */
 .price-box-bundle {
   padding: 0 0 10px 0;
 }
-/* line 208, ../scss/partials/_prices.scss */
+/* line 210, ../scss/partials/_prices.scss */
 .price-box-bundle .price-box {
   margin: 0 !important;
   padding: 0 !important;
 }
 
-/* line 217, ../scss/partials/_prices.scss */
+/* line 219, ../scss/partials/_prices.scss */
 .tier-prices {
   margin: 10px 0;
   padding: 10px;
   background-color: #f4f7f7;
   border: 1px solid #dadddd;
 }
-/* line 223, ../scss/partials/_prices.scss */
+/* line 225, ../scss/partials/_prices.scss */
 .tier-prices li {
   line-height: 1.4;
   background: url(../images/i_tier.gif) no-repeat 0 3px;
   padding: 2px 0 2px 10px;
 }
-/* line 229, ../scss/partials/_prices.scss */
+/* line 231, ../scss/partials/_prices.scss */
 .tier-prices .benefit {
   font-style: italic;
   font-weight: bold;
 }
-/* line 234, ../scss/partials/_prices.scss */
+/* line 236, ../scss/partials/_prices.scss */
 .tier-prices .price {
   font-weight: bold;
 }
 
-/* line 240, ../scss/partials/_prices.scss */
+/* line 242, ../scss/partials/_prices.scss */
 .tier-prices-grouped li {
   padding: 2px 0;
 }
-/* line 243, ../scss/partials/_prices.scss */
+/* line 245, ../scss/partials/_prices.scss */
 .tier-prices-grouped li .price {
   font-weight: bold;
 }
