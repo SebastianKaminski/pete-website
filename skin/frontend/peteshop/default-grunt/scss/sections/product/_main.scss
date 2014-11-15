@@ -115,11 +115,7 @@
 }
 
 .product-view .product-shop .availability { 
-	font-size:11px; 
-
-	span { 
-		font-weight:normal;
-	}
+	font-size:21px; 
 }
 
 
@@ -369,6 +365,10 @@
 
 	.price-box { 
 		margin:10px 0;
+		.price {
+			font-size: 28px;
+			font-family: $fontBase3;
+		}
 	}
 
 	.add-to-links { 
@@ -601,11 +601,12 @@
 .block-related {
 	ul {
 		li.item {
+			border: none;
 			margin: 0 0 8px 9px;
 			text-align: center;
-			border: none;
 			.product {
 				border: 1px dashed #DDD;
+				padding: 10px 5px;
 				.price-box .label { display: none; }
 			}
 		}
