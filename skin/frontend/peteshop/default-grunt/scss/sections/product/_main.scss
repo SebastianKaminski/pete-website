@@ -349,6 +349,10 @@
 
 	.product-name { 
 		margin:0 0 5px;
+		h1 {
+			font-family: $fontBase3;
+			font-style: italic;
+		}
 	}
 
 	.availability { 
