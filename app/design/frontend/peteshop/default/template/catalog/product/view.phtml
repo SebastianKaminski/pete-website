@@ -100,6 +100,18 @@
             <div class="product-img-box">
                 <?php echo $this->getChildHtml('media') ?>
             </div>
+            <div class="product-collateral">
+                <?php foreach ($this->getChildGroup('detailed_info', 'getChildHtml') as $alias => $html):?>
+                    <div class="box-collateral <?php echo "box-{$alias}"?>">
+                        <?php if ($title = $this->getChildData($alias, 'title')):?>
+                        <h2><?php echo $this->escapeHtml($title); ?></h2>
+                        <?php endif;?>
+                        <?php echo $html; ?>
+                    </div>
+                <?php endforeach;?>
+                <?php echo $this->getChildHtml('upsell_products') ?>
+                <?php echo $this->getChildHtml('product_additional_data') ?>
+            </div>            
         </div>
 
     </form>
@@ -154,18 +166,5 @@
         }.bind(productAddToCartForm);
     //]]>
     </script>
-    </div>
-
-    <div class="product-collateral">
-<?php foreach ($this->getChildGroup('detailed_info', 'getChildHtml') as $alias => $html):?>
-        <div class="box-collateral <?php echo "box-{$alias}"?>">
-            <?php if ($title = $this->getChildData($alias, 'title')):?>
-            <h2><?php echo $this->escapeHtml($title); ?></h2>
-            <?php endif;?>
-            <?php echo $html; ?>
-        </div>
-<?php endforeach;?>
-        <?php echo $this->getChildHtml('upsell_products') ?>
-        <?php echo $this->getChildHtml('product_additional_data') ?>
     </div>
 </div>
