@@ -99,8 +99,9 @@
                 <?php echo $this->getReviewsSummaryHtml($_product, 'short') ?>
                 <?php endif; ?>
                 <?php echo $this->getPriceHtml($_product, true) ?>
+                this: <?php echo $this->getAttributeText('instore_only'); ?>
+                prod:<?php echo $_product->getAttributeText('instore_only'); ?>
                 <?php if (!(($_product->getAttributeText('instore_only')) == "No")):?>
-                    <?php echo $this->getAttributeText('instore_only'); ?>
                     <div class="actions">
                         <?php if($_product->isSaleable()): ?>
                             <button type="button" title="<?php echo $this->__('Add to Cart') ?>" class="btn btn-success btn-sm btn-cart" onclick="setLocation('<?php echo $this->getAddToCartUrl($_product) ?>')"><span class="glyphicon glyphicon-shopping-cart"></span> <?php echo $this->__('Add to Cart') ?></button>
