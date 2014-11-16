@@ -99,8 +99,7 @@
                 <?php echo $this->getReviewsSummaryHtml($_product, 'short') ?>
                 <?php endif; ?>
                 <?php echo $this->getPriceHtml($_product, true) ?>
-                this: <?php echo $this->getAttributeText('instore_only'); ?>
-                prod:<?php echo $_product->getAttributeText('instore_only'); ?>
+                <?php var_dump($_product->getData()); ?>
                 <?php if (!(($_product->getAttributeText('instore_only')) == "No")):?>
                     <div class="actions">
                         <?php if($_product->isSaleable()): ?>
