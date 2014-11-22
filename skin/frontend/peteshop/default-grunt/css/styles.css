@@ -10336,7 +10336,7 @@ p.required {
 }
 /* line 23, ../scss/partials/_messages.scss */
 .messages li {
-  margin: 0 0 10px !important;
+  margin: 0 0 20px !important;
 }
 /* line 26, ../scss/partials/_messages.scss */
 .messages li li {
@@ -11927,7 +11927,7 @@ footer:after,
 .cart-table .product-name {
   font-weight: bold;
   margin: 0 0 5px;
-  font-size: 14px;
+  font-size: 12px;
 }
 /* line 50, ../scss/sections/cart/_main.scss */
 .cart-table .item-msg {
