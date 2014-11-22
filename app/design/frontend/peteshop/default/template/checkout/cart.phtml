@@ -98,7 +98,7 @@
                     <tr>
                         <td colspan="50" class="a-right">
                             <?php if($this->getContinueShoppingUrl()): ?>
-                                <button type="button" title="<?php echo $this->__('Continue Shopping') ?>" class="btn btn-primary btn-xs" onclick="setLocation('<?php echo $this->getContinueShoppingUrl() ?>')"><span class="glyphicon glyphicon-floppy-saved"></span> <?php echo $this->__('Continue Shopping') ?></button>
+                                <button type="button" title="<?php echo $this->__('Continue Shopping') ?>" class="btn btn-primary btn-xs pull-left" onclick="setLocation('<?php echo $this->getContinueShoppingUrl() ?>')"><span class="glyphicon glyphicon-floppy-saved"></span> <?php echo $this->__('Continue Shopping') ?></button>
                             <?php endif; ?>
                             <button type="submit" name="update_cart_action" value="update_qty" title="<?php echo $this->__('Update Shopping Cart'); ?>" class="btn btn-primary btn-xs"><span class="glyphicon glyphicon-refresh"></span> <?php echo $this->__('Update Shopping Cart'); ?></button>
                             <button type="submit" name="update_cart_action" value="empty_cart" title="<?php echo $this->__('Clear Shopping Cart'); ?>" class="btn btn-warning btn-xs" id="empty_cart_button"><span class="glyphicon glyphicon-floppy-remove"></span> <?php echo $this->__('Clear Shopping Cart'); ?></button>

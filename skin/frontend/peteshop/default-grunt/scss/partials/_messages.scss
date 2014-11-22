@@ -18,12 +18,13 @@
 .messages {
 	width:100%;
 	overflow:hidden;
+	font-size: 12px;
 
 	li {
 		margin:0 0 10px !important;
 
 		li {
-			margin:0 0 3px !important;
+			margin:0 !important;
 		}
 	}
 }
@@ -32,18 +33,18 @@
 .success-msg,
 .note-msg,
 .notice-msg {
-	padding:15px !important;
+	padding:10px 15px !important;
 }
 
 .error-msg {
-	background-color:#F2DEDE;
+	background-color: lighten($brandDanger, 15%);;
 }
 
 .success-msg {
-	background-color:#DFF0D8;
+	background-color: lighten($brandSuccess, 15%);;
 }
 
 .note-msg,
 .notice-msg {
-	background-color:#D9EDF7;
+	background-color: lighten($brandInfo, 15%);
 }
