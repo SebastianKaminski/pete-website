@@ -174,8 +174,10 @@
     <checkout_cart_index>
         <reference name="content">
             <block name="checkout.cart">
-                <!-- Remove cehckout discount codes -->
+                <!-- Remove checkout discount codes -->
                 <remove name="checkout.cart.coupon"/>
+                <!-- Remove checkout methods button -->
+                <remove name="checkout.cart.top_methods"/>
             </block>
         </reference>
     </checkout_cart_index>    

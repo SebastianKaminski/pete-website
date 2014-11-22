@@ -11910,95 +11910,101 @@ footer:after,
   margin: 0 0 5px 5px;
 }
 
-/* line 34, ../scss/sections/cart/_main.scss */
+/* line 33, ../scss/sections/cart/_main.scss */
+.cart-table {
+  font-size: 12px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+/* line 36, ../scss/sections/cart/_main.scss */
 .cart-table th {
   padding: 2px 10px;
 }
-/* line 38, ../scss/sections/cart/_main.scss */
+/* line 40, ../scss/sections/cart/_main.scss */
 .cart-table td {
   padding: 10px;
 }
-/* line 42, ../scss/sections/cart/_main.scss */
+/* line 44, ../scss/sections/cart/_main.scss */
 .cart-table .product-name {
   font-weight: bold;
   margin: 0 0 5px;
+  font-size: 14px;
 }
-/* line 47, ../scss/sections/cart/_main.scss */
+/* line 50, ../scss/sections/cart/_main.scss */
 .cart-table .item-msg {
   margin: 5px 0;
   font-size: 11px;
   font-weight: bold;
 }
-/* line 53, ../scss/sections/cart/_main.scss */
+/* line 56, ../scss/sections/cart/_main.scss */
 .cart-table tfoot td {
   padding: 5px 10px;
 }
-/* line 57, ../scss/sections/cart/_main.scss */
+/* line 60, ../scss/sections/cart/_main.scss */
 .cart-table .btn-continue {
   float: left;
 }
-/* line 61, ../scss/sections/cart/_main.scss */
+/* line 64, ../scss/sections/cart/_main.scss */
 .cart-table .btn-continue span,
 .cart-table .btn-update span {
   border-color: #406a83;
   background: #618499;
 }
 
-/* line 71, ../scss/sections/cart/_main.scss */
+/* line 74, ../scss/sections/cart/_main.scss */
 .cart .cart-collaterals {
   padding: 25px 0 0;
 }
-/* line 74, ../scss/sections/cart/_main.scss */
+/* line 77, ../scss/sections/cart/_main.scss */
 .cart .cart-collaterals .col2-set {
   float: left;
   width: 605px;
 }
-/* line 78, ../scss/sections/cart/_main.scss */
+/* line 81, ../scss/sections/cart/_main.scss */
 .cart .cart-collaterals .col2-set .col-2 {
   width: 294px;
 }
 
-/* line 84, ../scss/sections/cart/_main.scss */
+/* line 87, ../scss/sections/cart/_main.scss */
 .cart .crosssell {
   padding: 12px 15px;
 }
-/* line 87, ../scss/sections/cart/_main.scss */
+/* line 90, ../scss/sections/cart/_main.scss */
 .cart .crosssell h2 {
   font-size: 13px;
   font-weight: bold;
 }
-/* line 92, ../scss/sections/cart/_main.scss */
+/* line 95, ../scss/sections/cart/_main.scss */
 .cart .crosssell .product-image {
   float: left;
   width: 75px;
   height: 75px;
   border: 1px solid #d0cdc9;
 }
-/* line 99, ../scss/sections/cart/_main.scss */
+/* line 102, ../scss/sections/cart/_main.scss */
 .cart .crosssell .product-details {
   margin-left: 90px;
 }
-/* line 103, ../scss/sections/cart/_main.scss */
+/* line 106, ../scss/sections/cart/_main.scss */
 .cart .crosssell .product-name {
   font-weight: bold;
 }
-/* line 107, ../scss/sections/cart/_main.scss */
+/* line 110, ../scss/sections/cart/_main.scss */
 .cart .crosssell li.item {
   margin: 12px 0;
 }
-/* line 111, ../scss/sections/cart/_main.scss */
+/* line 114, ../scss/sections/cart/_main.scss */
 .cart .crosssell .link-compare {
   font-weight: normal;
 }
 
-/* line 119, ../scss/sections/cart/_main.scss */
+/* line 122, ../scss/sections/cart/_main.scss */
 .cart .discount,
 .cart .shipping {
   padding: 12px 15px;
   margin: 0 0 18px;
 }
 
-/* line 125, ../scss/sections/cart/_main.scss */
+/* line 128, ../scss/sections/cart/_main.scss */
 .cart .discount h2,
 .cart .shipping h2 {
   background-position: 0 0;
@@ -12008,14 +12014,14 @@ footer:after,
   text-transform: uppercase;
 }
 
-/* line 134, ../scss/sections/cart/_main.scss */
+/* line 137, ../scss/sections/cart/_main.scss */
 .cart .discount button span,
 .cart .shipping button span {
   border-color: #406a83;
   background: #618499;
 }
 
-/* line 140, ../scss/sections/cart/_main.scss */
+/* line 143, ../scss/sections/cart/_main.scss */
 .cart .discount .buttons-set,
 .cart .shipping .buttons-set {
   margin: 10px 0 0;
@@ -12024,101 +12030,101 @@ footer:after,
   text-align: left;
 }
 
-/* line 148, ../scss/sections/cart/_main.scss */
+/* line 151, ../scss/sections/cart/_main.scss */
 .cart .discount .buttons-set button.button,
 .cart .shipping .buttons-set button.button {
   float: none;
   margin-left: 0;
 }
 
-/* line 154, ../scss/sections/cart/_main.scss */
+/* line 157, ../scss/sections/cart/_main.scss */
 .cart .discount .input-box {
   margin: 8px 0 0;
   width: 260px;
 }
 
-/* line 159, ../scss/sections/cart/_main.scss */
+/* line 162, ../scss/sections/cart/_main.scss */
 .cart .discount input.input-text {
   width: 254px;
 }
 
-/* line 163, ../scss/sections/cart/_main.scss */
+/* line 166, ../scss/sections/cart/_main.scss */
 .cart .shipping .sp-methods {
   margin: 10px 0 0;
   padding: 5px 0 0;
   background: url(../images/bkg_divider1.gif) 0 0 repeat-x;
 }
 
-/* line 172, ../scss/sections/cart/_main.scss */
+/* line 175, ../scss/sections/cart/_main.scss */
 .cart .totals {
   float: right;
   width: 270px;
 }
-/* line 176, ../scss/sections/cart/_main.scss */
+/* line 179, ../scss/sections/cart/_main.scss */
 .cart .totals table {
   width: 100%;
   margin: 7px 0;
 }
-/* line 181, ../scss/sections/cart/_main.scss */
+/* line 184, ../scss/sections/cart/_main.scss */
 .cart .totals td {
   padding: 1px 15px 1px 7px;
 }
-/* line 186, ../scss/sections/cart/_main.scss */
+/* line 189, ../scss/sections/cart/_main.scss */
 .cart .totals tfoot th {
   padding: 5px 15px 5px 7px;
 }
-/* line 190, ../scss/sections/cart/_main.scss */
+/* line 193, ../scss/sections/cart/_main.scss */
 .cart .totals tfoot td {
   padding-top: 5px;
   padding-bottom: 5px;
 }
-/* line 195, ../scss/sections/cart/_main.scss */
+/* line 198, ../scss/sections/cart/_main.scss */
 .cart .totals tfoot th strong,
 .cart .totals tfoot td strong {
   font-size: 15px;
 }
-/* line 201, ../scss/sections/cart/_main.scss */
+/* line 204, ../scss/sections/cart/_main.scss */
 .cart .totals .checkout-types {
   font-size: 13px;
   padding: 8px 15px 15px;
   text-align: right;
 }
-/* line 206, ../scss/sections/cart/_main.scss */
+/* line 209, ../scss/sections/cart/_main.scss */
 .cart .totals .checkout-types li {
   clear: both;
   margin: 10px 0;
 }
 
-/* line 216, ../scss/sections/cart/_main.scss */
+/* line 219, ../scss/sections/cart/_main.scss */
 .item-options dt {
   font-weight: bold;
   font-style: italic;
 }
 
-/* line 221, ../scss/sections/cart/_main.scss */
+/* line 224, ../scss/sections/cart/_main.scss */
 .item-options dd {
   padding-left: 10px;
   margin: 0 0 6px;
 }
 
-/* line 226, ../scss/sections/cart/_main.scss */
+/* line 229, ../scss/sections/cart/_main.scss */
 .truncated {
   cursor: help;
 }
-/* line 229, ../scss/sections/cart/_main.scss */
+/* line 232, ../scss/sections/cart/_main.scss */
 .truncated a.dots {
   cursor: help;
 }
-/* line 233, ../scss/sections/cart/_main.scss */
+/* line 236, ../scss/sections/cart/_main.scss */
 .truncated a.details {
   cursor: help;
 }
-/* line 237, ../scss/sections/cart/_main.scss */
+/* line 240, ../scss/sections/cart/_main.scss */
 .truncated .truncated_full_value {
   position: relative;
   z-index: 999;
 }
-/* line 241, ../scss/sections/cart/_main.scss */
+/* line 244, ../scss/sections/cart/_main.scss */
 .truncated .truncated_full_value dl {
   position: absolute;
   top: -99999em;
@@ -12129,35 +12135,35 @@ footer:after,
   border: 1px solid #ddd;
   background-color: #f6f6f6;
 }
-/* line 253, ../scss/sections/cart/_main.scss */
+/* line 256, ../scss/sections/cart/_main.scss */
 .truncated .show dl {
   top: -20px;
   left: 50%;
 }
 
-/* line 259, ../scss/sections/cart/_main.scss */
+/* line 262, ../scss/sections/cart/_main.scss */
 .col-left .truncated .show dl {
   left: 15px;
   top: 7px;
 }
 
-/* line 264, ../scss/sections/cart/_main.scss */
+/* line 267, ../scss/sections/cart/_main.scss */
 .col-right .truncated .show dl {
   left: -240px;
   top: 7px;
 }
 
-/* line 272, ../scss/sections/cart/_main.scss */
+/* line 275, ../scss/sections/cart/_main.scss */
 .cart {
   position: relative;
 }
 
-/* line 276, ../scss/sections/cart/_main.scss */
+/* line 279, ../scss/sections/cart/_main.scss */
 tr.summary-total {
   cursor: pointer;
 }
 
-/* line 280, ../scss/sections/cart/_main.scss */
+/* line 283, ../scss/sections/cart/_main.scss */
 tr.summary-total .summary-collapse {
   float: right;
   text-align: right;
@@ -12166,39 +12172,39 @@ tr.summary-total .summary-collapse {
   cursor: pointer;
 }
 
-/* line 288, ../scss/sections/cart/_main.scss */
+/* line 291, ../scss/sections/cart/_main.scss */
 tr.show-details .summary-collapse {
   background-position: 0 -52px;
 }
 
-/* line 292, ../scss/sections/cart/_main.scss */
+/* line 295, ../scss/sections/cart/_main.scss */
 tr.summary-details td {
   font-size: 11px;
   background-color: #dae1e4;
 }
 
-/* line 297, ../scss/sections/cart/_main.scss */
+/* line 300, ../scss/sections/cart/_main.scss */
 tr.summary-details-first td {
   border-top: 1px solid #d2d8db;
 }
 
-/* line 301, ../scss/sections/cart/_main.scss */
+/* line 304, ../scss/sections/cart/_main.scss */
 tr.summary-details-excluded {
   font-style: italic;
 }
 
-/* line 308, ../scss/sections/cart/_main.scss */
+/* line 311, ../scss/sections/cart/_main.scss */
 .cart-tax-info {
   display: block;
 }
 
-/* line 312, ../scss/sections/cart/_main.scss */
+/* line 315, ../scss/sections/cart/_main.scss */
 .cart-tax-info,
 .cart-tax-info .cart-price {
   padding-right: 20px;
 }
 
-/* line 317, ../scss/sections/cart/_main.scss */
+/* line 320, ../scss/sections/cart/_main.scss */
 .cart-tax-total {
   display: block;
   padding-right: 20px;
@@ -12206,14 +12212,14 @@ tr.summary-details-excluded {
   cursor: pointer;
 }
 
-/* line 324, ../scss/sections/cart/_main.scss */
+/* line 327, ../scss/sections/cart/_main.scss */
 .cart-tax-info .price,
 .cart-tax-total .price {
   display: inline !important;
   font-weight: normal !important;
 }
 
-/* line 330, ../scss/sections/cart/_main.scss */
+/* line 333, ../scss/sections/cart/_main.scss */
 .cart-tax-total-expanded {
   background-position: 100% -52px;
 }
