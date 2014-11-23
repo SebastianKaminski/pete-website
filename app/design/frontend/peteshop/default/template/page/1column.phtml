@@ -20,8 +20,12 @@
 
 	<div class="container">
 		<div class="main">
-			<?php echo $this->getChildHtml('breadcrumbs'); ?>
-			<?php echo $this->getChildHtml('global_messages'); ?>
+			<div id="test1">
+				<?php echo $this->getChildHtml('breadcrumbs'); ?>	
+			</div>
+			<div id="test2">
+				<?php echo $this->getChildHtml('global_messages'); ?>
+			</div>
 			<?php echo $this->getChildHtml('content'); ?>
 		</div><!-- .main -->
 	</div><!-- .container -->
