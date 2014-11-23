@@ -76,14 +76,6 @@
         <reference name="root">
             <action method="setTemplate"><template>page/category.phtml</template></action>
         </reference>
-        
-        <!-- Instagram Gallery -->
-        <reference name="content">
-            <block type="instagramconnect/catalog_category_view_images"
-                   template="ikantam/instagram_connect/catalog/category/view/images.phtml"
-                   before="product_list">
-            </block>
-        </reference>
         <!-- optional -->
         <!--
         <reference name="site.bottom.css.js">
