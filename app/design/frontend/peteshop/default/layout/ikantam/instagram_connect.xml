@@ -50,7 +50,7 @@
             <block type="instagramconnect/catalog_category_view_images"
                    template="ikantam/instagram_connect/catalog/category/view/images.phtml"
                    before="product_list">
-            </block> 
+            </block>
         </reference>
     </catalog_category_default>
 
