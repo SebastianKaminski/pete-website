@@ -22,15 +22,15 @@
     <div class="category-description std">
         <?php echo $_helper->categoryAttribute($_category, $_description, 'description') ?>
     </div>
-    <?php endif; ?>
+<?php endif; ?>
+
+<?php echo $this->getChildHtml('instagram_images') ?>
 
 <?php if($this->isContentMode()): ?>
     <?php echo $this->getCmsBlockHtml() ?>
-
 <?php elseif($this->isMixedMode()): ?>
     <?php echo $this->getCmsBlockHtml() ?>
     <?php echo $this->getProductListHtml() ?>
-
 <?php else: ?>
     <?php echo $this->getProductListHtml() ?>
 <?php endif; ?>
