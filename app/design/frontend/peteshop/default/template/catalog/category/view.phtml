@@ -8,7 +8,9 @@
     }
 ?>
 
-<?php echo $this->getMessagesBlock()->getGroupedHtml() ?>
+<div id="messages">
+    <?php echo $this->getMessagesBlock()->getGroupedHtml() ?>    
+</div>
 
 <?php if($_imgUrl): ?>
     <?php echo $_imgHtml ?>
