@@ -1,10 +1,7 @@
 <?php
     $catalogSearchHelper =  $this->helper('catalogsearch');
 ?>
-
-<a href="#" id="show-search-form"><span class="glyphicon glyphicon-search"></span></a>
-
-<form id="search_mini_form" action="<?php echo $catalogSearchHelper->getResultUrl() ?>" method="get" class="hidden" role="search">
+<form id="search_mini_form" action="<?php echo $catalogSearchHelper->getResultUrl() ?>" method="get" class="hidden navbar-form navbar-right" role="search">
     <div class="form-group">
         <input class="form-control" id="search" type="text" name="<?php echo $catalogSearchHelper->getQueryParamName() ?>" value="<?php echo $catalogSearchHelper->getEscapedQueryText() ?>" maxlength="<?php echo $catalogSearchHelper->getMaxQueryLength();?>" />
         <button type="submit" title="<?php echo $this->__('Search') ?>" class="btn btn-default"><span><span><?php echo $this->__('Search') ?></span></span></button>

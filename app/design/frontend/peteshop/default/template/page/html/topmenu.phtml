@@ -19,9 +19,10 @@
 				<?php echo $_menu ?>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
-				<li><?php echo $this->getChildHtml('topSearch') ?></li>
+				<li><a href="#" id="show-search-form"><span class="glyphicon glyphicon-search"></span></a></li>
 			</ul>
 		</div>
+		<?php echo $this->getChildHtml('topSearch') ?>
 	</div>
 </nav>
 <?php endif ?>
