@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<!--
+/**
+ * MagPleasure Co.
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://www.magpleasure.com/LICENSE.txt
+ *
+ * @category   Magpleasure
+ * @package    Magpleasure_Pinterest
+ * @copyright  Copyright (c) 2011-2014 MagPleasure Ltd. (http://www.magpleasure.com)
+ * @license    http://www.magpleasure.com/LICENSE.txt
+ */
+-->
+<layout version="0.1.0">
+    <catalog_product_view>
+        <reference name="product.info.extrahint">
+            <block type="mppinterest/default" name="mppinterest.default" as="mppinterest_default"/>
+        </reference>
+        <reference name="product.info">
+            <block type="mppinterest/button" name="mppinterest.original" as="mppinterest_original" template="mppinterest/button.phtml"/>
+            <block type="mppinterest/direct" name="mppinterest.direct" as="mppinterest"/>
+        </reference>
+    </catalog_product_view>
+</layout>

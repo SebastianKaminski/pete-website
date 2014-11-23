@@ -1,0 +1,29 @@
+<?php
+/**
+ * MagPleasure Co.
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://www.magpleasure.com/LICENSE.txt
+ *
+ * @category   Magpleasure
+ * @package    Magpleasure_Pinterest
+ * @copyright  Copyright (c) 2011-2014 MagPleasure Ltd. (http://www.magpleasure.com)
+ * @license    http://www.magpleasure.com/LICENSE.txt
+ */
+/** @var Magpleasure_Pinterest_Block_Button $this */
+?>
+<?php if ($this->canShow()): ?>
+    <div <?php echo $this->addCssClass(); ?> class="pinit-button">
+        <a data-pin-do="buttonPin"
+           data-pin-config="<?php echo $this->getButtonType(); ?>" <?php echo $this->showZeroCount() ?>
+           href="<?php echo $this->getPinItUrl(); ?>"><img
+                src="//assets.pinterest.com/images/pidgets/pin_it_button.png"/></a>
+        <script type="text/javascript" src="http://assets.pinterest.com/js/pinit.js"></script>
+    </div>
+<?php endif; ?>
+
+
