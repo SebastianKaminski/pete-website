@@ -17,6 +17,8 @@
 			<ul class="nav navbar-nav">
 				<li class="home<?php if (Mage::helper('core/url')->getCurrentUrl() === Mage::helper('core/url')->getHomeUrl()):?> active<?php endif;?>"><a href="<?php echo $this->getUrl('')?>" title="Home">Home</a></li>
 				<?php echo $_menu ?>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
 				<li><?php echo $this->getChildHtml('topSearch') ?></li>
 			</ul>
 		</div>

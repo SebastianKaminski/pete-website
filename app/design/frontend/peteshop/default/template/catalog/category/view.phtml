@@ -24,10 +24,6 @@
     </div>
 <?php endif; ?>
 
-<?php if($this->getChildHtml('instagram_images')): ?>
-    <?php echo $this->getChildHtml('instagram_images') ?>
-<?php endif; ?>
-
 <?php if($this->isContentMode()): ?>
     <?php echo $this->getCmsBlockHtml() ?>
 <?php elseif($this->isMixedMode()): ?>
