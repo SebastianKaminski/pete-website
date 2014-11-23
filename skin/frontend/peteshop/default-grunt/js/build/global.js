@@ -12,7 +12,8 @@
     $(document).ready(function(){
     	$("#show-search-form").on("click", function (e) {
     		e.preventDefault();
-    		$(this).next("form").toggle();
+    		console.log("click suko");
+    		$("#search_mini_form").toggle();
     	})
     });
 })(jQuery);
