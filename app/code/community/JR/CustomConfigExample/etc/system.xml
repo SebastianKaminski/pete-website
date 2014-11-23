@@ -16,7 +16,7 @@
             <show_in_store>1</show_in_store>
             <groups>
                 <general translate="label comment">
-                    <label>General</label>
+                    <label>Social</label>
                     <sort_order>50</sort_order>
                     <show_in_default>1</show_in_default>
                     <show_in_website>1</show_in_website>
@@ -31,6 +31,33 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </facebook_field>
+                        <twitter_field translate="label comment">
+                            <label>Twitter</label>
+                            <comment>URL to your Twitter profile.</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </twitter_field>
+                        <instagram_field translate="label comment">
+                            <label>Instagram</label>
+                            <comment>URL to your Instagram profile.</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </instagram_field>
+                        <pinterest_field translate="label comment">
+                            <label>Pinterest</label>
+                            <comment>URL to your Pinterest profile.</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </pinterest_field>                                                                         
                     </fields>
                 </general>
             </groups>
