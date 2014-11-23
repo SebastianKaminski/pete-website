@@ -39,11 +39,11 @@
         </reference>
     </instagramconnect_gallery_index>
         
-    <catalog_product_view>
+<!--     <catalog_product_view>
     	<reference name="product.info.media" as="media">
     		<action method="setTemplate"><template>ikantam/instagram_connect/catalog/product/view/media.phtml</template></action>
     	</reference>
-    </catalog_product_view>
+    </catalog_product_view> -->
 
     <catalog_category_default>
         <reference name="content">
@@ -53,12 +53,12 @@
         </reference>
     </catalog_category_default>
 
-    <catalog_category_layered>
+<!--     <catalog_category_layered>
         <reference name="content">
             <block type="instagramconnect/catalog_category_view_images"
                    template="ikantam/instagram_connect/catalog/category/view/images.phtml"
                    before="category.products">
             </block>
         </reference>
-    </catalog_category_layered>
+    </catalog_category_layered> -->
 </layout>
