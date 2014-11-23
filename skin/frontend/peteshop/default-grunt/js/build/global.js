@@ -12,8 +12,7 @@
     $(document).ready(function(){
     	$("#show-search-form").on("click", function (e) {
     		e.preventDefault();
-    		console.log("click suko");
-    		$("#search_mini_form").toggle();
-    	})
+    		$("#search_mini_form").toggleClass('hidden');
+    	});
     });
 })(jQuery);
