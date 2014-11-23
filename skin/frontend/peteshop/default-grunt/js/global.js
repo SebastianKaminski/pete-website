@@ -10,7 +10,9 @@
     "use strict";
 
     $(document).ready(function(){
-    	/* Twitter dropdown */
-    	// $('.dropdown-toggle').dropdown();
+    	$("#show-search-form").on("click", function (e) {
+    		e.preventDefault();
+    		$(this).next("form").toggle();
+    	})
     });
 })(jQuery);
