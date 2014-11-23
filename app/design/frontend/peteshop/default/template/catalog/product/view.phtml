@@ -80,7 +80,7 @@
                 <?php endif; ?>
 
                 <?php foreach ($this->getChildGroup('detailed_info', 'getChildHtml') as $alias => $html):?>
-                    <div class="short-description <?php echo "box-{$alias}"?>">
+                    <div class="<?php echo "box-{$alias}"?>">
                         <?php if ($title = $this->getChildData($alias, 'title')):?>
                         <h2><?php echo $this->escapeHtml($title); ?></h2>
                         <?php endif;?>
@@ -99,7 +99,6 @@
                 <?php endif;?>
             </div>
         </div>
-
 
         <div class="col-md-6 col-md-pull-6">
             <div class="product-img-box">
