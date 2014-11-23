@@ -23,11 +23,11 @@
 -->
 <layout version="0.1.0">
 
-	<default>
+<!-- 	<default>
 		<reference name="head">
 			<action method="addCss"><stylesheet>ikantam/instagram_connect/css/instagram_connect.css</stylesheet></action>
 		</reference>
-	</default>
+	</default> -->
 	
     <instagramconnect_gallery_index translate="label">
         <label>Catalog Product Image Gallery Popup</label>
@@ -49,7 +49,7 @@
         <reference name="content">
             <block type="instagramconnect/catalog_category_view_images"
                    template="ikantam/instagram_connect/catalog/category/view/images.phtml"
-                   before="category.products">
+                   after="category.products">
             </block>
         </reference>
     </catalog_category_default>
