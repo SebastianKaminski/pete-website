@@ -25,7 +25,7 @@
     <tabs>
         <ikantam translate="label" module="instagramconnect">
             <label>iKantam</label>
-            <sort_order>9999999</sort_order>
+            <sort_order>100</sort_order>
         </ikantam>
     </tabs>
     
