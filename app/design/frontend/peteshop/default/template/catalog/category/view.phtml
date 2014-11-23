@@ -24,7 +24,10 @@
     </div>
 <?php endif; ?>
 
-<?php echo $this->getChildHtml('instagram_images') ?>
+<!-- Instagram Images -->
+<?php if($this->getChildHtml('instagram_images')): ?>
+    <?php echo $this->getChildHtml('instagram_images') ?>
+<?php endif; ?>
 
 <?php if($this->isContentMode()): ?>
     <?php echo $this->getCmsBlockHtml() ?>
