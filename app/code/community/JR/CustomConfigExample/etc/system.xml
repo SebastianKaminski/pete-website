@@ -60,7 +60,7 @@
                         </pinterest_field>                                                                         
                     </fields>
                 </social>
-                <maintenance translate="label">
+<!--                 <maintenance translate="label">
                     <label>Maintenance Mode</label>
                     <sort_order>60</sort_order>
                     <show_in_default>1</show_in_default>
@@ -87,7 +87,7 @@
                             <show_in_store>1</show_in_store>
                         </enabled_ips_field>                                             
                     </fields>                
-                </maintenance>
+                </maintenance> -->
             </groups>
         </skdev>
     </sections>
