@@ -53,7 +53,10 @@ if (file_exists($compilerConfig)) {
 $mageFilename = MAGENTO_ROOT . '/app/Mage.php';
 $maintenanceFile = 'maintenance.flag';
 $ip = $_SERVER['REMOTE_ADDR'];
-$allowed = explode(",",  Mage::getStoreConfig('skdev/maintenance/enabled_ips_field')); // these are the IP's that are allowed to view the site.
+// $allowed = explode(",", Mage::getStoreConfig('skdev/maintenance/enabled_ips_field')); // these are the IP's that are allowed to view the site.
+$allowed = [];
+
+echo Mage::getStoreConfig('skdev/maintenance/enabled_ips_field');
 
 if (!file_exists($mageFilename)) {
     if (is_dir('downloader')) {
