@@ -112,6 +112,13 @@
         -->
     </catalogsearch_result_index>
 
+    <!-- Empty result -->
+    <catalogsearch_result_index_empty>
+        <reference name="root">
+            <action method="setTemplate"><template>page/1column.phtml</template></action>
+        </reference>
+    </catalogsearch_result_index_empty>
+
     <!-- catalog search results (advanced) -->
     <catalogsearch_advanced_result>
         <reference name="root">
