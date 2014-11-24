@@ -20,18 +20,13 @@
     font-style: normal;
 }
 
-.entypo {
-	font-family: 'EntypoRegular';
-	font-size: 2em;
-	font-weight: normal;
-	line-height: 0;
-}
+.entypo { font-family: 'EntypoRegular'; }
+.entypo-social { font-family: 'EntypoSocialRegular'; }
 
-.entypo-social {
-	font-family: 'EntypoSocialRegular';
-	font-size: 2em;
-	font-weight: normal;
-	line-height: 0;
+.entypo, .entypo-social {
+    font-size: 2em;
+    font-weight: normal;
+    line-height: 1em;
 }
 
 .entypo.phone:before{ content:'\1F4DE'; }

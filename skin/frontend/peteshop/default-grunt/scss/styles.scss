@@ -75,8 +75,7 @@ $c-grey: #BBB;
      #header-middle {
           h1, h3 {
                img {
-                    // width: 100%;
-                    max-width: 400px;
+                    max-width: 100%;
                }
           }
      }
@@ -91,6 +90,7 @@ footer {
           color: #FFF;
           font-family: $fontBase;
           font-size: 12px;
+          .entypo, .entypo-social { color: #777; }
           h3 { color: $orange; }
      }
 }
