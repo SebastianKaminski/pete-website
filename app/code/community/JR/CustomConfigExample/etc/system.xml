@@ -15,7 +15,7 @@
             <show_in_website>1</show_in_website>
             <show_in_store>1</show_in_store>
             <groups>
-                <general translate="label comment">
+                <social translate="label">
                     <label>Social</label>
                     <sort_order>50</sort_order>
                     <show_in_default>1</show_in_default>
@@ -59,8 +59,8 @@
                             <show_in_store>1</show_in_store>
                         </pinterest_field>                                                                         
                     </fields>
-                </general>
-                <general translate="label comment">
+                </social>
+                <maintenance translate="label">
                     <label>Maintenance Mode</label>
                     <sort_order>60</sort_order>
                     <show_in_default>1</show_in_default>
@@ -87,7 +87,7 @@
                             <show_in_store>1</show_in_store>
                         </enabled_ips_field>                                             
                     </fields>                
-                </general>
+                </maintenance>
             </groups>
         </skdev>
     </sections>
