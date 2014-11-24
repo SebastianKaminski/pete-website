@@ -64,7 +64,7 @@ if (!file_exists($mageFilename)) {
     exit;
 }
 
-if (file_exists($maintenanceFile) && !in_array($ip, $allowed)) {
+if (file_exists($maintenanceFile) && !in_array($ip, $allowed) &&  Mage::getStoreConfig('skdev/general/maintenance_mode_enabled_field') == 'yes') {
     include_once dirname(__FILE__) . '/errors/503.php';
     exit;
 }

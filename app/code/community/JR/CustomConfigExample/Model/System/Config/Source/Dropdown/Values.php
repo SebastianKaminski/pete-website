@@ -6,12 +6,12 @@ class JR_CustomConfigExample_Model_System_Config_Source_Dropdown_Values
     {
         return array(
             array(
-                'value' => 'key1',
-                'label' => 'Value 1',
+                'value' => 'no',
+                'label' => 'No',
             ),
             array(
-                'value' => 'key2',
-                'label' => 'Value 2',
+                'value' => 'yes',
+                'label' => 'Yes',
             ),
         );
     }
