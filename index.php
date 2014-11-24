@@ -53,7 +53,8 @@ if (file_exists($compilerConfig)) {
 $mageFilename = MAGENTO_ROOT . '/app/Mage.php';
 $maintenanceFile = 'maintenance.flag';
 $ip = $_SERVER['REMOTE_ADDR'];
-$allowed = explode(',', Mage::getStoreConfig('skdev/maintenance/enabled_ips_field'));
+// $allowed = explode(',', Mage::getStoreConfig('skdev/maintenance/enabled_ips_field'));
+$allowed = ['92.17.234.145'];
 
 if (!file_exists($mageFilename)) {
     if (is_dir('downloader')) {
@@ -64,7 +65,7 @@ if (!file_exists($mageFilename)) {
     exit;
 }
 
-if (file_exists($maintenanceFile) && !in_array($ip, $allowed)) {
+if (file_exists($maintenanceFile) && !in_array($ip, $allowed) && Mage::getStoreConfig('skdev/maintenance/enabled_ips_field') == 'yes') {
     include_once dirname(__FILE__) . '/errors/503.php';
     exit;
 }
