@@ -154,6 +154,11 @@
         <reference name="root">
             <action method="setTemplate"><template>page/1column.phtml</template></action>
         </reference>
+        <reference>
+            <block type="cms/block" name="google_map" as="google_map">
+                <action method="setBlockId"><block_id>google_map</block_id></action>
+            </block>            
+        </reference>
     </contacts_index_index>
 
     <customer_logged_out>
