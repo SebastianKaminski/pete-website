@@ -56,7 +56,7 @@ $ip = $_SERVER['REMOTE_ADDR'];
 // $allowed = explode(",", Mage::getStoreConfig('skdev/maintenance/enabled_ips_field')); // these are the IP's that are allowed to view the site.
 $allowed = [];
 
-echo Mage::getStoreConfig('skdev/maintenance/enabled_ips_field');
+// echo Mage::getStoreConfig('skdev/maintenance/enabled_ips_field');
 
 if (!file_exists($mageFilename)) {
     if (is_dir('downloader')) {
@@ -67,7 +67,7 @@ if (!file_exists($mageFilename)) {
     exit;
 }
 
-if (file_exists($maintenanceFile) && !in_array($ip, $allowed) && Mage::getStoreConfig('skdev/maintenance/mode_enabled_field') == 'yes') {
+if (file_exists($maintenanceFile) && !in_array($ip, $allowed) && (Mage::getStoreConfig('skdev/maintenance/mode_enabled_field') == 'yes')) {
     include_once dirname(__FILE__) . '/errors/503.php';
     exit;
 }
