@@ -49,7 +49,7 @@
     </div>
 </form>
 
-<?php echo $this->getChildHtml('google_map'); ?>
+<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('google_map')->toHtml(); ?> 
 
 <script type="text/javascript">
 //<![CDATA[
