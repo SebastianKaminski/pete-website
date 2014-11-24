@@ -6,6 +6,19 @@
 </div>
 
 <div class="row">
+    <div class="col-md-6 col-md-push-6 col-xs-12 ">
+        <address>
+            <strong><?php echo Mage::getStoreConfig('general/store_information/name'); ?></strong>
+            <ul class="list-unstyled">
+                <li><?php echo Mage::getStoreConfig('general/store_information/address'); ?></li>
+                <li><span class="entypo phone"></span> <?php echo Mage::getStoreConfig('general/store_information/phone'); ?></li>
+                <li><span class="entypo mail"></span> <a href="mailto:<?php echo Mage::getStoreConfig('trans_email/ident_general/email') ?>"><?php echo Mage::getStoreConfig('trans_email/ident_general/email'); ?></a></li>
+            </ul>
+        </address>        
+    </div>
+</div>
+
+<div class="row">
     <div class="col-md-6 col-xs-12">
         <form action="<?php echo $this->getFormAction(); ?>" id="contactForm" method="post" role="form" class="form-horizontal">
             <div class="fieldset">
@@ -60,14 +73,6 @@
     </div>
     
     <div class="col-md-6 col-xs-12">
-        <address>
-            <strong><?php echo Mage::getStoreConfig('general/store_information/name'); ?></strong>
-            <ul class="list-unstyled">
-                <li><?php echo Mage::getStoreConfig('general/store_information/address'); ?></li>
-                <li><span class="entypo phone"></span> <?php echo Mage::getStoreConfig('general/store_information/phone'); ?></li>
-                <li><span class="entypo mail"></span> <a href="mailto:<?php echo Mage::getStoreConfig('trans_email/ident_general/email') ?>"><?php echo Mage::getStoreConfig('trans_email/ident_general/email'); ?></a></li>
-            </ul>
-        </address>
         <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('google_map')->toHtml(); ?> 
     </div>
 </div>
