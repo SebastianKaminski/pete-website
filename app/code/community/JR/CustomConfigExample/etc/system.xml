@@ -74,8 +74,8 @@
                             <source_model>jr_customconfigexample/system_config_source_dropdown_values</source_model>
                             <sort_order>61</sort_order>
                             <show_in_default>1</show_in_default>
-                            <show_in_website>0</show_in_website>
-                            <show_in_store>0</show_in_store>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
                         </enabled_field>
                         <enabled_ips_field translate="label comment">
                             <label>Enabled IP's</label>
