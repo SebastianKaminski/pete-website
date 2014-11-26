@@ -53,7 +53,7 @@ if (file_exists($compilerConfig)) {
 $mageFilename = MAGENTO_ROOT . '/app/Mage.php';
 $maintenanceFile = 'maintenance.flag';
 $ip = $_SERVER['REMOTE_ADDR'];
-$allowed = ['92.17.234.145'];
+$allowed = ['92.17.234.145','86.7.88.106'];
 
 if (!file_exists($mageFilename)) {
     if (is_dir('downloader')) {
