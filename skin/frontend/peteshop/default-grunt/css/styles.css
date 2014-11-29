@@ -12241,7 +12241,7 @@ p.required {
 .sorter {
   font-size: 11px;
   padding: 3px 0px;
-  float: left;
+  float: right;
 }
 /* line 48, ../scss/partials/_toolbar.scss */
 .sorter .view-mode {
