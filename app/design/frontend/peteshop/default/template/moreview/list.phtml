@@ -110,15 +110,6 @@
                                 <?php echo $this->getReviewsSummaryHtml($_product, 'short') ?>
                             <?php endif; ?>
                             <?php echo $this->getPriceHtml($_product, true) ?>
-                            <?php if (!(($_product->getAttributeText('instore_only')) == "No")):?>
-                                <div class="actions">
-                                    <?php if($_product->isSaleable()): ?>
-                                        <button type="button" title="<?php echo $this->__('Add to Cart') ?>" class="btn btn-success btn-sm btn-cart" onclick="setLocation('<?php echo $this->getAddToCartUrl($_product) ?>')"><span><span><?php echo $this->__('Add to Cart') ?></span></span></button>
-                                    <?php else: ?>
-                                        <p class="availability out-of-stock"><span><?php echo $this->__('Out of stock') ?></span></p>
-                                    <?php endif; ?>
-                                </div>
-                            <?php endif; ?>
                     </li>
         <?php if ($i == $_collectionSize): ?>
             </ul>
