@@ -5598,7 +5598,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 /* line 3865, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
 .navbar-fixed-top {
-  top: 0;
+  top: 160px;
   border-width: 0 0 1px;
 }
 
@@ -10323,106 +10323,107 @@ button.close {
 .main {
   min-height: 400px;
   text-align: left;
+  padding-top: 100px;
 }
 
-/* line 25, ../scss/partials/_layout.scss */
+/* line 26, ../scss/partials/_layout.scss */
 .col-left {
   float: left;
   width: 195px;
 }
 
-/* line 30, ../scss/partials/_layout.scss */
+/* line 31, ../scss/partials/_layout.scss */
 .col-main {
   float: left;
   width: 687px;
 }
 
-/* line 35, ../scss/partials/_layout.scss */
+/* line 36, ../scss/partials/_layout.scss */
 .col-right {
   float: right;
   width: 195px;
   padding: 0 0 1px;
 }
 
-/* line 44, ../scss/partials/_layout.scss */
+/* line 45, ../scss/partials/_layout.scss */
 .col1-layout .col-main {
   float: none;
   width: auto;
 }
 
-/* line 52, ../scss/partials/_layout.scss */
+/* line 53, ../scss/partials/_layout.scss */
 .col2-left-layout .col-main {
   float: right;
 }
 
-/* line 64, ../scss/partials/_layout.scss */
+/* line 65, ../scss/partials/_layout.scss */
 .col3-layout .col-main {
   width: 475px;
   margin-left: 15px;
 }
-/* line 69, ../scss/partials/_layout.scss */
+/* line 70, ../scss/partials/_layout.scss */
 .col3-layout .col-wrapper {
   float: left;
   width: 687px;
 }
-/* line 73, ../scss/partials/_layout.scss */
+/* line 74, ../scss/partials/_layout.scss */
 .col3-layout .col-wrapper .col-main {
   float: right;
 }
 
-/* line 83, ../scss/partials/_layout.scss */
+/* line 84, ../scss/partials/_layout.scss */
 .col2-set .col-1 {
   float: left;
   width: 48.5%;
 }
-/* line 88, ../scss/partials/_layout.scss */
+/* line 89, ../scss/partials/_layout.scss */
 .col2-set .col-2 {
   float: right;
   width: 48.5%;
 }
-/* line 93, ../scss/partials/_layout.scss */
+/* line 94, ../scss/partials/_layout.scss */
 .col2-set .col-narrow {
   width: 32%;
 }
-/* line 97, ../scss/partials/_layout.scss */
+/* line 98, ../scss/partials/_layout.scss */
 .col2-set .col-wide {
   width: 65%;
 }
 
-/* line 103, ../scss/partials/_layout.scss */
+/* line 104, ../scss/partials/_layout.scss */
 .col3-set .col-1 {
   float: left;
   width: 32%;
 }
-/* line 108, ../scss/partials/_layout.scss */
+/* line 109, ../scss/partials/_layout.scss */
 .col3-set .col-2 {
   float: left;
   width: 32%;
   margin-left: 2%;
 }
-/* line 114, ../scss/partials/_layout.scss */
+/* line 115, ../scss/partials/_layout.scss */
 .col3-set .col-3 {
   float: right;
   width: 32%;
 }
 
-/* line 121, ../scss/partials/_layout.scss */
+/* line 122, ../scss/partials/_layout.scss */
 .col4-set .col-1 {
   float: left;
   width: 23.5%;
 }
-/* line 126, ../scss/partials/_layout.scss */
+/* line 127, ../scss/partials/_layout.scss */
 .col4-set .col-2 {
   float: left;
   width: 23.5%;
   margin: 0 2%;
 }
-/* line 132, ../scss/partials/_layout.scss */
+/* line 133, ../scss/partials/_layout.scss */
 .col4-set .col-3 {
   float: left;
   width: 23.5%;
 }
-/* line 137, ../scss/partials/_layout.scss */
+/* line 138, ../scss/partials/_layout.scss */
 .col4-set .col-4 {
   float: right;
   width: 23.5%;
