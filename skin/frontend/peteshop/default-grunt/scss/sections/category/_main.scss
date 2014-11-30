@@ -70,16 +70,24 @@
 		color: #999;
 		display: inline-block;
 		margin:5px 0;
-		position: relative;
 		text-transform: uppercase;
 		&:before {
 			border-bottom: 1px solid #ABABAB;
 			content: "";
+			display: inline-block;
 			left: 0;
 			position: absolute;
-			top: 10px;
-			width: 200px;
+			bottom: 63px;
+			width: 100%;
 		}
+		&:before {
+		  right: 100%;
+		  margin-right: 15px;
+		}
+		&:after {
+		  left: 100%;
+		  margin-left: 15px;
+		}		
 	}
 
 	.availability { 
