@@ -68,7 +68,7 @@
 	.price-box { 
 		color: #999;
 		display: inline-block;
-		margin:5px 0;
+		margin:5px 0 10px;
 		padding: 0 10px;
 		position: relative;
 		text-transform: uppercase;
@@ -86,6 +86,17 @@
 		&:after {
 			left: 100%;
 		}		
+	}
+
+	.number-of-models {
+		text-align: center;
+		span {
+			border: 1px solid #ababab;
+			color: #999;
+			font-size: 11px;
+			padding: 3px 5px;
+			text-transform: uppercase;
+		}
 	}
 
 	.availability { 

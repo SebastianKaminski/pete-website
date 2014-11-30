@@ -12467,7 +12467,6 @@ footer:after,
   font-size: 14px;
   font-weight: 700;
   height: 25px;
-  letter-spacing: 1px;
   margin: 0 0 5px;
   text-transform: uppercase;
   width: 100%;
@@ -12476,16 +12475,16 @@ footer:after,
 .products-grid .product-name a {
   color: #444;
 }
-/* line 69, ../scss/sections/category/_main.scss */
+/* line 68, ../scss/sections/category/_main.scss */
 .products-grid .price-box {
   color: #999;
   display: inline-block;
-  margin: 5px 0;
+  margin: 5px 0 10px;
   padding: 0 10px;
   position: relative;
   text-transform: uppercase;
 }
-/* line 76, ../scss/sections/category/_main.scss */
+/* line 75, ../scss/sections/category/_main.scss */
 .products-grid .price-box:before, .products-grid .price-box:after {
   border-bottom: 1px solid #ABABAB;
   content: "";
@@ -12494,84 +12493,96 @@ footer:after,
   top: 10px;
   width: 40px;
 }
-/* line 84, ../scss/sections/category/_main.scss */
+/* line 83, ../scss/sections/category/_main.scss */
 .products-grid .price-box:before {
   right: 100%;
 }
-/* line 87, ../scss/sections/category/_main.scss */
+/* line 86, ../scss/sections/category/_main.scss */
 .products-grid .price-box:after {
   left: 100%;
 }
-/* line 92, ../scss/sections/category/_main.scss */
+/* line 91, ../scss/sections/category/_main.scss */
+.products-grid .number-of-models {
+  text-align: center;
+}
+/* line 93, ../scss/sections/category/_main.scss */
+.products-grid .number-of-models span {
+  border: 1px solid #ababab;
+  color: #999;
+  font-size: 11px;
+  padding: 3px 5px;
+  text-transform: uppercase;
+}
+/* line 102, ../scss/sections/category/_main.scss */
 .products-grid .availability {
   line-height: 21px;
 }
-/* line 96, ../scss/sections/category/_main.scss */
+/* line 106, ../scss/sections/category/_main.scss */
 .products-grid .actions {
   position: absolute;
   bottom: 12px;
   width: 100%;
 }
 
-/* line 106, ../scss/sections/category/_main.scss */
+/* line 116, ../scss/sections/category/_main.scss */
 .products-list {
   float: left;
 }
-/* line 109, ../scss/sections/category/_main.scss */
+/* line 119, ../scss/sections/category/_main.scss */
 .products-list li.item {
   padding: 12px 0px;
 }
-/* line 112, ../scss/sections/category/_main.scss */
+/* line 122, ../scss/sections/category/_main.scss */
 .products-list li.item.last {
   border-bottom: 0;
 }
-/* line 117, ../scss/sections/category/_main.scss */
+/* line 127, ../scss/sections/category/_main.scss */
 .products-list .product-image {
   float: left;
   width: 135px;
   height: 135px;
   margin: 0 0 10px;
 }
-/* line 124, ../scss/sections/category/_main.scss */
+/* line 134, ../scss/sections/category/_main.scss */
 .products-list .product-shop {
   margin-left: 150px;
 }
-/* line 128, ../scss/sections/category/_main.scss */
+/* line 138, ../scss/sections/category/_main.scss */
 .products-list .product-name {
   margin: 0 0 5px;
   font-weight: bold;
   font-size: 13px;
 }
-/* line 134, ../scss/sections/category/_main.scss */
+/* line 144, ../scss/sections/category/_main.scss */
 .products-list .price-box {
   float: left;
   margin: 3px 13px 5px 0;
 }
-/* line 139, ../scss/sections/category/_main.scss */
+/* line 149, ../scss/sections/category/_main.scss */
 .products-list .availability {
   float: left;
   margin: 3px 0 0;
 }
-/* line 144, ../scss/sections/category/_main.scss */
+/* line 154, ../scss/sections/category/_main.scss */
 .products-list .desc {
   clear: both;
   padding: 6px 0 0;
   margin: 0 0 15px;
   line-height: 1.35;
 }
-/* line 150, ../scss/sections/category/_main.scss */
+/* line 160, ../scss/sections/category/_main.scss */
 .products-list .desc .link-more {
   font-size: 11px;
 }
-/* line 155, ../scss/sections/category/_main.scss */
+/* line 165, ../scss/sections/category/_main.scss */
 .products-list .add-to-links {
   clear: both;
 }
-/* line 158, ../scss/sections/category/_main.scss */
+/* line 168, ../scss/sections/category/_main.scss */
 .products-list .add-to-links li {
   display: inline;
 }
-/* line 162, ../scss/sections/category/_main.scss */
+/* line 172, ../scss/sections/category/_main.scss */
 .products-list .add-to-links .separator {
   display: inline;
   margin: 0 2px;
