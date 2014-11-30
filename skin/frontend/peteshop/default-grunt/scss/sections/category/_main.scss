@@ -55,25 +55,30 @@
 	
 	.product-name { 
 		a { color: #444; }
+		display: inline-block;		
 		font-family: $fontBase;
 		font-size: 14px;
 		font-weight: 700;
+		height: 25px;
 		letter-spacing: 1px;
 		margin: 0 0 5px;
 		text-transform: uppercase;
 	}
 
 	.price-box { 
+		color: #999;
+		display: inline-block;
 		margin:5px 0;
-		text-transform: uppercase;
 		position: relative;
-		color: #444;
+		text-transform: uppercase;
 		&:after {
-			border-bottom: 1px solid #444;
+			border-bottom: 1px solid #ABABAB;
 			content: "";
+			left: -5px;
+			margin: 0 20px;
 			position: absolute;
-			top: 0;
-			width: 100%;
+			top: 10px;
+			width: 90%;
 		}
 	}
 
