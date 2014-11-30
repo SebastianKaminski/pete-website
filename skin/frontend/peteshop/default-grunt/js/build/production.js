@@ -17,13 +17,13 @@
     	});
 
     	// Menu
-		var nav = $('.navbar-fixed-top');
+		var nav = $('.navbar');
 		
 		$(window).scroll(function () {
-			if ($(this).scrollTop() > 136) {
-				nav.css("top", 0);
+			if ($(this).scrollTop() > 160) {
+				nav.addClass("navbar-fixed-top");
 			} else {
-				nav.css("top", "160px");
+				nav.removeClass("navbar-fixed-top");
 			}
 		});    	
     });

@@ -5598,7 +5598,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 /* line 3865, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
 .navbar-fixed-top {
-  top: 160px;
+  top: 0;
   border-width: 0 0 1px;
 }
 
@@ -10323,7 +10323,6 @@ button.close {
 .main {
   min-height: 400px;
   text-align: left;
-  padding-top: 100px;
 }
 
 /* line 26, ../scss/partials/_layout.scss */
