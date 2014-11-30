@@ -11828,29 +11828,30 @@ p.required {
   margin: 5px 0;
 }
 /* line 10, ../scss/partials/_prices.scss */
-.price-box .price {
-  font-weight: bold;
+.price-box .price, .price-box .label {
+  font-weight: normal;
+  font-size: 12px;
 }
-/* line 14, ../scss/partials/_prices.scss */
+/* line 15, ../scss/partials/_prices.scss */
 .price-box .configurable-price-from-label {
   color: #000;
 }
 
-/* line 21, ../scss/partials/_prices.scss */
+/* line 22, ../scss/partials/_prices.scss */
 .regular-price .price {
   font-weight: bold;
   font-size: 13px;
 }
 
-/* line 30, ../scss/partials/_prices.scss */
+/* line 31, ../scss/partials/_prices.scss */
 .old-price {
   margin: 0;
 }
-/* line 33, ../scss/partials/_prices.scss */
+/* line 34, ../scss/partials/_prices.scss */
 .old-price .price-label {
   white-space: nowrap;
 }
-/* line 37, ../scss/partials/_prices.scss */
+/* line 38, ../scss/partials/_prices.scss */
 .old-price .price {
   font-weight: bold;
   text-decoration: line-through;
@@ -11859,187 +11860,187 @@ p.required {
   font-size: 12px;
 }
 
-/* line 49, ../scss/partials/_prices.scss */
+/* line 50, ../scss/partials/_prices.scss */
 .special-price {
   margin: 0;
   padding: 3px 0;
 }
-/* line 53, ../scss/partials/_prices.scss */
+/* line 54, ../scss/partials/_prices.scss */
 .special-price .price-label {
   font-size: 13px;
   font-weight: bold;
   white-space: nowrap;
 }
-/* line 59, ../scss/partials/_prices.scss */
+/* line 60, ../scss/partials/_prices.scss */
 .special-price .price {
   font-size: 13px;
   font-weight: bold;
 }
 
-/* line 68, ../scss/partials/_prices.scss */
+/* line 69, ../scss/partials/_prices.scss */
 .minimal-price {
   margin: 0;
 }
-/* line 71, ../scss/partials/_prices.scss */
+/* line 72, ../scss/partials/_prices.scss */
 .minimal-price .price-label {
   font-weight: bold;
   white-space: nowrap;
 }
 
-/* line 77, ../scss/partials/_prices.scss */
+/* line 78, ../scss/partials/_prices.scss */
 .minimal-price-link {
   display: block;
 }
-/* line 80, ../scss/partials/_prices.scss */
+/* line 81, ../scss/partials/_prices.scss */
 .minimal-price-link .price {
   font-weight: normal;
 }
 
-/* line 88, ../scss/partials/_prices.scss */
+/* line 89, ../scss/partials/_prices.scss */
 .price-excluding-tax {
   display: block;
 }
-/* line 91, ../scss/partials/_prices.scss */
+/* line 92, ../scss/partials/_prices.scss */
 .price-excluding-tax .label {
   white-space: nowrap;
 }
-/* line 95, ../scss/partials/_prices.scss */
+/* line 96, ../scss/partials/_prices.scss */
 .price-excluding-tax .price {
   font-size: 13px;
   font-weight: normal;
 }
 
-/* line 104, ../scss/partials/_prices.scss */
+/* line 105, ../scss/partials/_prices.scss */
 .price-including-tax {
   display: block;
 }
-/* line 107, ../scss/partials/_prices.scss */
+/* line 108, ../scss/partials/_prices.scss */
 .price-including-tax .label {
   white-space: nowrap;
 }
-/* line 111, ../scss/partials/_prices.scss */
+/* line 112, ../scss/partials/_prices.scss */
 .price-including-tax .price {
   font-size: 13px;
   font-weight: bold;
 }
 
-/* line 120, ../scss/partials/_prices.scss */
+/* line 121, ../scss/partials/_prices.scss */
 .weee {
   display: block;
   font-size: 11px;
 }
-/* line 124, ../scss/partials/_prices.scss */
+/* line 125, ../scss/partials/_prices.scss */
 .weee .price {
   font-size: 11px;
   font-weight: normal;
 }
 
-/* line 133, ../scss/partials/_prices.scss */
+/* line 134, ../scss/partials/_prices.scss */
 .price-excl-tax {
   display: block;
 }
-/* line 136, ../scss/partials/_prices.scss */
+/* line 137, ../scss/partials/_prices.scss */
 .price-excl-tax .label {
   display: block;
   white-space: nowrap;
 }
-/* line 141, ../scss/partials/_prices.scss */
+/* line 142, ../scss/partials/_prices.scss */
 .price-excl-tax .price {
   display: block;
 }
 
-/* line 149, ../scss/partials/_prices.scss */
+/* line 150, ../scss/partials/_prices.scss */
 .price-incl-tax {
   display: block;
 }
-/* line 152, ../scss/partials/_prices.scss */
+/* line 153, ../scss/partials/_prices.scss */
 .price-incl-tax .label {
   display: block;
   white-space: nowrap;
 }
-/* line 157, ../scss/partials/_prices.scss */
+/* line 158, ../scss/partials/_prices.scss */
 .price-incl-tax .price {
   display: block;
   font-weight: bold;
 }
 
-/* line 166, ../scss/partials/_prices.scss */
+/* line 167, ../scss/partials/_prices.scss */
 .price-from {
   margin: 0;
 }
-/* line 169, ../scss/partials/_prices.scss */
+/* line 170, ../scss/partials/_prices.scss */
 .price-from .price-label {
   font-weight: bold;
   white-space: nowrap;
 }
 
-/* line 175, ../scss/partials/_prices.scss */
+/* line 176, ../scss/partials/_prices.scss */
 .price-to {
   margin: 0;
 }
-/* line 178, ../scss/partials/_prices.scss */
+/* line 179, ../scss/partials/_prices.scss */
 .price-to .price-label {
   font-weight: bold;
   white-space: nowrap;
 }
 
-/* line 187, ../scss/partials/_prices.scss */
+/* line 188, ../scss/partials/_prices.scss */
 .price-notice {
   padding-left: 10px;
 }
-/* line 190, ../scss/partials/_prices.scss */
+/* line 191, ../scss/partials/_prices.scss */
 .price-notice .price {
   font-weight: bold;
 }
 
-/* line 198, ../scss/partials/_prices.scss */
+/* line 199, ../scss/partials/_prices.scss */
 .price-as-configured {
   margin: 0;
 }
-/* line 201, ../scss/partials/_prices.scss */
+/* line 202, ../scss/partials/_prices.scss */
 .price-as-configured .price-label {
   font-weight: bold;
   white-space: nowrap;
 }
 
-/* line 207, ../scss/partials/_prices.scss */
+/* line 208, ../scss/partials/_prices.scss */
 .price-box-bundle {
   padding: 0 0 10px 0;
 }
-/* line 210, ../scss/partials/_prices.scss */
+/* line 211, ../scss/partials/_prices.scss */
 .price-box-bundle .price-box {
   margin: 0 !important;
   padding: 0 !important;
 }
 
-/* line 219, ../scss/partials/_prices.scss */
+/* line 220, ../scss/partials/_prices.scss */
 .tier-prices {
   margin: 10px 0;
   padding: 10px;
   background-color: #f4f7f7;
   border: 1px solid #dadddd;
 }
-/* line 225, ../scss/partials/_prices.scss */
+/* line 226, ../scss/partials/_prices.scss */
 .tier-prices li {
   line-height: 1.4;
   background: url(../images/i_tier.gif) no-repeat 0 3px;
   padding: 2px 0 2px 10px;
 }
-/* line 231, ../scss/partials/_prices.scss */
+/* line 232, ../scss/partials/_prices.scss */
 .tier-prices .benefit {
   font-style: italic;
   font-weight: bold;
 }
-/* line 236, ../scss/partials/_prices.scss */
+/* line 237, ../scss/partials/_prices.scss */
 .tier-prices .price {
   font-weight: bold;
 }
 
-/* line 242, ../scss/partials/_prices.scss */
+/* line 243, ../scss/partials/_prices.scss */
 .tier-prices-grouped li {
   padding: 2px 0;
 }
-/* line 245, ../scss/partials/_prices.scss */
+/* line 246, ../scss/partials/_prices.scss */
 .tier-prices-grouped li .price {
   font-weight: bold;
 }
@@ -12544,32 +12545,33 @@ footer:after,
 .products-list .price-box {
   float: left;
   margin: 3px 13px 5px 0;
+  text-transform: uppercase;
 }
-/* line 117, ../scss/sections/category/_main.scss */
+/* line 118, ../scss/sections/category/_main.scss */
 .products-list .availability {
   float: left;
   margin: 3px 0 0;
 }
-/* line 122, ../scss/sections/category/_main.scss */
+/* line 123, ../scss/sections/category/_main.scss */
 .products-list .desc {
   clear: both;
   padding: 6px 0 0;
   margin: 0 0 15px;
   line-height: 1.35;
 }
-/* line 128, ../scss/sections/category/_main.scss */
+/* line 129, ../scss/sections/category/_main.scss */
 .products-list .desc .link-more {
   font-size: 11px;
 }
-/* line 133, ../scss/sections/category/_main.scss */
+/* line 134, ../scss/sections/category/_main.scss */
 .products-list .add-to-links {
   clear: both;
 }
-/* line 136, ../scss/sections/category/_main.scss */
+/* line 137, ../scss/sections/category/_main.scss */
 .products-list .add-to-links li {
   display: inline;
 }
-/* line 140, ../scss/sections/category/_main.scss */
+/* line 141, ../scss/sections/category/_main.scss */
 .products-list .add-to-links .separator {
   display: inline;
   margin: 0 2px;
