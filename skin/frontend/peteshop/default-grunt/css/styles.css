@@ -12461,8 +12461,8 @@ footer:after,
   height: 200px;
   margin: 0 0 10px;
   .hover-available-bottom: 0;
-  .hover-available-position: absolute;
   .hover-available-right: 15px;
+  .hover-available-position: absolute;
 }
 /* line 62, ../scss/sections/category/_main.scss */
 .products-grid .product-name {
