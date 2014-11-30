@@ -70,23 +70,21 @@
 		color: #999;
 		display: inline-block;
 		margin:5px 0;
+		position: relative;
 		text-transform: uppercase;
-		&:before {
+		&:before, &:after {
 			border-bottom: 1px solid #ABABAB;
 			content: "";
 			display: inline-block;
-			left: 0;
 			position: absolute;
-			bottom: 63px;
-			width: 100%;
+			top: 10px;
+			width: 30px;
 		}
 		&:before {
-		  right: 100%;
-		  margin-right: 15px;
+			right: 100%;
 		}
 		&:after {
-		  left: 100%;
-		  margin-left: 15px;
+			left: 100%;
 		}		
 	}
 
