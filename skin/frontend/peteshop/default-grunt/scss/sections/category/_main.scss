@@ -48,11 +48,11 @@
 	}
 
 	.product-image { 
-		display: relative;
 		display:block; 
 		height:200px; 
 		margin:0 0 10px; 
-		.hover-available: {
+		position:relative;
+		.hover-available {
 			bottom: 0;
 			right: 15px;
 			position: absolute;

@@ -12456,13 +12456,16 @@ footer:after,
 }
 /* line 50, ../scss/sections/category/_main.scss */
 .products-grid .product-image {
-  display: relative;
   display: block;
   height: 200px;
   margin: 0 0 10px;
-  .hover-available-bottom: 0;
-  .hover-available-right: 15px;
-  .hover-available-position: absolute;
+  position: relative;
+}
+/* line 55, ../scss/sections/category/_main.scss */
+.products-grid .product-image .hover-available {
+  bottom: 0;
+  right: 15px;
+  position: absolute;
 }
 /* line 62, ../scss/sections/category/_main.scss */
 .products-grid .product-name {
