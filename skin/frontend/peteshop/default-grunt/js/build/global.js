@@ -22,7 +22,7 @@
 		$(window).scroll(function () {
 			if ($(this).scrollTop() > 162) {
 				nav.addClass("navbar-fixed-top");
-				$('body').css("padding-top", "70px");
+				$('body').css("padding-top", "95px");
 			} else {
 				nav.removeClass("navbar-fixed-top");
 				$('body').css("padding-top", 0);
