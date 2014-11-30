@@ -100,6 +100,7 @@
                                             $sb=1;
                                         ?>
                                         <img class="sbmoreview" src="<?php echo $this->helper('catalog/image')->init($_product, 'thumbnail', $_images->getFile())->resize(200); ?>" alt="<?php echo $this->htmlEscape($_images->getLabel());?>" title="<?php $this->htmlEscape($_images->getLabel());?>"/>
+                                        <div class="hover-available"><span class="glyphicon glyphicon-repeat"></span></div>
                                         <?php }
                                     endif;?>
                                  <img class="<?php if($sb==1)echo "sbview";?>" src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize(200); ?>" width="200" height="200" alt="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" />
