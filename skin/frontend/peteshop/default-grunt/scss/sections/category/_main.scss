@@ -62,30 +62,9 @@
 		margin: 0 0 5px;
 		text-transform: uppercase;
 	}
-	
-	.price-box{
-		// margin:5px 0;
-		display: inline-block;
-		position: relative;  
-		width: 100%;
-	}
-	.price-box span.price-container:before,
-	.price-box span.price-container:after {
-		content: "";
-		position: absolute;
-		height: 5px;
-		border-bottom: 1px solid black;
-		border-top: 1px solid black;
-		top: 0;
-		width: 600px;
-	}
-	.price-box span.price-container:before {
-		right: 100%;
-		margin-right: 15px;
-	}
-	.price-box span.price-container:after {
-		left: 100%;
-		margin-left: 15px;
+
+	.price-box { 
+		margin:5px 0;
 	}
 
 	.availability { 
