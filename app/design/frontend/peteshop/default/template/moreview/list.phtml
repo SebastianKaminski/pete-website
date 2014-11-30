@@ -106,10 +106,16 @@
                                 <!--<img src="<?php echo $this->getSkinUrl('images/')?>home_main_callout.jpg" class="sbmoreview"/>-->
                             </a>
                             <h2 class="product-name"><a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->stripTags($_product->getName(), null, true) ?>"><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></a></h2>
-                            <?php if($_product->getRatingSummary()): ?>
-                                <?php echo $this->getReviewsSummaryHtml($_product, 'short') ?>
-                            <?php endif; ?>
                             <?php echo $this->getPriceHtml($_product, true) ?>
+                            <?php 
+                                if ($_product->getTypeId() == "configurable") {
+                                    $conf = Mage::getModel('catalog/product_type_configurable')->setProduct($_product);
+                                    $simple_collection = $conf->getUsedProductCollection()->addAttributeToSelect('*')->addFilterByRequiredOptions();
+                                    foreach($simple_collection as $simple_product){
+                                        echo $simple_product->getSku() . " - " . $simple_product->getName() . " - " . Mage::helper('core')->currency($simple_product->getPrice()) . "<br>";
+                                    }                                    
+                                }
+                            ?>
                     </li>
         <?php if ($i == $_collectionSize): ?>
             </ul>
