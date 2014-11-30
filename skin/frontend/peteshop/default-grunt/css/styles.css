@@ -15055,8 +15055,8 @@ tr.summary-details-excluded {
 /* Homepage */
 /* line 85, ../scss/styles.scss */
 #homepage {
-  background-size: cover;
   background: url("../images/photos/hp_background.jpg") 0 0 no-repeat;
+  background-size: cover;
   color: #FFF;
   height: 600px;
   margin: -50px 0 -25px;
