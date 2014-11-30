@@ -15052,34 +15052,41 @@ tr.summary-details-excluded {
   max-width: 100%;
 }
 
+/* Homepage */
 /* line 85, ../scss/styles.scss */
+#homepage {
+  margin-top: -50px;
+  background: url("../images/photos/hp_background.jpg") 0 0 no-repeat;
+}
+
+/* line 91, ../scss/styles.scss */
 footer.container-fluid {
   background: #333;
   margin-top: 25px;
 }
-/* line 89, ../scss/styles.scss */
+/* line 95, ../scss/styles.scss */
 footer .footer-content {
   color: #FFF;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
 }
-/* line 93, ../scss/styles.scss */
+/* line 99, ../scss/styles.scss */
 footer .footer-content .entypo, footer .footer-content .entypo-social {
   color: #777;
 }
-/* line 94, ../scss/styles.scss */
+/* line 100, ../scss/styles.scss */
 footer .footer-content h3 {
   color: #f0ad4e;
 }
 
 /* Menu Fix */
-/* line 100, ../scss/styles.scss */
+/* line 106, ../scss/styles.scss */
 .navbar .dropdown:hover .dropdown-menu {
   display: block;
 }
 
 /* Boostrap Grid */
-/* line 105, ../scss/styles.scss */
+/* line 111, ../scss/styles.scss */
 .container-fluid {
   padding: 0 !important;
 }
