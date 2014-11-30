@@ -12470,12 +12470,13 @@ footer:after,
   letter-spacing: 1px;
   margin: 0 0 5px;
   text-transform: uppercase;
+  width: 100%;
 }
 /* line 57, ../scss/sections/category/_main.scss */
 .products-grid .product-name a {
   color: #444;
 }
-/* line 68, ../scss/sections/category/_main.scss */
+/* line 69, ../scss/sections/category/_main.scss */
 .products-grid .price-box {
   color: #999;
   display: inline-block;
@@ -12483,7 +12484,7 @@ footer:after,
   position: relative;
   text-transform: uppercase;
 }
-/* line 74, ../scss/sections/category/_main.scss */
+/* line 75, ../scss/sections/category/_main.scss */
 .products-grid .price-box:after {
   border-bottom: 1px solid #ABABAB;
   content: "";
@@ -12493,76 +12494,76 @@ footer:after,
   top: 10px;
   width: 90%;
 }
-/* line 85, ../scss/sections/category/_main.scss */
+/* line 86, ../scss/sections/category/_main.scss */
 .products-grid .availability {
   line-height: 21px;
 }
-/* line 89, ../scss/sections/category/_main.scss */
+/* line 90, ../scss/sections/category/_main.scss */
 .products-grid .actions {
   position: absolute;
   bottom: 12px;
   width: 100%;
 }
 
-/* line 99, ../scss/sections/category/_main.scss */
+/* line 100, ../scss/sections/category/_main.scss */
 .products-list {
   float: left;
 }
-/* line 102, ../scss/sections/category/_main.scss */
+/* line 103, ../scss/sections/category/_main.scss */
 .products-list li.item {
   padding: 12px 0px;
 }
-/* line 105, ../scss/sections/category/_main.scss */
+/* line 106, ../scss/sections/category/_main.scss */
 .products-list li.item.last {
   border-bottom: 0;
 }
-/* line 110, ../scss/sections/category/_main.scss */
+/* line 111, ../scss/sections/category/_main.scss */
 .products-list .product-image {
   float: left;
   width: 135px;
   height: 135px;
   margin: 0 0 10px;
 }
-/* line 117, ../scss/sections/category/_main.scss */
+/* line 118, ../scss/sections/category/_main.scss */
 .products-list .product-shop {
   margin-left: 150px;
 }
-/* line 121, ../scss/sections/category/_main.scss */
+/* line 122, ../scss/sections/category/_main.scss */
 .products-list .product-name {
   margin: 0 0 5px;
   font-weight: bold;
   font-size: 13px;
 }
-/* line 127, ../scss/sections/category/_main.scss */
+/* line 128, ../scss/sections/category/_main.scss */
 .products-list .price-box {
   float: left;
   margin: 3px 13px 5px 0;
 }
-/* line 132, ../scss/sections/category/_main.scss */
+/* line 133, ../scss/sections/category/_main.scss */
 .products-list .availability {
   float: left;
   margin: 3px 0 0;
 }
-/* line 137, ../scss/sections/category/_main.scss */
+/* line 138, ../scss/sections/category/_main.scss */
 .products-list .desc {
   clear: both;
   padding: 6px 0 0;
   margin: 0 0 15px;
   line-height: 1.35;
 }
-/* line 143, ../scss/sections/category/_main.scss */
+/* line 144, ../scss/sections/category/_main.scss */
 .products-list .desc .link-more {
   font-size: 11px;
 }
-/* line 148, ../scss/sections/category/_main.scss */
+/* line 149, ../scss/sections/category/_main.scss */
 .products-list .add-to-links {
   clear: both;
 }
-/* line 151, ../scss/sections/category/_main.scss */
+/* line 152, ../scss/sections/category/_main.scss */
 .products-list .add-to-links li {
   display: inline;
 }
-/* line 155, ../scss/sections/category/_main.scss */
+/* line 156, ../scss/sections/category/_main.scss */
 .products-list .add-to-links .separator {
   display: inline;
   margin: 0 2px;

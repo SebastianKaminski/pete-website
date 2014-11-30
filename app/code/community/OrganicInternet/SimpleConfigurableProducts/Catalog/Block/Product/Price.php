@@ -9,7 +9,7 @@ class OrganicInternet_SimpleConfigurableProducts_Catalog_Block_Product_Price
         $htmlToInsertAfter = '<div class="price-box">';
         if ($this->getTemplate() == 'catalog/product/price.phtml') {
             $product = $this->getProduct();
-            if (is_object($product) && $product->isConfigurable()) {
+            if (is_object($product) && $product->isConfigurable() && $product->getMaxPossibleFinalPrice() != $product->getFinalPrice()) {
                 $extraHtml = '<span class="label" id="configurable-price-from-'
                 . $product->getId()
                 . $this->getIdSuffix()
