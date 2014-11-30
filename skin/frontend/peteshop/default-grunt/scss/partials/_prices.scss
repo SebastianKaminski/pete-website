@@ -7,8 +7,9 @@
 .price-box { 
 	margin:5px 0;
 
-	.price { 
-		font-weight:bold;
+	.price, .label { 
+		font-weight:normal;
+		font-size: 12px;
 	}
 
 	.configurable-price-from-label { color: #000; }
