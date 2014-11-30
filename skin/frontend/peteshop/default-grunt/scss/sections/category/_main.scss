@@ -67,14 +67,15 @@
 		// margin:5px 0;
 		display: inline-block;
 		position: relative;  
+		width: 100%;
 	}
 	.price-box span.price-container:before,
 	.price-box span.price-container:after {
 		content: "";
 		position: absolute;
 		height: 5px;
-		border-bottom: 1px solid white;
-		border-top: 1px solid white;
+		border-bottom: 1px solid black;
+		border-top: 1px solid black;
 		top: 0;
 		width: 600px;
 	}
