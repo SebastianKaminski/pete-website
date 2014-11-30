@@ -111,9 +111,10 @@
                                 if ($_product->getTypeId() == "configurable") {
                                     $conf = Mage::getModel('catalog/product_type_configurable')->setProduct($_product);
                                     $simple_collection = $conf->getUsedProductCollection()->addAttributeToSelect('*')->addFilterByRequiredOptions();
-                                    foreach($simple_collection as $simple_product){
-                                        echo $simple_product->getSku() . " - " . $simple_product->getName() . " - " . Mage::helper('core')->currency($simple_product->getPrice()) . "<br>";
-                                    }                                    
+                                    echo "Models:".sizeof($simple_collection);
+                                    // foreach($simple_collection as $simple_product){
+                                    //     echo $simple_product->getSku() . " - " . $simple_product->getName() . " - " . Mage::helper('core')->currency($simple_product->getPrice()) . "<br>";
+                                    // }                                    
                                 }
                             ?>
                     </li>
