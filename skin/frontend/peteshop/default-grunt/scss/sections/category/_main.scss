@@ -65,6 +65,16 @@
 
 	.price-box { 
 		margin:5px 0;
+		text-transform: uppercase;
+		position: relative;
+		color: #444;
+		&:after {
+			border-bottom: 1px solid #444;
+			content: "";
+			position: absolute;
+			top: 0;
+			width: 100%;
+		}
 	}
 
 	.availability { 
@@ -112,7 +122,6 @@
 	.price-box { 
 		float:left; 
 		margin:3px 13px 5px 0;
-		text-transform: uppercase;
 	}
 
 	.availability { 
