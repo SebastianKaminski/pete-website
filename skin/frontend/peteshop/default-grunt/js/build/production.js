@@ -20,12 +20,12 @@
 		var nav = $('.navbar');
 		
 		$(window).scroll(function () {
-			if ($(this).scrollTop() > 160) {
+			if ($(this).scrollTop() > 162) {
 				nav.addClass("navbar-fixed-top");
-				$('body').css("padding-top","70px");
+				$('body').css("padding-top", "70px");
 			} else {
 				nav.removeClass("navbar-fixed-top");
-				$('body').css("padding-top",0);
+				$('body').css("padding-top", 0);
 			}
 		});    	
     });
