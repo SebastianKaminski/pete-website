@@ -160,7 +160,7 @@ class Webshopapps_Matrixrate_Model_Mysql4_Carrier_Matrixrate extends Mage_Core_M
 
 				/* Small improvement, which return most accurate result */
 				foreach ($row as $data) {
-					similar_text($data['dest_zip'], $postcode, $percent); 
+					similar_text(strtoupper($data['dest_zip']), strtoupper($postcode), $percent); 
 					if ($percent > $score) {
 						$score = $percent;
 						$tmp = $data;
