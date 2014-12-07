@@ -158,6 +158,7 @@ class Webshopapps_Matrixrate_Model_Mysql4_Carrier_Matrixrate extends Mage_Core_M
 				$tmp = array();
 				$score = 0;
 
+				/* Small improvement, which return most accurate result */
 				foreach ($row as $data) {
 					similar_text($data['dest_zip'], $postcode, $percent); 
 					if ($percent > $score) {
@@ -173,7 +174,6 @@ class Webshopapps_Matrixrate_Model_Mysql4_Carrier_Matrixrate extends Mage_Core_M
 				break;
 			}
 		}
-		var_dump($newdata);
 		return $newdata;
 
     }
