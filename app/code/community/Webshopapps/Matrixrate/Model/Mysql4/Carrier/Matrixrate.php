@@ -152,6 +152,7 @@ class Webshopapps_Matrixrate_Model_Mysql4_Carrier_Matrixrate extends Mage_Core_M
 
 			$newdata=array();
 			$row = $read->fetchAll($select);
+
 			if (!empty($row))
 			{
 				// have found a result or found nothing and at end of list!
@@ -160,8 +161,15 @@ class Webshopapps_Matrixrate_Model_Mysql4_Carrier_Matrixrate extends Mage_Core_M
 				}
 				break;
 			}
+
+			/* Return array, choose best delivery */
+			if (is_array($newdata) && count($newdata) > 2) {
+				foreach ($newdata as $delivery) {
+					echo $delivery['dest_zip'];
+				}
+			} 
 		}
-		var_dump($newdata);
+		// var_dump($newdata);
 		return $newdata;
 
     }
