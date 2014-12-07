@@ -45,7 +45,8 @@ class Webshopapps_Matrixrate_Model_Mysql4_Carrier_Matrixrate extends Mage_Core_M
 			#  Want to search for postcodes within a range
 			$zipSearchString = ' AND '.$postcode.' BETWEEN dest_zip AND dest_zip_to )';		
 		} else {
-			$zipSearchString = $read->quoteInto(" AND ? LIKE dest_zip )", $postcode);
+			// $zipSearchString = $read->quoteInto(" AND ? LIKE dest_zip )", $postcode);
+			$zipSearchString = $read->quoteInto(" AND CONTAINSTABLE(".$table.",dest_zip, ".$postcode.") AS T2");
 		}
 
 		for ($j=0;$j<10;$j++)
@@ -145,6 +146,7 @@ class Webshopapps_Matrixrate_Model_Mysql4_Carrier_Matrixrate extends Mage_Core_M
 			$select->order('dest_country_id DESC');
 			$select->order('dest_region_id DESC');
 			$select->order('dest_zip DESC');
+			$select->order('T2.Rank DESC');
 			$select->order('condition_from_value DESC');
 			/*
 			pdo has an issue. we cannot use bind
