@@ -164,6 +164,7 @@ class Webshopapps_Matrixrate_Model_Mysql4_Carrier_Matrixrate extends Mage_Core_M
 
 			/* Return array, choose best delivery */
 			if (is_array($newdata) && count($newdata) > 2) {
+				var_dump($newdata);
 				foreach ($newdata as $delivery) {
 					echo $delivery['dest_zip'];
 				}
