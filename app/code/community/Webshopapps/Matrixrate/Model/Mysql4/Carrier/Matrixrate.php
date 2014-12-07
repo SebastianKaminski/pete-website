@@ -46,7 +46,7 @@ class Webshopapps_Matrixrate_Model_Mysql4_Carrier_Matrixrate extends Mage_Core_M
 			$zipSearchString = ' AND '.$postcode.' BETWEEN dest_zip AND dest_zip_to )';		
 		} else {
 			// $zipSearchString = $read->quoteInto(" AND ? LIKE dest_zip )", $postcode);
-			$zipSearchString = $read->quoteInto(" AND CONTAINSTABLE(dest_zip, '".$postcode."') AS T2");
+			$zipSearchString = $read->quoteInto(" AND CONTAINSTABLE(dest_zip, ?) AS T2", $postcode);
 		}
 
 		for ($j=0;$j<10;$j++)
