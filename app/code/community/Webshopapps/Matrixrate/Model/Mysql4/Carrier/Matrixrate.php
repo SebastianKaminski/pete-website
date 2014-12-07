@@ -157,21 +157,21 @@ class Webshopapps_Matrixrate_Model_Mysql4_Carrier_Matrixrate extends Mage_Core_M
 			{
 				// have found a result or found nothing and at end of list!
 				foreach ($row as $data) {
+					var_dump($data);
 					$newdata[]=$data;
 				}
 				break;
 			}
 
 			/* Return array, choose best delivery */
-			if (is_array($newdata) && count($newdata) > 2) {
-				var_dump($newdata);
-				foreach ($newdata as $delivery) {
-					echo $delivery['dest_zip'];
-				}
-			} 
+			// if (is_array($newdata) && count($newdata) > 2) {
+			// 	var_dump($newdata);
+			// 	foreach ($newdata as $delivery) {
+			// 		echo $delivery['dest_zip'];
+			// 	}
+			// } 
 		}
-		var_dump($newdata);
-		echo is_array($newdata);
+
 		return $newdata;
 
     }
