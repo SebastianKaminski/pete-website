@@ -170,7 +170,8 @@ class Webshopapps_Matrixrate_Model_Mysql4_Carrier_Matrixrate extends Mage_Core_M
 				}
 			} 
 		}
-		// var_dump($newdata);
+		var_dump($newdata);
+		echo is_array($newdata);
 		return $newdata;
 
     }
