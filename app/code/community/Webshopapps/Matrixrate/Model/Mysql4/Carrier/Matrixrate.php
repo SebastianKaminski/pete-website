@@ -160,7 +160,7 @@ class Webshopapps_Matrixrate_Model_Mysql4_Carrier_Matrixrate extends Mage_Core_M
 		        $parcel = true;
 
 				/* Small improvement, which return most accurate result */
-				
+
 		        // Check item type
 		        if ($request->getAllItems()) {
 		            foreach ($request->getAllItems() as $item) {
@@ -182,13 +182,13 @@ class Webshopapps_Matrixrate_Model_Mysql4_Carrier_Matrixrate extends Mage_Core_M
 							$tmp = $data;
 						}
 					}				
+					$newdata[] = $tmp;
 				} else {
 					/* Other items */
 					foreach ($row as $data) {
 						$newdata[] = $data;
 					}
 				}
-				$newdata[]=$tmp;
 				break;
 			}
 		}
