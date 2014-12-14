@@ -161,7 +161,8 @@ class Webshopapps_Matrixrate_Model_Mysql4_Carrier_Matrixrate extends Mage_Core_M
 
 				/* Small improvement, which return most accurate result */
 
-		        // Check item type		        
+		        // Check item type	
+		        print_r($request->getAllItems());
 		        if ($request->getAllItems()) {
 		            foreach ($request->getAllItems() as $item) {
 		                $product = $item->getProduct();
