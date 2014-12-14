@@ -16,28 +16,24 @@
 	<?php echo $this->getChildHtml('after_body_start'); ?>
 	<?php echo $this->getChildHtml('global_notices'); ?>
 
-	<div class="wrapper">
-		<div class="page">
-			<?php echo $this->getChildHtml('header'); ?>
+	<?php echo $this->getChildHtml('header'); ?>
 
-			<div class="main-container col2-right-layout">
-				<div class="main">
+	<div class="container">
+		<div class="main">
+			<div class="row">
+				<div class="col-md-8 col-xsl-12">
 					<?php echo $this->getChildHtml('breadcrumbs'); ?>
+					<?php echo $this->getChildHtml('global_messages'); ?>
+					<?php echo $this->getChildHtml('content'); ?>
+				</div>
+				<div class="col-md-4 col-xsl-12">
+					<?php echo $this->getChildHtml('right'); ?>
+				</div>
+			</div>
+		</div><!-- .main -->
+	</div><!-- .container -->
 
-					<div class="col-main">
-						<?php echo $this->getChildHtml('global_messages'); ?>
-						<?php echo $this->getChildHtml('content'); ?>
-					</div><!-- .col-main -->
-
-					<div class="col-right sidebar">
-						<?php echo $this->getChildHtml('right'); ?>
-					</div><!-- .col-right sidebar -->
-				</div><!-- .main -->
-			</div><!-- .main-container col2-right-layout -->
-
-			<?php echo $this->getChildHtml('footer'); ?>
-		</div><!-- .page -->
-	</div><!-- #wrapper -->
+	<?php echo $this->getChildHtml('footer'); ?>
 
 	<?php echo $this->getChildHtml('site.bottom.css.js'); ?>
 	<?php echo $this->getChildHtml('before_body_end'); ?>
