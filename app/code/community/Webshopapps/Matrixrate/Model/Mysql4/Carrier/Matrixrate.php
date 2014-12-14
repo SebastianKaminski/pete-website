@@ -157,23 +157,24 @@ class Webshopapps_Matrixrate_Model_Mysql4_Carrier_Matrixrate extends Mage_Core_M
 			{
 				$tmp = array();
 				$score = 0;
-		        $parcel = false;
+		        $parcel = array();
 
 				/* Small improvement, which return most accurate result */
 
 		        // Check item type
 		        if ($request->getAllItems()) {
-		        	$parcel = true;
 		            foreach ($request->getAllItems() as $item) {
 		                $product = $item->getProduct();
 		                if ($product->getAttributeText('item_type') == "Radiator") {
 		                    // Set flag to false if Radiator is in the basket
-		                    $parcel = false;
+		                    $parcel[] = false;
+		                } else {
+		                	$parcel[] = true
 		                }
 		            }
 		        }
 
-				if ($parcel) {
+				if (in_array(false, $parcel, true) === false) {
 					/* Other items */
 					foreach ($row as $data) {
 						$newdata[] = $data;
