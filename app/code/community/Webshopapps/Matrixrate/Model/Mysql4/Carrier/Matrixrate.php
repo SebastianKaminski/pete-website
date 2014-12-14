@@ -157,18 +157,36 @@ class Webshopapps_Matrixrate_Model_Mysql4_Carrier_Matrixrate extends Mage_Core_M
 			{
 				$tmp = array();
 				$score = 0;
+		        $parcel = true;
 
 				/* Small improvement, which return most accurate result */
-				// foreach ($row as $data) {
-				// 	similar_text(strtoupper($data['dest_zip']), strtoupper($postcode), $percent); 
-				// 	if ($percent > $score) {
-				// 		$score = $percent;
-				// 		$tmp = $data;
-				// 	}
-				// }				
-				// have found a result or found nothing and at end of list!
-				foreach ($row as $data) {
-					$newdata[]=$data;
+				
+		        // Check item type
+		        if ($request->getAllItems()) {
+		            foreach ($request->getAllItems() as $item) {
+		                $product = $item->getProduct();
+		                if ($product->getAttributeText('item_type') == "Radiator") {
+		                    // Set flag to false if Radiator is in the basket
+		                    $parcel = false;
+		                }
+		            }
+		        }
+
+				if (!$parcel) {
+					/* Radiators */
+					foreach ($row as $data) {
+						// Check postcode accurate
+						similar_text(strtoupper($data['dest_zip']), strtoupper($postcode), $percent); 
+						if ($percent > $score) {
+							$score = $percent;
+							$tmp = $data;
+						}
+					}				
+				} else {
+					/* Other items */
+					foreach ($row as $data) {
+						$newdata[] = $data;
+					}
 				}
 				$newdata[]=$tmp;
 				break;

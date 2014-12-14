@@ -140,31 +140,6 @@ class Webshopapps_Matrixrate_Model_Carrier_Matrixrate
 			}
 		}
 
-        // Check item type
-        $parcel = true;
-
-        if ($request->getAllItems()) {
-            foreach ($request->getAllItems() as $item) {
-                $product = $item->getProduct();
-                if ($product->getAttributeText('item_type') == "Radiator") {
-                    // Set flag to false if Radiator is in the basket
-                    $parcel = false;
-                }
-            }
-        }
-
-        // if ($parcel) {
-        //     $method = Mage::getModel('shipping/rate_result_method');
-        //     $method->setCarrier('matrixrate');
-        //     $method->setCarrierTitle($this->getConfigData('title'));
-        //     $method->setMethod('parcel');
-        //     $method->setMethodTitle(Mage::helper('matrixrate')->__($rate['delivery_type']));
-        //     $method->setCost(0);
-        //     $shippingPrice = $this->getFinalPriceWithHandlingFee(6.66);
-        //     $method->setPrice($shippingPrice);
-        //     $result->append($method);            
-        // }
-
 	   foreach ($ratearray as $rate)
 		{
 		   if (!empty($rate) && $rate['price'] >= 0) {
