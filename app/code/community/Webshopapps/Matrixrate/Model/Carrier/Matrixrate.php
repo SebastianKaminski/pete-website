@@ -153,21 +153,21 @@ class Webshopapps_Matrixrate_Model_Carrier_Matrixrate
             }
         }
 
-        if ($parcel) {
-            $method = Mage::getModel('shipping/rate_result_method');
-            $method->setCarrier('matrixrate');
-            $method->setCarrierTitle($this->getConfigData('title'));
-            $method->setMethod('parcel');
-            $method->setMethodTitle('Royal Mail 1st Class');
-            $method->setCost(0);
-            $shippingPrice = $this->getFinalPriceWithHandlingFee(6.66);
-            $method->setPrice($shippingPrice);
-            $result->append($method);            
-        }
+        // if ($parcel) {
+        //     $method = Mage::getModel('shipping/rate_result_method');
+        //     $method->setCarrier('matrixrate');
+        //     $method->setCarrierTitle($this->getConfigData('title'));
+        //     $method->setMethod('parcel');
+        //     $method->setMethodTitle(Mage::helper('matrixrate')->__($rate['delivery_type']));
+        //     $method->setCost(0);
+        //     $shippingPrice = $this->getFinalPriceWithHandlingFee(6.66);
+        //     $method->setPrice($shippingPrice);
+        //     $result->append($method);            
+        // }
 
 	   foreach ($ratearray as $rate)
 		{
-		   if (!empty($rate) && $rate['price'] >= 0 && !$parcel) {
+		   if (!empty($rate) && $rate['price'] >= 0) {
 			    $method = Mage::getModel('shipping/rate_result_method');
 
 				$method->setCarrier('matrixrate');
