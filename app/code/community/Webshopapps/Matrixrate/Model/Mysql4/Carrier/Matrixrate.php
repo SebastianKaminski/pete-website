@@ -150,7 +150,7 @@ class Webshopapps_Matrixrate_Model_Mysql4_Carrier_Matrixrate extends Mage_Core_M
 			pdo has an issue. we cannot use bind
 			*/
 
-			$newdata=array();
+			$newdata = array();
 			$row = $read->fetchAll($select);
 
 			if (!empty($row))
@@ -166,6 +166,7 @@ class Webshopapps_Matrixrate_Model_Mysql4_Carrier_Matrixrate extends Mage_Core_M
 		        	$parcel = true;
 		            foreach ($request->getAllItems() as $item) {
 		                $product = $item->getProduct();
+		                var_dump($product);
 		                if ($product->getAttributeText('item_type') == "Radiator") {
 		                    // Set flag to false if Radiator is in the basket
 		                    $parcel = false;
@@ -173,8 +174,13 @@ class Webshopapps_Matrixrate_Model_Mysql4_Carrier_Matrixrate extends Mage_Core_M
 		            }
 		        }
 
-				if (!$parcel) {
-					/* Radiators */
+				if ($parcel) {
+					/* Other items */
+					foreach ($row as $data) {
+						$newdata[] = $data;
+					}
+				} else {
+					/* Pallet */
 					foreach ($row as $data) {
 						// Check postcode accurate
 						similar_text(strtoupper($data['dest_zip']), strtoupper($postcode), $percent); 
@@ -184,11 +190,6 @@ class Webshopapps_Matrixrate_Model_Mysql4_Carrier_Matrixrate extends Mage_Core_M
 						}
 					}				
 					$newdata[] = $tmp;
-				} else {
-					/* Other items */
-					foreach ($row as $data) {
-						$newdata[] = $data;
-					}
 				}
 				break;
 			}
