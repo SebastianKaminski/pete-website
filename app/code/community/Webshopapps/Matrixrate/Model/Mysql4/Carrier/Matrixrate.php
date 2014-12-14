@@ -169,7 +169,7 @@ class Webshopapps_Matrixrate_Model_Mysql4_Carrier_Matrixrate extends Mage_Core_M
 		                    // Set flag to false if Radiator is in the basket
 		                    $parcel[] = false;
 		                } else {
-		                	$parcel[] = true
+		                	$parcel[] = true;
 		                }
 		            }
 		        }
