@@ -140,7 +140,7 @@ class Webshopapps_Matrixrate_Model_Carrier_Matrixrate
 			}
 		}
 
-        var_dump($ratearray);
+        // var_dump($ratearray);
 
 	   foreach ($ratearray as $rate)
 		{
