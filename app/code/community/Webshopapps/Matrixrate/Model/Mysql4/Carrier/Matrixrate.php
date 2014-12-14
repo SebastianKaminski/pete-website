@@ -161,7 +161,7 @@ class Webshopapps_Matrixrate_Model_Mysql4_Carrier_Matrixrate extends Mage_Core_M
 
 				/* Small improvement, which return most accurate result */
 
-				debug($request->getAllItems());
+				Mage::log($request->getAllItems());
 
 		        // Check item type	
 		        if ($request->getAllItems()) {
