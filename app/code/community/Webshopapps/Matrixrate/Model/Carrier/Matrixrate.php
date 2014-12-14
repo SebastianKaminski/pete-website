@@ -139,11 +139,36 @@ class Webshopapps_Matrixrate_Model_Carrier_Matrixrate
 				return $result;
 			}
 		}
-     	
+
+        // Check item type
+        $parcel = true;
+
+        if ($request->getAllItems()) {
+            foreach ($request->getAllItems() as $item) {
+                $product = $item->getProduct();
+                if ($product->getAttributeText('item_type') == "Radiator") {
+                    // Set flag to false if Radiator is in the basket
+                    $parcel = false;
+                }
+            }
+        }
+
+        if ($parcel) {
+            $method = Mage::getModel('shipping/rate_result_method');
+            $method->setCarrier('matrixrate');
+            $method->setCarrierTitle($this->getConfigData('title'));
+            $method->setMethod('parcel');
+            $method->setMethodTitle('Royal Mail 1st Class');
+            $method->setCost(0);
+            $shippingPrice = $this->getFinalPriceWithHandlingFee(6.66);
+            $method->setPrice($shippingPrice);
+            $result->append($method);            
+        }
+
 	   foreach ($ratearray as $rate)
 		{
-		   if (!empty($rate) && $rate['price'] >= 0) {
-			  $method = Mage::getModel('shipping/rate_result_method');
+		   if (!empty($rate) && $rate['price'] >= 0 && !$parcel) {
+			    $method = Mage::getModel('shipping/rate_result_method');
 
 				$method->setCarrier('matrixrate');
 				$method->setCarrierTitle($this->getConfigData('title'));
@@ -177,7 +202,10 @@ class Webshopapps_Matrixrate_Model_Carrier_Matrixrate
      */
     public function getAllowedMethods()
     {
-        return array('matrixrate'=>$this->getConfigData('name'));
+        return array(
+            'matrixrate'=> $this->getConfigData('name'),
+            'parcel' => 'Royal Mail'
+        );
     }
     
 
