@@ -174,12 +174,16 @@ class Webshopapps_Matrixrate_Model_Mysql4_Carrier_Matrixrate extends Mage_Core_M
 		            }
 		        }
 
+		        var_dump($parcel);
+
 				if (in_array(false, $parcel, true) === false) {
+					echo "parcel kurwa";
 					/* Other items */
 					foreach ($row as $data) {
 						$newdata[] = $data;
 					}
 				} else {
+					echo "pallet kurwa";
 					/* Pallet */
 					foreach ($row as $data) {
 						// Check postcode accurate
