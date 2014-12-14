@@ -31,6 +31,20 @@
 <script type="text/javascript" src="<?php echo $this->getSkinUrl('js/opcheckout.js') ?>"></script>
 <ol class="opc" id="checkoutSteps">
 <?php $i=0; foreach($this->getSteps() as $_stepId => $_stepInfo): ?>
+
+<?php if($_stepId == 'login'): ?>
+    <li style="display: none;">
+        <input type="hidden" name="checkout_method" id="login:guest" value="guest" checked="checked" />
+        <script type="text/javascript">
+            Event.observe(window, 'load', function() {
+                var cb = $("login:guest");
+                cb.checked = true;
+                checkout.setMethod();
+            });
+        </script>
+    </li>
+<?php continue; endif; ?>
+
 <?php if (!$this->getChild($_stepId) || !$this->getChild($_stepId)->isShow()): continue; endif; $i++ ?>
     <li id="opc-<?php echo $_stepId ?>" class="section<?php echo !empty($_stepInfo['allow'])?' allow':'' ?><?php echo !empty($_stepInfo['complete'])?' saved':'' ?>">
         <div class="step-title">
