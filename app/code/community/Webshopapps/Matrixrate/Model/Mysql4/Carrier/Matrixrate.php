@@ -159,17 +159,17 @@ class Webshopapps_Matrixrate_Model_Mysql4_Carrier_Matrixrate extends Mage_Core_M
 				$score = 0;
 
 				/* Small improvement, which return most accurate result */
-				foreach ($row as $data) {
-					similar_text(strtoupper($data['dest_zip']), strtoupper($postcode), $percent); 
-					if ($percent > $score) {
-						$score = $percent;
-						$tmp = $data;
-					}
-				}				
-				// have found a result or found nothing and at end of list!
 				// foreach ($row as $data) {
-				// 	$newdata[]=$data;
-				// }
+				// 	similar_text(strtoupper($data['dest_zip']), strtoupper($postcode), $percent); 
+				// 	if ($percent > $score) {
+				// 		$score = $percent;
+				// 		$tmp = $data;
+				// 	}
+				// }				
+				// have found a result or found nothing and at end of list!
+				foreach ($row as $data) {
+					$newdata[]=$data;
+				}
 				$newdata[]=$tmp;
 				break;
 			}
