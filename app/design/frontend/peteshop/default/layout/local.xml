@@ -178,6 +178,9 @@
     </customer_logged_in>
 
     <checkout_cart_index>
+        <reference name="root">
+            <action method="setTemplate"><template>page/1column.phtml</template></action>
+        </reference>        
         <reference name="content">
             <block name="checkout.cart">
                 <!-- Remove checkout discount codes -->
