@@ -166,7 +166,6 @@ class Webshopapps_Matrixrate_Model_Mysql4_Carrier_Matrixrate extends Mage_Core_M
 		        	$parcel = true;
 		            foreach ($request->getAllItems() as $item) {
 		                $product = $item->getProduct();
-		                var_dump($product);
 		                if ($product->getAttributeText('item_type') == "Radiator") {
 		                    // Set flag to false if Radiator is in the basket
 		                    $parcel = false;
