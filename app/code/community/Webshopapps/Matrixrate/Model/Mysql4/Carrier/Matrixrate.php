@@ -161,12 +161,11 @@ class Webshopapps_Matrixrate_Model_Mysql4_Carrier_Matrixrate extends Mage_Core_M
 
 				/* Small improvement, which return most accurate result */
 
-		        // Check item type
-		        Zend_Debug::dump($request->getAllItems());
-		        
+		        // Check item type		        
 		        if ($request->getAllItems()) {
 		            foreach ($request->getAllItems() as $item) {
 		                $product = $item->getProduct();
+		                echo $product->getAttributeText('item_type');
 		                if ($product->getAttributeText('item_type') == "Radiator") {
 		                    // Set flag to false if Radiator is in the basket
 		                    $parcel[] = false;
