@@ -162,6 +162,7 @@ class Webshopapps_Matrixrate_Model_Mysql4_Carrier_Matrixrate extends Mage_Core_M
 				/* Small improvement, which return most accurate result */
 
 		        // Check item type
+		        var_dump($request->getAllItems());
 		        if ($request->getAllItems()) {
 		            foreach ($request->getAllItems() as $item) {
 		                $product = $item->getProduct();
@@ -176,7 +177,7 @@ class Webshopapps_Matrixrate_Model_Mysql4_Carrier_Matrixrate extends Mage_Core_M
 
 		        var_dump($parcel);
 
-				if (in_array(false, $parcel, true) === false) {
+				if (!empty($parcel) && in_array(false, $parcel, true) === false) {
 					echo "parcel kurwa";
 					/* Other items */
 					foreach ($row as $data) {
