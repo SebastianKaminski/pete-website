@@ -191,10 +191,10 @@ class Webshopapps_Matrixrate_Model_Carrier_Matrixrate
             foreach ($request->getAllItems() as $item) {
                 $product = Mage::getModel('catalog/product')->load($item->getProductId());
 
-                Mage::log("Item type kurwa: " . $product->getData('item_type'), null, 'debug.log');
+                Mage::log("Item type kurwa: " . $product->getAttributeText('item_type'), null, 'debug.log');
                 Mage::log($product->debug(), null, 'debug.log');
 
-                if ($product->getData('item_type') == "Radiator") {
+                if ($product->getAttributeText('item_type') == "Radiator") {
                     // Set flag to false if Radiator is in the basket
                     array_push($parcel, false);
                 } else {
