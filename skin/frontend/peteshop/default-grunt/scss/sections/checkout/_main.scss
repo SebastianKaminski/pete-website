@@ -17,14 +17,15 @@
 	dt { 
 		margin:13px 0 5px; 
 		font-weight:bold;
-		ul {
-			padding-left: 0;
-		}
 	}
 
 	dd li { 
 		margin:5px 0;
 	}
+
+	dd ul {
+		padding-left: 0;
+	}	
 	
 	label { 
 		font-weight: normal;
@@ -406,11 +407,11 @@
 		background:#eee; 
 		border:1px solid #a3aeb3; 
 		margin:0 0 6px; 
-		padding:2px 8px;
+		padding:10px;
 
 		&.complete { 
 			margin:0; 
-			background:#d0dce1;
+			background:#FFF;
 		}
 	}
 

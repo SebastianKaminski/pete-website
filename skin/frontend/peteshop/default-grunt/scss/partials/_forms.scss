@@ -130,7 +130,9 @@ p.control input.radio {
 
 		&.control {
 			label {
-				float:none;
+				float: none;
+				font-size: 12px;
+				font-weight: normal;
 			}
 
 			input.radio,
