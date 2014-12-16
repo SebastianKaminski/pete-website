@@ -208,7 +208,7 @@ class Webshopapps_Matrixrate_Model_Carrier_Matrixrate
             Mage::log("Parcel", null, 'debug.log');
         } else {
             /* Radiator */
-            Mage::log("Pallet" null, 'debug.log');
+            Mage::log("Pallet", null, 'debug.log');
             foreach ($ratearray as $rate)
             {
                 if (!empty($rate) && $rate['price'] >= 0) {
