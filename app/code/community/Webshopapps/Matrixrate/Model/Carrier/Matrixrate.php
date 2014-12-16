@@ -177,10 +177,12 @@ class Webshopapps_Matrixrate_Model_Carrier_Matrixrate
                     }
                 }
             }
-            $myrates = $tmp;
+            unset($myrates);
+            $myrates[] = $tmp;
         }
 
-        var_dump($myrates);
+        Mage::log($myrates, null, 'debug.log');
+        Mage::log(var_dump($myrates), null, 'debug.log');
 
         foreach ($myrates as $rate)
         {
