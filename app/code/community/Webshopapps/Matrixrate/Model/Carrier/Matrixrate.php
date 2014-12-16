@@ -187,21 +187,31 @@ class Webshopapps_Matrixrate_Model_Carrier_Matrixrate
         $postcode = $request->getDestPostcode();
 
         // Check item type   
-        if ($request->getAllItems()) {
-            foreach ($request->getAllItems() as $item) {
-                $product = $item->getProduct();
-                // print_r($item->getData());
-                Mage::log($product->debug(), null, 'debug.log');
-                if ($item->getData('item_type') == "Radiator") {
-                    // Set flag to false if Radiator is in the basket
-                    array_push($parcel, false);
-                } else {
-                    array_push($parcel, true);
-                }
-            }
+        // if ($request->getAllItems()) {
+        //     foreach ($request->getAllItems() as $item) {
+        //         $product = $item->getProduct();
+        //         // print_r($item->getData());
+        //         Mage::log($product->debug(), null, 'debug.log');
+        //         if ($item->getData('item_type') == "Radiator") {
+        //             // Set flag to false if Radiator is in the basket
+        //             array_push($parcel, false);
+        //         } else {
+        //             array_push($parcel, true);
+        //         }
+        //     }
+        // }
+
+        $cartItems = Mage::getSingleton('checkout/session')
+            ->getQuote()
+            ->getAllItems();
+
+        foreach ($cartItems as $item) {
+            Mage::log($item->getProduct()->debug(), null, 'debug.log');
+            $ean = Mage::getModel('catalog/product')->load($item->getProduct()->getId())->getAttributeText('item_type'));
+            echo $ean;
         }
 
-        var_dump($parcel);
+        // var_dump($parcel);
 
         foreach ($ratearray as $rate)
         {
