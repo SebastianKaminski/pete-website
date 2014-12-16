@@ -201,6 +201,8 @@ class Webshopapps_Matrixrate_Model_Carrier_Matrixrate
 
         print_r($myrates);
 
+        return $myrates;
+
         /*
         // Original function
        foreach ($ratearray as $rate)
