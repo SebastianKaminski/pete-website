@@ -142,7 +142,7 @@ class Webshopapps_Matrixrate_Model_Carrier_Matrixrate
 
         /* My Changes */
 
-        $myrates = array();
+        $myrates = $ratearray;
         $parcel = array();
         $score = 0;
         $tmp = array();
@@ -164,7 +164,6 @@ class Webshopapps_Matrixrate_Model_Carrier_Matrixrate
 
         if (!empty($parcel) && in_array(false, $parcel, true) === false) {
             /* Other items */
-            $myrates[] = $ratearray;
             Mage::log("Parcel", null, 'debug.log');
         } else {
             /* Radiator */
@@ -179,10 +178,10 @@ class Webshopapps_Matrixrate_Model_Carrier_Matrixrate
                     }
                 }
             }
-            $myrates[] = $tmp;
+            $myrates = $tmp;
         }
 
-        Mage::log($myrates->debug(), null, 'debug.log');
+        var_dump($myrates);
 
         foreach ($myrates as $rate)
         {
