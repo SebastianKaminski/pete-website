@@ -191,9 +191,6 @@ class Webshopapps_Matrixrate_Model_Carrier_Matrixrate
             foreach ($request->getAllItems() as $item) {
                 $product = Mage::getModel('catalog/product')->load($item->getProductId());
 
-                Mage::log("Item type kurwa: " . $product->getAttributeText('item_type'), null, 'debug.log');
-                Mage::log($product->debug(), null, 'debug.log');
-
                 if ($product->getAttributeText('item_type') == "Radiator") {
                     // Set flag to false if Radiator is in the basket
                     array_push($parcel, false);
@@ -203,31 +200,27 @@ class Webshopapps_Matrixrate_Model_Carrier_Matrixrate
             }
         }
 
-        // $cartItems = Mage::getSingleton('checkout/session')
-        //     ->getQuote()
-        //     ->getAllItems();
+        Mage::log("Array: ".$parcel, null, 'debug.log');
 
-        // foreach ($cartItems as $item) {
-        //     Mage::log($item->getProduct()->debug(), null, 'debug.log');
-        //     $ean = Mage::getModel('catalog/product')->load($item->getProduct()->getId())->getAttributeText('item_type'));
-        //     echo $ean;
-        // }
-
-        // var_dump($parcel);
-
-        foreach ($ratearray as $rate)
-        {
-
-            if (!empty($rate) && $rate['price'] >= 0) {
-                similar_text(strtoupper($rate['dest_zip']), strtoupper($postcode), $percent); 
-                if ($percent > $score) {
-                    $score = $percent;
-                    $tmp = $rate;
+        if (!empty($parcel) && in_array(false, $parcel, true) === false) {
+            /* Other items */
+            $myrates[] = $ratearray;
+            Mage::log("Parcel", null, 'debug.log');
+        } else {
+            /* Radiator */
+            Mage::log("Pallet" null, 'debug.log');
+            foreach ($ratearray as $rate)
+            {
+                if (!empty($rate) && $rate['price'] >= 0) {
+                    similar_text(strtoupper($rate['dest_zip']), strtoupper($postcode), $percent); 
+                    if ($percent > $score) {
+                        $score = $percent;
+                        $tmp = $rate;
+                    }
                 }
             }
+            $myrates[] = $tmp;
         }
-
-        $myrates[] = $tmp;
 
         foreach ($myrates as $rate)
         {
