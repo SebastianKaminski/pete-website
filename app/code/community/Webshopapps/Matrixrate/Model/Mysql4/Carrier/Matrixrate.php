@@ -156,7 +156,7 @@ class Webshopapps_Matrixrate_Model_Mysql4_Carrier_Matrixrate extends Mage_Core_M
 			if (!empty($row))
 			{
 				$tmp = array();
-				$score = 0;
+				// $score = 0;
 		  //       $parcel = array();
 
 				// /* Small improvement, which return most accurate result */

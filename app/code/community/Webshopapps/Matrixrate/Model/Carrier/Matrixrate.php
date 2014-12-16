@@ -144,7 +144,11 @@ class Webshopapps_Matrixrate_Model_Carrier_Matrixrate
 
 	   foreach ($ratearray as $rate)
 		{
+
 		   if (!empty($rate) && $rate['price'] >= 0) {
+
+                print_r($rate);
+
 			    $method = Mage::getModel('shipping/rate_result_method');
 
 				$method->setCarrier('matrixrate');
