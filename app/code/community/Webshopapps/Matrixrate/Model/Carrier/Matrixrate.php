@@ -201,7 +201,7 @@ class Webshopapps_Matrixrate_Model_Carrier_Matrixrate
 
         print_r($myrates);
 
-        return $myrates;
+        return $result;
 
         /*
         // Original function
