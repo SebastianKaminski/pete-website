@@ -136,6 +136,7 @@ p.control input.radio {
 			input.radio,
 			input.checkbox {
 				margin-right:6px;
+				float: left;
 			}
 
 			.input-box {
@@ -399,11 +400,11 @@ p.control input.radio {
 	clear:both;
 	min-height:13px;
 	margin:5px 0 0;
-	padding-right:17px;
+	padding-left:17px;
 	font-size:11px;
 	line-height:13px;
 	background:url(../images/validation_advice_bg.gif) 2px 0 no-repeat;
-	background-position: right;
+	background-position: left;
 }
 
 .validation-failed {

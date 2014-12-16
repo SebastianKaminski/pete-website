@@ -1,6 +1,13 @@
 // Checkout
 // --------------------------------------------------
-
+.form-list {
+	padding-left: 0;
+	list-style: none;
+	ul {
+		padding-left: 0;
+		list-style: none;
+	}
+}
 
 // Shipping and Payment methods
 // --------------------------------------------------
@@ -43,6 +50,11 @@
 	
 	input.cvv { 
 		width:3em !important;
+	}
+
+	input.radio {
+		float: left;
+		margin-right: 6px;
 	}
 	
 	.checkmo-list {
@@ -457,6 +469,7 @@
 		background: #FFF;
 		padding:10px; 
 		text-align:right;
+		border-bottom: 1px solid #000;
 
 		.number { 
 			float:left; 
@@ -484,7 +497,6 @@
 	.allow .step-title { 
 		background: #FFF; 
 		border:1px solid #000; 
-		border-bottom:0; 
 		cursor:pointer;
 
 		.number { 
@@ -494,10 +506,10 @@
 	}
 
 	.active .step-title { 
-		background:#BBB; 
+		background: #eee; 
 		border:1px solid #000; 
-		padding-bottom:5px; 
 		cursor:default;
+		color: #000;
 		
 		.number { 
 			background: $orange; 
@@ -506,8 +518,9 @@
 	}
 
 	.step { 
-		border:1px solid #bbafa0; 
-		border-top:0; 
+		border: 1px solid #000; 
+		border-top: 0; 
+		color: #ababab;
 		background:#fbfaf6 url(../images/bkg_checkout.gif) 0 0 repeat-x; 
 		padding:15px 30px; 
 		position:relative;
@@ -515,6 +528,7 @@
 		.tool-tip { 
 			right:30px;
 		}
+
 	}
 
 	.gift-messages-form { 
