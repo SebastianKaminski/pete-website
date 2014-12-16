@@ -413,6 +413,7 @@
 
 .opc {
 	position:relative;
+	padding-left: 0;
 	
 	.buttons-set { 
 		margin-top:0; 
@@ -453,8 +454,8 @@
 		border-width:0 1px; 
 		border-style:solid; 
 		border-color:#fff #d9dde3 #d9dde3; 
-		background:#eee url(../images/bkg_opc-title-off.gif) 0 100% repeat-x; 
-		padding:4px 8px 6px; 
+		background: #FFF;
+		padding:10px; 
 		text-align:right;
 
 		.number { 
@@ -481,26 +482,26 @@
 	}
 
 	.allow .step-title { 
-		background:#d0dce1; 
-		border:1px solid #607890; 
+		background: #FFF; 
+		border:1px solid #000; 
 		border-bottom:0; 
 		cursor:pointer;
 
 		.number { 
 			background:#dbe6eb; 
-			border-color:#dbe6eb;
+			border-color: #000;
 		}
 	}
 
 	.active .step-title { 
-		background:#eef2f5; 
-		border:1px solid #607890; 
+		background:#BBB; 
+		border:1px solid #000; 
 		padding-bottom:5px; 
 		cursor:default;
 		
 		.number { 
-			background:#f18200; 
-			border-color:#f19900;
+			background: $orange; 
+			border-color: darken($orange, 10%);
 		}
 	}
 
