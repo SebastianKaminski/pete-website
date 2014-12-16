@@ -180,12 +180,27 @@ class Webshopapps_Matrixrate_Model_Carrier_Matrixrate
                 // }
 
 
-        $tmp = array();
         $myrates = array();
+        $parcel = array();
         $score = 0;
+        $tmp = array();
         $postcode = $request->getDestPostcode();
 
-        print_r($postcode);
+        // Check item type   
+        if ($request->getAllItems()) {
+            foreach ($request->getAllItems() as $item) {
+                $product = $item->getProduct();
+                print_r($product);
+                if ($product->getAttributeText('item_type') == "Radiator") {
+                    // Set flag to false if Radiator is in the basket
+                    $parcel[] = false;
+                } else {
+                    $parcel[] = true;
+                }
+            }
+        }
+
+        print_r($parcel);
 
         foreach ($ratearray as $rate)
         {
