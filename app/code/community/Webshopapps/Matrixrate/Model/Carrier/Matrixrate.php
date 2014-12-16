@@ -192,14 +192,14 @@ class Webshopapps_Matrixrate_Model_Carrier_Matrixrate
                 $product = $item->getProduct();
                 if ($product->getAttributeText('item_type') == "Radiator") {
                     // Set flag to false if Radiator is in the basket
-                    $parcel[] = false;
+                    array_push($parcel, false);
                 } else {
-                    $parcel[] = true;
+                    array_push($parcel, true);
                 }
             }
         }
 
-        print_r($parcel);
+        var_dump($parcel);
 
         foreach ($ratearray as $rate)
         {
