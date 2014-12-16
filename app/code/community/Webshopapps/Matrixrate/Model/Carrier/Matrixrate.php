@@ -200,8 +200,6 @@ class Webshopapps_Matrixrate_Model_Carrier_Matrixrate
             }
         }
 
-        Mage::log("Array: ".$parcel, null, 'debug.log');
-
         if (!empty($parcel) && in_array(false, $parcel, true) === false) {
             /* Other items */
             $myrates[] = $ratearray;
@@ -221,6 +219,8 @@ class Webshopapps_Matrixrate_Model_Carrier_Matrixrate
             }
             $myrates[] = $tmp;
         }
+
+        Mage::log(var_dump($myrates), null, 'debug.log');
 
         foreach ($myrates as $rate)
         {
