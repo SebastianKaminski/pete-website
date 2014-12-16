@@ -178,7 +178,7 @@ class Webshopapps_Matrixrate_Model_Carrier_Matrixrate
                     }
                 }
             }
-            $myrates = $tmp;
+            $myrates[] = $tmp;
         }
 
         // var_dump($myrates);
