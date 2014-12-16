@@ -199,7 +199,29 @@ class Webshopapps_Matrixrate_Model_Carrier_Matrixrate
 
         $myrates[] = $tmp;
 
-        print_r($myrates);
+        foreach ($myrates as $rate)
+        {
+
+            if (!empty($rate) && $rate['price'] >= 0) {
+
+                $method = Mage::getModel('shipping/rate_result_method');
+
+                $method->setCarrier('matrixrate');
+                $method->setCarrierTitle($this->getConfigData('title'));
+
+                $method->setMethod('matrixrate_'.$rate['pk']);
+
+                $method->setMethodTitle(Mage::helper('matrixrate')->__($rate['delivery_type']));
+
+                $shippingPrice = $this->getFinalPriceWithHandlingFee($rate['price']);
+                $method->setCost($rate['cost']);
+                $method->setDeliveryType($rate['delivery_type']);
+
+                $method->setPrice($shippingPrice);
+
+                $result->append($method);
+            }
+        }   
 
         return $result;
 
