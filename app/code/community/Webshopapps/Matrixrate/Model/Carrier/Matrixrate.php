@@ -140,45 +140,7 @@ class Webshopapps_Matrixrate_Model_Carrier_Matrixrate
 			}
 		}
 
-        // var_dump($ratearray);
-
-                // $tmp = array();
-                // $score = 0;
-          //       $parcel = array();
-
-                // /* Small improvement, which return most accurate result */
-
-          //       // Check item type   
-          //       if ($request->getAllItems()) {
-          //           foreach ($request->getAllItems() as $item) {
-          //               $product = $item->getProduct();
-          //               if ($product->getAttributeText('item_type') == "Radiator") {
-          //                   // Set flag to false if Radiator is in the basket
-          //                   $parcel[] = false;
-          //               } else {
-          //                $parcel[] = true;
-          //               }
-          //           }
-          //       }
-
-                // if (!empty($parcel) && in_array(false, $parcel, true) === false) {
-                //  /* Other items */
-                //  foreach ($row as $data) {
-                //      $newdata[] = $data;
-                //  }
-                // } else {
-                //  /* Pallet */
-                //  foreach ($row as $data) {
-                //      // Check postcode accurate
-                //      similar_text(strtoupper($data['dest_zip']), strtoupper($postcode), $percent); 
-                //      if ($percent > $score) {
-                //          $score = $percent;
-                //          $tmp = $data;
-                //      }
-                //  }               
-                //  $newdata[] = $tmp;
-                // }
-
+        /* My Changes */
 
         $myrates = array();
         $parcel = array();
@@ -220,7 +182,7 @@ class Webshopapps_Matrixrate_Model_Carrier_Matrixrate
             $myrates[] = $tmp;
         }
 
-        Mage::log(var_dump($myrates), null, 'debug.log');
+        Mage::log($myrates->debug(), null, 'debug.log');
 
         foreach ($myrates as $rate)
         {
