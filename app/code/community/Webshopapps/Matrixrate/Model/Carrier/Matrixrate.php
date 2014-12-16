@@ -230,7 +230,7 @@ class Webshopapps_Matrixrate_Model_Carrier_Matrixrate
                 $result->append($method);
             }
         }     
-        /*   
+        */ 
 
         return $result;
     }
