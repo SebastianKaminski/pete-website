@@ -183,7 +183,9 @@ class Webshopapps_Matrixrate_Model_Carrier_Matrixrate
         $tmp = array();
         $myrates = array();
         $score = 0;
-        $postcode = "SK56PH";
+        $postcode = $request->getDestPostcode();
+
+        print_r($postcode);
 
         foreach ($ratearray as $rate)
         {
