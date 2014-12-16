@@ -142,31 +142,93 @@ class Webshopapps_Matrixrate_Model_Carrier_Matrixrate
 
         // var_dump($ratearray);
 
-	   foreach ($ratearray as $rate)
-		{
+                // $tmp = array();
+                // $score = 0;
+          //       $parcel = array();
 
-		   if (!empty($rate) && $rate['price'] >= 0) {
+                // /* Small improvement, which return most accurate result */
+
+          //       // Check item type   
+          //       if ($request->getAllItems()) {
+          //           foreach ($request->getAllItems() as $item) {
+          //               $product = $item->getProduct();
+          //               if ($product->getAttributeText('item_type') == "Radiator") {
+          //                   // Set flag to false if Radiator is in the basket
+          //                   $parcel[] = false;
+          //               } else {
+          //                $parcel[] = true;
+          //               }
+          //           }
+          //       }
+
+                // if (!empty($parcel) && in_array(false, $parcel, true) === false) {
+                //  /* Other items */
+                //  foreach ($row as $data) {
+                //      $newdata[] = $data;
+                //  }
+                // } else {
+                //  /* Pallet */
+                //  foreach ($row as $data) {
+                //      // Check postcode accurate
+                //      similar_text(strtoupper($data['dest_zip']), strtoupper($postcode), $percent); 
+                //      if ($percent > $score) {
+                //          $score = $percent;
+                //          $tmp = $data;
+                //      }
+                //  }               
+                //  $newdata[] = $tmp;
+                // }
+
+
+        $tmp = array();
+        $myrates = array();
+        $score = 0;
+        $postcode = "SK56PH";
+
+        foreach ($ratearray as $rate)
+        {
+
+            if (!empty($rate) && $rate['price'] >= 0) {
+                similar_text(strtoupper($rate['dest_zip']), strtoupper($postcode), $percent); 
+                if ($percent > $score) {
+                    $score = $percent;
+                    $tmp = $rate;
+                }
+            }
+        }
+
+        $myrates[] = $tmp;
+
+        print_r($myrates);
+
+        /*
+        // Original function
+       foreach ($ratearray as $rate)
+        {
+
+           if (!empty($rate) && $rate['price'] >= 0) {
 
                 print_r($rate);
 
-			    $method = Mage::getModel('shipping/rate_result_method');
+                $method = Mage::getModel('shipping/rate_result_method');
 
-				$method->setCarrier('matrixrate');
-				$method->setCarrierTitle($this->getConfigData('title'));
+                $method->setCarrier('matrixrate');
+                $method->setCarrierTitle($this->getConfigData('title'));
 
-				$method->setMethod('matrixrate_'.$rate['pk']);
+                $method->setMethod('matrixrate_'.$rate['pk']);
 
-				$method->setMethodTitle(Mage::helper('matrixrate')->__($rate['delivery_type']));
+                $method->setMethodTitle(Mage::helper('matrixrate')->__($rate['delivery_type']));
 
-				$shippingPrice = $this->getFinalPriceWithHandlingFee($rate['price']);
-				$method->setCost($rate['cost']);
-				$method->setDeliveryType($rate['delivery_type']);
-        		
-				$method->setPrice($shippingPrice);
+                $shippingPrice = $this->getFinalPriceWithHandlingFee($rate['price']);
+                $method->setCost($rate['cost']);
+                $method->setDeliveryType($rate['delivery_type']);
+                
+                $method->setPrice($shippingPrice);
 
-				$result->append($method);
-			}
-		}
+                $result->append($method);
+            }
+        }     
+        /*   
 
         return $result;
     }
