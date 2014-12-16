@@ -145,7 +145,6 @@ class Webshopapps_Matrixrate_Model_Carrier_Matrixrate
         $myrates = $ratearray;
         $parcel = array();
         $score = 0;
-        $tmp = array();
         $postcode = $request->getDestPostcode();
 
         // Check item type   
@@ -178,10 +177,10 @@ class Webshopapps_Matrixrate_Model_Carrier_Matrixrate
                     }
                 }
             }
-            $myrates[] = $tmp;
+            $myrates = $tmp;
         }
 
-        // var_dump($myrates);
+        var_dump($myrates);
 
         foreach ($myrates as $rate)
         {
