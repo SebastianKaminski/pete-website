@@ -164,10 +164,10 @@ class Webshopapps_Matrixrate_Model_Carrier_Matrixrate
 
         if (!empty($parcel) && in_array(false, $parcel, true) === false) {
             /* Other items */
-            Mage::log("Parcel", null, 'debug.log');
+            // Mage::log("Parcel", null, 'debug.log');
         } else {
             /* Radiator */
-            Mage::log("Pallet", null, 'debug.log');
+            // Mage::log("Pallet", null, 'debug.log');
             foreach ($ratearray as $rate)
             {
                 if (!empty($rate) && $rate['price'] >= 0) {
@@ -181,7 +181,7 @@ class Webshopapps_Matrixrate_Model_Carrier_Matrixrate
             $myrates = $tmp;
         }
 
-        var_dump($myrates);
+        // var_dump($myrates);
 
         foreach ($myrates as $rate)
         {
