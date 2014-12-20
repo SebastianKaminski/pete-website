@@ -14,12 +14,12 @@
 			<div class="col-md-2 col-md-offset-4">
 				<h3>Links</h3>
 				<ul class="list-unstyled">
-					<li><a href="#">Home</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Services</a></li>
-					<li><a href="#">Products</a></li>
-					<li><a href="#">FAQ</a></li>
-					<li><a href="#">Contact us</a></li>
+					<li><a href="<?php echo $this->getUrl('') ?>">Home</a></li>
+					<li><a href="<?php echo $this->getUrl('') ?>/about">About</a></li>
+					<li><a href="<?php echo $this->getUrl('') ?>/services">Services</a></li>
+					<li><a href="<?php echo $this->getUrl('') ?>/products">Products</a></li>
+					<li><a href="<?php echo $this->getUrl('') ?>/faq">FAQ</a></li>
+					<li><a href="<?php echo $this->getUrl('') ?>/contact-us">Contact us</a></li>
 				</ul>
 			</div>
 			<div class="col-md-2">
@@ -28,9 +28,15 @@
 					<?php if (Mage::getStoreConfig('skdev/social/facebook_field')): ?>
 						<li><span class="entypo-social facebook"></span> <a href="<?php echo Mage::getStoreConfig('skdev/social/facebook_field'); ?>" target="_blank">Facebook</a></li>
 					<?php endif; ?>
-					<li><span class="entypo-social twitter"></span> <a href="<?php echo Mage::getStoreConfig('skdev/social/twitter_field'); ?>">Twitter</a></li>
-					<li><span class="entypo-social instagram"></span> <a href="<?php echo Mage::getStoreConfig('skdev/social/instagram_field'); ?>">Instagram</a></li>
-					<li><span class="entypo-social pinterest"></span> <a href="<?php echo Mage::getStoreConfig('skdev/social/pinterest_field'); ?>">Pinterest</a></li>
+					<?php if (Mage::getStoreConfig('skdev/social/twitter_field')): ?>
+						<li><span class="entypo-social twitter"></span> <a href="<?php echo Mage::getStoreConfig('skdev/social/twitter_field'); ?>">Twitter</a></li>
+					<?php endif; ?>
+					<?php if (Mage::getStoreConfig('skdev/social/instagram_field')): ?>
+						<li><span class="entypo-social instagram"></span> <a href="<?php echo Mage::getStoreConfig('skdev/social/instagram_field'); ?>">Instagram</a></li>
+					<?php endif; ?>
+					<?php if (Mage::getStoreConfig('skdev/social/pinterest_field')): ?>
+						<li><span class="entypo-social pinterest"></span> <a href="<?php echo Mage::getStoreConfig('skdev/social/pinterest_field'); ?>">Pinterest</a></li>
+					<?php endif; ?>
 				</ul>
 			</div>
 		</div>
