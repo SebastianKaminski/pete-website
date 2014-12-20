@@ -28,22 +28,22 @@
 // partials
 // --------------------------------------------------
 @import
-     "partials/grid",
-     "partials/layout",
-     "partials/header",
-     "partials/footer",
-     "partials/navigation",
-     "partials/global",
-     "partials/blocks",
-     "partials/content",
-     "partials/forms",
-     "partials/messages",
-     "partials/prices",
-     "partials/sidebar",
-     "partials/tables",
-     "partials/toolbar",
-     "partials/tools",
-     "partials/clears";
+	"partials/grid",
+	"partials/layout",
+	"partials/header",
+	"partials/footer",
+	"partials/navigation",
+	"partials/global",
+	"partials/blocks",
+	"partials/content",
+	"partials/forms",
+	"partials/messages",
+	"partials/prices",
+	"partials/sidebar",
+	"partials/tables",
+	"partials/toolbar",
+	"partials/tools",
+	"partials/clears";
 
 // sections
 // --------------------------------------------------
@@ -60,54 +60,57 @@
 $c-grey: #BBB;
 
 .header-container {
-     #header-top {
-          .links {
-               border-bottom: 1px dashed $c-grey;
-               float: left;
-               font-size: 12px;
-               letter-spacing: 1px;
-               padding: 10px 0;
-               text-transform: uppercase;
-               width: 100%;
-               ul { margin-bottom: 0; }
-          }
-     }
-     #header-middle {
-          h1, h3 {
-               img {
-                    max-width: 100%;
-               }
-          }
-     }
+	#header-top {
+		.links {
+			border-bottom: 1px dashed $c-grey;
+			float: left;
+			font-size: 12px;
+			letter-spacing: 1px;
+			padding: 10px 0;
+			text-transform: uppercase;
+			width: 100%;
+			ul { margin-bottom: 0; }
+		}
+	}
+	#header-middle {
+		h1, h3 {
+			img {
+				max-width: 100%;
+			}
+		}
+	}
 }
 
 /* Homepage */
 #homepage {
-  background: url("../images/photos/hp_background.jpg") 0 0 no-repeat;
-  background-size: cover;
-  color: #FFF;
-  height: 600px;
-  margin: -50px 0 -25px;
+	background: url("../images/photos/hp_background.jpg") 0 0 no-repeat;
+	background-size: cover;
+	color: #FFF;
+	height: 600px;
+	margin: -50px 0 -25px;
+	.jumbotron {
+		text-shadow: 1px 1px 1px #000;
+	}
 }
 
 footer {
-     &.container-fluid {
-          background: #333;
-          margin-top: 25px;
-     }
-     .footer-content {
-          color: #FFF;
-          font-family: $fontBase;
-          font-size: 12px;
-          .entypo, .entypo-social { color: #777; }
-          h3 { color: $orange; }
-     }
+	&.container-fluid {
+		background: #333;
+		margin-top: 25px;
+	}
+	.footer-content {
+		color: #FFF;
+		font-family: $fontBase;
+		font-size: 12px;
+		.entypo, .entypo-social { color: #777; }
+		h3 { color: $orange; }
+	}
 }
 
 /* Menu Fix */
 .navbar {
   .dropdown:hover .dropdown-menu {
-      display: block;
+	 display: block;
    }
 }
 /* Boostrap Grid */
