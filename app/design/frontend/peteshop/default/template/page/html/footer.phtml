@@ -6,8 +6,8 @@
 					<h3><?php echo Mage::getStoreConfig('general/store_information/name'); ?></h3>
 					<ul class="list-unstyled">
 						<li><?php echo Mage::getStoreConfig('general/store_information/address'); ?></li>
-						<li><span class="entypo phone"></span> <?php echo Mage::getStoreConfig('general/store_information/phone'); ?></li>
-						<li><span class="entypo mail"></span> <a href="mailto:<?php echo Mage::getStoreConfig('trans_email/ident_general/email') ?>"><?php echo Mage::getStoreConfig('trans_email/ident_general/email'); ?></a></li>
+						<li><abbr title="Phone">P:</abbr> <?php echo Mage::getStoreConfig('general/store_information/phone'); ?></li>
+						<li><abbr title="Email">E:</abbr> <a href="mailto:<?php echo Mage::getStoreConfig('trans_email/ident_general/email') ?>"><?php echo Mage::getStoreConfig('trans_email/ident_general/email'); ?></a></li>
 					</ul>
 				</address>
 			</div>
@@ -15,10 +15,10 @@
 				<h3>Links</h3>
 				<ul class="list-unstyled">
 					<li><a href="<?php echo $this->getUrl('') ?>">Home</a></li>
-					<li><a href="<?php echo $this->getUrl('') ?>about">About</a></li>
-					<li><a href="<?php echo $this->getUrl('') ?>services">Services</a></li>
-					<li><a href="<?php echo $this->getUrl('') ?>products">Products</a></li>
-					<li><a href="<?php echo $this->getUrl('') ?>faq">FAQ</a></li>
+					<li><a href="<?php echo $this->getUrl('about') ?>">About</a></li>
+					<li><a href="<?php echo $this->getUrl('services') ?>">Services</a></li>
+					<li><a href="<?php echo $this->getUrl('products') ?>">Products</a></li>
+					<li><a href="<?php echo $this->getUrl('faq') ?>">FAQ</a></li>
 					<li><a href="<?php echo $this->getUrl('contact-us') ?>">Contact us</a></li>
 				</ul>
 			</div>

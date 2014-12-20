@@ -105,6 +105,12 @@ footer {
 		font-family: $fontBase;
 		font-size: 12px;
 		.entypo, .entypo-social { color: #777; }
+		.entypo-social {
+			display: inline-block;
+			margin-right: 2px;
+			text-align: center;			
+			width: 12px;
+		}
 		h3 { color: $orange; }
 	}
 }

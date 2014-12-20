@@ -1,15 +1,15 @@
 /**
-* Website name here
-* Website URL here
+* Website Radrestore
+* Website www.radrestore.co.uk
 *
-* @author Author name here
-* @package mypackagename_default
+* @author Sebastian Kaminski
+* @package peteshop
 *
 */
 (function ($) {
     "use strict";
 
     $(document).ready(function(){
-    	console.log("Homepage")
+    	// Script here
     });
 })(jQuery);

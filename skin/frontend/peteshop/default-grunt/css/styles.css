@@ -15112,18 +15112,25 @@ footer .footer-content .entypo, footer .footer-content .entypo-social {
   color: #777;
 }
 /* line 108, ../scss/styles.scss */
+footer .footer-content .entypo-social {
+  display: inline-block;
+  margin-right: 2px;
+  text-align: center;
+  width: 12px;
+}
+/* line 114, ../scss/styles.scss */
 footer .footer-content h3 {
   color: #f0ad4e;
 }
 
 /* Menu Fix */
-/* line 114, ../scss/styles.scss */
+/* line 120, ../scss/styles.scss */
 .navbar .dropdown:hover .dropdown-menu {
   display: block;
 }
 
 /* Boostrap Grid */
-/* line 119, ../scss/styles.scss */
+/* line 125, ../scss/styles.scss */
 .container-fluid {
   padding: 0 !important;
 }
