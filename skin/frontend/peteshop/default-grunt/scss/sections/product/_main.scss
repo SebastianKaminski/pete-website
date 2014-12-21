@@ -174,16 +174,21 @@
 // Add to Links + Add to Cart
 // --------------------------------------------------
 .add-to-box { 
-	margin:10px 0;
+	margin: 15px 0 10px;
 
 	.add-to-cart { 
-		float:left;
+		float:right;
 	}
 
 	.or { 
 		float:left; 
 		font-weight:bold; 
 		margin:0 7px;
+		display: none;
+	}
+
+	.btn {
+		margin-top: -6px;
 	}
 
 	.add-to-links { 
@@ -353,6 +358,8 @@
 	.pinit-button { padding-right: 22px; }
 
 	.availability { 
+		border-radius: 0;
+		font-weight: normal;
 		margin:10px 0;
 		padding: 2px 5px;
 	}
