@@ -37,6 +37,14 @@
             <action method="addItem"><type>skin_js</type><name>js/libs/html5shiv.min.js</name><params/><if>lt IE 9</if></action>
             <action method="addItem"><type>skin_js</type><name>js/libs/respond.min.js</name><params/><if>lt IE 9</if></action>
             <action method="addItem"><type>skin_js</type><name>js/libs/selectivizr.min.js</name><params/><if>lt IE 9</if></action>
+            <action method="addLinkRel">
+                <rel>author</rel>
+                <href>https://plus.google.com/109737528236830106730/</href>
+            </action>
+            <action method="addLinkRel">
+                <rel>publisher</rel>
+                <href>https://plus.google.com/109737528236830106730/</href>
+            </action>         
         </reference>
 
         <reference name="header">
