@@ -40,10 +40,10 @@
 	##### Please note - http://www. if not using www simply use http://
 	
 	RewriteCond %{THE_REQUEST} ^.*/index.php
-	RewriteRule ^(.*)index.php$ http://www.radrestore.co.uk/$1 [R=301,L]
+	RewriteRule ^(.*)index.php$ http://radrestore.co.uk/$1 [R=301,L]
   
   	##### Please note - http://www. if not using www simply use http://
-	redirect 301 /home http://www.radrestore.co.uk
+	redirect 301 /home http://radrestore.co.uk
 	
 	Options +FollowSymLinks
 	RewriteEngine on
@@ -80,7 +80,7 @@
 ##### Header Directives #####
 
 <ifModule mod_headers.c>
-	Header unset ETag
+	Header unset ETag 
 	Header unset Last-Modified
 </ifModule>
 
