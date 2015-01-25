@@ -30,8 +30,8 @@
 ##### Necessary redirects and rewrites for search engines #####
 
 <IfModule mod_rewrite.c>
-	#RewriteCond %{HTTP_HOST} !^www.yourdomain.com$ [NC]
-	#RewriteRule ^(.*)$ http://www.yourdomain.com/$1 [R=301,L]
+	#RewriteCond %{HTTP_HOST} !^www.radrestore.co.uk$ [NC]
+	#RewriteRule ^(.*)$ http://www.radrestore.co.uk/$1 [R=301,L]
 	
 	##### Redirect away from /index.php and /home	
 	##### Warning: This index.php rewrite will prevent Magento 
@@ -40,10 +40,10 @@
 	##### Please note - http://www. if not using www simply use http://
 	
 	RewriteCond %{THE_REQUEST} ^.*/index.php
-	RewriteRule ^(.*)index.php$ http://www.yourdomain.com/$1 [R=301,L]
+	RewriteRule ^(.*)index.php$ http://www.radrestore.co.uk/$1 [R=301,L]
   
   	##### Please note - http://www. if not using www simply use http://
-	redirect 301 /home http://www.yourdomain.com
+	redirect 301 /home http://www.radrestore.co.uk
 	
 	Options +FollowSymLinks
 	RewriteEngine on
