@@ -1,0 +1,44 @@
+<?php 
+    $news_count = Mage::getStoreConfig('news/news_general/no_of_news_column');
+    if(Mage::getStoreConfig('news/news_general/enabled') == 1):
+        $i = 0;    
+        $collection = $this->getCachedCollection();
+        $count = count($collection);  
+        if($count !==0 && $news_count>0):
+        ?>
+        <div class="block block-poll news-extra-block ">
+            <div class="block-title">
+                <strong><span>Latest News</span></strong>
+            </div>
+            <div class="block-content">
+                <ul class="news-list">
+                    <?php $cnt = 0;  foreach ($collection as $news_item): ?>
+                        <?php     
+
+                            if($news_count == ''){ $news_count = 3; }
+                            if($cnt < $news_count){
+                            ?>
+                            <li>
+                                <label><a href="<?php echo $this->getUrl('news/index/view').'?id='.$news_item->getNewsId(); ?>"><?php echo $news_item->getTitle(); ?></a></label>
+                            </li>
+                            <?php  
+                            }else{ break; }
+                            $cnt++;
+                        ?>
+                        <?php endforeach; ?> 
+                </ul>
+                <div class="actions" >
+                    <a href="<?php echo $this->getUrl('news/index') ?>" style="float: right;"><?php echo $this->__("View All"); ?></a>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">decorateGeneric($$('ul.news-list li'), ['odd','even','first','last'])</script>
+        <?php else: ?>
+        <div><h4><?php echo $this->__('No News to publish.'); ?></h4></div>
+        <?php endif; ?> 
+    <?php
+        else:
+        $url = Mage::getBaseUrl();
+        Mage::app()->getFrontController()->getResponse()->setRedirect($url);
+        endif;
+?>
