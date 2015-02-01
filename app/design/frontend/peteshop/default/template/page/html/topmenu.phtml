@@ -17,11 +17,14 @@
 			<ul class="nav navbar-nav">
 				<li class="home<?php if (Mage::helper('core/url')->getCurrentUrl() === Mage::helper('core/url')->getHomeUrl()):?> active<?php endif;?>"><a href="<?php echo $this->getUrl('')?>" title="Home">Home</a></li>
 				<?php echo $_menu ?>
+				<li><a href="#" id="show-search-form"><span class="glyphicon glyphicon-search"></span></a></li>
+				<?php echo $this->getChildHtml('topSearch') ?> 
 			</ul>
-			<ul class="nav navbar-nav navbar-right">
+<!-- 			<ul class="nav navbar-nav navbar-right">
 				<li><a href="#" id="show-search-form"><span class="glyphicon glyphicon-search"></span></a></li>
 			</ul>
-			<?php echo $this->getChildHtml('topSearch') ?>
+			<?php echo $this->getChildHtml('topSearch') ?> 
+			-->
 		</div>
 	</div>
 </nav>
