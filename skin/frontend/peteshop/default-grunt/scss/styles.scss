@@ -135,7 +135,9 @@ footer {
 
 /* Menu Search */
 .search-form-container {
+	
 	position: relative;
+
 	#search_mini_form {
 		left: 0;
 		margin-left: 25px;
@@ -146,7 +148,10 @@ footer {
 			margin-left: 10px;
 		}
 
-		@include breakpoint(small) {
+	}
+
+	@include breakpoint(small) {
+		#search_mini_form {
 			padding: 0;
 			margin: 0;
 			left: 50px;

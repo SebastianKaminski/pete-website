@@ -15158,7 +15158,7 @@ footer .footer-content h3 {
 .search-form-container {
   position: relative;
 }
-/* line 139, ../scss/styles.scss */
+/* line 141, ../scss/styles.scss */
 .search-form-container #search_mini_form {
   left: 0;
   margin-left: 25px;
@@ -15166,18 +15166,18 @@ footer .footer-content h3 {
   top: 0;
   width: 300px;
 }
-/* line 145, ../scss/styles.scss */
+/* line 147, ../scss/styles.scss */
 .search-form-container #search_mini_form button {
   margin-left: 10px;
 }
 @media (min-width: 768px) {
-  /* line 139, ../scss/styles.scss */
+  /* line 154, ../scss/styles.scss */
   .search-form-container #search_mini_form {
     padding: 0;
     margin: 0;
     left: 50px;
   }
-  /* line 153, ../scss/styles.scss */
+  /* line 158, ../scss/styles.scss */
   .search-form-container #search_mini_form input {
     float: left;
     width: 150px;
