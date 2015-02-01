@@ -15163,4 +15163,9 @@ footer .footer-content h3 {
   position: absolute;
   left: 0;
   top: -30px;
+  width: 260px;
+}
+/* line 144, ../scss/styles.scss */
+.search-form-container #search_mini_form button {
+  margin-left: 10px;
 }
