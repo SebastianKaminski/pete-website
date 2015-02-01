@@ -137,10 +137,11 @@ footer {
 .search-form-container {
 	position: relative;
 	#search_mini_form {
-		position: absolute;
 		left: 0;
-		top: -30px;
-		width: 260px;
+		margin-left: 25px;
+		position: absolute;
+		top: 0;
+		width: 300px;
 		button {
 			margin-left: 10px;
 		}

@@ -15160,12 +15160,13 @@ footer .footer-content h3 {
 }
 /* line 139, ../scss/styles.scss */
 .search-form-container #search_mini_form {
-  position: absolute;
   left: 0;
-  top: -30px;
-  width: 260px;
+  margin-left: 25px;
+  position: absolute;
+  top: 0;
+  width: 300px;
 }
-/* line 144, ../scss/styles.scss */
+/* line 145, ../scss/styles.scss */
 .search-form-container #search_mini_form button {
   margin-left: 10px;
 }
