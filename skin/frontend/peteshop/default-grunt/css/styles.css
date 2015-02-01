@@ -12422,16 +12422,16 @@ footer:after,
 
 /* line 3, ../scss/sections/category/_main.scss */
 .category-image {
-  background-position: center center;
+  background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 200px;
+  height: 400px;
   margin: 0 0 25px;
   width: 100%;
 }
 /* line 10, ../scss/sections/category/_main.scss */
 .category-image figcaption {
-  height: 200px;
+  height: 400px;
   position: relative;
 }
 /* line 13, ../scss/sections/category/_main.scss */
