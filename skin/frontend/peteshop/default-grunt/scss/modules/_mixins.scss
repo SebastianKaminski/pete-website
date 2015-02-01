@@ -22,6 +22,18 @@
   }
 }
 
+@mixin device($point) {
+  @if $point == large {
+    @media (max-width: 1200px) { @content; }
+  }
+  @else if $point == medium {
+    @media (max-width: 992px) { @content; }
+  }
+  @else if $point == small {
+    @media (max-width: 768px)  { @content; }
+  }
+}
+
 // background image retina mixin
 // e.g @include background-image-retina("../images/sprite", png, 750px, 750px, "repeat-x");
 // --------------------------------------------------

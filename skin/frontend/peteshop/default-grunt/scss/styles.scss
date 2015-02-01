@@ -135,7 +135,7 @@ footer {
 
 /* Menu Search */
 .search-form-container {
-	
+
 	position: relative;
 
 	#search_mini_form {
@@ -150,7 +150,7 @@ footer {
 
 	}
 
-	@include breakpoint(small) {
+	@include device(small) {
 		#search_mini_form {
 			padding: 0;
 			margin: 0;
