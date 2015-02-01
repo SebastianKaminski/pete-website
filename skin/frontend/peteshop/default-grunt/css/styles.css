@@ -8,7 +8,7 @@
 */
 /*!
  * Bootstrap v3.2.0 (http://getbootstrap.com)
- * Copyright 2011-2014 [object Object]
+ * Copyright 2011-2015 [object Object]
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
@@ -5717,13 +5717,13 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 @media (min-width: 768px) {
   /* line 3955, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
   .navbar-nav {
-    float: left;
     margin: 0;
+    text-align: center;
   }
 
   /* line 3959, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
   .navbar-nav > li {
-    float: left;
+    display: inline-block;
   }
 
   /* line 3962, ../node_modules/bootstrap/dist/css/_bootstrap.scss */
