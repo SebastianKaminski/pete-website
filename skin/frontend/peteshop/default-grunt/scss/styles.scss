@@ -129,5 +129,16 @@ footer {
 	 display: block;
    }
 }
+
 /* Boostrap Grid */
 .container-fluid { padding: 0 !important; }
+
+/* Menu Search */
+.search-form-container {
+	position: relative;
+	#search_mini_form {
+		position: absolute;
+		left: 0;
+		top: -30px;
+	}
+}
