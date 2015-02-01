@@ -88,17 +88,20 @@ $c-grey: #BBB;
 	color: #FFF;
 	min-height: 600px;
 	margin: -50px 0 -25px;
-	.jumbotron {
-		text-shadow: 1px 1px 1px #000;
-		background: rgba(0,0,0,0.5);
-		margin-top: 50px;
-		h1 {
-			small {
-				color: #FFF;
+	.std {
+		padding: 140px 0;		
+		.jumbotron {
+			text-shadow: 1px 1px 1px #000;
+			background: rgba(0,0,0,0.5);
+			margin-top: 50px;
+			h1 {
+				small {
+					color: #FFF;
+				}
 			}
-		}
-		p {
-			font-size: 16px;
+			p {
+				font-size: 16px;
+			}
 		}
 	}
 }

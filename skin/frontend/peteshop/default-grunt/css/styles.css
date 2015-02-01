@@ -15100,65 +15100,69 @@ tr.summary-details-excluded {
   margin: -50px 0 -25px;
 }
 /* line 91, ../scss/styles.scss */
-#homepage .jumbotron {
+#homepage .std {
+  padding: 140px 0;
+}
+/* line 93, ../scss/styles.scss */
+#homepage .std .jumbotron {
   text-shadow: 1px 1px 1px #000;
   background: rgba(0, 0, 0, 0.5);
   margin-top: 50px;
 }
-/* line 96, ../scss/styles.scss */
-#homepage .jumbotron h1 small {
+/* line 98, ../scss/styles.scss */
+#homepage .std .jumbotron h1 small {
   color: #FFF;
 }
-/* line 100, ../scss/styles.scss */
-#homepage .jumbotron p {
+/* line 102, ../scss/styles.scss */
+#homepage .std .jumbotron p {
   font-size: 16px;
 }
 
-/* line 107, ../scss/styles.scss */
+/* line 110, ../scss/styles.scss */
 footer.container-fluid {
   background: #333;
   margin-top: 25px;
 }
-/* line 111, ../scss/styles.scss */
+/* line 114, ../scss/styles.scss */
 footer .footer-content {
   color: #FFF;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
 }
-/* line 115, ../scss/styles.scss */
+/* line 118, ../scss/styles.scss */
 footer .footer-content .entypo, footer .footer-content .entypo-social {
   color: #777;
 }
-/* line 116, ../scss/styles.scss */
+/* line 119, ../scss/styles.scss */
 footer .footer-content .entypo-social {
   display: inline-block;
   margin-right: 2px;
   text-align: center;
   width: 12px;
 }
-/* line 122, ../scss/styles.scss */
+/* line 125, ../scss/styles.scss */
 footer .footer-content h3 {
   color: #f0ad4e;
 }
 
 /* Menu Fix */
-/* line 128, ../scss/styles.scss */
+/* line 131, ../scss/styles.scss */
 .navbar .dropdown:hover .dropdown-menu {
   display: block;
 }
 
 /* Boostrap Grid */
-/* line 134, ../scss/styles.scss */
+/* line 137, ../scss/styles.scss */
 .container-fluid {
   padding: 0 !important;
 }
 
 /* Menu Search */
-/* line 137, ../scss/styles.scss */
+/* line 140, ../scss/styles.scss */
 .search-form-container {
   position: relative;
 }
-/* line 141, ../scss/styles.scss */
+/* line 144, ../scss/styles.scss */
 .search-form-container #search_mini_form {
   left: 0;
   margin-left: 25px;
@@ -15166,18 +15170,18 @@ footer .footer-content h3 {
   top: 0;
   width: 300px;
 }
-/* line 147, ../scss/styles.scss */
+/* line 150, ../scss/styles.scss */
 .search-form-container #search_mini_form button {
   margin-left: 10px;
 }
 @media (max-width: 768px) {
-  /* line 154, ../scss/styles.scss */
+  /* line 157, ../scss/styles.scss */
   .search-form-container #search_mini_form {
     padding: 0;
     margin: 0;
     left: 50px;
   }
-  /* line 158, ../scss/styles.scss */
+  /* line 161, ../scss/styles.scss */
   .search-form-container #search_mini_form input {
     float: left;
     width: 150px;
