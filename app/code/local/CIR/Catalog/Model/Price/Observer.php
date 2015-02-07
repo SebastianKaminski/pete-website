@@ -51,4 +51,12 @@ class CIR_Catalog_Model_Price_Observer
 	        $orderItem->setProductOptions($options);
 	    }
 	}
+
+	public function salesQuoteItemSetCustomAttribute(Varien_Event_Observer $observer)
+	{
+	    $quoteItem = $observer->getQuoteItem();
+	    $product = $observer->getProduct();
+	    $quoteItem->setCustomAttribute($product->getCustomAttribute());
+	}
+
 }
