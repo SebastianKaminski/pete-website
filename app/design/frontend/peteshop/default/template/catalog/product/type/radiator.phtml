@@ -7,12 +7,11 @@
 
 <div>
 	<?php
-		$finishes = Mage::getResourceModel('catalog/product_collection');
+		$collection = Mage::getModel('catalog/product')->getCollection();
+		$collection->addAttributeToFilter('item_type', 'Finish');
 		// var_dump($finishes);
-		foreach ($finishes as $item) {
-			if ($item->getAttributeText('item_type') == "Finish") {
-				echo $item->getName();
-			}
+		foreach ($collection as $item) {
+			echo $item->getName()."<br/>";
 			// echo $finish = Mage::getModel('catalog/product')->loadByAttribute('item_type','Finish');
 			// echo "<option value=".$finish->getPrice().">".$finish->getName()."</option>";
 		}
