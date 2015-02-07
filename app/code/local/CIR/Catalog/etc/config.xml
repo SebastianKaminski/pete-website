@@ -21,7 +21,7 @@
           <extra_options>
             <type>model</type>
             <class>CIR_Catalog_Model_Price_Observer</class>
-            <method>catalogProductLoadAfter</method>
+            <method>catalog_product_load_after</method>
           </extra_options>
         </observers>
       </catalog_product_load_after>
