@@ -48,8 +48,8 @@
 
 			$("#choose-radiator-finish, input[name='radiator-number-of-sections']").on("change", function () {
 				var total = calcRadiatorCost(radiatorCost(), finishCost(), sections());
+				console.log(total)
 				if (total !== NaN) {
-					console.log(total)
 					if (sections() <=30 && sections >= 3) {
 						alert("Please select number of sections between 3 and 30.")
 					} else {
