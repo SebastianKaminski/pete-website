@@ -7,7 +7,7 @@
         </circatalog>
     </models>
     <events>
-      <sales_quote_add_item>
+      <checkout_cart_product_add_after>
         <observers>
           <cir_catalog_price_observer>
             <type>singleton</type>
@@ -15,7 +15,7 @@
             <method>calculate_radiator_price</method>
           </cir_catalog_price_observer>
         </observers>
-      </sales_quote_add_item>
+      </checkout_cart_product_add_after>
     </events>
   </global>
 </config>
