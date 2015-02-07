@@ -7,15 +7,19 @@
 
 <div>
 	<?php
-		$collection = Mage::getModel('catalog/product')->getCollection();
+		$products = Mage::getModel('catalog/product')->getCollection();
+		foreach($products as $prod) {
+			$product = Mage::getModel('catalog/product')->load($prod->getId());
+			Mage::Log('product found:'.$product->getName());
+		}
+		// $collection = Mage::getModel('catalog/product')->getCollection();
 		// $collection->addAttributeToFilter('item_type', 'Finish');
 		// var_dump($finishes);
-		foreach ($collection as $item) {
-			Mage::Log('product found:'.$item->getName());
+		// foreach ($collection as $item) {
 			// echo $item->getName()."<br/>";
 			// echo $finish = Mage::getModel('catalog/product')->loadByAttribute('item_type','Finish');
 			// echo "<option value=".$finish->getPrice().">".$finish->getName()."</option>";
-		}
+		// }
 	?>
 	<label for="">
 		Finish
