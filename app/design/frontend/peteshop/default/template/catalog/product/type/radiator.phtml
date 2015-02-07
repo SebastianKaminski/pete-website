@@ -49,8 +49,13 @@
 			$("#choose-radiator-finish, input[name='radiator-number-of-sections']").on("change", function () {
 				var total = calcRadiatorCost(radiatorCost(), finishCost(), sections());
 				if (total !== NaN) {
-					btn.removeClass('disabled').attr('disabled', false);
-					renderRadiatorCost(total);
+					console.log(total)
+					if (sections() <=30 && sections >= 3) {
+						alert("Please select number of sections between 3 and 30.")
+					} else {
+						btn.removeClass('disabled').attr('disabled', false);
+						renderRadiatorCost(total);
+					}
 				} else {
 					btn.addClass('disabled').attr("disabled", true);
 				}
