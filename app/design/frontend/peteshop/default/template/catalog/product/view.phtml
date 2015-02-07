@@ -59,6 +59,10 @@
                 <?php echo $this->getTierPriceHtml() ?>
                 <?php echo $this->getChildHtml('extrahint') ?>
 
+                <?php if ($_product->getAttributeText('item_type') == "Radiator"): ?>
+                    <h5>Radiator suko!</h5>
+                <?php endif; ?>
+
                 <?php if (!(($_product->getAttributeText('instore_only')) == "No")):?>
                     <?php if (!$this->hasOptions()):?>
                         <div class="add-to-box">
@@ -106,7 +110,7 @@
             <div class="product-collateral">
                 <?php echo $this->getChildHtml('upsell_products') ?>
                 <?php echo $this->getChildHtml('product_additional_data') ?>
-            </div>            
+            </div>
         </div>
 
     </form>
