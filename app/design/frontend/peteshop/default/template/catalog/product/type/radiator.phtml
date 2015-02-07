@@ -30,14 +30,22 @@
 	(function ($) {
 	    "use strict";
 
+		var radiatorCost = 0, sections = 0, finishCost = 0;
+
+	    var calcRadiatorCost = function (r,f,s) {
+	    	return Number((r+f)*s).toFixed(2);
+	    }
+
 	    $(document).ready(function(){
-			var radiatorCost = 0, sections = 0, finishCost = 0;
+
+	    	var btn = $("#product-addtocart-button").addClass('disabled').attr("disabled", true);
 
 			$("#choose-radiator-finish").on("change", function () {
 				radiatorCost = parseFloat($("input[name='radiator-price']").val());
 				sections = parseFloat($("input[name='radiator-number-of-sections']").val());
 				finishCost = parseFloat($(this).children('option:selected').data('price'));
-				console.log(radiatorCost, sections, finishCost);
+				btn.removeClass('disabled').attr('disabled', false);
+				console.log(calcRadiatorCost(radiatorCost, finishCost, sections));
 			});
 	    });
 
