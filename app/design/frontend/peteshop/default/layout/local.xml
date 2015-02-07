@@ -77,7 +77,9 @@
             <action method="addItem"><type>skin_js</type><name>js/build/home.min.js</name></action>
         </reference>
         <!-- Tweets -->
-        <block type="tweets/tweets" name="tweets.tweets" template="tweets/tweets.phtml" />
+        <reference name="root">
+            <block type="tweets/tweets" name="tweets.tweets" template="tweets/tweets.phtml" />
+        </reference>
     </cms_index_index>
 
     <!-- category (default) -->
