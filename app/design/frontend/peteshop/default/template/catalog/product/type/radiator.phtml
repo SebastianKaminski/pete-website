@@ -10,7 +10,7 @@
 <div>
 	<label for="">
 		Finish
-		<select name="choose-radiator-finish" id="choose-radiator-finish">
+		<select name="choose-radiator-finish" id="choose-radiator-finish" onchange="changeFinish(this);">
 			<option value="false" selected="selcted" disabled="disabled">Choose finish</option>
 			<?php
 				$products = Mage::getModel('catalog/product')->getCollection();
@@ -24,3 +24,14 @@
 		</select>
 	</label>
 </div>
+
+<script type="text/javascript">
+//<![CDATA[
+	var changeFinish = function (select) {
+		var radiatorCost = parseFloat($("input[name='radiator-price']").val());
+		var sections = parseFloat($("input[name='radiator-number-of-sections']").val());
+		var finishCost = parseFloat($(select).children('option:selected').data('price'));
+		console.log(radiatorCost, sections, finishCost);
+	}
+ //]]>
+</script>
