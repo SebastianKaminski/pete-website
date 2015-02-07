@@ -1,4 +1,5 @@
 <input type="hidden" value="<?php echo $this->getProduct()->getFinalPrice(); ?>" name="radiator-price">
+<input type="hidden" value="<?php echo $this->getProduct()->getId(); ?>" name="radiator-id">
 
 <div>
 	<label for="">
@@ -30,10 +31,18 @@
 	(function ($) {
 	    "use strict";
 
-		var radiatorCost = 0, sections = 0, finishCost = 0;
+		// var radiatorCost = 0, sections = 0, finishCost = 0;
+
+		var radiatorCost = function () { return parseFloat($("input[name='radiator-price']").val()); }
+		var sections = function () { return parseFloat($("input[name='radiator-number-of-sections']").val()); };
+		var finishCost = function () { return parseFloat($("#choose-radiator-finish").children('option:selected').data('price'));};
 
 	    var calcRadiatorCost = function (r,f,s) {
-	    	return Number((r+f)*s).toFixed(2);
+	    	return (r+f)*s;
+	    }
+
+	    var renderRadiatorCost = function (cost) {
+	    	$("#product-price-" + $("input[name='radiator-id']").val()).html("£"+Number(cost).toFixed(2));
 	    }
 
 	    $(document).ready(function(){
@@ -41,10 +50,8 @@
 	    	var btn = $("#product-addtocart-button").addClass('disabled').attr("disabled", true);
 
 			$("#choose-radiator-finish").on("change", function () {
-				radiatorCost = parseFloat($("input[name='radiator-price']").val());
-				sections = parseFloat($("input[name='radiator-number-of-sections']").val());
-				finishCost = parseFloat($(this).children('option:selected').data('price'));
 				btn.removeClass('disabled').attr('disabled', false);
+				renderRadiatorCost(calcRadiatorCost(radiatorCost(), finishCost(), sections()))
 				console.log(calcRadiatorCost(radiatorCost, finishCost, sections));
 			});
 	    });
