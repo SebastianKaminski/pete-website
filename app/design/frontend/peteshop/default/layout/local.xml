@@ -45,6 +45,9 @@
                 <rel>publisher</rel>
                 <href>https://plus.google.com/109737528236830106730/</href>
             </action>
+            <action method="addItem"><type>skin_js</type><name>js/build/jquery.min.js</name></action>
+            <action method="addItem"><type>skin_js</type><name>js/build/bootstrap.min.js</name></action>
+            <action method="addItem"><type>skin_js</type><name>js/build/global.min.js</name></action>
         </reference>
 
         <reference name="header">
@@ -59,11 +62,6 @@
         </reference>
 
         <reference name="root">
-            <block type="page/html_head" name="site.bottom.css.js" as="site.bottom.css.js" template="page/html/site-bottom-css-js.phtml">
-                <action method="addItem"><type>skin_js</type><name>js/build/jquery.min.js</name></action>
-                <action method="addItem"><type>skin_js</type><name>js/build/bootstrap.min.js</name></action>
-                <action method="addItem"><type>skin_js</type><name>js/build/global.min.js</name></action>
-            </block>
             <reference name="top.links">
                 <!-- Remove 'My account' link -->
                 <action method="removeLinkByUrl"><url helper="customer/getAccountUrl"/></action>
