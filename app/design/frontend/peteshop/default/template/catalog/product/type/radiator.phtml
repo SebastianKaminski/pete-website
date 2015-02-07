@@ -27,14 +27,21 @@
 
 <script type="text/javascript">
 //<![CDATA[
-	var radiatorCost = 0, sections = 0, finishCost = 0;
+	(function ($) {
+	    "use strict";
 
-	jQuery("#choose-radiator-finish").on("change", function () {
-		radiatorCost = parseFloat(jQuery("input[name='radiator-price']").val());
-		sections = parseFloat(jQuery("input[name='radiator-number-of-sections']").val());
-		finishCost = parseFloat(jQuery(this).children('option:selected').data('price'));
-		console.log(radiatorCost, sections, finishCost);
-	});
+	    $(document).ready(function(){
+			var radiatorCost = 0, sections = 0, finishCost = 0;
+
+			$("#choose-radiator-finish").on("change", function () {
+				radiatorCost = parseFloat($("input[name='radiator-price']").val());
+				sections = parseFloat($("input[name='radiator-number-of-sections']").val());
+				finishCost = parseFloat($(this).children('option:selected').data('price'));
+				console.log(radiatorCost, sections, finishCost);
+			});
+	    });
+
+	})(jQuery);
 
  //]]>
 </script>
