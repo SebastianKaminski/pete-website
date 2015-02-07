@@ -8,10 +8,11 @@
 <div>
 	<?php
 		$collection = Mage::getModel('catalog/product')->getCollection();
-		$collection->addAttributeToFilter('item_type', 'Finish');
+		// $collection->addAttributeToFilter('item_type', 'Finish');
 		// var_dump($finishes);
 		foreach ($collection as $item) {
-			echo $item->getName()."<br/>";
+			Mage::Log('product found:'.$item->getName());
+			// echo $item->getName()."<br/>";
 			// echo $finish = Mage::getModel('catalog/product')->loadByAttribute('item_type','Finish');
 			// echo "<option value=".$finish->getPrice().">".$finish->getName()."</option>";
 		}
