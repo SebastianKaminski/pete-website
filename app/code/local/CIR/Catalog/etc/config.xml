@@ -16,6 +16,15 @@
           </cir_catalog_price_observer>
         </observers>
       </checkout_cart_product_add_after>
+      <catalog_product_load_after>
+        <observers>
+          <extra_options>
+            <type>model</type>
+            <class>CIR_Catalog_Model_Price_Observer</class>
+            <method>catalogProductLoadAfter</method>
+          </extra_options>
+        </observers>
+      </catalog_product_load_after>
     </events>
   </global>
 </config>

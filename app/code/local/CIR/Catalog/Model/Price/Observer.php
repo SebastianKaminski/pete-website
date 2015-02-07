@@ -7,11 +7,20 @@ class CIR_Catalog_Model_Price_Observer
 
 	}
 
-	public function calculate_radiator_price(Varien_Event_Observer $obs)
+	public function calculate_radiator_price(Varien_Event_Observer $observer)
 	{
-	    // $customPrice = Mage::getSingleton(’core/session’)->getCustomPriceCalcuation(); // Provide you price i have set with session
 	    $customPrice = 999;
-	    $p = $obs->getQuoteItem();
+	    $p = $observer->getQuoteItem();
 	    $p->setCustomPrice($customPrice)->setOriginalCustomPrice($customPrice);
+	}
+
+	public function catalogProductLoadAfter(Varien_Event_Observer $observer)
+	{
+		$action = Mage::app()->getFrontController()->getAction();
+		if ($action->getFullActionName() == 'checkout_cart_add')
+		{
+			$options = $action->getRequest()->getParam('extra_options');
+			Mage:log($options);
+		}
 	}
 }
