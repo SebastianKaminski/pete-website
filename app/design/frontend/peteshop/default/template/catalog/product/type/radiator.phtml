@@ -1,24 +1,22 @@
 <div>
 	<label for="">
 		Number of sections
-		<input type="number" step="1" min="3" max="30">
+		<input type="number" step="1" min="3" max="30" value="10">
 	</label>
 </div>
 
 <div>
 	<label for="">
 		Finish
-		<select name="" id="">
+		<select name="choose-radiator-finish" id="choose-radiator-finish">
 			<option value="false" selected="selcted" disabled="disabled">Choose finish</option>
 			<?php
 				$products = Mage::getModel('catalog/product')->getCollection();
 				foreach($products as $prod) {
 					$product = Mage::getModel('catalog/product')->load($prod->getId());
-
 					if (($product->getAttributeText('item_type') == "Finish")) {
-						echo "<option value=".$product->getId()." data-price=".$product->getPrice().">".$product->getName()."</option>";
+						echo "<option value=".$product->getId()." data-price=".$product->getPrice().">".$product->getName()." (".Mage::helper('core')->currency($product->getPrice(), true, false);.")</option>";
 					}
-
 				}
 			?>
 		</select>
