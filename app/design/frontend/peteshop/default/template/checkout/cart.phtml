@@ -117,10 +117,8 @@
                 </tfoot>
                 <tbody>
                 <?php foreach($this->getItems() as $_item): ?>
-                    <?php
-                        echo $this->getItemHtml($_item);
-                        Mage:log(var_dump($_item));
-                    ?>
+                    <?php echo $_item->getOptionByCode('additional_options'); ?>
+                    <?php // echo $this->getItemHtml($_item); ?>
                 <?php endforeach ?>
                 </tbody>
             </table>
