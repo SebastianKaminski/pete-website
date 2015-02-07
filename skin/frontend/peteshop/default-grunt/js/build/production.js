@@ -31,21 +31,25 @@
     });
 })(jQuery);
 
-if(!String.linkify) {
-    String.prototype.linkify = function() {
-
-        // http://, https://, ftp://
-        var urlPattern = /\b(?:https?|ftp):\/\/[a-z0-9-+&@#\/%?=~_|!:,.;]*[a-z0-9-+&@#\/%=~_|]/gim;
-
-        // www. sans http:// or https://
-        var pseudoUrlPattern = /(^|[^\/])(www\.[\S]+(\b|$))/gim;
-
-        // Email addresses
-        var emailAddressPattern = /[\w.]+@[a-zA-Z_-]+?(?:\.[a-zA-Z]{2,6})+/gim;
-
-        return this
-            .replace(urlPattern, '<a href="$&">$&</a>')
-            .replace(pseudoUrlPattern, '$1<a href="http://$2">$2</a>')
-            .replace(emailAddressPattern, '<a href="mailto:$&">$&</a>');
-    };
+function make_link(string) {
+    var words = string.split(' '),
+        ret = document.createDocumentFragment();
+    for (var i = 0, l = words.length; i < l; i++) {
+        if (words[i].match(/[-a-zA-Z0-9@:%_\+.~#?&//=]{2,256}\.[a-z]{2,4}\b(\/[-a-zA-Z0-9@:%_\+.~#?&//=]*)?/gi)) {
+            var elm = document.createElement('a');
+            elm.href = words[i];
+            elm.textContent = words[i];
+            if (ret.childNodes.length > 0) {
+                ret.lastChild.textContent += ' ';
+            }
+            ret.appendChild(elm);
+        } else {
+            if (ret.lastChild && ret.lastChild.nodeType === 3) {
+                ret.lastChild.textContent += ' ' + words[i];
+            } else {
+                ret.appendChild(document.createTextNode(' ' + words[i]));
+            }
+        }
+    }
+    return ret;
 }
