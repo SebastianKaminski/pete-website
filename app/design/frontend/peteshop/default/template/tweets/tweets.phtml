@@ -21,9 +21,9 @@
 				<?php endforeach; ?>       
 				</ul>
 				<script type="text/javascript">
-					$(function() {
+					jQuery(function() {
 						console.log("document ready");
-						$("#sparx-tweets").linkify();
+						jQuery("#sparx-tweets").html(jQuery("#sparx-tweets").html().linkify());
 					});
 				</script>
 			</div>
