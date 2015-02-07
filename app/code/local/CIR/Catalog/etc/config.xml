@@ -7,40 +7,37 @@
         </circatalog>
     </models>
 
-<fieldsets>
-    <sales_convert_quote_item>
-        <custom_attribute>
-            <to_order_item>*</to_order_item>
-        </custom_attribute>
-    </sales_convert_quote_item>
-    <sales_convert_order_item>
-        <custom_attribute>
-            <to_quote_item>*</to_quote_item>
-        </custom_attribute>
-    </sales_convert_order_item>
-</fieldsets>
-
+    <fieldsets>
+      <sales_convert_quote_item>
+          <test>
+              <to_order_item>*</to_order_item>
+          </test>
+      </sales_convert_quote_item>
+    </fieldsets>
 
     <sales>
-        <quote>
-            <item>
-                <product_attributes>
-                    <custom_attribute/>
-                </product_attributes>
-            </item>
-        </quote>
+      <quote>
+        <item>
+          <product_attributes>
+              <test />
+          </product_attributes>
+        </item>
+      </quote>
     </sales>
 
     <events>
 
-<sales_quote_item_set_product>
-    <observers>
-        <cir_custom_attribute>
-            <class>CIR_Catalog_Model_Price_Observer</class>
-            <method>salesQuoteItemSetCustomAttribute</method>
-        </cir_custom_attribute>
-    </observers>
-</sales_quote_item_set_product>
+    <events>
+        <sales_quote_item_set_product>
+            <observers>
+                <cir_catalog_price_observer>
+                    <class>CIR_Catalog_Model_Price_Observer</class>
+                    <method>setTestAttribute</method>
+                </cir_catalog_price_observer>
+            </observers>
+        </sales_quote_item_set_product>
+    </events>
+
 
       <checkout_cart_product_add_after>
         <observers>

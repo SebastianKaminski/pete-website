@@ -59,4 +59,13 @@ class CIR_Catalog_Model_Price_Observer
 	    $quoteItem->setCustomAttribute($product->getCustomAttribute());
 	}
 
+	public function setTestAttribute(Varien_Event_Observer $observer) {
+
+	    $item = $observer->getQuoteItem();
+	    $product = $observer->getProduct();
+	    $item->setTest($product->getTest());
+	    Mage::log($product->getTest(), null, 'debug.log', true);
+	    return $this;
+	}
+
 }
