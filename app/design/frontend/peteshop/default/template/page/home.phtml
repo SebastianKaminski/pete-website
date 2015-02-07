@@ -21,6 +21,7 @@
 	<div class="container-fluid">
 		<div class="main" id="homepage">
 			<?php echo $this->getChildHtml('content'); ?>
+			<?php echo $this->getLayout()->createBlock("tweets/tweets")->setTemplate("tweets/tweets.phtml")->toHtml(); ?>
 		</div>
 	</div>
 
