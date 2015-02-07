@@ -27,10 +27,11 @@
 
 <script type="text/javascript">
 //<![CDATA[
+	var $j = jQuery.noConflict();
 	var changeFinish = function (select) {
-		var radiatorCost = parseFloat($("input[name='radiator-price']").val());
-		var sections = parseFloat($("input[name='radiator-number-of-sections']").val());
-		var finishCost = parseFloat($(select).children('option:selected').data('price'));
+		var radiatorCost = parseFloat(j$("input[name='radiator-price']").val());
+		var sections = parseFloat(j$("input[name='radiator-number-of-sections']").val());
+		var finishCost = parseFloat(j$(select).children('option:selected').data('price'));
 		console.log(radiatorCost, sections, finishCost);
 	}
  //]]>
