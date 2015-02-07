@@ -14,58 +14,12 @@ class CIR_Catalog_Model_Price_Observer
 	    $p->setCustomPrice($customPrice)->setOriginalCustomPrice($customPrice);
 	}
 
-	public function catalog_product_load_after(Varien_Event_Observer $observer)
+	public function setKozaAttribute(Varien_Event_Observer $observer)
 	{
-		$action = Mage::app()->getFrontController()->getAction();
-		if ($action->getFullActionName() == 'checkout_cart_add')
-		{
-		    if ($options = $action->getRequest()->getParam('extra_options'))
-		    {
-		        $product = $observer->getProduct();
-
-		        $additionalOptions = array();
-		        if ($additionalOption = $product->getCustomOption('additional_options'))
-		        {
-		            $additionalOptions = (array) unserialize($additionalOption->getValue());
-		        }
-		        foreach ($options as $key => $value)
-		        {
-		            $additionalOptions[] = array(
-		                'label' => $key,
-		                'value' => $value,
-		            );
-		        }
-		        // add the additional options array with the option code additional_options
-		        $observer->getProduct()->addCustomOption('additional_options', serialize($additionalOptions));
-		    }
-		}
+        $item = $observer->getQuoteItem();
+        Zend_Debug::dump($item);
+        $product = $observer->getProduct();
+        $item->setKoza($product->getKoza());
+        return $this;
 	}
-
-	public function sales_convert_quote_item_to_order_item(Varien_Event_Observer $observer)
-	{
-	    $quoteItem = $observer->getItem();
-	    if ($additionalOptions = $quoteItem->getOptionByCode('additional_options')) {
-	        $orderItem = $observer->getOrderItem();
-	        $options = $orderItem->getProductOptions();
-	        $options['additional_options'] = unserialize($additionalOptions->getValue());
-	        $orderItem->setProductOptions($options);
-	    }
-	}
-
-	public function salesQuoteItemSetCustomAttribute(Varien_Event_Observer $observer)
-	{
-	    $quoteItem = $observer->getQuoteItem();
-	    $product = $observer->getProduct();
-	    $quoteItem->setCustomAttribute($product->getCustomAttribute());
-	}
-
-	public function setTestAttribute(Varien_Event_Observer $observer) {
-
-	    $item = $observer->getQuoteItem();
-	    $product = $observer->getProduct();
-	    $item->setTest($product->getTest());
-	    Mage::log($product->getTest(), null, 'debug.log', true);
-	    return $this;
-	}
-
 }
