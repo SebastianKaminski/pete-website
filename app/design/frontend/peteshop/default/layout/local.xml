@@ -28,7 +28,7 @@
 			<action method="removeItem"><type>skin_js</type><name>js/ie6.js</name><if>lt IE 7</if></action>
             <action method="removeItem"><type>js</type><name>scriptaculous/builder.js</name></action>
             <action method="removeItem"><type>js</type><name>scriptaculous/dragdrop.js</name></action>
-            <action method="removeItem"><type>js</type><name>scriptaculous/slider.js</name></action>            
+            <action method="removeItem"><type>js</type><name>scriptaculous/slider.js</name></action>
             <action method="removeItem"><type>js</type><name>varien/menu.js</name></action>
 			<action method="removeItem"><type>js</type><name>lib/ds-sleight.js</name><params/><if>lt IE 7</if></action>
 
@@ -44,7 +44,7 @@
             <action method="addLinkRel">
                 <rel>publisher</rel>
                 <href>https://plus.google.com/109737528236830106730/</href>
-            </action>         
+            </action>
         </reference>
 
         <reference name="header">
@@ -76,7 +76,10 @@
 		<reference name="site.bottom.css.js">
             <action method="addItem"><type>skin_js</type><name>js/build/home.min.js</name></action>
         </reference>
-
+        <reference name="content">
+            <!-- Tweets -->
+            <block type="tweets/tweets" name="tweets.tweets" template="tweets/tweets.phtml" />
+        </reference>
     </cms_index_index>
 
     <!-- category (default) -->
@@ -148,13 +151,13 @@
         </reference>
 
         <!-- optional -->
-        
+
         <reference name="site.bottom.css.js">
             <action method="addItem"><type>skin_js</type><name>js/build/product.min.js</name></action>
             <action method="addItem"><type>skin_js</type><name>js/plugins/lightbox/lightbox.min.js</name></action>
             <action method="addItem"><type>skin_css</type><name>css/lightbox.css</name></action>
         </reference>
-        
+
 	</catalog_product_view>
 
     <!-- static page -->
@@ -188,14 +191,14 @@
     <checkout_onepage_index>
         <reference name="root">
             <action method="setTemplate"><template>page/2columns-right.phtml</template></action>
-        </reference>        
+        </reference>
     </checkout_onepage_index>
 
     <checkout_onepage_success>
         <reference name="root">
             <action method="setTemplate"><template>page/1column.phtml</template></action>
-        </reference>        
-    </checkout_onepage_success>    
+        </reference>
+    </checkout_onepage_success>
 
     <checkout_cart_index>
         <reference name="content">
@@ -206,5 +209,5 @@
                 <remove name="checkout.cart.top_methods"/>
             </block>
         </reference>
-    </checkout_cart_index>    
+    </checkout_cart_index>
 </layout>
