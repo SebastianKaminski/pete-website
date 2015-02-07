@@ -1,9 +1,9 @@
-<input type="hidden" value="<?php echo $_product->getFinalPrice(); ?>">
+<input type="hidden" value="<?php echo $this->getProduct()->getFinalPrice(); ?>" name="radiator-price">
 
 <div>
 	<label for="">
 		Number of sections
-		<input type="number" step="1" min="3" max="30" value="10">
+		<input type="number" step="1" min="3" max="30" value="10" name="radiator-number-of-sections">
 	</label>
 </div>
 
