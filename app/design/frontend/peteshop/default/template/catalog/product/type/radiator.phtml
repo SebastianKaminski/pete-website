@@ -15,7 +15,7 @@
 				foreach($products as $prod) {
 					$product = Mage::getModel('catalog/product')->load($prod->getId());
 					if (($product->getAttributeText('item_type') == "Finish")) {
-						echo "<option value=".$product->getId()." data-price=".$product->getPrice().">".$product->getName()." (".Mage::helper('core')->currency($product->getPrice(), true, false);.")</option>";
+						echo "<option value=".$product->getId()." data-price=".$product->getPrice().">".$product->getName()." (".Mage::helper('core')->currency($product->getPrice(), true, false).")</option>";
 					}
 				}
 			?>
