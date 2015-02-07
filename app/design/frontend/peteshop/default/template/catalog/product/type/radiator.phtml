@@ -12,6 +12,7 @@
 			<option value="false" selected="selcted" disabled="disabled">Choose finish</option>
 			<?php
 				$finishes = Mage::getResourceModel('catalog/product_collection');
+				var_dump($finishes);
 				foreach ($finishes as $item) {
 					$finish = Mage::getModel('catalog/product')->loadByAttribute('item_type','Finish');
 					echo "<option value=".$finish->getPrice().">".$finish->getName()."</option>";
