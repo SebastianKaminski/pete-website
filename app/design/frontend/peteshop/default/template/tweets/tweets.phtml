@@ -10,7 +10,7 @@
 				</strong>
 			</div>
 			<div class="block-content">
-				<ul id="sparx-tweets">
+				<ul id="sparx-tweets" class="list-unstyled">
 				<?php foreach($tweets as $tweet): ?>
 					<li class="item">
 						<?php echo (string) trim($tweet["text"]); ?>
@@ -20,7 +20,7 @@
 					</li>
 				<?php endforeach; ?>       
 				</ul>
-				<script type="text/javascript">decorateList('sparx-tweets');</script>
+				<script type="text/javascript">decorateList('#sparx-tweets');</script>
 			</div>
 		</div>
 	<?php endif; ?>
