@@ -40,4 +40,15 @@ class CIR_Catalog_Model_Price_Observer
 		    }
 		}
 	}
+
+	public function sales_convert_quote_item_to_order_item(Varien_Event_Observer $observer)
+	{
+	    $quoteItem = $observer->getItem();
+	    if ($additionalOptions = $quoteItem->getOptionByCode('additional_options')) {
+	        $orderItem = $observer->getOrderItem();
+	        $options = $orderItem->getProductOptions();
+	        $options['additional_options'] = unserialize($additionalOptions->getValue());
+	        $orderItem->setProductOptions($options);
+	    }
+	}
 }
