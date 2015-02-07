@@ -26,8 +26,6 @@
     </sales>
 
     <events>
-
-    <events>
         <sales_quote_item_set_product>
             <observers>
                 <cir_catalog_price_observer>
@@ -36,7 +34,6 @@
                 </cir_catalog_price_observer>
             </observers>
         </sales_quote_item_set_product>
-    </events>
 
 
       <checkout_cart_product_add_after>
