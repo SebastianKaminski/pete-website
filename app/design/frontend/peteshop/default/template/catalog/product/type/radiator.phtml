@@ -10,7 +10,7 @@
 <div>
 	<label for="">
 		Finish
-		<select name="choose-radiator-finish" id="choose-radiator-finish" onchange="App.changeFinish(this);">
+		<select name="choose-radiator-finish" id="choose-radiator-finish">
 			<option value="false" selected="selcted" disabled="disabled">Choose finish</option>
 			<?php
 				$products = Mage::getModel('catalog/product')->getCollection();
@@ -27,13 +27,14 @@
 
 <script type="text/javascript">
 //<![CDATA[
-	window.App = {};
-	var $j = jQuery.noConflict();
-	App.changeFinish = function (select) {
-		var radiatorCost = parseFloat(j$("input[name='radiator-price']").val());
-		var sections = parseFloat(j$("input[name='radiator-number-of-sections']").val());
-		var finishCost = parseFloat(j$(select).children('option:selected').data('price'));
+	var $j = jQuery.noConflict(), radiatorCost = 0, sections = 0, finishCost = 0;
+
+	j$("#choose-radiator-finish").on("change", function () {
+		radiatorCost = parseFloat(j$("input[name='radiator-price']").val());
+		sections = parseFloat(j$("input[name='radiator-number-of-sections']").val());
+		finishCost = parseFloat(j$(this).children('option:selected').data('price'));
 		console.log(radiatorCost, sections, finishCost);
-	}
+	});
+
  //]]>
 </script>
