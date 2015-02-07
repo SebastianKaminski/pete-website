@@ -15121,53 +15121,54 @@ tr.summary-details-excluded {
 /* line 107, ../scss/styles.scss */
 #homepage .std .block-creare-twitter {
   margin-top: 50px;
+  padding: 26px 0px;
 }
 
-/* line 114, ../scss/styles.scss */
+/* line 115, ../scss/styles.scss */
 footer.container-fluid {
   background: #333;
   margin-top: 25px;
 }
-/* line 118, ../scss/styles.scss */
+/* line 119, ../scss/styles.scss */
 footer .footer-content {
   color: #FFF;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
 }
-/* line 122, ../scss/styles.scss */
+/* line 123, ../scss/styles.scss */
 footer .footer-content .entypo, footer .footer-content .entypo-social {
   color: #777;
 }
-/* line 123, ../scss/styles.scss */
+/* line 124, ../scss/styles.scss */
 footer .footer-content .entypo-social {
   display: inline-block;
   margin-right: 2px;
   text-align: center;
   width: 12px;
 }
-/* line 129, ../scss/styles.scss */
+/* line 130, ../scss/styles.scss */
 footer .footer-content h3 {
   color: #f0ad4e;
 }
 
 /* Menu Fix */
-/* line 135, ../scss/styles.scss */
+/* line 136, ../scss/styles.scss */
 .navbar .dropdown:hover .dropdown-menu {
   display: block;
 }
 
 /* Boostrap Grid */
-/* line 141, ../scss/styles.scss */
+/* line 142, ../scss/styles.scss */
 .container-fluid {
   padding: 0 !important;
 }
 
 /* Menu Search */
-/* line 144, ../scss/styles.scss */
+/* line 145, ../scss/styles.scss */
 .search-form-container {
   position: relative;
 }
-/* line 148, ../scss/styles.scss */
+/* line 149, ../scss/styles.scss */
 .search-form-container #search_mini_form {
   left: 0;
   margin-left: 25px;
@@ -15175,18 +15176,18 @@ footer .footer-content h3 {
   top: 0;
   width: 300px;
 }
-/* line 154, ../scss/styles.scss */
+/* line 155, ../scss/styles.scss */
 .search-form-container #search_mini_form button {
   margin-left: 10px;
 }
 @media (max-width: 768px) {
-  /* line 161, ../scss/styles.scss */
+  /* line 162, ../scss/styles.scss */
   .search-form-container #search_mini_form {
     padding: 0;
     margin: 0;
     left: 50px;
   }
-  /* line 165, ../scss/styles.scss */
+  /* line 166, ../scss/styles.scss */
   .search-form-container #search_mini_form input {
     float: left;
     width: 150px;
