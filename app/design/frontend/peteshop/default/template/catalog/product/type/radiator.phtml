@@ -10,7 +10,10 @@
 		$finishes = Mage::getResourceModel('catalog/product_collection');
 		// var_dump($finishes);
 		foreach ($finishes as $item) {
-			echo $finish = Mage::getModel('catalog/product')->loadByAttribute('item_type','Finish');
+			if ($item->getAttributeText('item_type') == "Finish") {
+				echo $item->getName();
+			}
+			// echo $finish = Mage::getModel('catalog/product')->loadByAttribute('item_type','Finish');
 			// echo "<option value=".$finish->getPrice().">".$finish->getName()."</option>";
 		}
 	?>
