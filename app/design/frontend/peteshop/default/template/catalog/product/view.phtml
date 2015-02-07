@@ -60,7 +60,7 @@
                 <?php echo $this->getChildHtml('extrahint') ?>
 
                 <?php if ($_product->getAttributeText('item_type') == "Radiator"): ?>
-                    <h5>Radiator suko!</h5>
+                    <?php echo $this->getChildHtml('radiator') ?>
                 <?php endif; ?>
 
                 <?php if (!(($_product->getAttributeText('instore_only')) == "No")):?>
