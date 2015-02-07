@@ -1,1 +1,22 @@
-<h5>Radiator suko!</h5>
+<div>
+	<label for="">
+		Number of sections
+		<input type="number" step="1" min="3" max="30">
+	</label>
+</div>
+
+<div>
+	<label for="">
+		Finish
+		<select name="" id="">
+			<option value="false" selected="selcted" disabled="disabled">Choose finish</option>
+			<?php
+				$finishes = Mage::getResourceModel('catalog/product_collection');
+				foreach ($finishes as $item) {
+					$finish = Mage::getModel('catalog/product')->loadByAttribute('item_type','Finish');
+					echo "<option value=".$finish->getPrice().">".$finish->getName()."</option>";
+				}
+			?>
+		</select>
+	</label>
+</div>
