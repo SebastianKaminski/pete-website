@@ -8,6 +8,7 @@
 <div>
 	<?php
 		$products = Mage::getModel('catalog/product')->getCollection();
+		$products->addAttributeToFilter('item_type', 'Finish');
 		foreach($products as $prod) {
 			$product = Mage::getModel('catalog/product')->load($prod->getId());
 			Mage::Log('product found:'.$product->getName());
