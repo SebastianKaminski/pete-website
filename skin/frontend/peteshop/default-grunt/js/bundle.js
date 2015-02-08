@@ -81,7 +81,7 @@ Product.Bundle.prototype = {
                 tierPriceHtml = this.config.options[parts[2]].selections[selection.value].tierPriceHtml;
             }
             
-            if (tierPriceHtml !== null) tierPriceElement.update(tierPriceHtml);
+            if (tierPriceElement !== null) tierPriceElement.update(tierPriceHtml);
         }
         this.reloadPrice();
     },
