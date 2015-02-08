@@ -9,23 +9,16 @@ class CIR_Catalog_Model_Price_Observer
 		// 	// Not simple product here
 		// } else {
 			// Simple product
-		$product->setOriginalCustomPrice($product->_getRadiatorPrice($product));
-		$product->setFinalPrice($product->_getRadiatorPrice($product));
+		$params = Mage::app()->getFrontController()->getRequest()->getParams();
+		$specialPrice = $params['number-of-sections'] * ($params['radiator-finish'] + $product->getPrice());
+		$product->setOriginalCustomPrice($specialPrice);
+		$product->setFinalPrice($specialPrice);
 		// }
 
+  		Mage::log("Special price = ".$specialPrice.", product = ".$product->getPrice(), null, 'debug.log', true);
   		// Mage::log($product->debug(), null, 'debug.log', true);
+  		Mage::log(Mage::app()->getFrontController()->getRequest()->getParams(), null, 'debug.log', true);
 
 		return $this;	
 	}
-
-	protected function _getRadiatorPrice(Mage_Sales_Model_Quote_Item $product) {
-		$params = Mage::app()->getFrontController()->getRequest()->getParams();
-		$price = $params['number-of-sections'] * ($params['radiator-finish'] + $product->getPrice());
-
-  		Mage::log("Special price = ".$price.", product price = ".$product->getPrice(), null, 'debug.log', true);
-  		Mage::log($params, null, 'debug.log', true);
-
-		return $price;
-	}
-
 }
