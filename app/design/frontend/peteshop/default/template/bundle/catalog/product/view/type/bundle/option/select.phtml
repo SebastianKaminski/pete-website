@@ -33,14 +33,14 @@
 <?php list($_defaultQty, $_canChangeQty) = $this->_getDefaultValues(); ?>
 <?php $tierPriceHtml = ''; ?>
 
-<!-- <?php Mage::log($_option->debug(), null, 'debug.log', true); ?> -->
-<?php Mage::log("String:".strtolower(preg_replace('/\s+/','-', $_option->getTitle())), null, 'debug.log', true); ?>
+<!-- <?php //Mage::log($_option->debug(), null, 'debug.log', true); ?> -->
+<!-- <?php //Mage::log("String:".strtolower(preg_replace('/\s+/','-', $_option->getTitle())), null, 'debug.log', true); ?> -->
 
 
 <dt>
     <label<?php if ($_option->getRequired()) echo ' class="required"' ?>><?php echo $this->escapeHtml($_option->getTitle()) ?><?php if ($_option->getRequired()) echo '<em>*</em>' ?></label>
 </dt>
-<dd>
+<dd class="field-<?php echo strtolower(preg_replace('/\s+/','-', $this->escapeHtml($_option->getTitle()))) ?>">
     <div class="input-box">
     <?php /** @var $_selection Mage_Catalog_Model_Product*/ ?>
     <?php if ($this->_showSingle()): ?>
