@@ -3,7 +3,10 @@
 class CIR_Catalog_Model_Price_Observer
 {
 	public function applyRadiatorPrice($observer) {
-		$product = $observer->getQuoteItem();
+		// Quote item
+		$item = $observer->getQuoteItem();
+		// Product
+		$product = $item->getProduct();
 
 		// if ($product->getSuperProduct() && $product->getSuperProduct()->isConfigurable()) {
 		// 	// Not simple product here
@@ -11,8 +14,9 @@ class CIR_Catalog_Model_Price_Observer
 			// Simple product
 		$params = Mage::app()->getFrontController()->getRequest()->getParams();
 		$specialPrice = $params['number-of-sections'] * ($params['radiator-finish'] + $product->getPrice());
-		$product->setOriginalCustomPrice($specialPrice);
-		$product->setFinalPrice($specialPrice);
+		$item->setOriginalCustomPrice($specialPrice);
+		$item->setFinalPrice($specialPrice);
+		$product->setIsSuperMode(true);
 		// }
 
   		Mage::log("Special price = ".$specialPrice.", product = ".$product->getPrice(), null, 'debug.log', true);
