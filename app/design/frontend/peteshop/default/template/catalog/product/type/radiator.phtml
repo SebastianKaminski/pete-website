@@ -1,6 +1,7 @@
-<input type="hidden" value="<?php echo $this->getProduct()->getFinalPrice(); ?>" name="radiator-price">
-<input type="hidden" value="<?php echo $this->getProduct()->getId(); ?>" name="radiator-id">
- 
+<input type="hidden" value="<?php echo $this->getProduct()->getFinalPrice(); ?>" name="radiator-price"/>
+<input type="hidden" value="<?php echo $this->getProduct()->getId(); ?>" name="radiator-id"/>
+<input type="hidden" name="radiator-finish-id"/>
+
 <div>
 	<label for="">
 		Number of sections
@@ -18,7 +19,7 @@
 				foreach($products as $prod) {
 					$product = Mage::getModel('catalog/product')->load($prod->getId());
 					if (($product->getAttributeText('item_type') == "Finish")) {
-						echo "<option value=".$product->getPrice().">".$product->getName()." (".Mage::helper('core')->currency($product->getPrice(), true, false).")</option>";
+						echo "<option value=".$product->getPrice()." data-finish-id=".$product->getId().">".$product->getName()." (".Mage::helper('core')->currency($product->getPrice(), true, false).")</option>";
 					}
 				}
 			?>

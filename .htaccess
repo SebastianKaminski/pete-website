@@ -39,14 +39,14 @@
 	##### following two lines of code when using Connect.
 	##### Please note - http://www. if not using www simply use http://
 	
-	RewriteCond %{THE_REQUEST} ^.*/index.php
-	RewriteRule ^(.*)index.php$ http://www.radrestore.co.uk/$1 [R=301,L]
+	###RewriteCond %{THE_REQUEST} ^.*/index.php
+	###RewriteRule ^(.*)index.php$ http://www.radrestore.co.uk/$1 [R=301,L]
   
   	##### Please note - http://www. if not using www simply use http://
-	redirect 301 /home http://www.radrestore.co.uk
+	###redirect 301 /home http://www.radrestore.co.uk
 	
 	RewriteCond %{HTTP_HOST} ^185\.23\.21\.18
-	RewriteRule (.*) http://www.radrestore.co.uk/$1 [R=301,L]
+	###RewriteRule (.*) http://www.radrestore.co.uk/$1 [R=301,L]
 
 	Options +FollowSymLinks
 	RewriteEngine on

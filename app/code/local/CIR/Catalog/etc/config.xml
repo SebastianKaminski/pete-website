@@ -6,29 +6,6 @@
 				<class>CIR_Catalog_Model</class>
 			</circatalog>
 		</models>
-		<!-- Custom attribute -->
-<!-- 		<sales_convert_quote_item>
-			<sections>
-				<to_order_item>*</to_order_item>
-			</sections>
-		</sales_convert_quote_item>
-
-		<sales_convert_order_item>
-			<sections>
-				<to_quote_item>*</to_quote_item>
-			</sections>
-		</sales_convert_order_item>
-
-		<sales>
-			<quote>
-				<item>
-					<product_attributes>
-						<sections />
-					</product_attributes>
-				</item>
-			</quote>
-		</sales> -->
-
 	    	<!-- Events -->
 		<events>
 			<checkout_cart_product_add_after>
@@ -47,14 +24,6 @@
 					</cir_catalog_name_observer>
 				</observers>
 			</checkout_cart_product_add_after>
-			<!-- Set custom attribute -->
-<!-- 			<sales_quote_item_set_product>
-				<cir_catalog_name_observer>
-					<type>singleton</type>
-					<class>CIR_Catalog_Model_Name_Observer</class>
-					<method>setNumberOfSections</method>						
-				</cir_catalog_name_observer>
-			</sales_quote_item_set_product> -->
 		</events>
 	</global>
 </config>
