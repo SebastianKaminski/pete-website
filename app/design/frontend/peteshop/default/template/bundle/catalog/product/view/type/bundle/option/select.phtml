@@ -46,7 +46,7 @@
     <?php if ($this->_showSingle()): ?>
         <?php echo $this->getSelectionTitlePrice($_selections[0]); ?>
         <?php if ($_selections[0]->getSelectionCanChangeQty()): ?>
-            <?php $tierPriceHtml = $this->getTierPriceHtml($_selections[0]); ?>
+            <?php //$tierPriceHtml = $this->getTierPriceHtml($_selections[0]); ?>
         <?php endif; ?>
         <input type="hidden" name="bundle_option[<?php echo $_option->getId() ?>]" value="<?php echo $_selections[0]->getSelectionId() ?>"/>
     <?php else:?>
