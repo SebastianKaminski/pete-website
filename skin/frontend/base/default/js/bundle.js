@@ -80,7 +80,8 @@ Product.Bundle.prototype = {
             if (selection.value != '' && this.config.options[parts[2]].selections[selection.value].customQty == 1) {
                 tierPriceHtml = this.config.options[parts[2]].selections[selection.value].tierPriceHtml;
             }
-            tierPriceElement.update(tierPriceHtml);
+            
+            if (tierPrice !== null) tierPriceElement.update(tierPriceHtml);
         }
         this.reloadPrice();
     },
