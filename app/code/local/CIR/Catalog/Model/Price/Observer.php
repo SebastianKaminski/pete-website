@@ -3,23 +3,29 @@
 class CIR_Catalog_Model_Price_Observer
 {
 	public function apply_radiator_price($observer) {
-		$event = $observer->getEvent();
 		$product = $observer->getQuoteItem();
 
 		// if ($product->getSuperProduct() && $product->getSuperProduct()->isConfigurable()) {
 		// 	// Not simple product here
 		// } else {
 			// Simple product
-			$params = Mage::app()->getFrontController()->getRequest()->getParams();
-			$specialPrice = $params['number-of-sections'] * ($params['radiator-finish'] + $product->getPrice());
-			$product->setOriginalCustomPrice($specialPrice);
-			$product->setFinalPrice($specialPrice);
+		$product->setOriginalCustomPrice($product->_get_radiator_price($product,$product));
+		$product->setFinalPrice($product->_get_radiator_price($product,$product));
 		// }
 
-  		Mage::log("Special price = ".$specialPrice, null, 'debug.log', true);
   		// Mage::log($product->debug(), null, 'debug.log', true);
-  		Mage::log(Mage::app()->getFrontController()->getRequest()->getParams(), null, 'debug.log', true);
 
 		return $this;	
 	}
+
+	protected function _get_radiator_price(Mage_Sales_Model_Quote_Item $item, $product) {
+		$params = Mage::app()->getFrontController()->getRequest()->getParams();
+		$price = $params['number-of-sections'] * ($params['radiator-finish'] + $product->getPrice());
+
+  		Mage::log("Special price = ".$price.", product price = ".$product->getPrice(), null, 'debug.log', true);
+  		Mage::log($params, null, 'debug.log', true);
+
+		return $price;
+	}
+
 }
