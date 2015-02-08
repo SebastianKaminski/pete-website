@@ -40,12 +40,12 @@
 						<method>applyRadiatorPrice</method>
 					</cir_catalog_price_observer>
 					<!-- Change radiator name -->
-<!-- 					<cir_catalog_name_observer>
+					<cir_catalog_name_observer>
 						<type>singleton</type>
 						<class>CIR_Catalog_Model_Name_Observer</class>
 						<method>applyRadiatorName</method>						
 					</cir_catalog_name_observer>
- -->				</observers>
+				</observers>
 			</checkout_cart_product_add_after>
 			<!-- Set custom attribute -->
 			<sales_quote_item_set_product>
