@@ -9,8 +9,8 @@ class CIR_Catalog_Model_Price_Observer
 		// 	// Not simple product here
 		// } else {
 			// Simple product
-		$product->setOriginalCustomPrice($product->getRadiatorPrice($product));
-		$product->setFinalPrice($product->getRadiatorPrice($product));
+		$product->setOriginalCustomPrice($product->_getRadiatorPrice($product));
+		$product->setFinalPrice($product->_getRadiatorPrice($product));
 		// }
 
   		// Mage::log($product->debug(), null, 'debug.log', true);
@@ -18,7 +18,7 @@ class CIR_Catalog_Model_Price_Observer
 		return $this;	
 	}
 
-	protected function getRadiatorPrice(Mage_Sales_Model_Quote_Item $product) {
+	protected function _getRadiatorPrice(Mage_Sales_Model_Quote_Item $product) {
 		$params = Mage::app()->getFrontController()->getRequest()->getParams();
 		$price = $params['number-of-sections'] * ($params['radiator-finish'] + $product->getPrice());
 
