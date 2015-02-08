@@ -20,7 +20,6 @@ class CIR_Catalog_Model_Price_Observer
 				$specialPrice = $params['number-of-sections'] * ($params['radiator-finish-cost'] + $product->getPrice());
 				$item->setOriginalCustomPrice($specialPrice);
 				$item->setFinalPrice($specialPrice);
-				$item->addMessage("Test message");
 				$product->setIsSuperMode(true);
 			}
 		}

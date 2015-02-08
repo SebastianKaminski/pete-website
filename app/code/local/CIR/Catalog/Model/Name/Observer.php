@@ -18,14 +18,13 @@ class CIR_Catalog_Model_Name_Observer
 			$params = Mage::app()->getFrontController()->getRequest()->getParams();
 			if (isset($params['number-of-sections'])) {
 				Mage::log(" ========== applyRadiatorName ==========", null, 'debug.log', true);
-				$item->setName('Test radiator name');
-				$item->save();
+				$product->setName('Test radiator name')->setSku('test-rad')->save();
 			}
 		}
 
   		// Mage::log(Mage::app()->getFrontController()->getRequest()->getParams(), null, 'debug.log', true);
   		// Mage::log($product->debug(), null, 'debug.log', true);
-  		// Mage::log("Test, sections".$product->getSections(), null, 'debug.log', true);
+  		Mage::log($product->debug(), null, 'debug.log', true);
 
 		return $this;
 	}
