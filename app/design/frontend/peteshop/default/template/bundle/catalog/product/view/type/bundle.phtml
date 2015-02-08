@@ -53,4 +53,15 @@
     <?php echo $this->getPriceHtml($_product) ?>
 </div>
  -->
+
+<?php if ($_product->getAttributeText('item_type') == "Radiator"): ?>
+    <script type="text/javascript">
+        //<![CDATA[
+            bundle.changeRadiatorLength(element) = function () {
+                console.log("Radaitor length:", element.value);
+            };
+        //]]>
+    </script>
+<?php endif; ?>
+
 <?php echo $this->getChildHtml('bundle_prices') ?>
