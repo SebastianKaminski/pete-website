@@ -12,7 +12,7 @@
 					<cir_catalog_price_observer>
 						<type>singleton</type>
 						<class>CIR_Catalog_Model_Price_Observer</class>
-						<method>apply_radiator_price</method>
+						<method>applyRadiatorPrice</method>
 					</cir_catalog_price_observer>
 				</observers>
 			</checkout_cart_product_add_after>
