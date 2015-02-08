@@ -11,14 +11,14 @@
 <div>
 	<label for="">
 		Finish
-		<select name="choose-radiator-finish" id="choose-radiator-finish">
+		<select name="radiator-finish" id="radiator-finish-cost">
 			<option value="false" selected="selcted" disabled="disabled">Choose finish</option>
 			<?php
 				$products = Mage::getModel('catalog/product')->getCollection();
 				foreach($products as $prod) {
 					$product = Mage::getModel('catalog/product')->load($prod->getId());
 					if (($product->getAttributeText('item_type') == "Finish")) {
-						echo "<option value=".$product->getId()." data-price=".$product->getPrice().">".$product->getName()." (".Mage::helper('core')->currency($product->getPrice(), true, false).")</option>";
+						echo "<option value=".$product->getPrice().">".$product->getName()." (".Mage::helper('core')->currency($product->getPrice(), true, false).")</option>";
 					}
 				}
 			?>
@@ -33,7 +33,7 @@
 
 		var radiatorCost = function () { return parseFloat($("input[name='radiator-price']").val()); }
 		var sections = function () { return parseFloat($("input[name='number-of-sections']").val()); };
-		var finishCost = function () { return parseFloat($("#choose-radiator-finish").children('option:selected').data('price'));};
+		var finishCost = function () { return parseFloat($("#radiator-finish-cost").children('option:selected').val());};
 
 	    var calcRadiatorCost = function (r,f,s) {
 	    	return (r+f)*s;
@@ -46,7 +46,7 @@
 	    $(document).ready(function(){
 	    	var btn = $("#product-addtocart-button").addClass('disabled').attr("disabled", true);
 
-			$("#choose-radiator-finish, input[name='number-of-sections']").on("change", function () {
+			$("#radiator-finish-cost, input[name='number-of-sections']").on("change", function () {
 				var total = calcRadiatorCost(radiatorCost(), finishCost(), sections());
 				console.log(total)
 				if (!isNaN(total)) {
