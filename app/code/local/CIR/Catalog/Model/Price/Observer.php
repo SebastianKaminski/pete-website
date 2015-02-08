@@ -7,7 +7,6 @@ class CIR_Catalog_Model_Price_Observer
 		$item = $observer->getQuoteItem();
 		// Product
 		$product = $item->getProduct();
-
 		// Is Radiator?
 		if ($product->getAttributeText('item_type') == "Radiator") {
 			$params = Mage::app()->getFrontController()->getRequest()->getParams();
@@ -18,9 +17,6 @@ class CIR_Catalog_Model_Price_Observer
 				$product->setIsSuperMode(true);
 			}
 		}
-
-  		Mage::log("Special price = ".$specialPrice.", product = ".$product->getPrice(), null, 'debug.log', true);
-  		Mage::log(Mage::app()->getFrontController()->getRequest()->getParams(), null, 'debug.log', true);
 
 		return $this;	
 	}
