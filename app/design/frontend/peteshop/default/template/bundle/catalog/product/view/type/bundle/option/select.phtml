@@ -66,12 +66,12 @@
         <?php endforeach; ?>
         </select>
     <?php endif; ?>
-        <?php if ($_product->getAttributeText('item_type') == "Radiator"): ?>
+        <?php if ($_product->getAttributeText('item_type') == "Radiator" && $optionName == 'number-of-sections'): ?>
             <span class="qty-holder">
                 <ul class="list-inline">
-                    <li><button>+</button></li>
+                    <li><button onclick="javascript:void(0);">+</button></li>
                     <li><input onkeyup="bundle.changeOptionQty(this, event);bundle.changeRadiatorLength(this);" onblur="bundle.changeOptionQty(this, event);bundle.changeRadiatorLength(this);" <?php if (!$_canChangeQty) echo ' disabled="disabled"' ?> id="bundle-option-<?php echo $_option->getId() ?>-qty-input" class="input-text qty<?php if (!$_canChangeQty) echo ' qty-disabled' ?>" type="number" name="bundle_option_qty[<?php echo $_option->getId() ?>]" value="<?php echo $_defaultQty ?>"/></li>
-                    <li><button>-</button></li>
+                    <li><button onclick="javascript:void(0);">-</button></li>
                 </ul>
             </span>            
         <?php else:?>
