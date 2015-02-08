@@ -20,8 +20,6 @@ class CIR_Catalog_Model_Name_Observer
 				Mage::log(" ========== applyRadiatorName ==========", null, 'debug.log', true);
 				$item->setName('Test radiator name');
 				$item->save();
-				$product->setIsSuperMode(true);
-				$item->getQuote()->save();
 			}
 		}
 
