@@ -25,8 +25,9 @@ class CIR_Catalog_Model_Name_Observer
 			}
 		}
 
-  		Mage::log(Mage::app()->getFrontController()->getRequest()->getParams(), null, 'debug.log', true);
-  		Mage::log($product->debug(), null, 'debug.log', true);
+  		// Mage::log(Mage::app()->getFrontController()->getRequest()->getParams(), null, 'debug.log', true);
+  		// Mage::log($product->debug(), null, 'debug.log', true);
+  		Mage::log("Test, sections".$product->getSections(), null, 'debug.log', true);
 
 		return $this;
 	}
