@@ -35,7 +35,7 @@ class CIR_Catalog_Model_Name_Observer
 		Mage::log(" ========== setNumberOfSections ==========", null, 'debug.log', true);
 		$item = $observer->getQuoteItem();
 		$product = $observer->getProduct();
-		$item->setSections($product->getSections());
+		$item->setSections(12);
 		return $this;		
 	}
 }
