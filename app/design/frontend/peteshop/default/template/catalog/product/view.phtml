@@ -59,9 +59,9 @@
                 <?php echo $this->getTierPriceHtml() ?>
                 <?php echo $this->getChildHtml('extrahint') ?>
 
-                <?php if ($_product->getAttributeText('item_type') == "Radiator"): ?>
+<!--                 <?php if ($_product->getAttributeText('item_type') == "Radiator"): ?>
                     <?php echo $this->getChildHtml('radiator') ?>
-                <?php endif; ?>
+                <?php endif; ?> -->
 
                 <?php if (!(($_product->getAttributeText('instore_only')) == "No")):?>
                     <?php if (!$this->hasOptions()):?>
