@@ -6,6 +6,15 @@
 				<class>CIR_Catalog_Model</class>
 			</circatalog>
 		</models>
+		<!-- Custom attribute -->
+		<fieldsets>
+		   <sales_convert_quote_item>
+		       <sections>
+		           <to_order_item>*</to_order_item>
+		       </sections>
+		   </sales_convert_quote_item>
+		</fieldsets>
+	    	<!-- Events -->
 		<events>
 			<checkout_cart_product_add_after>
 				<observers>
@@ -16,13 +25,21 @@
 						<method>applyRadiatorPrice</method>
 					</cir_catalog_price_observer>
 					<!-- Change radaitor name -->
-					<cir_catalog_name_observer>
+<!-- 					<cir_catalog_name_observer>
 						<type>singleton</type>
 						<class>CIR_Catalog_Model_Name_Observer</class>
 						<method>applyRadiatorName</method>						
 					</cir_catalog_name_observer>
-				</observers>
+ -->				</observers>
 			</checkout_cart_product_add_after>
+			<!-- Set custom attribute -->
+			<sales_quote_item_set_product>
+				<cir_catalog_name_observer>
+					<type>singleton</type>
+					<class>CIR_Catalog_Model_Name_Observer</class>
+					<method>setNumberOfSections</method>						
+				</cir_catalog_name_observer>
+			</sales_quote_item_set_product>
 		</events>
 	</global>
 </config>
