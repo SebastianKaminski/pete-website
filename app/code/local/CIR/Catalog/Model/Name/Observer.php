@@ -18,9 +18,10 @@ class CIR_Catalog_Model_Name_Observer
 			$params = Mage::app()->getFrontController()->getRequest()->getParams();
 			if (isset($params['number-of-sections'])) {
 				Mage::log(" ========== applyRadiatorName ==========", null, 'debug.log', true);
-				$product->setIsSuperMode(true);
 				$item->setName('Test radiator name');
 				$item->save();
+				$product->setIsSuperMode(true);
+				$item->getQuote()->save();
 			}
 		}
 
