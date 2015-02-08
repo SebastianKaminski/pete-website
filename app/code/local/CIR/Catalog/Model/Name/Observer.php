@@ -4,6 +4,7 @@ class CIR_Catalog_Model_Name_Observer
 {
 	public function applyRadiatorName($observer) {
 		// Quote item
+		$quote = Mage::getSingleton('checkout/session')->getQuote();
 	    $item = $observer->getQuoteItem();
 	    if ($item->getParentItem()) {
 	        $item = $item->getParentItem();
@@ -18,8 +19,10 @@ class CIR_Catalog_Model_Name_Observer
 			$params = Mage::app()->getFrontController()->getRequest()->getParams();
 			if (isset($params['number-of-sections'])) {
 				Mage::log(" ========== applyRadiatorName ==========", null, 'debug.log', true);
-				$product->setName('Test radiator name')->setSku('test-rad')->setIsSuperMode(true);
-				$item->save();
+
+				$quote->addProduct($product, array('qty' => $params['number-of-sections'], 'product_id' => $product->getId()));
+				// $product->setName('Test radiator name')->setSku('test-rad')->setIsSuperMode(true);
+				// $item->save();
 			}
 		}
 
