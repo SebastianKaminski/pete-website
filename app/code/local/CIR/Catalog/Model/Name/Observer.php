@@ -19,6 +19,7 @@ class CIR_Catalog_Model_Name_Observer
 			if (isset($params['number-of-sections'])) {
 				Mage::log(" ========== applyRadiatorName ==========", null, 'debug.log', true);
 				$product->setName('Test radiator name')->setSku('test-rad');
+				$item->save();
 			}
 		}
 
