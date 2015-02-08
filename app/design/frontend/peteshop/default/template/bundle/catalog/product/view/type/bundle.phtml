@@ -57,9 +57,11 @@
 <?php if ($_product->getAttributeText('item_type') == "Radiator"): ?>
     <script type="text/javascript">
         //<![CDATA[
-            bundle.changeRadiatorLength = function (element) {
-                console.log("Radaitor length:", element.value);
-            };
+        // copy number of sections value
+        bundle.changeRadiatorLength = function (element) {
+            jQuery(".option-radiator-finish input.qty").val(element.value);
+            bundle.reloadPrice();
+        };
         //]]>
     </script>
 <?php endif; ?>
