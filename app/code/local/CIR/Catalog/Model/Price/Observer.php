@@ -4,9 +4,15 @@ class CIR_Catalog_Model_Price_Observer
 {
 	public function applyRadiatorPrice($observer) {
 		// Quote item
-		$item = $observer->getQuoteItem();
+	    $item = $observer->getQuoteItem();
+	    if ($item->getParentItem()) {
+	        $item = $item->getParentItem();
+	    }	
 		// Product
 		$product = $item->getProduct();
+		if ($product->getTypeId() == 'cofigurable') {
+		    return $this;
+		}		
 		// Is Radiator?
 		if ($product->getAttributeText('item_type') == "Radiator") {
 			$params = Mage::app()->getFrontController()->getRequest()->getParams();
