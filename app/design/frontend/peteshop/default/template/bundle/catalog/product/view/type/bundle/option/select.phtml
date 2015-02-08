@@ -33,6 +33,8 @@
 <?php list($_defaultQty, $_canChangeQty) = $this->_getDefaultValues(); ?>
 <?php $tierPriceHtml = ''; ?>
 
+<?php Mage::log($_option->debug(), null, 'debug.log', true); ?>
+
 <dt>
     <label<?php if ($_option->getRequired()) echo ' class="required"' ?>><?php echo $this->escapeHtml($_option->getTitle()) ?><?php if ($_option->getRequired()) echo '<em>*</em>' ?></label>
 </dt>
