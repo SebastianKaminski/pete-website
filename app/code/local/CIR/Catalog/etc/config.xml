@@ -1,54 +1,21 @@
 <?xml version="1.0"?>
 <config>
-  <global>
-<!--     <modules>
-        <CIR_Koza>
-            <version>0.1.0</version>
-        </CIR_Koza>
-    </modules> -->
-    <models>
-        <circatalog>
-          <class>CIR_Catalog_Model</class>
-        </circatalog>
-    </models>
-
-    <fieldsets>
-        <sales_convert_quote_item>
-            <koza>
-                <to_order_item>*</to_order_item>
-            </koza>
-        </sales_convert_quote_item>
-    </fieldsets>
-
-    <sales>
-        <quote>
-            <item>
-                <product_attributes>
-                    <koza/>
-                </product_attributes>
-            </item>
-        </quote>
-    </sales>
-
-    <events>
-
-        <sales_quote_item_set_product>
-              <observers>
-                  <cir_catalog_price_observer>
-                      <class>CIR_Catalog_Model_Price_Observer</class>
-                      <method>setKozaAttribute</method>
-                  </cir_catalog_price_observer>
-              </observers>
-          </sales_quote_item_set_product>
-
-        <sales_quote_item_set_product>
-            <observers>
-                <cir_catalog_price_observer>
-                    <class>CIR_Catalog_Model_Price_Observer</class>
-                    <method>setTestAttribute</method>
-                </cir_catalog_price_observer>
-            </observers>
-        </sales_quote_item_set_product>
-    </events>
-  </global>
+	<global>
+		<models>
+			<circatalog>
+				<class>CIR_Catalog_Model</class>
+			</circatalog>
+		</models>
+		<events>
+			<catalog_product_get_final_price>
+				<observers>
+					<cir_catalog_price_observer>
+						<type>singleton</type>
+						<class>CIR_Catalog_Model_Price_Observer</class>
+						<method>apply_radiator_price</method>
+					</cir_catalog_price_observer>
+				</observers>
+			</catalog_product_get_final_price>
+		</events>
+	</global>
 </config>
