@@ -35,10 +35,20 @@
 
 <?php Mage::log($_option->debug(), null, 'debug.log', true); ?>
 
+<?php 
+    function replaceAll($text) { 
+        $text = strtolower(htmlentities($text)); 
+        $text = str_replace(get_html_translation_table(), "-", $text);
+        $text = str_replace(" ", "-", $text);
+        $text = preg_replace("/[-]+/i", "-", $text);
+        return $text;
+    }
+?>
+
 <dt>
     <label<?php if ($_option->getRequired()) echo ' class="required"' ?>><?php echo $this->escapeHtml($_option->getTitle()) ?><?php if ($_option->getRequired()) echo '<em>*</em>' ?></label>
 </dt>
-<dd<?php if ($_option->decoratedIsLast){?> class="last"<?php }?>>
+<dd<?php replaceAll($_option->getTitle()); }?>>
     <div class="input-box">
     <?php /** @var $_selection Mage_Catalog_Model_Product*/ ?>
     <?php if ($this->_showSingle()): ?>
