@@ -48,7 +48,7 @@
 <dt>
     <label<?php if ($_option->getRequired()) echo ' class="required"' ?>><?php echo $this->escapeHtml($_option->getTitle()) ?><?php if ($_option->getRequired()) echo '<em>*</em>' ?></label>
 </dt>
-<dd class="field-<?php echo strtolower(preg_replace('/\s+/', '', $_option->getTitle())); ?>">
+<dd class="field-<?php echo strtolower(preg_replace('/\s+/','-', $_option->getTitle())); ?>">
     <div class="input-box">
     <?php /** @var $_selection Mage_Catalog_Model_Product*/ ?>
     <?php if ($this->_showSingle()): ?>
