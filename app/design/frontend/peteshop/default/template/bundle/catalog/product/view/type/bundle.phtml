@@ -57,11 +57,12 @@
 <?php if ($_product->getAttributeText('item_type') == "Radiator"): ?>
     <script type="text/javascript">
         //<![CDATA[    
-        var qty_input = jQuery(".option-radiator-finish input.qty");
+        var qty_input = jQuery(".option-number-of-sections input.qty");
+        var fin_qty_input = jQuery(".option-radiator-finish input.qty");
 
         var setQuantity = function (qty) {
             qty_input.val(qty);
-            jQuery(element).trigger('keyup');
+            fin_qty_input.val(qty);
             bundle.reloadPrice();
         }
 

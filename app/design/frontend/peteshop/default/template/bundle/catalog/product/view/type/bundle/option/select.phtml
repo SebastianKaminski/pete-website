@@ -70,7 +70,7 @@
             <span class="qty-holder">
                 <ul class="list-inline">
                     <li><button onclick="bundle.removeSection(this, event);" class="btn btn-sm btn-warning"><span class="entypo minus"></span></button></li>
-                    <li><input onkeyup="bundle.changeOptionQty(this, event); bundle.changeRadiatorLength(this);" onblur="bundle.changeOptionQty(this, event);bundle.changeRadiatorLength(this);" <?php if (!$_canChangeQty) echo ' disabled="disabled"' ?> id="bundle-option-<?php echo $_option->getId() ?>-qty-input" class="input-text qty<?php if (!$_canChangeQty) echo ' qty-disabled' ?>" type="text" name="bundle_option_qty[<?php echo $_option->getId() ?>]" value="<?php echo $_defaultQty ?>"/></li>
+                    <li><input onkeyup="bundle.changeRadiatorLength(this); bundle.changeOptionQty(this, event);" onblur="bundle.changeRadiatorLength(this); bundle.changeOptionQty(this, event);" <?php if (!$_canChangeQty) echo ' disabled="disabled"' ?> id="bundle-option-<?php echo $_option->getId() ?>-qty-input" class="input-text qty<?php if (!$_canChangeQty) echo ' qty-disabled' ?>" type="text" name="bundle_option_qty[<?php echo $_option->getId() ?>]" value="<?php echo $_defaultQty ?>"/></li>
                     <li><button onclick="bundle.addSection(this, event);" class="btn btn-sm btn-success"><span class="entypo plus"></span></button></li>
                 </ul>
             </span>            
