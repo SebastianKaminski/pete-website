@@ -60,12 +60,12 @@
         // copy number of sections value
         bundle.changeRadiatorLength = function (element) {
             jQuery(".option-radiator-finish input.qty").val(element.value);
+            jQuery(element).trigger('keyup');
             bundle.reloadPrice();
         };
 
-        bundle.setRadiatorLength = function (event) {
-            event.preventDefault();
-
+        bundle.setRadiatorLength = function (element, value) {
+            console.log(element, value);
         }
         //]]>
     </script>

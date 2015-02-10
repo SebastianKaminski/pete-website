@@ -413,14 +413,6 @@
 			em { margin-right: 5px; }
 		}
 
-		.qty-holder { 
-			float:right; 
-			margin-right:15px;
-
-			label { 
-				vertical-align:middle;
-			}
-		}
 
 		.qty-disabled { 
 			background:none; 
@@ -440,6 +432,21 @@
 
 		input.datetime-picker { 
 			width:150px;
+		}
+
+		select {
+			height: 30px;
+			padding: 0 10px;
+		}
+
+		.qty-holder { 
+			label { vertical-align:middle; }
+			select {
+				height: 30px;
+				padding: 0px 5px;
+				text-align: center;			
+				width: 50px !important;
+			}
 		}
 
 		.time-picker { 

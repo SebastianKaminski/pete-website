@@ -11,6 +11,7 @@ button {
 	font:12px/15px Arial, Helvetica, sans-serif;
 	vertical-align:middle;
 	color:#2f2f2f;
+	cursor: pointer;
 }
 
 input.input-text,
@@ -27,6 +28,8 @@ textarea {
 
 select {
 	padding:1px;
+	border-radius: 0;
+	-webkit-apperance: none;
 
 	option {
 		padding-right:10px;
