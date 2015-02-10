@@ -70,8 +70,8 @@
             setQuantity(element.value)
         };
 
-        bundle.addSection = function (this, e) {
-            e.prevenDefault();
+        bundle.addSection = function (el, ev) {
+            ev.prevenDefault();
             var max = 30;
             if (parseInt(qty_input.val()) + 1 >= max) {
                 alert("Maximum radiator length has been reached!");
@@ -80,8 +80,8 @@
             }
         }        
 
-        bundle.removeSection = function (this, e) {
-            e.prevenDefault();
+        bundle.removeSection = function (el, ev) {
+            ev.prevenDefault();
             var min = 3;
             if (parseInt(qty_input.val()) - 1 <= max) {
                 alert("Minimum radiator length has been reached!");
@@ -93,7 +93,7 @@
         jQuery(document).ready(function($) {  
             setQuantity(3);
         });
-        
+
         //]]>
     </script>
 <?php endif; ?>
