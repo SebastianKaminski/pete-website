@@ -441,7 +441,7 @@
 
 		.qty-holder { 
 			label { vertical-align:middle; }
-			select {
+			input[type='number'] {
 				height: 30px;
 				padding: 0px 5px;
 				text-align: center;			

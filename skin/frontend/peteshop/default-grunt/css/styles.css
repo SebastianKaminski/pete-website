@@ -11762,17 +11762,16 @@ p.control input.radio {
   padding-left: 17px;
   font-size: 11px;
   line-height: 13px;
-  background: url(../images/validation_advice_bg.gif) 2px 0 no-repeat;
-  background-position: left;
+  color: #d9534f;
 }
 
-/* line 415, ../scss/partials/_forms.scss */
+/* line 416, ../scss/partials/_forms.scss */
 .validation-failed {
   border: 1px solid #d9534f !important;
   background: #faebe7 !important;
 }
 
-/* line 420, ../scss/partials/_forms.scss */
+/* line 421, ../scss/partials/_forms.scss */
 p.required {
   font-size: 11px;
   text-align: right;
@@ -13052,7 +13051,7 @@ footer:after,
   vertical-align: middle;
 }
 /* line 444, ../scss/sections/product/_main.scss */
-.product-options dd .qty-holder select {
+.product-options dd .qty-holder input[type='number'] {
   height: 30px;
   padding: 0px 5px;
   text-align: center;

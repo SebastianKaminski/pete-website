@@ -408,8 +408,9 @@ p.control input.radio {
 	padding-left:17px;
 	font-size:11px;
 	line-height:13px;
-	background:url(../images/validation_advice_bg.gif) 2px 0 no-repeat;
-	background-position: left;
+	color: $brandDanger;
+	// background:url(../images/validation_advice_bg.gif) 2px 0 no-repeat;
+	// background-position: left;
 }
 
 .validation-failed {
