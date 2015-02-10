@@ -71,24 +71,24 @@
             setQuantity(element.value)
         };
 
-        bundle.addSection = function (el, ev) {
-            ev.prevenDefault();
+        bundle.addSection = function () {
             var max = 30;
             if (parseInt(qty_input.val()) + 1 >= max) {
                 alert("Maximum radiator length has been reached!");
             } else {
                 setQuantity(parseInt(qty_input.val())+1);
             }
+            return false;
         }        
 
-        bundle.removeSection = function (el, ev) {
-            ev.prevenDefault();
+        bundle.removeSection = function () {
             var min = 3;
             if (parseInt(qty_input.val()) - 1 <= max) {
                 alert("Minimum radiator length has been reached!");
             } else {
                 setQuantity(parseInt(qty_input.val())-1);
-            }            
+            }    
+            return false;        
         }
 
         jQuery(document).ready(function($) {  
