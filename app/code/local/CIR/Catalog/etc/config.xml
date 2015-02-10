@@ -32,5 +32,29 @@
 							 </observers>
 					</checkout_cart_product_add_after>
 		 </events>
+		<models>
+			<circatalog>
+				<class>CIR_Catalog_Model</class>
+			</circatalog>
+		</models>
+	    	<!-- Events -->
+		<events>
+			<checkout_cart_product_add_after>
+				<observers>
+					<!-- Change radiator price -->
+					<cir_catalog_price_observer>
+						<type>singleton</type>
+						<class>CIR_Catalog_Model_Price_Observer</class>
+						<method>applyRadiatorPrice</method>
+					</cir_catalog_price_observer>
+					<!-- Change radiator name -->
+					<cir_catalog_name_observer>
+						<type>singleton</type>
+						<class>CIR_Catalog_Model_Name_Observer</class>
+						<method>applyRadiatorName</method>
+					</cir_catalog_name_observer>
+				</observers>
+			</checkout_cart_product_add_after>
+		</events>
 	</global>
 </config>

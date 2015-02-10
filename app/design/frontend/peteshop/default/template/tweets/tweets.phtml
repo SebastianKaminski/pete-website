@@ -1,0 +1,26 @@
+<?php $helper = Mage::helper('tweets'); ?>
+<?php if($helper->isEnabled()): ?>
+	<?php if($helper->isEnabledWidgets()): ?>
+		<?php echo $helper->getWidgetScript(); ?>
+	<?php elseif($helper->isShowIn() == 0 && $tweets = $this->getTweetsByUsername($helper->getUsername())): ?>
+		<div class="block block-creare-twitter">
+			<div class="block-title">
+				<strong>
+					<strong><span class="entypo-social twitter"></span> Latest Tweets</strong>
+				</strong>
+			</div>
+			<div class="block-content">
+				<ul id="sparx-tweets" class="list-unstyled">
+				<?php foreach($tweets as $tweet): ?>
+					<li class="item">
+						<?php echo (string) trim($tweet["text"]); ?>
+						<?php if($helper->isDisplayPostedTime()): ?>
+							<span> - <?php echo (string) trim($tweet["created_at"]); ?></span>
+						<?php endif; ?>
+					</li>
+				<?php endforeach; ?>       
+				</ul>
+			</div>
+		</div>
+	<?php endif; ?>
+<?php endif; ?>
