@@ -57,6 +57,7 @@
 <?php if ($_product->getAttributeText('item_type') == "Radiator"): ?>
     <script type="text/javascript">
         //<![CDATA[
+        var qty_input = jQuery(".option-radiator-finish input.qty");
         // copy number of sections value
         bundle.changeRadiatorLength = function (element) {
             jQuery(".option-radiator-finish input.qty").val(element.value);
@@ -64,9 +65,24 @@
             bundle.reloadPrice();
         };
 
-        bundle.setRadiatorLength = function (element, value) {
-            console.log(element, value);
-            return false;
+        bundle.addSection = function (e) {
+            e.prevenDefault();
+            var max = 30;
+            if (parseInt(qty_input.val()) + 1 >= max) {
+                alert("Maximum radiator length has been reached!");
+            } else {
+                qty_input.val(parseInt(qty_input.val())+1);
+            }
+        }        
+
+        bundle.removeSection = function (e) {
+            e.prevenDefault();
+            var min = 3;
+            if (parseInt(qty_input.val()) - 1 <= max) {
+                alert("Minimum radiator length has been reached!");
+            } else {
+                qty_input.val(parseInt(qty_input.val())-1);
+            }            
         }
         //]]>
     </script>

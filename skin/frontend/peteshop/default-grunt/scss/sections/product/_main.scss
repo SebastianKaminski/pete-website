@@ -440,8 +440,15 @@
 		}
 
 		.qty-holder { 
-			label { vertical-align:middle; }
-			input[type='number'] {
+			.entypo {
+				font-size: 12px;
+			}
+
+			label { 
+				vertical-align:middle; 
+			}
+			
+			input[type='text'] {
 				height: 30px;
 				padding: 0px 5px;
 				text-align: center;			
