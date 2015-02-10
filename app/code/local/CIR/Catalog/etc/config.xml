@@ -1,54 +1,36 @@
 <?xml version="1.0"?>
 <config>
-  <global>
-<!--     <modules>
-        <CIR_Koza>
-            <version>0.1.0</version>
-        </CIR_Koza>
-    </modules> -->
-    <models>
-        <circatalog>
-          <class>CIR_Catalog_Model</class>
-        </circatalog>
-    </models>
-
-    <fieldsets>
-        <sales_convert_quote_item>
-            <koza>
-                <to_order_item>*</to_order_item>
-            </koza>
-        </sales_convert_quote_item>
-    </fieldsets>
-
-    <sales>
-        <quote>
-            <item>
-                <product_attributes>
-                    <koza/>
-                </product_attributes>
-            </item>
-        </quote>
-    </sales>
-
-    <events>
-
-        <sales_quote_item_set_product>
-              <observers>
-                  <cir_catalog_price_observer>
-                      <class>CIR_Catalog_Model_Price_Observer</class>
-                      <method>setKozaAttribute</method>
-                  </cir_catalog_price_observer>
-              </observers>
-          </sales_quote_item_set_product>
-
-        <sales_quote_item_set_product>
-            <observers>
-                <cir_catalog_price_observer>
-                    <class>CIR_Catalog_Model_Price_Observer</class>
-                    <method>setTestAttribute</method>
-                </cir_catalog_price_observer>
-            </observers>
-        </sales_quote_item_set_product>
-    </events>
-  </global>
+	<global>
+		 <fieldsets>
+				 <sales_convert_quote_item>
+						 <custom_attribute_column>
+								 <to_order_item>*</to_order_item>
+						 </custom_attribute_column>
+				 </sales_convert_quote_item>
+		 </fieldsets>
+		 <resources>
+				 <cir_catalog_setup>
+							<setup>
+									<module>CIR_Catalog</module>
+									<class>Mage_Sales_Model_Mysql4_Setup</class>
+							</setup>
+				 </cir_catalog_setup>
+		 </resources>
+		 <models>
+					<cir_catalog>
+							 <class>CIR_Catalog_Model</class>
+					</cir_catalog>
+		 </models>
+		 <events>
+					<checkout_cart_product_add_after>
+							 <observers>
+										<cir_catalog_checkout_cart_product_add_after>
+												 <type>model</type>
+												 <class>CIR_Catalog_Model_Observer</class>
+												 <method>checkoutCartProductAddAfter</method>
+										</cir_catalog_checkout_cart_product_add_after>
+							 </observers>
+					</checkout_cart_product_add_after>
+		 </events>
+	</global>
 </config>

@@ -1,11 +1,20 @@
 <?php
 
-class CIR_Catalog_Model_Price_Observer
+class CIR_Catalog_Model_Observer
 {
 	public function __construct()
 	{
 
 	}
+
+    public function checkoutCartProductAddAfter(Varien_Event_Observer $observer)
+    {
+        $item = $observer->getEvent()->getQuoteItem();
+        $item->setData('custom_attribute_column', 'the value');
+        $item->save();
+
+        return $this;
+    }
 
 	public function calculate_radiator_price(Varien_Event_Observer $observer)
 	{
