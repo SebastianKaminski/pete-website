@@ -61,6 +61,7 @@
         var fin_qty_input = jQuery(".option-radiator-finish input.qty");
 
         var setQuantity = function (qty) {
+            console.log("T2", qty);
             qty_input.val(qty);
             fin_qty_input.val(qty);
             bundle.reloadPrice();
@@ -78,17 +79,16 @@
             } else {
                 setQuantity(parseInt(qty_input.val())+1);
             }
-            return false;
         }        
 
         bundle.removeSection = function () {
             var min = 3;
-            if (parseInt(qty_input.val()) - 1 <= max) {
+            console.log("T1", qty_input.val())
+            if (parseInt(qty_input.val()) - 1 <= min) {
                 alert("Minimum radiator length has been reached!");
             } else {
                 setQuantity(parseInt(qty_input.val())-1);
-            }    
-            return false;        
+            }          
         }
 
         jQuery(document).ready(function($) {  
