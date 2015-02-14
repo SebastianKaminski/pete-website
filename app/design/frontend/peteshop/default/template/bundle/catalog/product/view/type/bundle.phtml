@@ -71,7 +71,7 @@
         };
 
         bundle.addSection = function () {
-            var max = parseInt("input[name='radiator-stock']").val() || 30;
+            var max = parseInt(jQuery("input[name='radiator-stock']").val()) || 30;
             if (parseInt(qty_input.val()) + 1 > max) {
                 alert("Maximum radiator length has been reached!");
             } else {
@@ -99,8 +99,6 @@
                 bundle.reloadPrice();
             });
         });
-
-        /* TODO: select change quantity */
 
         //]]>
     </script>
