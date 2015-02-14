@@ -90,7 +90,11 @@
                 <?php if ($_product->getAttributeText('item_type') == "Radiator"):?>
 
                     <?php if ($_product->getTypeID() == 'bundle'): ?>
-                        <?php Mage::log($_product->debug(), null, 'debug.log', true); ?>
+                        <?php   
+                            $bundleIds = Mage::getResourceSingleton('bundle/selection')->getParentIdsByChild($_product->getId());
+                            print_r($bundleIds);
+                            Mage::log($bundleIds, null, 'debug.log', true); 
+                        ?>
                     <?php elseif ($_product->getTypeID() == 'simple'): ?>
                         <?php Mage::log('SIMPLE'.$_product->debug(), null, 'debug.log', true); ?>
                     <?php endif; ?>
