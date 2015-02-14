@@ -91,7 +91,7 @@
 
                     <?php if ($_product->getTypeID() == 'bundle'): ?>
                         <?php  
-                            $collection = $product->getTypeInstance(true)
+                            $collection = $_product->getTypeInstance(true)
                                 ->getSelectionsCollection(
                                     $_product->getTypeInstance(true)
                                             ->getOptionsIds($_product), $_product);
