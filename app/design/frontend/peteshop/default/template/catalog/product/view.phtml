@@ -91,15 +91,9 @@
 
                     <?php if ($_product->getTypeID() == 'bundle'): ?>
                         <?php  
-                            $collection = $_product->getTypeInstance(true)
-                                ->getSelectionsCollection(
-                                    $_product->getTypeInstance(true)
-                                            ->getOptionsIds($_product), $_product);
-
-                            foreach ($collection as $item) {
-                                # $item->product_id has the product id.
-                                Mage::log($item->debug(), null, 'debug.log', true); 
-                            }
+                            $items = $product->getTypeInstance(true)->getChildrenIds($_product->getId(), true);
+                            print_r($items);
+                            Mage::log($product->debug(), null, 'debug.log', true); 
                         ?>
                     <?php elseif ($_product->getTypeID() == 'simple'): ?>
                         <?php Mage::log('SIMPLE'.$_product->debug(), null, 'debug.log', true); ?>
