@@ -53,11 +53,11 @@
                     <h1><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></h1>
                 </div>
 
-                <?php echo $this->getReviewsSummaryHtml($_product, false, true)?>
-                <?php echo $this->getChildHtml('alert_urls') ?>
-                <?php echo $this->getChildHtml('product_type_data') ?>
-                <?php echo $this->getTierPriceHtml() ?>
-                <?php echo $this->getChildHtml('extrahint') ?>
+                <div class="reviews-summary"><?php echo $this->getReviewsSummaryHtml($_product, false, true)?></div>
+                <div class="alert-urls"><?php echo $this->getChildHtml('alert_urls') ?></div>
+                <div class="product-type-data"><?php echo $this->getChildHtml('product_type_data') ?></div>
+                <div class="tier-price"><?php echo $this->getTierPriceHtml() ?></div>
+                <div class="extra-hint"><?php echo $this->getChildHtml('extrahint') ?></div>
 
                 <?php if (!(($_product->getAttributeText('instore_only')) == "No")):?>
                     <?php if (!$this->hasOptions()):?>

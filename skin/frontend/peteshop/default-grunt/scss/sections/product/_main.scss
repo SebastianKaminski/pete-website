@@ -401,6 +401,20 @@
 			// font-size: 28px;
 			// font-family: $fontBase3;
 		}
+		// Bundle price
+		.price-as-configured {
+			.price-label {
+				display: none;
+			}
+			.full-product-price {
+				background: $brandInfo;
+				border: 2px solid $brandInfo;
+				color: #FFF;
+				font-weight: normal;
+				margin: 10px 0;
+				padding: 4px 10px;
+			}
+		}
 		.old-price .price { font-size: 18px; }
 		.configurable-price-from-label { color: #000; }
 	}
