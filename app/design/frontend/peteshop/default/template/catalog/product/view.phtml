@@ -90,8 +90,10 @@
                 <?php if ($_product->getAttributeText('item_type') == "Radiator"):?>
 
                     <?php if ($_product->getTypeID() == 'bundle'): ?>
-                        <?php $radiator = $this->getOption()->getSelections()[0]; ?>
-                        <?php Mage::log('BUNDLE'.$radiator->debug(), null, 'debug.log', true); ?>
+                        <?php 
+                            $items = $_product->getTypeInstance(true)->getChildrenIds($_product->getId(), false)
+                        ?>
+                        <?php Mage::log('BUNDLE'.$items->debug(), null, 'debug.log', true); ?>
                     <?php elseif ($_product->getTypeID() == 'simple'): ?>
                         <?php Mage::log('SIMPLE'.$_product->debug(), null, 'debug.log', true); ?>
                     <?php endif; ?>
@@ -110,10 +112,10 @@
                             <tbody>
                                 <tr>
                                     <td>1</td>        
-                                    <td><?php echo $radiator->getAttributeText('leg_section_height'); ?> mm</td>        
-                                    <td><?php echo $radiator->getAttributeText('section_length'); ?> mm</td>        
-                                    <td><?php echo $radiator->getAttributeText('section_depth'); ?> mm</td>        
-                                    <td><?php echo $radiator->getAttributeText('section_watts'); ?> Watts</td>        
+                                    <td><?php //echo $radiator->getAttributeText('leg_section_height'); ?> mm</td>        
+                                    <td><?php //echo $radiator->getAttributeText('section_length'); ?> mm</td>        
+                                    <td><?php //echo $radiator->getAttributeText('section_depth'); ?> mm</td>        
+                                    <td><?php //echo $radiator->getAttributeText('section_watts'); ?> Watts</td>        
                                 </tr>
                             </tbody>
                         </table>
