@@ -66,7 +66,14 @@
         </select>
     <?php endif; ?>
         <?php if ($_product->getAttributeText('item_type') == "Radiator" && $optionName == 'number-of-sections'): ?>
+            <?php $radiator = Mage::getModel('catalog/product')->load($_selections[0]->getId()); ?>
             <input type="hidden" name="radiator-stock" value="<?php echo Mage::getModel('cataloginventory/stock_item')->loadByProduct($_selections[0]->getId())->getQty(); ?>"/>
+            <input type="hidden" name="radiator-leg-section-height" value="<?php echo $radiator->getAttributeText('leg_section_height'); ?>"/>
+            <input type="hidden" name="radiator-middle-section-height" value="<?php echo $radiator->getAttributeText('mid_section_height'); ?>"/>
+            <input type="hidden" name="radiator-section-weight" value="<?php echo $radiator->getAttributeText('weight'); ?>"/>
+            <input type="hidden" name="radiator-section-lenght" value="<?php echo $radiator->getAttributeText('section_lenght'); ?>"/>
+            <input type="hidden" name="radiator-section-depth" value="<?php echo $radiator->getAttributeText('section_depth'); ?>"/>
+            <input type="hidden" name="radiator-section-watts" value="<?php echo $radiator->getAttributeText('section_watts'); ?>"/>
             <span class="qty-holder">
                 <ul class="list-inline">
                     <li><button type="button" onclick="bundle.removeSection(); return false;" class="btn btn-sm btn-warning"><span class="entypo minus"></span></button></li>

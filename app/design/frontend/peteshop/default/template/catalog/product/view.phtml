@@ -88,14 +88,7 @@
                 <?php endforeach;?>
 
                 <?php if ($_product->getAttributeText('item_type') == "Radiator"):?>
-                    <script type="text/javascript">
-                    //<![CDATA[
-                    var fillTable = function (table) {
-                        console.log("test", jQuery(table));
-                    };                   
-                    //]]>     
-                    </script>
-                    <div class="radiator-dimensions-table" onload="fillTable(this);">
+                    <div class="radiator-dimensions-table">
                         <table class="table table-condensed table-bordered">
                             <thead>
                                 <tr>
@@ -117,6 +110,14 @@
                             </tbody>
                         </table>
                     </div>
+                    <script type="text/javascript">
+                    //<![CDATA[
+                        jQuery(document).ready(function () {
+                            var table = jQuery('.radiator-dimensions-table table');
+                            console.log(table);
+                        });
+                    //]]>     
+                    </script>
                 <?php endif; ?>
 
                 <?php echo $this->getChildHtml('other');?>
