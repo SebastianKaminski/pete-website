@@ -91,17 +91,28 @@
 
                     <?php if ($_product->getTypeID() == 'bundle'): ?>
                         <?php  
-                            // $items = $_product->getTypeInstance(true)->getChildrenIds($_product->getId(), true);
-                            $items = $_product->getTypeInstance(true)->getChildrenIds(89, true);
-                            print_r($items);
-                            echo "<br/><ul>";
-                            foreach ($items as $value => $key) {
-                                print_r($value);
-                                echo "<li>".$value." - ".$key." - ".$items[$key][0]."</li>";
-                                // Mage::getModel('catalog/product')->load($productId);
+                            $bundled_product = new Mage_Catalog_Model_Product();
+                            $bundled_product->load(88);
+                            $selectionCollection = $bundled_product->getTypeInstance(true)->getSelectionsCollection(
+                            $bundled_product->getTypeInstance(true)->getOptionsIds($bundled_product), $bundled_product
+                            );
+                            $bundled_items = array();
+                            foreach($selectionCollection as $option)
+                            {
+                                $bundled_items[] = $option->product_id;
                             }
-                            echo "</ul>";
-                            Mage::log($_product->debug(), null, 'debug.log', true); 
+                            print_r($bundled_items);
+
+                            // $items = $_product->getTypeInstance(true)->getChildrenIds($_product->getId(), true);
+                            // $items = $_product->getTypeInstance(true)->getChildrenIds(89, true);
+                            // print_r($items);
+                            // echo "<br/><ul>";
+                            // foreach ($items as $value => $key) {
+                            //     print_r($value);
+                            //     echo "<li>".$value." - ".$key." - ".$items[$key]."</li>";
+                            // }
+                            // echo "</ul>";
+                            // Mage::log($_product->debug(), null, 'debug.log', true); 
                         ?>
                     <?php elseif ($_product->getTypeID() == 'simple'): ?>
                         <?php Mage::log('SIMPLE'.$_product->debug(), null, 'debug.log', true); ?>
