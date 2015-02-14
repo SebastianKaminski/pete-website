@@ -87,6 +87,29 @@
                     </div>
                 <?php endforeach;?>
 
+                <div class="radiator-dimensions-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Sections</th>
+                                <th>Height</th>
+                                <th>Length</th>
+                                <th>Depth</th>
+                                <th>Watts</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>        
+                                <td>1</td>        
+                                <td>1</td>        
+                                <td>1</td>        
+                                <td>1</td>        
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
                 <?php echo $this->getChildHtml('other');?>
 
                 <?php if ($_product->isSaleable() && $this->hasOptions()):?>
