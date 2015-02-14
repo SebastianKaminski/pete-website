@@ -91,9 +91,9 @@
 
                     <?php if ($_product->getTypeID() == 'bundle'): ?>
                         <?php  
-                            $items = $product->getTypeInstance(true)->getChildrenIds($_product->getId(), true);
+                            $items = $_product->getTypeInstance(true)->getChildrenIds($_product->getId(), true);
                             print_r($items);
-                            Mage::log($product->debug(), null, 'debug.log', true); 
+                            Mage::log($_product->debug(), null, 'debug.log', true); 
                         ?>
                     <?php elseif ($_product->getTypeID() == 'simple'): ?>
                         <?php Mage::log('SIMPLE'.$_product->debug(), null, 'debug.log', true); ?>
