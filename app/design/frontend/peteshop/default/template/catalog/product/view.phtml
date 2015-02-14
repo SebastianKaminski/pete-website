@@ -90,10 +90,16 @@
                 <?php if ($_product->getAttributeText('item_type') == "Radiator"):?>
 
                     <?php if ($_product->getTypeID() == 'bundle'): ?>
-                        <?php   
-                            $bundleIds = Mage::getResourceSingleton('bundle/selection')->getParentIdsByChild($_product->getId());
-                            print_r($bundleIds);
-                            Mage::log($bundleIds, null, 'debug.log', true); 
+                        <?php  
+                            $collection = $product->getTypeInstance(true)
+                                ->getSelectionsCollection(
+                                    $_product->getTypeInstance(true)
+                                            ->getOptionsIds($_product), $_product);
+
+                            foreach ($collection as $item) {
+                                # $item->product_id has the product id.
+                                Mage::log($item->debug(), null, 'debug.log', true); 
+                            }
                         ?>
                     <?php elseif ($_product->getTypeID() == 'simple'): ?>
                         <?php Mage::log('SIMPLE'.$_product->debug(), null, 'debug.log', true); ?>
