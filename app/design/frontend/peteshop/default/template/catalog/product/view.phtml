@@ -95,9 +95,9 @@
                             $items = $_product->getTypeInstance(true)->getChildrenIds(89, true);
                             print_r($items);
                             echo "<br/><ul>";
-                            foreach ($items as $value) {
+                            foreach ($items as $value => $key) {
                                 print_r($value);
-                                echo "<li>".$value[0]."</li>";
+                                echo "<li>".$value." - ".$key."</li>";
                                 // Mage::getModel('catalog/product')->load($productId);
                             }
                             echo "</ul>";
