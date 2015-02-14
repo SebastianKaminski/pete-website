@@ -66,18 +66,15 @@
         </select>
     <?php endif; ?>
         <?php if ($_product->getAttributeText('item_type') == "Radiator" && $optionName == 'number-of-sections'): ?>
-            <?php 
-                $radiator = Mage::getModel('catalog/product')->load($_selections[0]->getId()); 
-                echo $radiator['leg_section_height'];
-                // Mage::log($radiator->debug(), null, 'debug.log', true); 
-            ?>
+            <?php $radiator = Mage::getModel('catalog/product')->load($_selections[0]->getId()); ?>
+            <?php // Mage::log($radiator->debug(), null, 'debug.log', true); ?>
             <input type="hidden" name="radiator-stock" value="<?php echo Mage::getModel('cataloginventory/stock_item')->loadByProduct($_selections[0]->getId())->getQty(); ?>"/>
             <input type="hidden" name="radiator-leg-section-height" value="<?php echo $radiator->getAttributeText('leg_section_height'); ?>"/>
             <input type="hidden" name="radiator-middle-section-height" value="<?php echo $radiator->getAttributeText('mid_section_height'); ?>"/>
-            <input type="hidden" name="radiator-section-weight" value="<?php echo $radiator->getAttributeText('weight'); ?>"/>
-            <input type="hidden" name="radiator-section-lenght" value="<?php echo $radiator->getAttributeText('section_lenght'); ?>"/>
-            <input type="hidden" name="radiator-section-depth" value="<?php echo $radiator->getAttributeText('section_depth'); ?>"/>
-            <input type="hidden" name="radiator-section-watts" value="<?php echo $radiator->getAttributeText('section_watts'); ?>"/>
+            <input type="hidden" name="radiator-section-weight" value="<?php echo $radiator['weight'] ?>"/>
+            <input type="hidden" name="radiator-section-lenght" value="<?php echo $radiator['section_lenght'] ?>"/>
+            <input type="hidden" name="radiator-section-depth" value="<?php echo $radiator['section_depth'] ?>"/>
+            <input type="hidden" name="radiator-section-watts" value="<?php echo $radiator['section_watts'] ?>"/>
 
             <span class="qty-holder">
                 <ul class="list-inline">
