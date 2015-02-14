@@ -345,23 +345,46 @@
 // Product Shop
 // --------------------------------------------------
 .product-view .product-shop { 
-	text-align: right;
 
 	.product-name { 
 		margin:0 0 5px;
 		h1 {
 			font-family: $fontBase3;
-			font-style: italic;
+			font-size: 30px;			
+			font-weight: bold;
+			text-transform: uppercase;
 		}
 	}
+
+	.radiator-dimensions-table {
+		table {
+			font-size: 12px;
+			th, td {
+				text-align: center;
+			}
+			th {
+				text-transform: uppercase;
+				color: $colorGrey;
+			}
+		}
+	}
+
+	.box-description { margin: 10px 0; }
 
 	.pinit-button { padding-right: 22px; }
 
 	.availability { 
 		border-radius: 0;
+		border: 2px solid;
 		font-weight: normal;
 		margin:10px 0;
-		padding: 2px 5px;
+		padding: 4px 10px;
+		&.in-stock {
+			border-color: $brandSuccess
+		}
+		&.out-of-stock {
+			border-color: $brandWarning;
+		}
 	}
 
 	.short-description { 
@@ -375,8 +398,8 @@
 	.price-box { 
 		margin:10px 0;
 		.price {
-			font-size: 28px;
-			font-family: $fontBase3;
+			// font-size: 28px;
+			// font-family: $fontBase3;
 		}
 		.old-price .price { font-size: 18px; }
 		.configurable-price-from-label { color: #000; }
