@@ -96,6 +96,7 @@
             // Change finish
             jQuery('.option-radiator-finish select').on('change', function() {
                 fin_qty_input.val(qty_input.val());
+                bundle.reloadPrice();
             });
         });
 
