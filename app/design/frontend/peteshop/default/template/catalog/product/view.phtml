@@ -88,6 +88,13 @@
                 <?php endforeach;?>
 
                 <?php if ($_product->getAttributeText('item_type') == "Radiator"):?>
+                    <script type="text/javascript">
+                    //<![CDATA[
+                    var fillTable = function (table) {
+                        console.log("test", jQuery(table));
+                    };                   
+                    //]]>     
+                    </script>
                     <div class="radiator-dimensions-table" onload="fillTable(this);">
                         <table class="table table-condensed table-bordered">
                             <thead>
@@ -137,9 +144,6 @@
     </form>
     <script type="text/javascript">
     //<![CDATA[
-        var fillTable = function (table) {
-            console.log("test", jQuery(table));
-        };
 
         var productAddToCartForm = new VarienForm('product_addtocart_form');
         productAddToCartForm.submit = function(button, url) {
