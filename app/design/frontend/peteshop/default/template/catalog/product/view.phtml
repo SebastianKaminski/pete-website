@@ -57,7 +57,7 @@
                 <div class="alert-urls"><?php echo $this->getChildHtml('alert_urls') ?></div>
                 <div class="product-type-data"><?php echo $this->getChildHtml('product_type_data') ?></div>
                 <div class="tier-price"><?php echo $this->getTierPriceHtml() ?></div>
-                <div class="extra-hint"><?php echo $this->getChildHtml('extrahint') ?></div>
+                <div class="extra-hint hidden"><?php echo $this->getChildHtml('extrahint') ?></div>
 
                 <?php if (!(($_product->getAttributeText('instore_only')) == "No")):?>
                     <?php if (!$this->hasOptions()):?>

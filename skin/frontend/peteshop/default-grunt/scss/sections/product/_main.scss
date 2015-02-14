@@ -61,14 +61,6 @@
 
 // Availability
 // --------------------------------------------------
-.availability { 
-	margin:0;
-
-	span { 
-		font-weight:bold;
-	}
-}
-
 .availability-only { 
 	margin:10px 0 7px; 
 	line-height:16px; 
@@ -112,10 +104,6 @@
 	tr.odd td.last { 
 		font-weight:bold;
 	}
-}
-
-.product-view .product-shop .availability { 
-	font-size:12px; 
 }
 
 
@@ -374,16 +362,18 @@
 	.pinit-button { padding-right: 22px; }
 
 	.availability { 
-		border-radius: 0;
 		border: 2px solid;
-		font-weight: normal;
+		color: #FFF;
 		margin:10px 0;
 		padding: 4px 10px;
+		text-transform: uppercase;
 		&.in-stock {
-			border-color: $brandSuccess
+			border-color: $brandSuccess;
+			background: $brandSuccess;
 		}
 		&.out-of-stock {
 			border-color: $brandWarning;
+			background: $brandWarning;
 		}
 	}
 

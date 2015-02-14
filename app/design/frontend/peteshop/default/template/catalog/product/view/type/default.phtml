@@ -27,12 +27,16 @@
 <?php /* @var $this Mage_Catalog_Block_Product_View_Abstract */?>
 <?php $_product = $this->getProduct() ?>
 
-<?php if ($this->displayProductStockStatus()): ?>
-    <?php if ($_product->isAvailable()): ?>
-        <span class="availability in-stock label label-success"><span><?php echo $this->__('In stock') ?></span></span>
-    <?php else: ?>
-        <span class="availability out-of-stock label label-danger"><span><?php echo $this->__('Out of stock') ?></span></span>
-    <?php endif; ?>
-<?php endif; ?>
-<?php echo $this->getChildHtml('product_type_data_extra') ?>
-<?php echo $this->getPriceHtml($_product) ?>
+<ul class="inline-list">
+	<li>
+		<?php if ($this->displayProductStockStatus()): ?>
+		    <?php if ($_product->isAvailable()): ?>
+		        <span class="availability in-stock label label-success"><span><?php echo $this->__('In stock') ?></span></span>
+		    <?php else: ?>
+		        <span class="availability out-of-stock label label-danger"><span><?php echo $this->__('Out of stock') ?></span></span>
+		    <?php endif; ?>
+		<?php endif; ?>
+	</li>
+	<li><?php echo $this->getChildHtml('product_type_data_extra') ?></li>
+	<li><?php echo $this->getPriceHtml($_product) ?></li>
+</ul>
