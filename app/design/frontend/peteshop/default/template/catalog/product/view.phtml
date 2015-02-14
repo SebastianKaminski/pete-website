@@ -90,13 +90,12 @@
                 <?php if ($_product->getAttributeText('item_type') == "Radiator"):?>
 
                     <?php if ($_product->getTypeID() == 'bundle'): ?>
-                        <?php //$radiator = $this->getOption()->getSelections()[0]; ?>
+                        <!-- <?php //$radiator = $this->getOption()->getSelections()[0]; ?> -->
                         <?php Mage::log('BUNDLE'.$_product->debug(), null, 'debug.log', true); ?>
                     <?php elseif ($_product->getTypeID() == 'simple'): ?>
                         <?php Mage::log('SIMPLE'.$_product->debug(), null, 'debug.log', true); ?>
-                        <?php //$radiator = $_product; ?>
                     <?php endif; ?>
-                    
+
                     <div class="radiator-dimensions-table">
                         <table class="table table-condensed table-bordered">
                             <thead>
