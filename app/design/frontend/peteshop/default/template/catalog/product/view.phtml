@@ -118,7 +118,7 @@
 
                             var renderTable = function (tab, sec) {
                                 var body = tab.find('tbody').empty();
-                                body.appent("<tr>\
+                                body.append("<tr>\
                                     <td>" + sec + " mm</td>\
                                     <td>" + sec + " mm</td>\
                                     <td>" + sec + " mm</td>\
@@ -127,7 +127,7 @@
                                 </tr>")
                             }
 
-                            sections.on('change', function(event) {
+                            sections.on('input', function(event) {
                                 event.preventDefault();
                                 renderTable(table, sections.val()) 
                             });
