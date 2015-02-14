@@ -35,7 +35,7 @@
 <?php $tierPriceHtml = ''; ?>
 <?php $optionName   = strtolower(preg_replace('/\s+/','-', $this->escapeHtml($_option->getTitle()))); ?>
 
-<?php Mage::log($_option->debug(), null, 'debug.log', true); ?>
+<?php //Mage::log($_option->debug(), null, 'debug.log', true); ?>
 
 <dt>
     <strong<?php if ($_option->getRequired()) echo ' class="required"' ?>><?php echo $this->escapeHtml($_option->getTitle()) ?><?php if ($_option->getRequired()) echo '<em>*</em>' ?></strong>
