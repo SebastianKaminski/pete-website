@@ -91,8 +91,15 @@
 
                     <?php if ($_product->getTypeID() == 'bundle'): ?>
                         <?php  
-                            $items = $_product->getTypeInstance(true)->getChildrenIds($_product->getId(), true);
-                            print_r($items);
+                            // $items = $_product->getTypeInstance(true)->getChildrenIds($_product->getId(), true);
+                            $items = $_product->getTypeInstance(true)->getChildrenIds(89, true);
+                            // print_r($items);
+                            echo "<ul>";
+                            foreach ($items as $value) {
+                                echo "<li>".$value."</li>";
+                                // Mage::getModel('catalog/product')->load($productId);
+                            }
+                            echo "</ul>";
                             Mage::log($_product->debug(), null, 'debug.log', true); 
                         ?>
                     <?php elseif ($_product->getTypeID() == 'simple'): ?>
