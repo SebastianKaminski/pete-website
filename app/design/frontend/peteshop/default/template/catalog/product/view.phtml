@@ -91,18 +91,6 @@
 
                     <?php if ($_product->getTypeID() == 'bundle'): ?>
                         <?php  
-                            $bundled_product = new Mage_Catalog_Model_Product();
-                            $bundled_product->load(88);
-                            $selectionCollection = $bundled_product->getTypeInstance(true)->getSelectionsCollection(
-                            $bundled_product->getTypeInstance(true)->getOptionsIds($bundled_product), $bundled_product
-                            );
-                            $bundled_items = array();
-                            foreach($selectionCollection as $option)
-                            {
-                                $bundled_items[] = $option->product_id;
-                            }
-                            print_r($bundled_items);
-
                             // $items = $_product->getTypeInstance(true)->getChildrenIds($_product->getId(), true);
                             // $items = $_product->getTypeInstance(true)->getChildrenIds(89, true);
                             // print_r($items);
