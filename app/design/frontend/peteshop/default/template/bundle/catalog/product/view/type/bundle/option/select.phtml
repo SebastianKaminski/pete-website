@@ -67,6 +67,7 @@
         </select>
     <?php endif; ?>
         <?php if ($_product->getAttributeText('item_type') == "Radiator" && $optionName == 'number-of-sections'): ?>
+            <input type="hidden" name="radiator-stock" value="<?php echo $_product->getStockItem()->getQty(); ?>"/>
             <span class="qty-holder">
                 <ul class="list-inline">
                     <li><button type="button" onclick="bundle.removeSection(); return false;" class="btn btn-sm btn-warning"><span class="entypo minus"></span></button></li>
