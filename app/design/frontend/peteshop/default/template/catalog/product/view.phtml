@@ -113,10 +113,12 @@
                     <script type="text/javascript">
                     //<![CDATA[
                         jQuery(document).ready(function () {
-                            var sections = jQuery('.option-number-of-sections input[type="text"]')
+                            var sectionsInput = jQuery('.option-number-of-sections input[type="text"]');
+                            var sections = sectionsInput.val();
                             var table = jQuery('.radiator-dimensions-table table');
 
                             var renderTable = function (tab, sec) {
+                                console.log("render table");
                                 var body = tab.find('tbody').empty();
                                 body.append("<tr>\
                                     <td>" + sec + " mm</td>\
@@ -127,12 +129,16 @@
                                 </tr>")
                             }
 
-                            sections.on('input', function(event) {
-                                event.preventDefault();
-                                renderTable(table, sections.val()) 
-                            });
+                            setInterval(function () {
+                                if (sections !== sectionsInput.val()) {
+                                    renderTable(table, sectionsInput.val());
+                                    sections = sectionsInput.val();
+                                }
+                            }, 100);
 
-                            console.log(table);
+
+                            // Init table
+                            renderTable(table, sections);
                         });
                     //]]>     
                     </script>
