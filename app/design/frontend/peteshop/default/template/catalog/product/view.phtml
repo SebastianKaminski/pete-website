@@ -88,7 +88,7 @@
                 <?php endforeach;?>
 
                 <div class="radiator-dimensions-table">
-                    <table>
+                    <table class="table table-condensed table-bordered">
                         <thead>
                             <tr>
                                 <th>Sections</th>
@@ -101,10 +101,10 @@
                         <tbody>
                             <tr>
                                 <td>1</td>        
-                                <td>1</td>        
-                                <td>1</td>        
-                                <td>1</td>        
-                                <td>1</td>        
+                                <td><?php echo $_product->getAttributeText('leg_section_height'); ?> mm</td>        
+                                <td><?php echo $_product->getAttributeText('section_length'); ?> mm</td>        
+                                <td><?php echo $_product->getAttributeText('section_depth'); ?> mm</td>        
+                                <td><?php echo $_product->getAttributeText('section_watts'); ?> Watts</td>        
                             </tr>
                         </tbody>
                     </table>
