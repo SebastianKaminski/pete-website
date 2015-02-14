@@ -90,8 +90,8 @@
                 <?php if ($_product->getAttributeText('item_type') == "Radiator"):?>
 
                     <?php if ($_product->getTypeID() == 'bundle'): ?>
-                        <!-- <?php //$radiator = $this->getOption()->getSelections()[0]; ?> -->
-                        <?php Mage::log('BUNDLE'.$_product->debug(), null, 'debug.log', true); ?>
+                        <?php $radiator = $this->getOption()->getSelections()[0]; ?>
+                        <?php Mage::log('BUNDLE'.$radiator->debug(), null, 'debug.log', true); ?>
                     <?php elseif ($_product->getTypeID() == 'simple'): ?>
                         <?php Mage::log('SIMPLE'.$_product->debug(), null, 'debug.log', true); ?>
                     <?php endif; ?>
