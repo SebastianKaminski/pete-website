@@ -57,7 +57,7 @@
 <?php if ($_product->getAttributeText('item_type') == "Radiator"): ?>
     <script type="text/javascript">
         //<![CDATA[    
-        var qty_input, fin_qty_input;
+        var qty_input, fin_qty_input, max = 0, min = 0;
 
         var setQuantity = function (qty) {
             qty_input.val(qty);
@@ -67,11 +67,14 @@
 
         // copy number of sections value
         bundle.changeRadiatorLength = function (element) {
-            setQuantity(element.value)
+            if (element.value > max || element.value < min) {
+                setQuantity(max);
+            } else {
+                setQuantity(element.value);
+            }
         };
 
         bundle.addSection = function () {
-            var max = parseInt(jQuery("input[name='radiator-stock']").val()) || 30;
             if (parseInt(qty_input.val()) + 1 > max) {
                 alert("Maximum radiator length has been reached!");
             } else {
@@ -80,7 +83,6 @@
         }        
 
         bundle.removeSection = function () {
-            var min = 3;
             if (parseInt(qty_input.val()) - 1 < min) {
                 alert("Minimum radiator length has been reached!");
             } else {
@@ -89,6 +91,8 @@
         }
 
         jQuery(document).ready(function($) {  
+            max = parseInt(jQuery("input[name='radiator-stock']").val()) || 30;
+            min = 3;
             qty_input = jQuery(".option-number-of-sections input.qty");
             fin_qty_input = jQuery(".option-radiator-finish input.qty");
             setQuantity(3);
