@@ -92,22 +92,15 @@
                         <table class="table table-condensed table-bordered">
                             <thead>
                                 <tr>
-                                    <th>Sections</th>
+                                    <th>Number of sections</th>
                                     <th>Height</th>
                                     <th>Length</th>
                                     <th>Depth</th>
+                                    <th>Weight</th>
                                     <th>Watts</th>
                                 </tr>
                             </thead>
-                            <tbody>
-                                <tr>
-                                    <td>N/A</td>
-                                    <td>N/A</td>
-                                    <td>N/A</td>
-                                    <td>N/A</td>
-                                    <td>N/A</td>
-                                </tr>
-                            </tbody>
+                            <tbody></tbody>
                         </table>
                     </div>
                     <script type="text/javascript">
@@ -118,14 +111,14 @@
                             var table = jQuery('.radiator-dimensions-table table');
 
                             var renderTable = function (tab, sec) {
-                                console.log("render table");
                                 var body = tab.find('tbody').empty();
                                 body.append("<tr>\
-                                    <td>" + sec + " mm</td>\
-                                    <td>" + sec + " mm</td>\
-                                    <td>" + sec + " mm</td>\
-                                    <td>" + sec + " mm</td>\
-                                    <td>" + sec + " mm</td>\
+                                    <td>" + sec + "</td>\
+                                    <td>" + parseInt(jQuery('input[name="radiator-leg-section-height"]').val()) + "mm</td>\
+                                    <td>" + parseInt(jQuery('input[name="radiator-section-length"]').val()) * sec + "mm</td>\
+                                    <td>" + parseInt(jQuery('input[name="radiator-section-depth"]').val()) + "mm</td>\
+                                    <td>" + Number(parseFloat(jQuery('input[name="radiator-section-weight"]').val()) * sec).toFixed(2) + "kg</td>\
+                                    <td>" + Number(parseFloat(jQuery('input[name="radiator-section-watts"]').val()) * sec).toFixed(2) + "</td>\
                                 </tr>")
                             }
 
