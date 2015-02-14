@@ -103,10 +103,10 @@
                             foreach($selectionCollection as $option) 
                             {
                                 $bundled_items[] = $option->product_id;
+                                Mage::log($option->debug(), null, 'debug.log', true);
                             }
                             // $items = $_product->getTypeInstance(true)->getChildrenIds($_product->getId(), false); 
                         ?>
-                        <?php Mage::log('BUNDLE'.print_r($bundled_items), null, 'debug.log', true); ?>
                     <?php elseif ($_product->getTypeID() == 'simple'): ?>
                         <?php Mage::log('SIMPLE'.$_product->debug(), null, 'debug.log', true); ?>
                     <?php endif; ?>
