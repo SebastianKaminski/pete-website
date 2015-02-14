@@ -91,11 +91,22 @@
 
                     <?php if ($_product->getTypeID() == 'bundle'): ?>
                         <?php 
-                            $product = $_product->getTypeInstance();
-                            $options = $product->getOptions();
+                            $bundled_product = new Mage_Catalog_Model_Product();        
+                            $bundled_product->load($_product->getId());
+                         
+                         
+                            $selectionCollection = $bundled_product->getTypeInstance(true)->getSelectionsCollection(
+                                $bundled_product->getTypeInstance(true)->getOptionsIds($bundled_product), $bundled_product
+                            );
+                         
+                            $bundled_items = array();
+                            foreach($selectionCollection as $option) 
+                            {
+                                $bundled_items[] = $option->product_id;
+                            }
                             // $items = $_product->getTypeInstance(true)->getChildrenIds($_product->getId(), false); 
                         ?>
-                        <?php Mage::log('BUNDLE'.$options->debug(), null, 'debug.log', true); ?>
+                        <?php Mage::log('BUNDLE'.$bundled_items, null, 'debug.log', true); ?>
                     <?php elseif ($_product->getTypeID() == 'simple'): ?>
                         <?php Mage::log('SIMPLE'.$_product->debug(), null, 'debug.log', true); ?>
                     <?php endif; ?>
