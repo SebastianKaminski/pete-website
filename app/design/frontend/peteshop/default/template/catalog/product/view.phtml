@@ -97,7 +97,7 @@
                             echo "<br/><ul>";
                             foreach ($items as $value => $key) {
                                 print_r($value);
-                                echo "<li>".$value." - ".$key."</li>";
+                                echo "<li>".$value." - ".$key." - ".$items[$key][0]."</li>";
                                 // Mage::getModel('catalog/product')->load($productId);
                             }
                             echo "</ul>";
