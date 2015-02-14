@@ -60,7 +60,6 @@
         var qty_input, fin_qty_input;
 
         var setQuantity = function (qty) {
-            console.log("T2", qty);
             qty_input.val(qty);
             fin_qty_input.val(qty);
             bundle.reloadPrice();
@@ -73,7 +72,7 @@
 
         bundle.addSection = function () {
             var max = 30;
-            if (parseInt(qty_input.val()) + 1 >= max) {
+            if (parseInt(qty_input.val()) + 1 > max) {
                 alert("Maximum radiator length has been reached!");
             } else {
                 setQuantity(parseInt(qty_input.val())+1);
@@ -82,8 +81,7 @@
 
         bundle.removeSection = function () {
             var min = 3;
-            console.log("T1", qty_input.val())
-            if (parseInt(qty_input.val()) - 1 <= min) {
+            if (parseInt(qty_input.val()) - 1 < min) {
                 alert("Minimum radiator length has been reached!");
             } else {
                 setQuantity(parseInt(qty_input.val())-1);
@@ -94,7 +92,14 @@
             qty_input = jQuery(".option-number-of-sections input.qty");
             fin_qty_input = jQuery(".option-radiator-finish input.qty");
             setQuantity(3);
+
+            // Change finish
+            jQuery('.option-radiator-finish select').on('change', function() {
+                fin_qty_input.val(qty_input.val());
+            });
         });
+
+        /* TODO: select change quantity */
 
         //]]>
     </script>
