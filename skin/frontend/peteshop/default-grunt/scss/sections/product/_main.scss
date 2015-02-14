@@ -335,7 +335,7 @@
 .product-view .product-shop { 
 
 	.product-name { 
-		margin:0 0 5px;
+		margin:0 0 25px;
 		h1 {
 			font-family: $fontBase3;
 			font-size: 30px;			
@@ -369,11 +369,11 @@
 		text-transform: uppercase;
 		&.in-stock {
 			border-color: $brandSuccess;
-			background: $brandSuccess;
+			color: $brandSuccess;
 		}
 		&.out-of-stock {
 			border-color: $brandWarning;
-			background: $brandWarning;
+			color: $brandWarning;
 		}
 	}
 
@@ -387,8 +387,9 @@
 
 	.price-box { 
 		margin:10px 0;
+		display: inline-block;
 		.price {
-			// font-size: 28px;
+			font-size: 14px;
 			// font-family: $fontBase3;
 		}
 		// Bundle price
