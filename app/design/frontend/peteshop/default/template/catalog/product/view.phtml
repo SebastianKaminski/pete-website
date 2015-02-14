@@ -113,7 +113,25 @@
                     <script type="text/javascript">
                     //<![CDATA[
                         jQuery(document).ready(function () {
+                            var sections = jQuery('.option-number-of-sections input[type="text"]')
                             var table = jQuery('.radiator-dimensions-table table');
+
+                            var renderTable = function (tab, sec) {
+                                var body = tab.find('tbody').empty();
+                                body.appent("<tr>\
+                                    <td>" + sec + " mm</td>\
+                                    <td>" + sec + " mm</td>\
+                                    <td>" + sec + " mm</td>\
+                                    <td>" + sec + " mm</td>\
+                                    <td>" + sec + " mm</td>\
+                                </tr>")
+                            }
+
+                            sections.on('change', function(event) {
+                                event.preventDefault();
+                                renderTable(table, sections.val()) 
+                            });
+
                             console.log(table);
                         });
                     //]]>     
