@@ -434,14 +434,14 @@
 	margin:20px 0 0; 
 
 	dt { 
-		padding:10px 0 0; 
+		padding: 10px 0; 
 		font-weight:normal;
 
-		label { 
+		strong, label { 
 			font-size: 12px;
+			text-transform: uppercase;
 			em { margin-right: 5px; }
 		}
-
 
 		.qty-disabled { 
 			background:none; 
@@ -464,11 +464,16 @@
 		}
 
 		select {
+			-webkit-appearance: none !important;
+			border-radius: 0;
+			border: 2px solid #000;
 			height: 30px;
 			padding: 0 10px;
+			text-transform: uppercase;
 		}
 
 		.qty-holder { 
+
 			.entypo {
 				font-size: 12px;
 			}
@@ -482,6 +487,17 @@
 				padding: 0px 5px;
 				text-align: center;			
 				width: 50px !important;
+			}
+
+			button {
+				background: none;
+				border: 1px solid #000;
+				padding: 0 10px;
+				.entypo { font-size: 28px; }
+				&:hover {
+					background: #000;
+					.entypo { color: #FFF; }
+				}
 			}
 		}
 
