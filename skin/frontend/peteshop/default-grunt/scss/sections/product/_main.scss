@@ -485,6 +485,9 @@
 			height: 30px;
 			padding: 0 10px;
 			text-transform: uppercase;
+			&:focus, &:active {
+				outline: none;
+			}
 		}
 
 		.qty-holder { 
@@ -509,8 +512,10 @@
 				border: 1px solid #000;
 				padding: 0 10px;
 				&:hover {
-					// .entypo { color: #FFF; }
 					background: #000;
+					span {
+						color: #FFF;
+					}
 				}
 				.entypo { font-size: 28px; }
 			}
