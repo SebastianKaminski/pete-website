@@ -103,12 +103,19 @@
                             <tbody></tbody>
                         </table>
                     </div>
+
+                    <div id="leg-sections-alert" class="alert alert-warning hidden" role="alert">This radiator hasn't got leg sections, but we offer <b>free</b> radiator feets!</div>
+
                     <script type="text/javascript">
                     //<![CDATA[
                         jQuery(document).ready(function () {
                             var sectionsInput = jQuery('.option-number-of-sections input[type="text"]');
                             var sections = sectionsInput.val();
                             var table = jQuery('.radiator-dimensions-table table');
+
+                            if (jQuery('input[name="radiator-leg-sections-enabled"]').val() == "Yes") {
+                                jQuery('#leg-sections-alert').removeClass('hidden');
+                            }
 
                             var renderTable = function (tab, sec) {
                                 var body = tab.find('tbody').empty();
