@@ -67,7 +67,7 @@
     <?php endif; ?>
         <?php if ($_product->getAttributeText('item_type') == "Radiator" && $optionName == 'number-of-sections'): ?>
             <?php $radiator = Mage::getModel('catalog/product')->load($_selections[0]->getId()); ?>
-            <?php // Mage::log($radiator->debug(), null, 'debug.log', true); ?>
+            <?php Mage::log($radiator->debug(), null, 'debug.log', true); ?>
             <input type="hidden" name="radiator-stock" value="<?php echo Mage::getModel('cataloginventory/stock_item')->loadByProduct($_selections[0]->getId())->getQty(); ?>"/>
             <input type="hidden" name="radiator-leg-section-height" value="<?php echo $radiator['leg_section_height'] ?>"/>
             <input type="hidden" name="radiator-middle-section-height" value="<?php echo $radiator['mid_section_height'] ?>"/>
@@ -75,7 +75,7 @@
             <input type="hidden" name="radiator-section-lenght" value="<?php echo $radiator['section_length'] ?>"/>
             <input type="hidden" name="radiator-section-depth" value="<?php echo $radiator['section_depth'] ?>"/>
             <input type="hidden" name="radiator-section-watts" value="<?php echo $radiator['section_watts'] ?>"/>
-            <input type="hidden" name="radiator-leg-sections-enabled" value="<?php echo $radiator['leg_sections_enabled'] ?>"/>
+            <input type="hidden" name="radiator-leg-sections-enabled" value="<?php echo $radiator->getAttributeText('leg_sections_enabled') ?>"/>
 
             <span class="qty-holder">
                 <ul class="list-inline">
