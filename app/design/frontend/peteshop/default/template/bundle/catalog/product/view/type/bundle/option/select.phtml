@@ -78,9 +78,9 @@
 
             <span class="qty-holder">
                 <ul class="list-inline">
-                    <li><button type="button" onclick="bundle.removeSection(); return false;" class="btn btn-sm"><span class="entypo minus"></span></button></li>
+                    <li><button type="button" onclick="bundle.removeSection(); return false;" class="btn btn-sm" title="Decrease number of sections"><span class="entypo minus"></span></button></li>
                     <li><input onkeyup="bundle.changeOptionQty(this, event);" onblur="bundle.changeRadiatorLength(this); bundle.changeOptionQty(this, event);" <?php if (!$_canChangeQty) echo ' disabled="disabled"' ?> id="bundle-option-<?php echo $_option->getId() ?>-qty-input" class="input-text qty<?php if (!$_canChangeQty) echo ' qty-disabled' ?>" type="text" name="bundle_option_qty[<?php echo $_option->getId() ?>]" value="<?php echo $_defaultQty ?>"/></li>
-                    <li><button type="button" onclick="bundle.addSection(); return false;" class="btn btn-sm"><span class="entypo plus"></span></button></li>
+                    <li><button type="button" onclick="bundle.addSection(); return false;" class="btn btn-sm" title="Increase number of sections"><span class="entypo plus"></span></button></li>
                 </ul>
             </span>            
         <?php else:?>
