@@ -418,7 +418,16 @@
 		}
 		.old-price, 
 		.special-price {
-			@extend .full-product-price;
+			margin: 10px 0;
+			padding: 4px 10px;
+		}
+		.old-price {
+			border: 2px solid $brandDanger;
+			background: none;
+		}
+		.special-price {
+			background: $brandInfo;
+			border: 2px solid $brandInfo;
 		}
 		.configurable-price-from-label { color: #000; }
 	}
