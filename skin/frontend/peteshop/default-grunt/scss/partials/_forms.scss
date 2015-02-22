@@ -404,10 +404,11 @@ p.control input.radio {
 .validation-advice {
 	clear:both;
 	min-height:13px;
-	margin:5px 0 0;
-	padding-left:17px;
+	margin: 10px 0 0;
+	// padding-left:17px;
 	font-size:11px;
 	line-height:13px;
+	font-weight: bold;
 	color: $brandDanger;
 	// background:url(../images/validation_advice_bg.gif) 2px 0 no-repeat;
 	// background-position: left;

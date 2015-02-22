@@ -11758,20 +11758,20 @@ p.control input.radio {
 .validation-advice {
   clear: both;
   min-height: 13px;
-  margin: 5px 0 0;
-  padding-left: 17px;
+  margin: 10px 0 0;
   font-size: 11px;
   line-height: 13px;
+  font-weight: bold;
   color: #d9534f;
 }
 
-/* line 416, ../scss/partials/_forms.scss */
+/* line 417, ../scss/partials/_forms.scss */
 .validation-failed {
   border: 1px solid #d9534f !important;
   background: #faebe7 !important;
 }
 
-/* line 421, ../scss/partials/_forms.scss */
+/* line 422, ../scss/partials/_forms.scss */
 p.required {
   font-size: 11px;
 }
