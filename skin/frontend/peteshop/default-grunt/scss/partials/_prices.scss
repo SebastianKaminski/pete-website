@@ -36,7 +36,7 @@
 	}
 	
 	.price { 
-		font-weight:bold; 
+		// font-weight:bold; 
 		text-decoration:line-through;
 		color: $brandDanger;
 		display: inline-block;
@@ -175,6 +175,7 @@
 
 .price-to { 
 	margin:0;
+	display: none;
 
 	.price-label { 
 		font-weight:bold; 

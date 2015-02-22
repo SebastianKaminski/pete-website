@@ -369,9 +369,11 @@
 	.pinit-button { padding-right: 22px; }
 
 	.availability { 
+		background: none;
 		border: 2px solid;
 		color: #FFF;
 		font-size: 11px;
+		font-weight: normal;		
 		margin:10px 0;
 		padding: 7px 10px 5px 10px;
 		text-transform: uppercase;
@@ -394,8 +396,9 @@
 	}
 
 	.price-box { 
-		margin:10px 0;
 		display: inline-block;
+		font-weight: normal;
+		margin:10px 0;
 		.price {
 			font-size: 14px;
 			// font-family: $fontBase3;
@@ -409,12 +412,14 @@
 				background: $brandInfo;
 				border: 2px solid $brandInfo;
 				color: #FFF;
-				font-weight: normal;
 				margin: 10px 0;
 				padding: 4px 10px;
 			}
 		}
-		.old-price .price { font-size: 18px; }
+		.old-price, 
+		.special-price {
+			@extend .price-as-configured;
+		}
 		.configurable-price-from-label { color: #000; }
 	}
 
