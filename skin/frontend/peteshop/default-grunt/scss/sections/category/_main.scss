@@ -39,6 +39,13 @@
 		height: 380px;
 		// margin-left: 15px;
 
+		.price-box {
+			.old-price, 
+			.special-price {
+				display: inline-block;
+			}
+		}
+
 		&.first { 
 			padding-left: 0;
 		}
