@@ -420,6 +420,7 @@
 				padding: 4px 10px;
 			}
 		}
+		.regular-price,
 		.old-price, 
 		.special-price {
 			margin: 10px 3px;
@@ -429,6 +430,7 @@
 			border: 2px solid $brandDanger;
 			background: none;
 		}
+		.regular-price,
 		.special-price {
 			background: $brandInfo;
 			border: 2px solid $brandInfo;

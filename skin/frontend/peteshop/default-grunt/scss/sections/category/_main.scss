@@ -57,7 +57,7 @@
 
 	.product-image { 
 		display:block; 
-		height:200px; 
+		// height:200px; 
 		margin:0 0 10px; 
 		position:relative;
 		.hover-available {
@@ -75,6 +75,7 @@
 		font-weight: 700;
 		height: 25px;
 		margin: 0 0 5px;
+		text-align: center;
 		text-transform: uppercase;
 		width: 100%;
 	}
