@@ -218,7 +218,11 @@
 .product-view .product-img-box { 
 
 	.product-image { 
-		margin:0 0 13px;
+		margin: 50px 0 13px;
+		text-align: center;
+		img {
+			min-width: 100%;
+		}
 	}
 
 	.product-image-zoom { 
@@ -418,7 +422,7 @@
 		}
 		.old-price, 
 		.special-price {
-			margin: 10px 0;
+			margin: 10px 3px;
 			padding: 4px 10px;
 		}
 		.old-price {
@@ -428,6 +432,7 @@
 		.special-price {
 			background: $brandInfo;
 			border: 2px solid $brandInfo;
+			color: #FFF;
 		}
 		.configurable-price-from-label { color: #000; }
 	}
