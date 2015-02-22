@@ -418,7 +418,7 @@
 		}
 		.old-price, 
 		.special-price {
-			@extend .price-as-configured;
+			@extend .full-product-price;
 		}
 		.configurable-price-from-label { color: #000; }
 	}

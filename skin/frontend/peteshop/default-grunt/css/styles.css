@@ -11985,13 +11985,11 @@ p.required {
 }
 
 /* line 200, ../scss/partials/_prices.scss */
-.price-as-configured, .product-view .product-shop .price-box .old-price,
-.product-view .product-shop .price-box .special-price {
+.price-as-configured {
   margin: 0;
 }
 /* line 203, ../scss/partials/_prices.scss */
-.price-as-configured .price-label, .product-view .product-shop .price-box .old-price .price-label,
-.product-view .product-shop .price-box .special-price .price-label {
+.price-as-configured .price-label {
   font-weight: bold;
   white-space: nowrap;
 }
@@ -13004,13 +13002,12 @@ footer:after,
   font-size: 14px;
 }
 /* line 408, ../scss/sections/product/_main.scss */
-.product-view .product-shop .price-box .price-as-configured .price-label, .product-view .product-shop .price-box .old-price .price-label,
-.product-view .product-shop .price-box .special-price .price-label {
+.product-view .product-shop .price-box .price-as-configured .price-label {
   display: none;
 }
 /* line 411, ../scss/sections/product/_main.scss */
-.product-view .product-shop .price-box .price-as-configured .full-product-price, .product-view .product-shop .price-box .old-price .full-product-price,
-.product-view .product-shop .price-box .special-price .full-product-price {
+.product-view .product-shop .price-box .price-as-configured .full-product-price, .product-view .product-shop .price-box .price-as-configured .old-price,
+.product-view .product-shop .price-box .price-as-configured .special-price {
   background: #5bc0de;
   border: 2px solid #5bc0de;
   color: #FFF;
