@@ -691,6 +691,13 @@
 			h3 {
 				font-size: 12px;
 			}
+			label { 
+				width: 100%; 
+				input.checkbox {
+					display: inline-block;
+					margin: 0 2px 2px 0px;					
+				}
+			}
 		}
 	}
 }

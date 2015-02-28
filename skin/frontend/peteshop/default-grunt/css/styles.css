@@ -13293,53 +13293,70 @@ footer:after,
   padding-top: 12px;
 }
 
-/* line 684, ../scss/sections/product/_main.scss */
+/* line 683, ../scss/sections/product/_main.scss */
+.box-up-sell h4,
+.block-related h4 {
+  border-bottom: 1px solid #DDD;
+  padding-bottom: 10px;
+}
+/* line 688, ../scss/sections/product/_main.scss */
 .box-up-sell .products-grid li.item,
 .block-related .products-grid li.item {
   font-size: 12px;
   height: auto !important;
 }
-/* line 687, ../scss/sections/product/_main.scss */
+/* line 691, ../scss/sections/product/_main.scss */
 .box-up-sell .products-grid li.item h3,
 .block-related .products-grid li.item h3 {
   font-size: 12px;
 }
-
+/* line 694, ../scss/sections/product/_main.scss */
+.box-up-sell .products-grid li.item label,
+.block-related .products-grid li.item label {
+  width: 100%;
+}
 /* line 696, ../scss/sections/product/_main.scss */
+.box-up-sell .products-grid li.item label input.checkbox,
+.block-related .products-grid li.item label input.checkbox {
+  display: inline-block;
+  margin: 0 2px 2px 0px;
+}
+
+/* line 707, ../scss/sections/product/_main.scss */
 .product-view .box-tags {
   margin: 0;
 }
-/* line 699, ../scss/sections/product/_main.scss */
+/* line 710, ../scss/sections/product/_main.scss */
 .product-view .box-tags h3 {
   font-size: 13px;
 }
-/* line 703, ../scss/sections/product/_main.scss */
+/* line 714, ../scss/sections/product/_main.scss */
 .product-view .box-tags .product-tags {
   display: block;
   margin: 0 0 15px;
 }
-/* line 707, ../scss/sections/product/_main.scss */
+/* line 718, ../scss/sections/product/_main.scss */
 .product-view .box-tags .product-tags li {
   display: inline;
   padding: 0 7px 0 4px;
 }
-/* line 711, ../scss/sections/product/_main.scss */
+/* line 722, ../scss/sections/product/_main.scss */
 .product-view .box-tags .product-tags li.first {
   padding-left: 0;
 }
-/* line 715, ../scss/sections/product/_main.scss */
+/* line 726, ../scss/sections/product/_main.scss */
 .product-view .box-tags .product-tags li.last {
   background: none;
   padding-right: 0;
 }
-/* line 724, ../scss/sections/product/_main.scss */
+/* line 735, ../scss/sections/product/_main.scss */
 .product-view .box-tags .form-add label {
   display: block;
   font-size: 13px;
   font-weight: bold;
   margin: 0 0 5px;
 }
-/* line 731, ../scss/sections/product/_main.scss */
+/* line 742, ../scss/sections/product/_main.scss */
 .product-view .box-tags .form-add .input-box {
   float: left;
   width: 305px;
@@ -13347,109 +13364,109 @@ footer:after,
   background: url(../images/i_tag_add.gif) 0 2px no-repeat;
   padding: 0 0 0 23px;
 }
-/* line 739, ../scss/sections/product/_main.scss */
+/* line 750, ../scss/sections/product/_main.scss */
 .product-view .box-tags .form-add input.input-text {
   width: 299px;
 }
-/* line 743, ../scss/sections/product/_main.scss */
+/* line 754, ../scss/sections/product/_main.scss */
 .product-view .box-tags .form-add button.button span {
   border-color: #406a83;
   background: #618499;
 }
-/* line 748, ../scss/sections/product/_main.scss */
+/* line 759, ../scss/sections/product/_main.scss */
 .product-view .box-tags .form-add .note {
   margin: 3px 0 0;
   padding: 0 0 0 23px;
   font-size: 11px;
 }
 
-/* line 760, ../scss/sections/product/_main.scss */
+/* line 771, ../scss/sections/product/_main.scss */
 .product-view .box-reviews dl {
   margin: 15px 0;
 }
-/* line 764, ../scss/sections/product/_main.scss */
+/* line 775, ../scss/sections/product/_main.scss */
 .product-view .box-reviews dt a,
 .product-view .box-reviews dt span {
   font-weight: bold;
 }
-/* line 769, ../scss/sections/product/_main.scss */
+/* line 780, ../scss/sections/product/_main.scss */
 .product-view .box-reviews dd {
   margin: 0 0 15px;
 }
-/* line 772, ../scss/sections/product/_main.scss */
+/* line 783, ../scss/sections/product/_main.scss */
 .product-view .box-reviews dd small {
   font-style: italic;
 }
-/* line 777, ../scss/sections/product/_main.scss */
+/* line 788, ../scss/sections/product/_main.scss */
 .product-view .box-reviews .form-add {
   margin: 15px 0 0;
 }
-/* line 780, ../scss/sections/product/_main.scss */
+/* line 791, ../scss/sections/product/_main.scss */
 .product-view .box-reviews .form-add h3 {
   font-size: 13px;
   font-weight: normal;
 }
-/* line 784, ../scss/sections/product/_main.scss */
+/* line 795, ../scss/sections/product/_main.scss */
 .product-view .box-reviews .form-add h3 span {
   font-weight: bold;
 }
-/* line 789, ../scss/sections/product/_main.scss */
+/* line 800, ../scss/sections/product/_main.scss */
 .product-view .box-reviews .form-add h4 {
   font-size: 12px;
 }
-/* line 793, ../scss/sections/product/_main.scss */
+/* line 804, ../scss/sections/product/_main.scss */
 .product-view .box-reviews .form-add .data-table td {
   text-align: center;
 }
-/* line 797, ../scss/sections/product/_main.scss */
+/* line 808, ../scss/sections/product/_main.scss */
 .product-view .box-reviews .form-add .form-list {
   margin: 15px 0 0;
 }
-/* line 800, ../scss/sections/product/_main.scss */
+/* line 811, ../scss/sections/product/_main.scss */
 .product-view .box-reviews .form-add .form-list .input-box {
   width: 360px;
 }
-/* line 804, ../scss/sections/product/_main.scss */
+/* line 815, ../scss/sections/product/_main.scss */
 .product-view .box-reviews .form-add .form-list input.input-text,
 .product-view .box-reviews .form-add .form-list textarea {
   width: 354px;
 }
 
-/* line 816, ../scss/sections/product/_main.scss */
+/* line 827, ../scss/sections/product/_main.scss */
 .send-friend .form-list {
   width: 615px;
   overflow: hidden;
 }
-/* line 820, ../scss/sections/product/_main.scss */
+/* line 831, ../scss/sections/product/_main.scss */
 .send-friend .form-list li {
   margin-right: -15px;
 }
-/* line 823, ../scss/sections/product/_main.scss */
+/* line 834, ../scss/sections/product/_main.scss */
 .send-friend .form-list li p {
   margin: 0 15px 0 0;
 }
-/* line 828, ../scss/sections/product/_main.scss */
+/* line 839, ../scss/sections/product/_main.scss */
 .send-friend .form-list li.wide .input-box {
   width: 612px;
 }
-/* line 832, ../scss/sections/product/_main.scss */
+/* line 843, ../scss/sections/product/_main.scss */
 .send-friend .form-list li.wide textarea {
   width: 609px;
 }
-/* line 838, ../scss/sections/product/_main.scss */
+/* line 849, ../scss/sections/product/_main.scss */
 .send-friend .form-list .field {
   width: 315px;
 }
-/* line 842, ../scss/sections/product/_main.scss */
+/* line 853, ../scss/sections/product/_main.scss */
 .send-friend .form-list .input-box {
   width: 300px;
 }
-/* line 846, ../scss/sections/product/_main.scss */
+/* line 857, ../scss/sections/product/_main.scss */
 .send-friend .form-list input.input-text,
 .send-friend .form-list textarea {
   width: 294px;
 }
-/* line 853, ../scss/sections/product/_main.scss */
+/* line 864, ../scss/sections/product/_main.scss */
 .send-friend .buttons-set .limit {
   float: right;
   margin: 0 7px 0 0;
