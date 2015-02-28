@@ -678,12 +678,12 @@
 
 // Block: Upsell & Related
 // --------------------------------------------------
-.product-view .box-up-sell,
-.product-view .block-related {
+.box-up-sell,
+.block-related {
 	.products-grid { 
 		li.item {
 			font-size: 12px;
-			height: auto;
+			height: auto !important;
 			h3 {
 				font-size: 12px;
 			}

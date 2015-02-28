@@ -12087,14 +12087,13 @@ p.required {
 .block-poll,
 .block-viewed,
 .block-compared,
-.block-related,
 .block-tags,
 .block-login {
   font-size: 11px;
   line-height: 1.25;
 }
 
-/* line 64, ../scss/partials/_sidebar.scss */
+/* line 63, ../scss/partials/_sidebar.scss */
 .block-cart .block-title strong,
 .block-wishlist .block-title strong,
 .block-subscribe .block-title strong,
@@ -12103,7 +12102,6 @@ p.required {
 .block-poll .block-title strong,
 .block-viewed .block-title strong,
 .block-compared .block-title strong,
-.block-related .block-title strong,
 .block-tags .block-title strong,
 .block-login .block-title strong {
   background-position: 0 0;
@@ -13296,14 +13294,14 @@ footer:after,
 }
 
 /* line 684, ../scss/sections/product/_main.scss */
-.product-view .box-up-sell .products-grid li.item,
-.product-view .block-related .products-grid li.item {
+.box-up-sell .products-grid li.item,
+.block-related .products-grid li.item {
   font-size: 12px;
-  height: auto;
+  height: auto !important;
 }
 /* line 687, ../scss/sections/product/_main.scss */
-.product-view .box-up-sell .products-grid li.item h3,
-.product-view .block-related .products-grid li.item h3 {
+.box-up-sell .products-grid li.item h3,
+.block-related .products-grid li.item h3 {
   font-size: 12px;
 }
 
