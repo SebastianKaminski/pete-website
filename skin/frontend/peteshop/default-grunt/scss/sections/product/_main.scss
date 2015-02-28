@@ -676,9 +676,10 @@
 }
 
 
-// Block: Upsell
+// Block: Upsell & Related
 // --------------------------------------------------
-.product-view .box-up-sell {
+.product-view .box-up-sell,
+.product-view .block-related {
 	.products-grid { 
 		li.item {
 			font-size: 12px;
@@ -689,24 +690,6 @@
 		}
 	}
 }
-
-// Block: Related
-// --------------------------------------------------
-.block-related {
-	ul {
-		li.item {
-			border: none;
-			margin: 0 0 8px 9px;
-			text-align: center;
-			.product {
-				border: 1px dashed #DDD;
-				padding: 10px 5px;
-				.price-box .label { display: none; }
-			}
-		}
-	}
-}
-
 
 // Block: Tags
 // --------------------------------------------------
