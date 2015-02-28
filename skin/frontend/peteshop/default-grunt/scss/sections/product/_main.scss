@@ -679,32 +679,13 @@
 // Block: Upsell
 // --------------------------------------------------
 .product-view .box-up-sell {
-	h2 { 
-		padding:0; 
-		margin:0 0 8px;
-	}
-
 	.products-grid { 
-		width:100%;
-
-		td { 
-			width:25%; 
-			padding:15px 10px 12px; 
-			line-height:1.6em; 
-
-			&.empty { 
-				border-right:0;
+		li.item {
+			font-size: 12px;
+			height: auto;
+			h3 {
+				font-size: 12px;
 			}
-		}
-
-		.product-image { 
-			text-align:center;
-		}
-
-		.ratings .rating-box { 
-			float:none; 
-			display:block; 
-			margin:0 0 3px;
 		}
 	}
 }
