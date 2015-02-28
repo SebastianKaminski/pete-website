@@ -57,7 +57,6 @@
                 <div class="alert-urls"><?php echo $this->getChildHtml('alert_urls') ?></div>
                 <div class="product-type-data"><?php echo $this->getChildHtml('product_type_data') ?></div>
                 <div class="tier-price"><?php echo $this->getTierPriceHtml() ?></div>
-                <div class="extra-hint hidden"><?php echo $this->getChildHtml('extrahint') ?></div>
 
                 <?php foreach ($this->getChildGroup('detailed_info', 'getChildHtml') as $alias => $html):?>
                     <div class="<?php echo "box-{$alias}"?>">
@@ -66,8 +65,9 @@
                         <?php endif;?>
                         <?php echo $html; ?>
                     </div>
+                    <div class="extra-hint"><?php echo $this->getChildHtml('extrahint') ?></div>
                 <?php endforeach;?>
-                
+
                 <?php if (!(($_product->getAttributeText('instore_only')) == "No")):?>
                     <?php if (!$this->hasOptions()):?>
                         <div class="add-to-box">

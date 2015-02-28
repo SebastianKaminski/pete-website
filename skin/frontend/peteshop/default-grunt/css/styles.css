@@ -12780,7 +12780,7 @@ footer:after,
 }
 /* line 179, ../scss/sections/product/_main.scss */
 .add-to-box .btn {
-  margin-top: -6px;
+  text-transform: uppercase;
 }
 /* line 183, ../scss/sections/product/_main.scss */
 .add-to-box .add-to-links {
