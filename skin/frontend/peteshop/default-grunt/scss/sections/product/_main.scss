@@ -368,7 +368,10 @@
 		}
 	}
 
-	.box-description { margin: 10px 0 15px 0; }
+	.box-description { 
+		margin: 10px 0 15px 0; 
+		font-size: 13px;
+	}
 
 	.pinit-button { padding-right: 22px; }
 
@@ -403,6 +406,7 @@
 		display: inline-block;
 		font-weight: normal;
 		margin:10px 0;
+		min-width: 200px;
 		.price {
 			font-size: 14px;
 			// font-family: $fontBase3;
