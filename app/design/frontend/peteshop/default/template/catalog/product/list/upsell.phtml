@@ -26,7 +26,7 @@
 ?>
 <?php if(count($this->getItemCollection()->getItems())): ?>
 <div class="box-collateral box-up-sell">
-    <strong><?php echo $this->__('You may also be interested in the following product(s)') ?></strong>
+    <h4><?php echo $this->__('You may also be interested in the following product(s)') ?></h4>
     <ul class="products-grid list-group row" id="upsell-product-table">
     <?php $this->setColumnCount(6); // uncomment this line if you want to have another number of columns. also can be changed in layout ?>
     <?php $this->resetItemsIterator() ?>

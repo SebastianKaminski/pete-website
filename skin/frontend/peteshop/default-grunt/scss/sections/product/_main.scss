@@ -680,6 +680,10 @@
 // --------------------------------------------------
 .box-up-sell,
 .block-related {
+	h4 {
+		border-bottom: 1px solid #DDD;
+		padding-bottom: 10px;		
+	}
 	.products-grid { 
 		li.item {
 			font-size: 12px;
