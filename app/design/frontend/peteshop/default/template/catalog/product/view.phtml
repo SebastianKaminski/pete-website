@@ -59,13 +59,22 @@
                 <div class="tier-price"><?php echo $this->getTierPriceHtml() ?></div>
                 <div class="extra-hint hidden"><?php echo $this->getChildHtml('extrahint') ?></div>
 
+                <?php foreach ($this->getChildGroup('detailed_info', 'getChildHtml') as $alias => $html):?>
+                    <div class="<?php echo "box-{$alias}"?>">
+                        <?php if ($title = $this->getChildData($alias, 'title')):?>
+                        <h2><?php echo $this->escapeHtml($title); ?></h2>
+                        <?php endif;?>
+                        <?php echo $html; ?>
+                    </div>
+                <?php endforeach;?>
+                
                 <?php if (!(($_product->getAttributeText('instore_only')) == "No")):?>
                     <?php if (!$this->hasOptions()):?>
                         <div class="add-to-box">
-                            <?php echo $this->getChildHtml('addto') ?>
                             <?php if($_product->isSaleable()): ?>
                                 <?php echo $this->getChildHtml('addtocart') ?>
                             <?php endif; ?>
+                            <?php echo $this->getChildHtml('addto') ?>
                         </div>
                         <?php echo $this->getChildHtml('extra_buttons') ?>
                     <?php elseif (!$_product->isSaleable()): ?>
@@ -75,14 +84,6 @@
                     <?php endif; ?>
                 <?php endif; ?>
 
-                <?php foreach ($this->getChildGroup('detailed_info', 'getChildHtml') as $alias => $html):?>
-                    <div class="<?php echo "box-{$alias}"?>">
-                        <?php if ($title = $this->getChildData($alias, 'title')):?>
-                        <h2><?php echo $this->escapeHtml($title); ?></h2>
-                        <?php endif;?>
-                        <?php echo $html; ?>
-                    </div>
-                <?php endforeach;?>
 
                 <?php if ($_product->getAttributeText('item_type') == "Radiator"):?>
                     <div class="radiator-dimensions-table">
