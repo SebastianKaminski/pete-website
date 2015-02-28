@@ -12969,7 +12969,7 @@ footer:after,
 }
 /* line 376, ../scss/sections/product/_main.scss */
 .product-view .product-shop .pinit-button {
-  padding-right: 22px;
+  margin-bottom: 10px;
 }
 /* line 378, ../scss/sections/product/_main.scss */
 .product-view .product-shop .availability {
