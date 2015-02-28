@@ -62,13 +62,10 @@
                 <?php if (!(($_product->getAttributeText('instore_only')) == "No")):?>
                     <?php if (!$this->hasOptions()):?>
                         <div class="add-to-box">
+                            <?php echo $this->getChildHtml('addto') ?>
                             <?php if($_product->isSaleable()): ?>
                                 <?php echo $this->getChildHtml('addtocart') ?>
-                                <?php if( $this->helper('wishlist')->isAllow() || $_compareUrl=$this->helper('catalog/product_compare')->getAddUrl($_product)): ?>
-                                    <span class="or"><?php echo $this->__('OR') ?></span>
-                                <?php endif; ?>
                             <?php endif; ?>
-                            <?php echo $this->getChildHtml('addto') ?>
                         </div>
                         <?php echo $this->getChildHtml('extra_buttons') ?>
                     <?php elseif (!$_product->isSaleable()): ?>
