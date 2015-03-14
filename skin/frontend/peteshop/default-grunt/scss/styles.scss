@@ -88,6 +88,16 @@ $c-grey: #BBB;
 	// color: #FFF;
 	// min-height: 600px;
 	// margin: -50px 0 -25px;
+	#categories {
+		figure {
+			text-align: center;
+			figcaption {
+				h3 {
+					font-family: $fontBase3;
+				}
+			}
+		}
+	}
 	.std {
 		padding: 140px 0;
 		.jumbotron {

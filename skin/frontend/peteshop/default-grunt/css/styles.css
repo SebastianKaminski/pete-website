@@ -15197,76 +15197,84 @@ tr.summary-details-excluded {
 }
 
 /* Homepage */
-/* line 91, ../scss/styles.scss */
+/* line 92, ../scss/styles.scss */
+#homepage #categories figure {
+  text-align: center;
+}
+/* line 95, ../scss/styles.scss */
+#homepage #categories figure figcaption h3 {
+  font-family: Baskerville, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+/* line 101, ../scss/styles.scss */
 #homepage .std {
   padding: 140px 0;
   /* Tweets Block */
 }
-/* line 102, ../scss/styles.scss */
+/* line 112, ../scss/styles.scss */
 #homepage .std .jumbotron p {
   font-size: 16px;
 }
-/* line 107, ../scss/styles.scss */
+/* line 117, ../scss/styles.scss */
 #homepage .std .block-creare-twitter {
   margin-top: 50px;
   padding: 20px 0px;
 }
-/* line 110, ../scss/styles.scss */
+/* line 120, ../scss/styles.scss */
 #homepage .std .block-creare-twitter ul {
   margin-top: 15px;
 }
-/* line 112, ../scss/styles.scss */
+/* line 122, ../scss/styles.scss */
 #homepage .std .block-creare-twitter ul li.item {
   border-left: 3px solid #357ebd;
   margin-bottom: 5px;
   padding-left: 15px;
 }
 
-/* line 123, ../scss/styles.scss */
+/* line 133, ../scss/styles.scss */
 footer.container-fluid {
   background: #333;
   margin-top: 25px;
 }
-/* line 127, ../scss/styles.scss */
+/* line 137, ../scss/styles.scss */
 footer .footer-content {
   color: #FFF;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
 }
-/* line 131, ../scss/styles.scss */
+/* line 141, ../scss/styles.scss */
 footer .footer-content .entypo, footer .footer-content .entypo-social {
   color: #777;
 }
-/* line 132, ../scss/styles.scss */
+/* line 142, ../scss/styles.scss */
 footer .footer-content .entypo-social {
   display: inline-block;
   text-align: center;
   margin-right: 2px;
   width: 12px;
 }
-/* line 138, ../scss/styles.scss */
+/* line 148, ../scss/styles.scss */
 footer .footer-content h3 {
   color: #f0ad4e;
 }
 
 /* Menu Fix */
-/* line 144, ../scss/styles.scss */
+/* line 154, ../scss/styles.scss */
 .navbar .dropdown:hover .dropdown-menu {
   display: block;
 }
 
 /* Boostrap Grid */
-/* line 150, ../scss/styles.scss */
+/* line 160, ../scss/styles.scss */
 .container-fluid {
   padding: 0 !important;
 }
 
 /* Menu Search */
-/* line 153, ../scss/styles.scss */
+/* line 163, ../scss/styles.scss */
 .search-form-container {
   position: relative;
 }
-/* line 157, ../scss/styles.scss */
+/* line 167, ../scss/styles.scss */
 .search-form-container #search_mini_form {
   left: 0;
   margin-left: 25px;
@@ -15274,18 +15282,18 @@ footer .footer-content h3 {
   top: 0;
   width: 300px;
 }
-/* line 163, ../scss/styles.scss */
+/* line 173, ../scss/styles.scss */
 .search-form-container #search_mini_form button {
   margin-left: 10px;
 }
 @media (max-width: 768px) {
-  /* line 170, ../scss/styles.scss */
+  /* line 180, ../scss/styles.scss */
   .search-form-container #search_mini_form {
     padding: 0;
     margin: 0;
     left: 50px;
   }
-  /* line 174, ../scss/styles.scss */
+  /* line 184, ../scss/styles.scss */
   .search-form-container #search_mini_form input {
     float: left;
     width: 150px;
