@@ -15207,8 +15207,17 @@ tr.summary-details-excluded {
 /* line 90, ../scss/styles.scss */
 #homepage #categories figure {
   text-align: center;
+  margin: 20px 0 10px 0;
 }
 /* line 93, ../scss/styles.scss */
+#homepage #categories figure img {
+  opacity: 0.8;
+}
+/* line 95, ../scss/styles.scss */
+#homepage #categories figure img:hover {
+  opacity: 1;
+}
+/* line 100, ../scss/styles.scss */
 #homepage #categories figure figcaption h3 {
   font-family: Baskerville, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -15216,96 +15225,96 @@ tr.summary-details-excluded {
   letter-spacing: 1px;
   text-transform: uppercase;
 }
-/* line 99, ../scss/styles.scss */
+/* line 106, ../scss/styles.scss */
 #homepage #categories figure figcaption h3 a {
   color: #333;
 }
-/* line 107, ../scss/styles.scss */
+/* line 114, ../scss/styles.scss */
 #homepage .std .jumbotron-image {
   padding-top: 50px;
 }
-/* line 110, ../scss/styles.scss */
+/* line 117, ../scss/styles.scss */
 #homepage .std .jumbotron {
   margin-bottom: 0;
 }
-/* line 112, ../scss/styles.scss */
+/* line 119, ../scss/styles.scss */
 #homepage .std .jumbotron h2 {
   font-family: Baskerville, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
-/* line 118, ../scss/styles.scss */
+/* line 125, ../scss/styles.scss */
 #homepage .std .jumbotron p {
   font-size: 16px;
 }
-/* line 122, ../scss/styles.scss */
+/* line 129, ../scss/styles.scss */
 #homepage .block-creare-twitter {
   margin-top: 50px;
   padding: 20px 0px;
 }
-/* line 125, ../scss/styles.scss */
+/* line 132, ../scss/styles.scss */
 #homepage .block-creare-twitter ul {
   margin-top: 15px;
 }
-/* line 127, ../scss/styles.scss */
+/* line 134, ../scss/styles.scss */
 #homepage .block-creare-twitter ul li.item {
   border-left: 3px solid #357ebd;
   margin-bottom: 5px;
   padding-left: 15px;
 }
-/* line 135, ../scss/styles.scss */
+/* line 142, ../scss/styles.scss */
 #homepage .block .block-title {
   border-bottom: 1px solid #999;
   margin-bottom: 15px;
   padding-bottom: 15px;
 }
 
-/* line 144, ../scss/styles.scss */
+/* line 151, ../scss/styles.scss */
 footer.container-fluid {
   background: #333;
   margin-top: 25px;
 }
-/* line 148, ../scss/styles.scss */
+/* line 155, ../scss/styles.scss */
 footer .footer-content {
   color: #FFF;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
 }
-/* line 152, ../scss/styles.scss */
+/* line 159, ../scss/styles.scss */
 footer .footer-content .entypo, footer .footer-content .entypo-social {
   color: #777;
 }
-/* line 153, ../scss/styles.scss */
+/* line 160, ../scss/styles.scss */
 footer .footer-content .entypo-social {
   display: inline-block;
   text-align: center;
   margin-right: 2px;
   width: 12px;
 }
-/* line 159, ../scss/styles.scss */
+/* line 166, ../scss/styles.scss */
 footer .footer-content h3 {
   color: #f0ad4e;
 }
 
 /* Menu Fix */
-/* line 165, ../scss/styles.scss */
+/* line 172, ../scss/styles.scss */
 .navbar .dropdown:hover .dropdown-menu {
   display: block;
 }
 
 /* Boostrap Grid */
-/* line 171, ../scss/styles.scss */
+/* line 178, ../scss/styles.scss */
 .container-fluid {
   padding: 0 !important;
 }
 
 /* Menu Search */
-/* line 174, ../scss/styles.scss */
+/* line 181, ../scss/styles.scss */
 .search-form-container {
   position: relative;
 }
-/* line 178, ../scss/styles.scss */
+/* line 185, ../scss/styles.scss */
 .search-form-container #search_mini_form {
   left: 0;
   margin-left: 25px;
@@ -15313,18 +15322,18 @@ footer .footer-content h3 {
   top: 0;
   width: 300px;
 }
-/* line 184, ../scss/styles.scss */
+/* line 191, ../scss/styles.scss */
 .search-form-container #search_mini_form button {
   margin-left: 10px;
 }
 @media (max-width: 768px) {
-  /* line 191, ../scss/styles.scss */
+  /* line 198, ../scss/styles.scss */
   .search-form-container #search_mini_form {
     padding: 0;
     margin: 0;
     left: 50px;
   }
-  /* line 195, ../scss/styles.scss */
+  /* line 202, ../scss/styles.scss */
   .search-form-container #search_mini_form input {
     float: left;
     width: 150px;

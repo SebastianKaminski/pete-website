@@ -89,6 +89,13 @@ $c-grey: #BBB;
 	#categories {
 		figure {
 			text-align: center;
+			margin: 20px 0 10px 0;
+			img {
+				opacity: 0.8;
+				&:hover {
+					opacity: 1;
+				}
+			}
 			figcaption {
 				h3 {
 					font-family: $fontBase3;
