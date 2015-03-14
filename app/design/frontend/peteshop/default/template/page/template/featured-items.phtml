@@ -10,6 +10,8 @@
 	<?php foreach($collection as $product): ?>
 		<?php
 			$attribute = $product->getResource()->getAttribute('show_at_homepage');
+			echo $attribute;
+
 			if ($attribute) {
 				$attribute_value = $attribute -> getFrontend() -> getValue($product);
 				// Display only items where show_at_homepage_slider value is Yes
