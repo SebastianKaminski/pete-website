@@ -2,12 +2,37 @@
 <div>koza</div>
 <?php
 	$collection = Mage::getModel('catalog/product') -> getCollection();
-
+	$collection->addAttributeToSelect('show_at_homepage');
+	$collection->addFieldToFilter(array(
+	    array('attribute'=>'show_at_homepage','eq'=>'Yes')
+	));
 	if (!empty($collection)) {
 ?>
 <!-- Show items list if items are exists -->
 <div class="featured-items">
 	<?php foreach($collection as $product): ?>
+		<div>
+			<div class="row">
+				<div class="large-6 medium-6 small-12 columns">
+					<a href="<?php echo $product->getProductUrl(); ?>">
+						<img src="<?php echo Mage::helper('catalog/image')->init($product, 'small_image')->resize(300, 300); ?>" alt="<?php echo $product->getName()?>"/>
+					</a>
+				</div>
+				<div class="large-6 medium-6 small-12 columns">
+					<div class="content">
+						<h2><a href="<?php echo $product->getProductUrl(); ?>"><? echo $product->getName(); ?></a></h2>
+						<div class="description"><?= $product->getShortDescription(); ?></div>
+						<div class="actions">
+							<?php if($product->isSaleable()): ?>
+		            			<button type="button" title="<?php echo $this->__('Add to Cart') ?>" class="button btn-cart" onclick="setLocation('<?php echo $this->helper('checkout/cart')->getAddUrl($product) ?>')"><span><i class="icon-basket"></i> <span><?php echo $this->__('Add to Cart') ?></span></span></button>
+							<?php else: ?>
+								<p class="availability out-of-stock"><span><?php echo $this->__('Out of stock') ?></span></p>
+							<?php endif; ?>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<?php
 			$attribute = $product->getResource()->getAttribute('show_at_homepage');
 			echo $attribute;
