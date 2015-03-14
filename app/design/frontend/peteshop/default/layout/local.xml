@@ -73,7 +73,7 @@
         <!-- Tweets -->
         <reference name="root">
             <block type="tweets/tweets" name="tweets.tweets" template="tweets/tweets.phtml" />
-            <block type="page/carousel" name="featured.items" template="page/template/featured-items.phtml"></block>
+            <block type="core/template" name="featured.items" template="page/template/featured-items.phtml"/>
         </reference>
         <!-- optional -->
         <reference name="head">
