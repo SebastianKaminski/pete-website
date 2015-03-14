@@ -15179,9 +15179,9 @@ tr.summary-details-excluded {
 
 /* line 62, ../scss/styles.scss */
 .divider {
+  background: url("../images/divider.png");
   background-position: center center;
   background-repeat: no-repeat;
-  background: url("../images/divider.png");
   clear: both;
   height: 45px;
   width: 100%;
@@ -15273,57 +15273,61 @@ tr.summary-details-excluded {
   margin-bottom: 5px;
   padding-left: 15px;
 }
-/* line 151, ../scss/styles.scss */
+/* line 150, ../scss/styles.scss */
+#homepage .block {
+  text-align: center;
+}
+/* line 152, ../scss/styles.scss */
 #homepage .block .block-title {
   margin-bottom: 15px;
   padding-bottom: 15px;
 }
 
-/* line 159, ../scss/styles.scss */
+/* line 160, ../scss/styles.scss */
 footer.container-fluid {
   background: #333;
   margin-top: 25px;
 }
-/* line 163, ../scss/styles.scss */
+/* line 164, ../scss/styles.scss */
 footer .footer-content {
   color: #FFF;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
 }
-/* line 167, ../scss/styles.scss */
+/* line 168, ../scss/styles.scss */
 footer .footer-content .entypo, footer .footer-content .entypo-social {
   color: #777;
 }
-/* line 168, ../scss/styles.scss */
+/* line 169, ../scss/styles.scss */
 footer .footer-content .entypo-social {
   display: inline-block;
   text-align: center;
   margin-right: 2px;
   width: 12px;
 }
-/* line 174, ../scss/styles.scss */
+/* line 175, ../scss/styles.scss */
 footer .footer-content h3 {
   color: #f0ad4e;
 }
 
 /* Menu Fix */
-/* line 180, ../scss/styles.scss */
+/* line 181, ../scss/styles.scss */
 .navbar .dropdown:hover .dropdown-menu {
   display: block;
 }
 
 /* Boostrap Grid */
-/* line 186, ../scss/styles.scss */
+/* line 187, ../scss/styles.scss */
 .container-fluid {
   padding: 0 !important;
 }
 
 /* Menu Search */
-/* line 189, ../scss/styles.scss */
+/* line 190, ../scss/styles.scss */
 .search-form-container {
   position: relative;
 }
-/* line 193, ../scss/styles.scss */
+/* line 194, ../scss/styles.scss */
 .search-form-container #search_mini_form {
   left: 0;
   margin-left: 25px;
@@ -15331,18 +15335,18 @@ footer .footer-content h3 {
   top: 0;
   width: 300px;
 }
-/* line 199, ../scss/styles.scss */
+/* line 200, ../scss/styles.scss */
 .search-form-container #search_mini_form button {
   margin-left: 10px;
 }
 @media (max-width: 768px) {
-  /* line 206, ../scss/styles.scss */
+  /* line 207, ../scss/styles.scss */
   .search-form-container #search_mini_form {
     padding: 0;
     margin: 0;
     left: 50px;
   }
-  /* line 210, ../scss/styles.scss */
+  /* line 211, ../scss/styles.scss */
   .search-form-container #search_mini_form input {
     float: left;
     width: 150px;

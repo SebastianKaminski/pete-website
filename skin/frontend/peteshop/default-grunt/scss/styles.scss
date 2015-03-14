@@ -60,9 +60,9 @@
 $c-grey: #BBB;
 
 .divider {
+	background: url("../images/divider.png");
 	background-position: center center;
 	background-repeat: no-repeat;
-	background: url("../images/divider.png");
 	clear: both;
 	height: 45px;
 	width: 100%;
@@ -148,6 +148,7 @@ $c-grey: #BBB;
 		}
 	}
 	.block {
+		text-align: center;
 		.block-title {
 			margin-bottom: 15px;
 			padding-bottom: 15px;
