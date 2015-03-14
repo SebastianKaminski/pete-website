@@ -15202,6 +15202,7 @@ tr.summary-details-excluded {
   background: url("../images/textures/concrete_seamless.png");
   background-repeat: repeat;
   margin: -50px 0 -25px 0;
+  /* Tweets Block */
 }
 /* line 90, ../scss/styles.scss */
 #homepage #categories figure {
@@ -15215,10 +15216,6 @@ tr.summary-details-excluded {
   font-weight: bold;
   letter-spacing: 1px;
   text-transform: uppercase;
-}
-/* line 104, ../scss/styles.scss */
-#homepage .std {
-  /* Tweets Block */
 }
 /* line 105, ../scss/styles.scss */
 #homepage .std .jumbotron {
@@ -15240,17 +15237,17 @@ tr.summary-details-excluded {
 #homepage .std .jumbotron p {
   font-size: 16px;
 }
-/* line 121, ../scss/styles.scss */
-#homepage .std .block-creare-twitter {
+/* line 122, ../scss/styles.scss */
+#homepage .block-creare-twitter {
   margin-top: 50px;
   padding: 20px 0px;
 }
-/* line 124, ../scss/styles.scss */
-#homepage .std .block-creare-twitter ul {
+/* line 125, ../scss/styles.scss */
+#homepage .block-creare-twitter ul {
   margin-top: 15px;
 }
-/* line 126, ../scss/styles.scss */
-#homepage .std .block-creare-twitter ul li.item {
+/* line 127, ../scss/styles.scss */
+#homepage .block-creare-twitter ul li.item {
   border-left: 3px solid #357ebd;
   margin-bottom: 5px;
   padding-left: 15px;
