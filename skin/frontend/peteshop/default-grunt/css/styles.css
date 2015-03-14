@@ -15254,14 +15254,11 @@ tr.summary-details-excluded {
   margin-bottom: 5px;
   padding-left: 15px;
 }
-/* line 134, ../scss/styles.scss */
-#homepage .block {
-  margin: 0 0 25px 0;
-}
-/* line 136, ../scss/styles.scss */
+/* line 135, ../scss/styles.scss */
 #homepage .block .block-title {
-  padding-bottom: 25px;
   border-bottom: 1px solid #999;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
 }
 
 /* line 144, ../scss/styles.scss */
