@@ -12,13 +12,13 @@
 			<div class="block-content">
 				<ul id="sparx-tweets" class="list-unstyled">
 				<?php foreach($tweets as $tweet): ?>
-					<li class="item">
+					<li class="col-md-3 col-sm-12">
 						<?php echo (string) trim($tweet["text"]); ?>
 						<?php if($helper->isDisplayPostedTime()): ?>
 							<span> - <?php echo (string) trim($tweet["created_at"]); ?></span>
 						<?php endif; ?>
 					</li>
-				<?php endforeach; ?>       
+				<?php endforeach; ?>
 				</ul>
 			</div>
 		</div>

@@ -15201,12 +15201,13 @@ tr.summary-details-excluded {
 #homepage {
   background: url("../images/textures/concrete_seamless.png");
   background-repeat: repeat;
+  margin: -50px 0 -25px 0;
 }
-/* line 89, ../scss/styles.scss */
+/* line 90, ../scss/styles.scss */
 #homepage #categories figure {
   text-align: center;
 }
-/* line 92, ../scss/styles.scss */
+/* line 93, ../scss/styles.scss */
 #homepage #categories figure figcaption h3 {
   font-family: Baskerville, "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #333;
@@ -15215,84 +15216,91 @@ tr.summary-details-excluded {
   letter-spacing: 1px;
   text-transform: uppercase;
 }
-/* line 103, ../scss/styles.scss */
+/* line 104, ../scss/styles.scss */
 #homepage .std {
   /* Tweets Block */
 }
 /* line 105, ../scss/styles.scss */
+#homepage .std .jumbotron {
+  margin-bottom: 0;
+  max-width: 800px;
+  padding-left: 0 !important;
+}
+/* line 109, ../scss/styles.scss */
 #homepage .std .jumbotron h2 {
   border-bottom: 2px solid #000;
   font-family: Baskerville, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   letter-spacing: 1px;
-  padding-bottom: 12px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
   text-transform: uppercase;
 }
-/* line 113, ../scss/styles.scss */
+/* line 118, ../scss/styles.scss */
 #homepage .std .jumbotron p {
   font-size: 16px;
 }
-/* line 116, ../scss/styles.scss */
+/* line 121, ../scss/styles.scss */
 #homepage .std .block-creare-twitter {
   margin-top: 50px;
   padding: 20px 0px;
 }
-/* line 119, ../scss/styles.scss */
+/* line 124, ../scss/styles.scss */
 #homepage .std .block-creare-twitter ul {
   margin-top: 15px;
 }
-/* line 121, ../scss/styles.scss */
+/* line 126, ../scss/styles.scss */
 #homepage .std .block-creare-twitter ul li.item {
   border-left: 3px solid #357ebd;
   margin-bottom: 5px;
   padding-left: 15px;
 }
 
-/* line 132, ../scss/styles.scss */
+/* line 137, ../scss/styles.scss */
 footer.container-fluid {
   background: #333;
   margin-top: 25px;
 }
-/* line 136, ../scss/styles.scss */
+/* line 141, ../scss/styles.scss */
 footer .footer-content {
   color: #FFF;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
 }
-/* line 140, ../scss/styles.scss */
+/* line 145, ../scss/styles.scss */
 footer .footer-content .entypo, footer .footer-content .entypo-social {
   color: #777;
 }
-/* line 141, ../scss/styles.scss */
+/* line 146, ../scss/styles.scss */
 footer .footer-content .entypo-social {
   display: inline-block;
   text-align: center;
   margin-right: 2px;
   width: 12px;
 }
-/* line 147, ../scss/styles.scss */
+/* line 152, ../scss/styles.scss */
 footer .footer-content h3 {
   color: #f0ad4e;
 }
 
 /* Menu Fix */
-/* line 153, ../scss/styles.scss */
+/* line 158, ../scss/styles.scss */
 .navbar .dropdown:hover .dropdown-menu {
   display: block;
 }
 
 /* Boostrap Grid */
-/* line 159, ../scss/styles.scss */
+/* line 164, ../scss/styles.scss */
 .container-fluid {
   padding: 0 !important;
 }
 
 /* Menu Search */
-/* line 162, ../scss/styles.scss */
+/* line 167, ../scss/styles.scss */
 .search-form-container {
   position: relative;
 }
-/* line 166, ../scss/styles.scss */
+/* line 171, ../scss/styles.scss */
 .search-form-container #search_mini_form {
   left: 0;
   margin-left: 25px;
@@ -15300,18 +15308,18 @@ footer .footer-content h3 {
   top: 0;
   width: 300px;
 }
-/* line 172, ../scss/styles.scss */
+/* line 177, ../scss/styles.scss */
 .search-form-container #search_mini_form button {
   margin-left: 10px;
 }
 @media (max-width: 768px) {
-  /* line 179, ../scss/styles.scss */
+  /* line 184, ../scss/styles.scss */
   .search-form-container #search_mini_form {
     padding: 0;
     margin: 0;
     left: 50px;
   }
-  /* line 183, ../scss/styles.scss */
+  /* line 188, ../scss/styles.scss */
   .search-form-container #search_mini_form input {
     float: left;
     width: 150px;
