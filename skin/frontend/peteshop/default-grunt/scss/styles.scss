@@ -92,11 +92,13 @@ $c-grey: #BBB;
 			figcaption {
 				h3 {
 					font-family: $fontBase3;
-					color: #333;
 					font-size: 16px;
 					font-weight: bold;
 					letter-spacing: 1px;
 					text-transform: uppercase;
+					a {
+						color: #333;
+					}
 				}
 			}
 		}
@@ -108,12 +110,9 @@ $c-grey: #BBB;
 		.jumbotron {
 			margin-bottom: 0;
 			h2 {
-				border-bottom: 2px solid #000;
 				font-family: $fontBase3;
 				font-weight: bold;
 				letter-spacing: 1px;
-				padding-bottom: 20px;
-				margin-bottom: 20px;
 				text-transform: uppercase;
 			}
 			p { font-size: 16px; }
@@ -130,6 +129,13 @@ $c-grey: #BBB;
 				margin-bottom: 5px;
 				padding-left: 15px;
 			}
+		}
+	}
+	.block {
+		margin: 0 0 25px 0;
+		.block-title {
+			padding-bottom: 25px;
+			border-bottom: 1px solid #999;
 		}
 	}
 }
