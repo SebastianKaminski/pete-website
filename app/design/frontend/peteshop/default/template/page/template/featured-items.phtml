@@ -13,7 +13,7 @@
 <div class="featured-items">
 	<?php foreach($collection as $product): ?>
 		<?php
-			$attribute = $product->getResource()->getAttribute('show_at_homepage_slider');
+			$attribute = $product->getResource()->getAttribute('show_at_homepage');
 			if ($attribute) {
 				$attribute_value = $attribute -> getFrontend() -> getValue($product);
 				// Display only items where show_at_homepage_slider value is Yes
