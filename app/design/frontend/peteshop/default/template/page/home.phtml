@@ -45,11 +45,12 @@
 					<div class="col-md-3 col-sm-6">Accessories</div>
 				</div>
 			</div>
-			<?php echo $this->getLayout()
-			            ->createBlock('cms/block')
-			            ->setBlockId('tweets/tweets')
-			            ->toHtml();
-			?>
+			<div class="12">
+				<?php echo $this->getChildHtml('tweets') ?>
+			</div>
+			<div class="22">
+				<?php echo $this->getChildHtml('tweets.tweets') ?>
+			</div>
 		</div>
 	</div>
 
