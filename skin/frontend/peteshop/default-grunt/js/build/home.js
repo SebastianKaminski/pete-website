@@ -11,5 +11,6 @@
 
     $(document).ready(function(){
     	// Script here
+    	console.log("test hp")
     });
 })(jQuery);
