@@ -12,7 +12,7 @@
     $(document).ready(function(){
     	// Script here
     	$("#categories").slick({
-    		infinite: false,
+    		infinite: true,
     		dots: false,
 			slidesToShow: 4,
 			slidesToScroll: 4,
