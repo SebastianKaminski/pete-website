@@ -1,0 +1,57 @@
+<div class="widget widget-static-block">
+	<?php echo $this->getText(); ?>
+</div>
+
+<!-- Get products collection from category 3 -->
+<?php
+	$collection = Mage::getModel('catalog/product')
+		-> getCollection()
+		-> joinField('category_id', 'catalog/category_product', 'category_id', 'product_id = entity_id', null, 'left')
+		-> addAttributeToSelect('*')
+		-> addAttributeToFilter('category_id', 3);
+
+	if (!empty($collection)) {
+?>
+<!-- Show items list if items are exists -->
+<div class="featured-items">
+	<?php foreach($collection as $product): ?>
+		<?php
+			$attribute = $product->getResource()->getAttribute('show_at_homepage_slider');
+			if ($attribute) {
+				$attribute_value = $attribute -> getFrontend() -> getValue($product);
+				// Display only items where show_at_homepage_slider value is Yes
+				if ($attribute_value == 'Yes') { ?>
+					<div>
+						<div class="row">
+							<div class="large-6 medium-6 small-12 columns">
+								<a href="<?php echo $product->getProductUrl(); ?>">
+									<img src="<?php echo Mage::helper('catalog/image')->init($product, 'small_image')->resize(300, 300); ?>" alt="<?php echo $product->getName()?>"/>
+								</a>
+							</div>
+							<div class="large-6 medium-6 small-12 columns">
+								<div class="content">
+									<h2><a href="<?php echo $product->getProductUrl(); ?>"><? echo $product->getName(); ?></a></h2>
+									<div class="description"><?= $product->getShortDescription(); ?></div>
+									<div class="actions">
+										<?php if($product->isSaleable()): ?>
+		                        			<button type="button" title="<?php echo $this->__('Add to Cart') ?>" class="button btn-cart" onclick="setLocation('<?php echo $this->helper('checkout/cart')->getAddUrl($product) ?>')"><span><i class="icon-basket"></i> <span><?php echo $this->__('Add to Cart') ?></span></span></button>
+										<?php else: ?>
+											<p class="availability out-of-stock"><span><?php echo $this->__('Out of stock') ?></span></p>
+										<?php endif; ?>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div> <?php
+				}
+			}
+		?>
+	<?php endforeach; ?>
+</div>
+
+<!-- No items -->
+<?php
+	} else {
+		echo "No products exists";
+	}
+?>
