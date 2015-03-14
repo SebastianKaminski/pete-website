@@ -13,7 +13,7 @@
     	// Script here
     	$("#categories").slick({
     		infinite: true,
-    		dots: true,
+    		dots: false,
 			slidesToShow: 4,
 			slidesToScroll: 4,
 			responsive: [
