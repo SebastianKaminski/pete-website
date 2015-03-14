@@ -70,17 +70,15 @@
 	</default>
 
     <cms_index_index>
+        <!-- Tweets -->
+        <reference name="root">
+            <block type="tweets/tweets" name="tweets.tweets" template="tweets/tweets.phtml" />
+        </reference>
         <!-- optional -->
         <reference name="head">
             <action method="addItem"><type>skin_js</type><name>js/plugins/slick/slick.min.js</name></action>
             <action method="addItem"><type>skin_css</type><name>js/plugins/slick/slick.css</name></action>
-        </reference>
-        <reference name="site.bottom.css.js">
             <action method="addItem"><type>skin_js</type><name>js/build/home.min.js</name></action>
-        </reference>
-        <!-- Tweets -->
-        <reference name="root">
-            <block type="tweets/tweets" name="tweets.tweets" template="tweets/tweets.phtml" />
         </reference>
     </cms_index_index>
 
