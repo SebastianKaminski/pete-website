@@ -15267,62 +15267,63 @@ tr.summary-details-excluded {
   border-left: 3px solid #357ebd;
   margin-bottom: 5px;
   padding-left: 15px;
+  text-align: left;
 }
-/* line 148, ../scss/styles.scss */
+/* line 149, ../scss/styles.scss */
 #homepage .block {
   text-align: center;
 }
-/* line 150, ../scss/styles.scss */
+/* line 151, ../scss/styles.scss */
 #homepage .block .block-title {
   margin-bottom: 15px;
   padding-bottom: 15px;
 }
 
-/* line 158, ../scss/styles.scss */
+/* line 159, ../scss/styles.scss */
 footer.container-fluid {
   background: #333;
   margin-top: 25px;
 }
-/* line 162, ../scss/styles.scss */
+/* line 163, ../scss/styles.scss */
 footer .footer-content {
   color: #FFF;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
 }
-/* line 166, ../scss/styles.scss */
+/* line 167, ../scss/styles.scss */
 footer .footer-content .entypo, footer .footer-content .entypo-social {
   color: #777;
 }
-/* line 167, ../scss/styles.scss */
+/* line 168, ../scss/styles.scss */
 footer .footer-content .entypo-social {
   display: inline-block;
   text-align: center;
   margin-right: 2px;
   width: 12px;
 }
-/* line 173, ../scss/styles.scss */
+/* line 174, ../scss/styles.scss */
 footer .footer-content h3 {
   color: #f0ad4e;
 }
 
 /* Menu Fix */
-/* line 179, ../scss/styles.scss */
+/* line 180, ../scss/styles.scss */
 .navbar .dropdown:hover .dropdown-menu {
   display: block;
 }
 
 /* Boostrap Grid */
-/* line 185, ../scss/styles.scss */
+/* line 186, ../scss/styles.scss */
 .container-fluid {
   padding: 0 !important;
 }
 
 /* Menu Search */
-/* line 188, ../scss/styles.scss */
+/* line 189, ../scss/styles.scss */
 .search-form-container {
   position: relative;
 }
-/* line 192, ../scss/styles.scss */
+/* line 193, ../scss/styles.scss */
 .search-form-container #search_mini_form {
   left: 0;
   margin-left: 25px;
@@ -15330,18 +15331,18 @@ footer .footer-content h3 {
   top: 0;
   width: 300px;
 }
-/* line 198, ../scss/styles.scss */
+/* line 199, ../scss/styles.scss */
 .search-form-container #search_mini_form button {
   margin-left: 10px;
 }
 @media (max-width: 768px) {
-  /* line 205, ../scss/styles.scss */
+  /* line 206, ../scss/styles.scss */
   .search-form-container #search_mini_form {
     padding: 0;
     margin: 0;
     left: 50px;
   }
-  /* line 209, ../scss/styles.scss */
+  /* line 210, ../scss/styles.scss */
   .search-form-container #search_mini_form input {
     float: left;
     width: 150px;
