@@ -59,6 +59,13 @@
 
 $c-grey: #BBB;
 
+.divider {
+	background: url("../images/divider.png") 0 0 no-repeat;
+	width: 100%;
+	clear: both;
+	height: 45px;
+}
+
 .header-container {
 	#header-top {
 		.links {
