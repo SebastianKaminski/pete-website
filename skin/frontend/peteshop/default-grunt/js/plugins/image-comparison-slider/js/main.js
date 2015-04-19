@@ -25,7 +25,7 @@ jQuery(document).ready(function($){
 function checkPosition(container) {
     container.each(function(){
         var actualContainer = $(this);
-        if( $(window).scrollTop() + $(window).height()*0.5 > actualContainer.offset().top) {
+        if( jQuery(window).scrollTop() + jQuery(window).height()*0.5 > actualContainer.offset().top) {
             actualContainer.addClass('is-visible');
         }
     });
@@ -56,12 +56,12 @@ function drags(dragElement, resizeElement, container, labelContainer, labelResiz
 
             widthValue = (leftValue + dragWidth/2 - containerOffset)*100/containerWidth+'%';
             
-            $('.draggable').css('left', widthValue).on("mouseup vmouseup", function() {
-                $(this).removeClass('draggable');
+            jQuery('.draggable').css('left', widthValue).on("mouseup vmouseup", function() {
+                jQuery(this).removeClass('draggable');
                 resizeElement.removeClass('resizable');
             });
 
-            $('.resizable').css('width', widthValue); 
+            jQuery('.resizable').css('width', widthValue); 
 
             updateLabel(labelResizeElement, resizeElement, 'left');
             updateLabel(labelContainer, resizeElement, 'right');
