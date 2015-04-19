@@ -24,7 +24,7 @@ jQuery(document).ready(function($){
 
 function checkPosition(container) {
     container.each(function(){
-        var actualContainer = $(this);
+        var actualContainer = jQuery(this);
         if( jQuery(window).scrollTop() + jQuery(window).height()*0.5 > actualContainer.offset().top) {
             actualContainer.addClass('is-visible');
         }
