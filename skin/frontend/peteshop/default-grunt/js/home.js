@@ -11,5 +11,20 @@
 
     $(document).ready(function(){
     	// Script here
+    	$("#categories").slick({
+    		infinite: true,
+    		dots: true,
+			slidesToShow: 4,
+			slidesToScroll: 4,
+			responsive: [
+				{
+					breakpoint: 480,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1
+					}
+				}
+			]
+    	});
     });
 })(jQuery);
