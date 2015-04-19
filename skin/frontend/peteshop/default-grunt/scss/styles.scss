@@ -220,7 +220,7 @@ footer {
 .cd-image-container {
 	position: relative;
 	width: 90%;
-	max-width: 768px;
+	max-width: 600px;
 	margin: 0em auto;
 }
 .cd-image-container img {
@@ -231,7 +231,8 @@ footer {
 	position: absolute;
 	bottom: 0;
 	right: 0;
-	color: #ffffff;
+	color: #000;
+	font-weight: bold;
 	padding: 1em;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -337,7 +338,7 @@ footer {
 	margin-left: -22px;
 	margin-top: -22px;
 	border-radius: 50%;
-	background: #f0ad4e url("js/plugins/image-comparison-slider/img/cd-arrows.svg") no-repeat center center;
+	background: #f0ad4e url("../js/plugins/image-comparison-slider/img/cd-arrows.svg") no-repeat center center;
 	cursor: move;
 	box-shadow: 0 0 0 6px rgba(0, 0, 0, 0.2), 0 0 10px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.3);
 	opacity: 0;
