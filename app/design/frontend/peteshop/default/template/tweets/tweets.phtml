@@ -13,7 +13,11 @@
 				<ul id="sparx-tweets" class="list-unstyled">
 				<?php foreach($tweets as $tweet): ?>
 					<li class="item">
-						<?php echo (string) trim($tweet["text"]); ?>
+						<?php 
+							$text = (string) trim($tweet["text"]); 
+							echo preg_replace('@(https?://([-\w\.]+)+(:\d+)?(/([\w/_\.]*(\?\S+)?)?)?)@', '<a href="$1">$1</a>', $text);
+						?>
+
 						<?php if($helper->isDisplayPostedTime()): ?>
 							<span> - <?php echo (string) trim($tweet["created_at"]); ?></span>
 						<?php endif; ?>
