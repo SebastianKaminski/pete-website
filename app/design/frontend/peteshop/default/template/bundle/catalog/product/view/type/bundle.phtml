@@ -54,6 +54,7 @@
 <?php if ($_product->getAttributeText('item_type') == "Radiator"): ?>
     <script type="text/javascript">
         //<![CDATA[    
+        var BundleItemsArray = [];
         var qty_input, fin_qty_input, max = 0, min = 0, current;
 
         var setQuantity = function (qty) {
