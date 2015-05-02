@@ -61,7 +61,7 @@
                 <?php if ($_selection->getSelectionCanChangeQty() && $this->_isSelected($_selection)): ?>
                     <?php $tierPriceHtml = $this->getTierPriceHtml($_selection); ?>
                 <?php endif; ?>
-                <?php $product = Mage::getModel('catalog/product')->load($_selections[0]->getId()); ?>
+                <?php $product = Mage::getModel('catalog/product')->load($_selection->getSelectionId()); ?>
                 <script>
                     BundleItemsArray.push({
                         "id":"<?php echo $_selection->getSelectionId() ?>", 
