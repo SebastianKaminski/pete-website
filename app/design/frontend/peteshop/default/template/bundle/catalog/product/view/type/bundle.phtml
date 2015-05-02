@@ -75,7 +75,10 @@
         };
 
         bundle.showThumbnail = function (element) {
-            console.log(BundleItemsArray, element.value, jQuery.grep(BundleItemsArray, function(item) { return item.id === element.value }) );
+            var obj = jQuery.grep(BundleItemsArray, function(item) { return item.id === element.value });
+            if (obj.length === 1) {
+                jQuery(element).closest('.item-thumbnail-container').html('<img src="'+obj.small_image+'" alt="'+obj.name+' thumbnail image" />');
+            }
         }
 
         bundle.addSection = function () {
