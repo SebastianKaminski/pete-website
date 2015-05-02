@@ -80,7 +80,8 @@
             if (result.length == 1) {
                 var obj = result[0];
                 console.log(obj, element, jQuery(element));
-                jQuery(element).next('.item-thumbnail-container').html('<img src="'+obj.small_image+'" alt="'+obj.name+' thumbnail image" />');
+                jQuery(element).siblings('.item-thumbnail-container').html("Koza");
+                // jQuery(element).siblings('.item-thumbnail-container').html('<img src="'+obj.small_image+'" alt="'+obj.name+' thumbnail image" />');
             }
         }
 
