@@ -74,6 +74,10 @@
             }
         };
 
+        bundle.showThumbnail = function (element) {
+            console.log(BundleItemsArray, element.value, jQuery.grep(BundleItemsArray, function(item) { return item.id === element.value }) );
+        }
+
         bundle.addSection = function () {
             if (parseInt(qty_input.val()) + 1 > max) {
                 alert("Maximum radiator length has been reached!");

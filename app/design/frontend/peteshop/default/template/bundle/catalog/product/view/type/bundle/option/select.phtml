@@ -68,8 +68,7 @@
                         "product_id":"<?php echo $_selection->getProductId() ?>", 
                         "name":"<?php echo $_selection->getName() ?>",
                         "image":"<?php echo Mage::helper('catalog/image')->init($product, 'image')->resize(400,400) ?>",
-                        "small_image":"<?php echo Mage::helper('catalog/image')->init($product,'small_image')->resize(163,100) ?>",
-                        "thumb_image":"<?php $product->getThumbnail() ?>"
+                        "small_image":"<?php echo Mage::helper('catalog/image')->init($product,'small_image')->resize(163,100) ?>"
                     });
                 </script>
                 <option value="<?php echo $_selection->getSelectionId() ?>"<?php if ($this->_isSelected($_selection)) echo ' selected="selected"' ?><?php if (!$_selection->isSaleable()) echo ' disabled="disabled"' ?>><?php echo $this->getSelectionTitlePrice($_selection, false) ?></option>
