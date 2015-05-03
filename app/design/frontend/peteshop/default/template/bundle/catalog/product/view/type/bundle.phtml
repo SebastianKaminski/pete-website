@@ -76,10 +76,9 @@
 
         bundle.showThumbnail = function (element) {
             var result = jQuery.grep(BundleItemsArray, function(item) { return item.id === element.value });
-            console.log(result, result.length)
             if (result.length == 1) {
                 var obj = result[0];
-                jQuery(element).siblings('.item-thumbnail-container').html('<img src="'+obj.small_image+'" alt="'+obj.name+' thumbnail image" />');
+                jQuery(element).siblings('.item-thumbnail-container').html('<a href="#" class="thumbnail"><img src="'+obj.small_image+'" alt="'+obj.name+' thumbnail image" /></a>');
             }
         }
 
