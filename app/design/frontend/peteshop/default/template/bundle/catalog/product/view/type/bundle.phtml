@@ -78,7 +78,7 @@
             var result = jQuery.grep(BundleItemsArray, function(item) { return item.id === element.value });
             if (result.length == 1) {
                 var obj = result[0];
-                jQuery(element).siblings('.item-thumbnail-container').html('<a href="#" class="thumbnail" data-title="'+obj.name+'" data-lightbox="lb-'+obj.id+'"><img src="'+obj.small_image+'" alt="'+obj.name+' thumbnail image" /></a>');
+                jQuery(element).siblings('.item-thumbnail-container').html('<a href="'+obj.image+'" class="thumbnail" data-title="'+obj.name+'" data-lightbox="lb-'+obj.id+'"><img src="'+obj.small_image+'" alt="'+obj.name+' thumbnail image" /></a>');
             }
         }
 
