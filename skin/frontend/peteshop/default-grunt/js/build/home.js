@@ -13,9 +13,9 @@
     	// Script here
     	$("#categories").slick({
     		infinite: true,
-    		dots: true,
-			slidesToShow: 4,
-			slidesToScroll: 4,
+    		// dots: true,
+			slidesToShow: 2,
+			slidesToScroll: 2,
 			responsive: [
 				{
 					breakpoint: 480,
