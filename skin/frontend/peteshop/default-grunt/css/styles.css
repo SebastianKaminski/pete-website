@@ -15199,8 +15199,6 @@ tr.summary-details-excluded {
 /* Homepage */
 /* line 94, ../scss/styles.scss */
 #homepage {
-  background: url("../images/textures/concrete_seamless.png");
-  background-repeat: repeat;
   margin: -50px 0 -25px 0;
   /* Tweets Block */
 }
