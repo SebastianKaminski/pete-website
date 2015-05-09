@@ -76,11 +76,12 @@
 
         bundle.showThumbnail = function (element) {
             var result = jQuery.grep(BundleItemsArray, function(item) { return item.id === element.value });
+            var el = jQuery(element).siblings('.item-thumbnail-container');
             if (result.length == 1) {
                 var obj = result[0];
-                jQuery(element)
-                    .siblings('.item-thumbnail-container')
-                    .html('<a href="'+obj.image+'" class="thumbnail" data-title="'+obj.name+'" data-lightbox="lb-'+obj.id+'"><img src="'+obj.small_image+'" alt="'+obj.name+' thumbnail image" /></a>');
+                el.html('<a href="'+obj.image+'" class="thumbnail" data-title="'+obj.name+'" data-lightbox="lb-'+obj.id+'"><img src="'+obj.small_image+'" alt="'+obj.name+' thumbnail image" /></a>');
+            } else {
+                el.empty();
             }
         }
 
