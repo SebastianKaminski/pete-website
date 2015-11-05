@@ -37,7 +37,7 @@
     var optionsPrice = new Product.OptionsPrice(<?php echo $this->getJsonConfig() ?>);
 </script>
 <div id="messages_product_view"><?php echo $this->getMessagesBlock()->getGroupedHtml() ?></div>
-<div class="product-view">
+<div class="product-view" itemscope itemtype="http://schema.org/Product" itemid="#product_base">
     <div class="product-essential row">
 
     <form action="<?php echo $this->getSubmitUrl($_product) ?>" method="post" id="product_addtocart_form"<?php if($_product->getOptions()): ?> enctype="multipart/form-data"<?php endif; ?>>
@@ -50,7 +50,7 @@
         <div class="col-md-6 col-md-push-6">
             <div class="product-shop">
                 <div class="product-name">
-                    <h1><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></h1>
+                    <h1 itemprop="name"><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></h1>
                 </div>
 
                 <div class="reviews-summary"><?php echo $this->getReviewsSummaryHtml($_product, false, true)?></div>
@@ -61,9 +61,9 @@
                 <?php foreach ($this->getChildGroup('detailed_info', 'getChildHtml') as $alias => $html):?>
                     <div class="<?php echo "box-{$alias}"?>">
                         <?php if ($title = $this->getChildData($alias, 'title')):?>
-                        <h2><?php echo $this->escapeHtml($title); ?></h2>
+                            <h2><?php echo $this->escapeHtml($title); ?></h2>
                         <?php endif;?>
-                        <?php echo $html; ?>
+                        <p itemprop="description"><?php echo $html; ?></p>
                     </div>
                     <div class="extra-hint"><?php echo $this->getChildHtml('extrahint') ?></div>
                 <?php endforeach;?>
@@ -137,7 +137,7 @@
                             // Init table
                             renderTable(table, sections);
                         });
-                    //]]>     
+                    //]]>
                     </script>
                 <?php endif; ?>
 
@@ -158,7 +158,7 @@
                 <?php echo $this->getChildHtml('media') ?>
             </div>
             <div class="product-collateral">
-                <?php echo $this->getChildHtml('product_additional_data') ?>              
+                <?php echo $this->getChildHtml('product_additional_data') ?>
             </div>
         </div>
 
