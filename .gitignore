@@ -113,7 +113,7 @@ shell/log.php
 sitemap.xml
 skin/adminhtml/default/default/
 skin/adminhtml/default/enterprise
-skin/frontend/base/
+skin/frontend/default/
 skin/frontend/rwd/
 skin/frontend/default/blank/
 skin/frontend/default/blue/
