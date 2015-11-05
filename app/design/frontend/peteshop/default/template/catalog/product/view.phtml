@@ -48,7 +48,6 @@
             <input type="hidden" name="related_product" id="related-products-field" value="" />
             <input type="hidden" itemprop="url" content="<?php echo $_product->getUrlModel()->getUrl($_product, array('_ignore_category'=>true)); ?>" />
             <input type="hidden" itemprop="sku" content="<?php echo $_product->getSku() ?>" />
-            <input type="hidden" itemprop="priceCurrency" content="<?php echo Mage::app()->getStore()->getCurrentCurrencyCode();?>" />
         </div>
 
         <div class="col-md-6 col-md-push-6">
