@@ -33,14 +33,16 @@
 
     <div class="post-metadata">
         <div class="post-time">
-            <?php echo $this->__('Posted On: ');?>
-            <?php $date = ($this->getPost()->getPostDate() != NULL)? $this->getPost()->getPostDate()  : $this->getPost()->getCreatedAt() ; ?>
-            <?php  echo Mage::app()->getLocale()->date($date)->toString($format); ?>
-            <?php // $timestamp = (int) Mage::app()->getLocale()->date($date)->getTimestamp() ;?>
-            <?php // echo date('d D', $timestamp)?><?php // echo date('M', $timestamp)?>
+            <small>
+                <?php echo $this->__('Posted On: ');?>
+                <?php $date = ($this->getPost()->getPostDate() != NULL)? $this->getPost()->getPostDate()  : $this->getPost()->getCreatedAt() ; ?>
+                <?php  echo Mage::app()->getLocale()->date($date)->toString($format); ?>
+                <?php // $timestamp = (int) Mage::app()->getLocale()->date($date)->getTimestamp() ;?>
+                <?php // echo date('d D', $timestamp)?><?php // echo date('M', $timestamp)?>
+            </small>
         </div>
         <?php if ($authorName = $this->getPost()->getAuthor()) :?>
-        <div class="post-author"><?php echo $this->__('by'); ?> <?php echo $authorName; ?></div>
+        <div class="post-author"><small><?php echo $this->__('by'); ?> <?php echo $authorName; ?></small></div>
         <?php endif;?>
     </div>
 
