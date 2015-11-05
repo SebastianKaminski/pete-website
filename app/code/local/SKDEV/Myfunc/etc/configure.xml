@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <SKDEV_Myfunc>
+            <version>0.1.0</version>
+        </SKDEV_Myfunc>
+    </modules>
+    <global>
+        <helpers>
+            <Myfunc>
+                <class>SKDEV_Myfunc_Helper</class>
+            </Myfunc>
+        </helpers>
+    </global>
+</config>
