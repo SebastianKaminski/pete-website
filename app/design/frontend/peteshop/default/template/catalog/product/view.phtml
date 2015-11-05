@@ -42,9 +42,12 @@
 
     <form action="<?php echo $this->getSubmitUrl($_product) ?>" method="post" id="product_addtocart_form"<?php if($_product->getOptions()): ?> enctype="multipart/form-data"<?php endif; ?>>
         <?php echo $this->getBlockHtml('formkey') ?>
+
         <div class="no-display">
             <input type="hidden" name="product" value="<?php echo $_product->getId() ?>" />
             <input type="hidden" name="related_product" id="related-products-field" value="" />
+            <input type="hidden" itemprop="url" value="<?php echo $_product->getUrlModel()->getUrl($_product, array('_ignore_category'=>true)); ?>" />       
+            <input type="hidden" itemprop="sku" value="<?php echo $_product->getSku() ?>" />
         </div>
 
         <div class="col-md-6 col-md-push-6">
@@ -59,11 +62,11 @@
                 <div class="tier-price"><?php echo $this->getTierPriceHtml() ?></div>
 
                 <?php foreach ($this->getChildGroup('detailed_info', 'getChildHtml') as $alias => $html):?>
-                    <div class="<?php echo "box-{$alias}"?>">
+                    <div class="<?php echo "box-{$alias}"?>" itemprop="description">
                         <?php if ($title = $this->getChildData($alias, 'title')):?>
                             <h2><?php echo $this->escapeHtml($title); ?></h2>
                         <?php endif;?>
-                        <p itemprop="description"><?php echo $html; ?></p>
+                        <?php echo $html; ?>
                     </div>
                     <div class="extra-hint"><?php echo $this->getChildHtml('extrahint') ?></div>
                 <?php endforeach;?>
