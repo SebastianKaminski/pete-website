@@ -36,12 +36,14 @@
         <div class="post-metadata">
             <ul>
                 <li class="post-time">
-                    <?php echo $this->__('Posted On: ');?>
-                    <?php $date = ($this->getPost()->getPostDate() != NULL)? $this->getPost()->getPostDate()  : $this->getPost()->getCreatedAt() ; ?>
-                    <?php  echo  Mage::app()->getLocale()->date($date)->toString($format); ?>
+                    <small>
+                        <?php echo $this->__('Posted On: ');?>
+                        <?php $date = ($this->getPost()->getPostDate() != NULL)? $this->getPost()->getPostDate()  : $this->getPost()->getCreatedAt() ; ?>
+                        <?php  echo  Mage::app()->getLocale()->date($date)->toString($format); ?>
+                    </small>
                 </li>
                 <?php if ($this->getPost()->getAuthor()): ?>
-                <div class="post-author"><?php echo $this->__('by'); ?> <?php echo $this->getPost()->getAuthor(); ?></div>
+                <div class="post-author"><small><i><?php echo $this->__('by'); ?> <?php echo $this->getPost()->getAuthor(); ?></i></small></div>
                 <?php endif;?>
             </ul>
         </div>
