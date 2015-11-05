@@ -16,8 +16,7 @@ $catid="";
 		</div>
 		<?php if($value['category_img']): ?>
 			<div class="cat-img">
-				<img src="<?php echo Mage::helper('module')->resizeImg(); ?>" title="<?php echo $value['category_title']; ?>" alt="<?php echo $value['category_title']; ?>"/>
-				<!-- <img src="<?php echo Mage::getBaseUrl('media').$value['category_img']; ?>" title="<?php echo $value['category_title']; ?>" alt="<?php echo $value['category_title']; ?>"/> -->
+				<img src="<?php echo Mage::getBaseUrl('media').$value['category_img']; ?>" title="<?php echo $value['category_title']; ?>" alt="<?php echo $value['category_title']; ?>"/>
 			</div>
 			<?php //echo Mage::getBaseUrl('media'); ?>
 		<?php endif; ?>
@@ -65,6 +64,7 @@ $catid="";
 	</div>
 <script type="text/javascript">
 	jQuery(function($) {
+		console.log("koza");
 		// Gallery
 	jQuery('.image-link<?php echo $catid; ?>.gallery-block').magnificPopup({
 		  type: 'image',
