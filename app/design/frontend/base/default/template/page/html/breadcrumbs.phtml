@@ -26,19 +26,23 @@
 ?>
 <?php if($crumbs && is_array($crumbs)): ?>
 <div class="breadcrumbs">
-    <ul>
+    <ul class="breadcrumb" xmlns:v="http://rdf.data-vocabulary.org/#">
         <?php foreach($crumbs as $_crumbName=>$_crumbInfo): ?>
-            <li class="<?php echo $_crumbName ?>">
-            <?php if($_crumbInfo['link']): ?>
-                <a href="<?php echo $_crumbInfo['link'] ?>" title="<?php echo $this->escapeHtml($_crumbInfo['title']) ?>"><?php echo $this->escapeHtml($_crumbInfo['label']) ?></a>
-            <?php elseif($_crumbInfo['last']): ?>
-                <strong><?php echo $this->escapeHtml($_crumbInfo['label']) ?></strong>
-            <?php else: ?>
-                <?php echo $this->escapeHtml($_crumbInfo['label']) ?>
-            <?php endif; ?>
-            <?php if(!$_crumbInfo['last']): ?>
-                <span>/ </span>
-            <?php endif; ?>
+            <li class="<?php echo $_crumbName ?>" typeof="v:Breadcrumb" name="dupa">
+                <?php if($_crumbInfo['link']): ?>
+                    <a href="<?php echo $_crumbInfo['link'] ?>" title="<?php echo $this->escapeHtml($_crumbInfo['title']) ?>" rel="v:url" property="v:title">
+                        <span><?php echo $this->escapeHtml($_crumbInfo['label']) ?></span>
+                    </a>
+                <?php elseif($_crumbInfo['last']): ?>
+                    <span rel="v:child" property="v:title">
+                        <strong><?php echo $this->escapeHtml($_crumbInfo['label']) ?></strong>
+                    </span>
+                <?php else: ?>
+                    <span><?php echo $this->escapeHtml($_crumbInfo['label']) ?></span>
+                <?php endif; ?>
+                <?php if(!$_crumbInfo['last']): ?>
+                    <span>/ </span>
+                <?php endif; ?>
             </li>
         <?php endforeach; ?>
     </ul>
