@@ -1,7 +1,7 @@
 <?php if($crumbs && is_array($crumbs)): ?>
     <ol class="breadcrumb" xmlns:v="http://rdf.data-vocabulary.org/#">
         <?php foreach($crumbs as $_crumbName=>$_crumbInfo): ?>
-            <li class="<?php echo $_crumbName ?>" <?php $_crumbInfo['last']) ?: typeof="v:Breadcrumb" ?>>
+            <li class="<?php echo $_crumbName ?>" <?php $_crumbName == 'product' ?: 'typeof="v:Breadcrumb"' ?>>
                 <?php if($_crumbInfo['link']): ?>
                     <a href="<?php echo $_crumbInfo['link'] ?>" title="<?php echo $this->escapeHtml($_crumbInfo['title']) ?>" rel="v:url" property="v:title">
                         <?php echo $this->escapeHtml($_crumbInfo['label']) ?>
