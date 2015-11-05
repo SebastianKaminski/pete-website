@@ -37,8 +37,6 @@
                 <?php echo $this->__('Posted On: ');?>
                 <?php $date = ($this->getPost()->getPostDate() != NULL)? $this->getPost()->getPostDate()  : $this->getPost()->getCreatedAt() ; ?>
                 <?php  echo Mage::app()->getLocale()->date($date)->toString($format); ?>
-                <?php // $timestamp = (int) Mage::app()->getLocale()->date($date)->getTimestamp() ;?>
-                <?php // echo date('d D', $timestamp)?><?php // echo date('M', $timestamp)?>
             </small>
         </div>
         <?php if ($authorName = $this->getPost()->getAuthor()) :?>
