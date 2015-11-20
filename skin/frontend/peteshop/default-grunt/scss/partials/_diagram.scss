@@ -1,4 +1,4 @@
-/* -------------------------------- 
+/* --------------------------------
 
 Modules - reusable parts of our design
 
@@ -6,7 +6,7 @@ Modules - reusable parts of our design
 
 .cd-container {
     /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
-    width: 90%;
+    width: 100%;
     max-width: 1170px;
     margin: 0 auto;
     &:after {
@@ -55,6 +55,7 @@ header {
     max-width: 450px;
     > img {
         display: block;
+        max-width: 100%;
     }
 }
 
