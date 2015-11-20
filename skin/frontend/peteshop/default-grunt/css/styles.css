@@ -12556,7 +12556,7 @@ header h1 {
 }
 /* line 123, ../scss/partials/_diagram.scss */
 .cd-single-point:nth-of-type(1) {
-  bottom: 40%;
+  bottom: 75%;
   right: 30%;
 }
 /* line 127, ../scss/partials/_diagram.scss */
@@ -12728,8 +12728,8 @@ header h1 {
   /* line 296, ../scss/partials/_diagram.scss */
   .cd-single-point .cd-more-info {
     position: absolute;
-    width: 220px;
-    height: 240px;
+    width: 300px;
+    height: auto;
     padding: 1em;
     overflow-y: visible;
     line-height: 1.4;
@@ -12801,17 +12801,16 @@ header h1 {
   /* line 356, ../scss/partials/_diagram.scss */
   .cd-single-point .cd-more-info h2 {
     font-size: 20px;
-    font-size: 1.25rem;
-    margin-bottom: 0;
+    margin-bottom: 8px;
+    margin-top: 0;
   }
-  /* line 361, ../scss/partials/_diagram.scss */
+  /* line 362, ../scss/partials/_diagram.scss */
   .cd-single-point .cd-more-info p {
-    font-size: 14px;
-    font-size: 0.875rem;
+    font-size: 13px;
   }
 }
 /* close the interest point description - only on mobile */
-/* line 370, ../scss/partials/_diagram.scss */
+/* line 371, ../scss/partials/_diagram.scss */
 .cd-close-info {
   position: fixed;
   top: 0;
@@ -12819,7 +12818,7 @@ header h1 {
   height: 44px;
   width: 44px;
 }
-/* line 376, ../scss/partials/_diagram.scss */
+/* line 377, ../scss/partials/_diagram.scss */
 .cd-close-info::after, .cd-close-info:before {
   content: '';
   position: absolute;
@@ -12840,19 +12839,19 @@ header h1 {
   -moz-transition-duration: 0.2s;
   transition-duration: 0.2s;
 }
-/* line 396, ../scss/partials/_diagram.scss */
+/* line 397, ../scss/partials/_diagram.scss */
 .cd-close-info::after {
   height: 2px;
   width: 16px;
 }
-/* line 400, ../scss/partials/_diagram.scss */
+/* line 401, ../scss/partials/_diagram.scss */
 .cd-close-info::before {
   height: 16px;
   width: 2px;
 }
 
 @media only screen and (min-width: 600px) {
-  /* line 407, ../scss/partials/_diagram.scss */
+  /* line 408, ../scss/partials/_diagram.scss */
   .cd-close-info {
     display: none;
   }
