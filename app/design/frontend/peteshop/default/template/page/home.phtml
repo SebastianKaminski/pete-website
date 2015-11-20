@@ -47,6 +47,24 @@
 						    <!-- .cd-product-wrapper -->
 						</div>
 						<!-- <div class="jumbotron-image hidden-xs"><img class="img-responsive" title="Queen 760mm in Full Polish" src="http://www.radrestore.co.uk/media/wysiwyg/Images/queen-760-full-polish.png" alt="Queen 760mm in Full Polish" /></div> -->
+						<script type="text/javascript">
+							jQuery(document).ready(function($){
+								//open interest point description
+								$('.cd-single-point').children('a').on('click', function(){
+									var selectedPoint = $(this).parent('li');
+									if( selectedPoint.hasClass('is-open') ) {
+										selectedPoint.removeClass('is-open').addClass('visited');
+									} else {
+										selectedPoint.addClass('is-open').siblings('.cd-single-point.is-open').removeClass('is-open').addClass('visited');
+									}
+								});
+								//close interest point description
+								$('.cd-close-info').on('click', function(event){
+									event.preventDefault();
+									$(this).parents('.cd-single-point').eq(0).removeClass('is-open').addClass('visited');
+								});
+							});
+						</script>
 					</div>
 					<div class="col-md-7 col-sm-12">
 						<div class="std">
@@ -61,12 +79,6 @@
 			</div>
 
 			<div class="container">
-				<div class="row">
-					<div class="col-md-12 col-sm-12">
-						<div class="divider"></div>
-					</div>
-				</div>
-
 				<!-- Divider -->
 				<div class="row">
 					<div class="col-md-12 col-sm-12">
@@ -112,6 +124,14 @@
 						</div>
 					</div>
 				</div>
+
+				<!-- Divider -->
+				<div class="row">
+					<div class="col-md-12 col-sm-12">
+						<div class="divider"></div>
+					</div>
+				</div>
+
 				<!-- Categories -->
 				<div class="row">
 					<div class="col-md-12 col-sm-12">

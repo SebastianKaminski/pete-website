@@ -12479,19 +12479,20 @@ header h1 {
   margin: 0 auto;
   width: 100%;
   max-width: 450px;
+  padding-top: 45px;
 }
-/* line 56, ../scss/partials/_diagram.scss */
+/* line 57, ../scss/partials/_diagram.scss */
 .cd-product-wrapper > img {
   display: block;
   max-width: 100%;
 }
 
-/* line 62, ../scss/partials/_diagram.scss */
+/* line 63, ../scss/partials/_diagram.scss */
 .cd-single-point {
   position: absolute;
   border-radius: 50%;
 }
-/* line 65, ../scss/partials/_diagram.scss */
+/* line 66, ../scss/partials/_diagram.scss */
 .cd-single-point > a {
   position: relative;
   z-index: 2;
@@ -12505,7 +12506,7 @@ header h1 {
   -moz-transition: background-color 0.2s;
   transition: background-color 0.2s;
 }
-/* line 77, ../scss/partials/_diagram.scss */
+/* line 78, ../scss/partials/_diagram.scss */
 .cd-single-point > a::after, .cd-single-point > a:before {
   /* rotating plus icon */
   content: '';
@@ -12527,17 +12528,17 @@ header h1 {
   -moz-transition-duration: 0.2s;
   transition-duration: 0.2s;
 }
-/* line 98, ../scss/partials/_diagram.scss */
+/* line 99, ../scss/partials/_diagram.scss */
 .cd-single-point > a::after {
   height: 2px;
   width: 12px;
 }
-/* line 102, ../scss/partials/_diagram.scss */
+/* line 103, ../scss/partials/_diagram.scss */
 .cd-single-point > a::before {
   height: 12px;
   width: 2px;
 }
-/* line 107, ../scss/partials/_diagram.scss */
+/* line 108, ../scss/partials/_diagram.scss */
 .cd-single-point::after {
   /* this is used to create the pulse animation */
   content: '';
@@ -12553,31 +12554,31 @@ header h1 {
   -moz-animation: cd-pulse 2s infinite;
   animation: cd-pulse 2s infinite;
 }
-/* line 122, ../scss/partials/_diagram.scss */
+/* line 123, ../scss/partials/_diagram.scss */
 .cd-single-point:nth-of-type(1) {
   bottom: 40%;
   right: 30%;
 }
-/* line 126, ../scss/partials/_diagram.scss */
+/* line 127, ../scss/partials/_diagram.scss */
 .cd-single-point:nth-of-type(2) {
   bottom: 24%;
   right: 46%;
 }
-/* line 130, ../scss/partials/_diagram.scss */
+/* line 131, ../scss/partials/_diagram.scss */
 .cd-single-point:nth-of-type(3) {
   top: 28%;
   left: 20%;
 }
-/* line 134, ../scss/partials/_diagram.scss */
+/* line 135, ../scss/partials/_diagram.scss */
 .cd-single-point:nth-of-type(4) {
   top: 20%;
   right: 22%;
 }
-/* line 139, ../scss/partials/_diagram.scss */
+/* line 140, ../scss/partials/_diagram.scss */
 .cd-single-point.is-open > a {
   background-color: #475f74;
 }
-/* line 141, ../scss/partials/_diagram.scss */
+/* line 142, ../scss/partials/_diagram.scss */
 .cd-single-point.is-open > a::after, .cd-single-point.is-open > a::before {
   -webkit-transform: translateX(-50%) translateY(-50%) rotate(135deg);
   -moz-transform: translateX(-50%) translateY(-50%) rotate(135deg);
@@ -12585,12 +12586,12 @@ header h1 {
   -o-transform: translateX(-50%) translateY(-50%) rotate(135deg);
   transform: translateX(-50%) translateY(-50%) rotate(135deg);
 }
-/* line 149, ../scss/partials/_diagram.scss */
+/* line 150, ../scss/partials/_diagram.scss */
 .cd-single-point.is-open::after {
   /* remove pulse effect */
   display: none;
 }
-/* line 153, ../scss/partials/_diagram.scss */
+/* line 154, ../scss/partials/_diagram.scss */
 .cd-single-point.is-open .cd-more-info {
   visibility: visible;
   opacity: 1;
@@ -12603,16 +12604,16 @@ header h1 {
   -moz-transition: opacity 0.3s 0s, visibility 0s 0s, -moz-transform 0.3s 0s, top 0.3s 0s, bottom 0.3s 0s, left 0.3s 0s, right 0.3s 0s;
   transition: opacity 0.3s 0s, visibility 0s 0s, transform 0.3s 0s, top 0.3s 0s, bottom 0.3s 0s, left 0.3s 0s, right 0.3s 0s;
 }
-/* line 167, ../scss/partials/_diagram.scss */
+/* line 168, ../scss/partials/_diagram.scss */
 .cd-single-point.visited > a {
   background-color: #475f74;
 }
-/* line 170, ../scss/partials/_diagram.scss */
+/* line 171, ../scss/partials/_diagram.scss */
 .cd-single-point.visited::after {
   /* pulse effect no more active on visited elements */
   display: none;
 }
-/* line 175, ../scss/partials/_diagram.scss */
+/* line 176, ../scss/partials/_diagram.scss */
 .cd-single-point .cd-more-info {
   position: fixed;
   top: 0;
@@ -12637,7 +12638,7 @@ header h1 {
   -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s, -moz-transform 0.3s 0s, top 0.3s 0s, bottom 0.3s 0s, left 0.3s 0s, right 0.3s 0s;
   transition: opacity 0.3s 0s, visibility 0s 0.3s, transform 0.3s 0s, top 0.3s 0s, bottom 0.3s 0s, left 0.3s 0s, right 0.3s 0s;
 }
-/* line 198, ../scss/partials/_diagram.scss */
+/* line 199, ../scss/partials/_diagram.scss */
 .cd-single-point .cd-more-info::before {
   /* triangle next to the interest point description - hidden on mobile */
   content: '';
@@ -12647,31 +12648,31 @@ header h1 {
   display: none;
   border: 8px solid transparent;
 }
-/* line 207, ../scss/partials/_diagram.scss */
+/* line 208, ../scss/partials/_diagram.scss */
 .cd-single-point .cd-more-info h2 {
   font-size: 22px;
   font-size: 1.375rem;
   margin-bottom: .6em;
 }
-/* line 212, ../scss/partials/_diagram.scss */
+/* line 213, ../scss/partials/_diagram.scss */
 .cd-single-point .cd-more-info p {
   color: #758eb1;
 }
 
 @media only screen and (min-width: 600px) {
-  /* line 220, ../scss/partials/_diagram.scss */
+  /* line 221, ../scss/partials/_diagram.scss */
   .cd-single-point.is-open .cd-more-info.cd-left {
     right: 140%;
   }
-  /* line 223, ../scss/partials/_diagram.scss */
+  /* line 224, ../scss/partials/_diagram.scss */
   .cd-single-point.is-open .cd-more-info.cd-right {
     left: 140%;
   }
-  /* line 226, ../scss/partials/_diagram.scss */
+  /* line 227, ../scss/partials/_diagram.scss */
   .cd-single-point.is-open .cd-more-info.cd-top {
     bottom: 140%;
   }
-  /* line 229, ../scss/partials/_diagram.scss */
+  /* line 230, ../scss/partials/_diagram.scss */
   .cd-single-point.is-open .cd-more-info.cd-bottom {
     top: 140%;
   }
@@ -12724,7 +12725,7 @@ header h1 {
   }
 }
 @media only screen and (min-width: 600px) {
-  /* line 295, ../scss/partials/_diagram.scss */
+  /* line 296, ../scss/partials/_diagram.scss */
   .cd-single-point .cd-more-info {
     position: absolute;
     width: 220px;
@@ -12735,11 +12736,11 @@ header h1 {
     border-radius: 0.25em;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   }
-  /* line 304, ../scss/partials/_diagram.scss */
+  /* line 305, ../scss/partials/_diagram.scss */
   .cd-single-point .cd-more-info::before {
     display: block;
   }
-  /* line 307, ../scss/partials/_diagram.scss */
+  /* line 308, ../scss/partials/_diagram.scss */
   .cd-single-point .cd-more-info.cd-left, .cd-single-point .cd-more-info.cd-right, .cd-single-point .cd-more-info.cd-left::before, .cd-single-point .cd-more-info.cd-right::before {
     top: 50%;
     bottom: auto;
@@ -12749,26 +12750,26 @@ header h1 {
     -o-transform: translateY(-50%);
     transform: translateY(-50%);
   }
-  /* line 316, ../scss/partials/_diagram.scss */
+  /* line 317, ../scss/partials/_diagram.scss */
   .cd-single-point .cd-more-info.cd-left {
     right: 160%;
     left: auto;
   }
-  /* line 319, ../scss/partials/_diagram.scss */
+  /* line 320, ../scss/partials/_diagram.scss */
   .cd-single-point .cd-more-info.cd-left::before {
     border-left-color: rgba(255, 255, 255, 0.95);
     left: 100%;
   }
-  /* line 324, ../scss/partials/_diagram.scss */
+  /* line 325, ../scss/partials/_diagram.scss */
   .cd-single-point .cd-more-info.cd-right {
     left: 160%;
   }
-  /* line 326, ../scss/partials/_diagram.scss */
+  /* line 327, ../scss/partials/_diagram.scss */
   .cd-single-point .cd-more-info.cd-right::before {
     border-right-color: rgba(255, 255, 255, 0.95);
     right: 100%;
   }
-  /* line 331, ../scss/partials/_diagram.scss */
+  /* line 332, ../scss/partials/_diagram.scss */
   .cd-single-point .cd-more-info.cd-top, .cd-single-point .cd-more-info.cd-bottom, .cd-single-point .cd-more-info.cd-top::before, .cd-single-point .cd-more-info.cd-bottom::before {
     left: 50%;
     right: auto;
@@ -12778,39 +12779,39 @@ header h1 {
     -o-transform: translateX(-50%);
     transform: translateX(-50%);
   }
-  /* line 340, ../scss/partials/_diagram.scss */
+  /* line 341, ../scss/partials/_diagram.scss */
   .cd-single-point .cd-more-info.cd-top {
     bottom: 160%;
     top: auto;
   }
-  /* line 343, ../scss/partials/_diagram.scss */
+  /* line 344, ../scss/partials/_diagram.scss */
   .cd-single-point .cd-more-info.cd-top::before {
     border-top-color: rgba(255, 255, 255, 0.95);
     top: 100%;
   }
-  /* line 348, ../scss/partials/_diagram.scss */
+  /* line 349, ../scss/partials/_diagram.scss */
   .cd-single-point .cd-more-info.cd-bottom {
     top: 160%;
   }
-  /* line 350, ../scss/partials/_diagram.scss */
+  /* line 351, ../scss/partials/_diagram.scss */
   .cd-single-point .cd-more-info.cd-bottom::before {
     border-bottom-color: rgba(255, 255, 255, 0.95);
     bottom: 100%;
   }
-  /* line 355, ../scss/partials/_diagram.scss */
+  /* line 356, ../scss/partials/_diagram.scss */
   .cd-single-point .cd-more-info h2 {
     font-size: 20px;
     font-size: 1.25rem;
     margin-bottom: 0;
   }
-  /* line 360, ../scss/partials/_diagram.scss */
+  /* line 361, ../scss/partials/_diagram.scss */
   .cd-single-point .cd-more-info p {
     font-size: 14px;
     font-size: 0.875rem;
   }
 }
 /* close the interest point description - only on mobile */
-/* line 369, ../scss/partials/_diagram.scss */
+/* line 370, ../scss/partials/_diagram.scss */
 .cd-close-info {
   position: fixed;
   top: 0;
@@ -12818,7 +12819,7 @@ header h1 {
   height: 44px;
   width: 44px;
 }
-/* line 375, ../scss/partials/_diagram.scss */
+/* line 376, ../scss/partials/_diagram.scss */
 .cd-close-info::after, .cd-close-info:before {
   content: '';
   position: absolute;
@@ -12839,19 +12840,19 @@ header h1 {
   -moz-transition-duration: 0.2s;
   transition-duration: 0.2s;
 }
-/* line 395, ../scss/partials/_diagram.scss */
+/* line 396, ../scss/partials/_diagram.scss */
 .cd-close-info::after {
   height: 2px;
   width: 16px;
 }
-/* line 399, ../scss/partials/_diagram.scss */
+/* line 400, ../scss/partials/_diagram.scss */
 .cd-close-info::before {
   height: 16px;
   width: 2px;
 }
 
 @media only screen and (min-width: 600px) {
-  /* line 406, ../scss/partials/_diagram.scss */
+  /* line 407, ../scss/partials/_diagram.scss */
   .cd-close-info {
     display: none;
   }
@@ -15680,78 +15681,79 @@ tr.summary-details-excluded {
   font-weight: bold;
   letter-spacing: 1px;
   text-transform: uppercase;
+  margin-bottom: 30px;
 }
-/* line 137, ../scss/styles.scss */
+/* line 138, ../scss/styles.scss */
 #homepage .std .jumbotron p {
   font-size: 16px;
 }
-/* line 142, ../scss/styles.scss */
+/* line 143, ../scss/styles.scss */
 #homepage .block-creare-twitter ul {
   margin-top: 15px;
 }
-/* line 144, ../scss/styles.scss */
+/* line 145, ../scss/styles.scss */
 #homepage .block-creare-twitter ul li.item {
   border-left: 3px solid #357ebd;
   margin-bottom: 5px;
   padding-left: 15px;
   text-align: left;
 }
-/* line 152, ../scss/styles.scss */
+/* line 153, ../scss/styles.scss */
 #homepage .block {
   text-align: center;
 }
-/* line 154, ../scss/styles.scss */
+/* line 155, ../scss/styles.scss */
 #homepage .block .block-title {
   margin-bottom: 15px;
   padding-bottom: 15px;
 }
 
-/* line 162, ../scss/styles.scss */
+/* line 163, ../scss/styles.scss */
 footer.container-fluid {
   background: #333;
   margin-top: 25px;
 }
-/* line 166, ../scss/styles.scss */
+/* line 167, ../scss/styles.scss */
 footer .footer-content {
   padding-top: 15px;
   color: #FFF;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
 }
-/* line 171, ../scss/styles.scss */
+/* line 172, ../scss/styles.scss */
 footer .footer-content .entypo, footer .footer-content .entypo-social {
   color: #777;
 }
-/* line 172, ../scss/styles.scss */
+/* line 173, ../scss/styles.scss */
 footer .footer-content .entypo-social {
   display: inline-block;
   text-align: center;
   margin-right: 2px;
   width: 12px;
 }
-/* line 178, ../scss/styles.scss */
+/* line 179, ../scss/styles.scss */
 footer .footer-content h3 {
   color: #f0ad4e;
 }
 
 /* Menu Fix */
-/* line 184, ../scss/styles.scss */
+/* line 185, ../scss/styles.scss */
 .navbar .dropdown:hover .dropdown-menu {
   display: block;
 }
 
 /* Boostrap Grid */
-/* line 190, ../scss/styles.scss */
+/* line 191, ../scss/styles.scss */
 .container-fluid {
   padding: 0 !important;
 }
 
 /* Menu Search */
-/* line 193, ../scss/styles.scss */
+/* line 194, ../scss/styles.scss */
 .search-form-container {
   position: relative;
 }
-/* line 197, ../scss/styles.scss */
+/* line 198, ../scss/styles.scss */
 .search-form-container #search_mini_form {
   left: 0;
   margin-left: 25px;
@@ -15759,18 +15761,18 @@ footer .footer-content h3 {
   top: 0;
   width: 300px;
 }
-/* line 203, ../scss/styles.scss */
+/* line 204, ../scss/styles.scss */
 .search-form-container #search_mini_form button {
   margin-left: 10px;
 }
 @media (max-width: 768px) {
-  /* line 210, ../scss/styles.scss */
+  /* line 211, ../scss/styles.scss */
   .search-form-container #search_mini_form {
     padding: 0;
     margin: 0;
     left: 50px;
   }
-  /* line 214, ../scss/styles.scss */
+  /* line 215, ../scss/styles.scss */
   .search-form-container #search_mini_form input {
     float: left;
     width: 150px;
@@ -15778,7 +15780,7 @@ footer .footer-content h3 {
 }
 
 /* Compare plugin */
-/* line 223, ../scss/styles.scss */
+/* line 224, ../scss/styles.scss */
 .cd-image-container {
   position: relative;
   width: 90%;
@@ -15786,12 +15788,12 @@ footer .footer-content h3 {
   margin: 0em auto;
 }
 
-/* line 229, ../scss/styles.scss */
+/* line 230, ../scss/styles.scss */
 .cd-image-container img {
   display: block;
 }
 
-/* line 233, ../scss/styles.scss */
+/* line 234, ../scss/styles.scss */
 .cd-image-label {
   position: absolute;
   bottom: 0;
@@ -15812,12 +15814,12 @@ footer .footer-content h3 {
   transition: transform 0.3s 0.7s, opacity 0.3s 0.7s;
 }
 
-/* line 252, ../scss/styles.scss */
+/* line 253, ../scss/styles.scss */
 .cd-image-label.is-hidden {
   visibility: hidden;
 }
 
-/* line 255, ../scss/styles.scss */
+/* line 256, ../scss/styles.scss */
 .is-visible .cd-image-label {
   opacity: 1;
   -webkit-transform: translateY(0);
@@ -15827,7 +15829,7 @@ footer .footer-content h3 {
   transform: translateY(0);
 }
 
-/* line 264, ../scss/styles.scss */
+/* line 265, ../scss/styles.scss */
 .cd-resize-img {
   position: absolute;
   top: 0;
@@ -15845,7 +15847,7 @@ footer .footer-content h3 {
   backface-visibility: hidden;
 }
 
-/* line 280, ../scss/styles.scss */
+/* line 281, ../scss/styles.scss */
 .cd-resize-img img {
   position: absolute;
   left: 0;
@@ -15856,13 +15858,13 @@ footer .footer-content h3 {
   max-width: none;
 }
 
-/* line 289, ../scss/styles.scss */
+/* line 290, ../scss/styles.scss */
 .cd-resize-img .cd-image-label {
   right: auto;
   left: 0;
 }
 
-/* line 293, ../scss/styles.scss */
+/* line 294, ../scss/styles.scss */
 .is-visible .cd-resize-img {
   width: 50%;
   /* bounce in animation of the modified image */
@@ -15904,7 +15906,7 @@ footer .footer-content h3 {
     width: 50%;
   }
 }
-/* line 334, ../scss/styles.scss */
+/* line 335, ../scss/styles.scss */
 .cd-handle {
   position: absolute;
   height: 44px;
@@ -15926,13 +15928,13 @@ footer .footer-content h3 {
   transform: translate3d(0, 0, 0) scale(0);
 }
 
-/* line 354, ../scss/styles.scss */
+/* line 355, ../scss/styles.scss */
 .cd-handle.draggable {
   /* change background color when element is active */
   background-color: #445b7c;
 }
 
-/* line 358, ../scss/styles.scss */
+/* line 359, ../scss/styles.scss */
 .is-visible .cd-handle {
   opacity: 1;
   -webkit-transform: translate3d(0, 0, 0) scale(1);
