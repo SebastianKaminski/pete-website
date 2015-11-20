@@ -96,6 +96,25 @@ $c-grey: #BBB;
 	// background: url("../images/textures/concrete_seamless.png");
 	// background-repeat: repeat;
 	margin: -50px 0 -25px 0;
+
+    #boxes {
+        .panel {
+            .panel-heading {
+                h3 {
+                    font-family: $fontBase3;
+    				font-weight: bold;
+    				letter-spacing: 1px;
+    				text-transform: uppercase;
+                }
+            }
+            .panel-body {
+                p {
+                    font-weight: 200;
+                }
+            }
+        }
+    }
+
 	#categories {
 		figure {
 			text-align: center;
@@ -138,18 +157,18 @@ $c-grey: #BBB;
 			p { font-size: 16px; }
 		}
 	}
-	/* Tweets Block */
-	.block-creare-twitter {
-		ul {
-			margin-top: 15px;
-			li.item {
-				border-left: 3px solid #357ebd;
-				margin-bottom: 5px;
-				padding-left: 15px;
-				text-align: left;
-			}
-		}
-	}
+	// /* Tweets Block */
+	// .block-creare-twitter {
+	// 	ul {
+	// 		margin-top: 15px;
+	// 		li.item {
+	// 			border-left: 3px solid #357ebd;
+	// 			margin-bottom: 5px;
+	// 			padding-left: 15px;
+	// 			text-align: left;
+	// 		}
+	// 	}
+	// }
 	.block {
 		text-align: center;
 		.block-title {
