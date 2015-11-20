@@ -12419,6 +12419,442 @@ footer:after,
   overflow: hidden;
 }
 
+/* -------------------------------- 
+
+Modules - reusable parts of our design
+
+-------------------------------- */
+/* line 7, ../scss/partials/_diagram.scss */
+.cd-container {
+  /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
+  width: 90%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+/* line 12, ../scss/partials/_diagram.scss */
+.cd-container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 19, ../scss/partials/_diagram.scss */
+.cd-img-replace {
+  /* replace text with background images */
+  display: inline-block;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+}
+
+/* --------------------------------
+
+Main components
+
+-------------------------------- */
+/* line 33, ../scss/partials/_diagram.scss */
+header {
+  height: 250px;
+  line-height: 250px;
+  background-color: #33435a;
+}
+/* line 37, ../scss/partials/_diagram.scss */
+header h1 {
+  font-size: 30px;
+  font-size: 1.875rem;
+  text-align: center;
+  color: #f2eacf;
+  font-weight: 300;
+}
+
+/* line 46, ../scss/partials/_diagram.scss */
+.cd-product {
+  text-align: center;
+}
+
+/* line 50, ../scss/partials/_diagram.scss */
+.cd-product-wrapper {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 450px;
+}
+/* line 56, ../scss/partials/_diagram.scss */
+.cd-product-wrapper > img {
+  display: block;
+}
+
+/* line 61, ../scss/partials/_diagram.scss */
+.cd-single-point {
+  position: absolute;
+  border-radius: 50%;
+}
+/* line 64, ../scss/partials/_diagram.scss */
+.cd-single-point > a {
+  position: relative;
+  z-index: 2;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: inherit;
+  background: #d95353;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  -webkit-transition: background-color 0.2s;
+  -moz-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+/* line 76, ../scss/partials/_diagram.scss */
+.cd-single-point > a::after, .cd-single-point > a:before {
+  /* rotating plus icon */
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background-color: #ffffff;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+/* line 97, ../scss/partials/_diagram.scss */
+.cd-single-point > a::after {
+  height: 2px;
+  width: 12px;
+}
+/* line 101, ../scss/partials/_diagram.scss */
+.cd-single-point > a::before {
+  height: 12px;
+  width: 2px;
+}
+/* line 106, ../scss/partials/_diagram.scss */
+.cd-single-point::after {
+  /* this is used to create the pulse animation */
+  content: '';
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: inherit;
+  background-color: transparent;
+  -webkit-animation: cd-pulse 2s infinite;
+  -moz-animation: cd-pulse 2s infinite;
+  animation: cd-pulse 2s infinite;
+}
+/* line 121, ../scss/partials/_diagram.scss */
+.cd-single-point:nth-of-type(1) {
+  bottom: 40%;
+  right: 30%;
+}
+/* line 125, ../scss/partials/_diagram.scss */
+.cd-single-point:nth-of-type(2) {
+  bottom: 24%;
+  right: 46%;
+}
+/* line 129, ../scss/partials/_diagram.scss */
+.cd-single-point:nth-of-type(3) {
+  top: 28%;
+  left: 20%;
+}
+/* line 133, ../scss/partials/_diagram.scss */
+.cd-single-point:nth-of-type(4) {
+  top: 20%;
+  right: 22%;
+}
+/* line 138, ../scss/partials/_diagram.scss */
+.cd-single-point.is-open > a {
+  background-color: #475f74;
+}
+/* line 140, ../scss/partials/_diagram.scss */
+.cd-single-point.is-open > a::after, .cd-single-point.is-open > a::before {
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(135deg);
+  -moz-transform: translateX(-50%) translateY(-50%) rotate(135deg);
+  -ms-transform: translateX(-50%) translateY(-50%) rotate(135deg);
+  -o-transform: translateX(-50%) translateY(-50%) rotate(135deg);
+  transform: translateX(-50%) translateY(-50%) rotate(135deg);
+}
+/* line 148, ../scss/partials/_diagram.scss */
+.cd-single-point.is-open::after {
+  /* remove pulse effect */
+  display: none;
+}
+/* line 152, ../scss/partials/_diagram.scss */
+.cd-single-point.is-open .cd-more-info {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: opacity 0.3s 0s, visibility 0s 0s, -webkit-transform 0.3s 0s, top 0.3s 0s, bottom 0.3s 0s, left 0.3s 0s, right 0.3s 0s;
+  -moz-transition: opacity 0.3s 0s, visibility 0s 0s, -moz-transform 0.3s 0s, top 0.3s 0s, bottom 0.3s 0s, left 0.3s 0s, right 0.3s 0s;
+  transition: opacity 0.3s 0s, visibility 0s 0s, transform 0.3s 0s, top 0.3s 0s, bottom 0.3s 0s, left 0.3s 0s, right 0.3s 0s;
+}
+/* line 166, ../scss/partials/_diagram.scss */
+.cd-single-point.visited > a {
+  background-color: #475f74;
+}
+/* line 169, ../scss/partials/_diagram.scss */
+.cd-single-point.visited::after {
+  /* pulse effect no more active on visited elements */
+  display: none;
+}
+/* line 174, ../scss/partials/_diagram.scss */
+.cd-single-point .cd-more-info {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  text-align: left;
+  line-height: 1.5;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 2em 1em 1em;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  transform: scale(0.8);
+  -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s, -webkit-transform 0.3s 0s, top 0.3s 0s, bottom 0.3s 0s, left 0.3s 0s, right 0.3s 0s;
+  -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s, -moz-transform 0.3s 0s, top 0.3s 0s, bottom 0.3s 0s, left 0.3s 0s, right 0.3s 0s;
+  transition: opacity 0.3s 0s, visibility 0s 0.3s, transform 0.3s 0s, top 0.3s 0s, bottom 0.3s 0s, left 0.3s 0s, right 0.3s 0s;
+}
+/* line 197, ../scss/partials/_diagram.scss */
+.cd-single-point .cd-more-info::before {
+  /* triangle next to the interest point description - hidden on mobile */
+  content: '';
+  position: absolute;
+  height: 0;
+  width: 0;
+  display: none;
+  border: 8px solid transparent;
+}
+/* line 206, ../scss/partials/_diagram.scss */
+.cd-single-point .cd-more-info h2 {
+  font-size: 22px;
+  font-size: 1.375rem;
+  margin-bottom: .6em;
+}
+/* line 211, ../scss/partials/_diagram.scss */
+.cd-single-point .cd-more-info p {
+  color: #758eb1;
+}
+
+@media only screen and (min-width: 600px) {
+  /* line 219, ../scss/partials/_diagram.scss */
+  .cd-single-point.is-open .cd-more-info.cd-left {
+    right: 140%;
+  }
+  /* line 222, ../scss/partials/_diagram.scss */
+  .cd-single-point.is-open .cd-more-info.cd-right {
+    left: 140%;
+  }
+  /* line 225, ../scss/partials/_diagram.scss */
+  .cd-single-point.is-open .cd-more-info.cd-top {
+    bottom: 140%;
+  }
+  /* line 228, ../scss/partials/_diagram.scss */
+  .cd-single-point.is-open .cd-more-info.cd-bottom {
+    top: 140%;
+  }
+}
+@-webkit-keyframes cd-pulse {
+  0% {
+    -webkit-transform: scale(1);
+    box-shadow: inset 0 0 1px 1px rgba(217, 83, 83, 0.8);
+  }
+  50% {
+    box-shadow: inset 0 0 1px 1px rgba(217, 83, 83, 0.8);
+  }
+  100% {
+    -webkit-transform: scale(1.6);
+    box-shadow: inset 0 0 1px 1px rgba(217, 83, 83, 0);
+  }
+}
+@-moz-keyframes cd-pulse {
+  0% {
+    -moz-transform: scale(1);
+    box-shadow: inset 0 0 1px 1px rgba(217, 83, 83, 0.8);
+  }
+  50% {
+    box-shadow: inset 0 0 1px 1px rgba(217, 83, 83, 0.8);
+  }
+  100% {
+    -moz-transform: scale(1.6);
+    box-shadow: inset 0 0 1px 1px rgba(217, 83, 83, 0);
+  }
+}
+@keyframes cd-pulse {
+  0% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    box-shadow: inset 0 0 1px 1px rgba(217, 83, 83, 0.8);
+  }
+  50% {
+    box-shadow: inset 0 0 1px 1px rgba(217, 83, 83, 0.8);
+  }
+  100% {
+    -webkit-transform: scale(1.6);
+    -moz-transform: scale(1.6);
+    -ms-transform: scale(1.6);
+    -o-transform: scale(1.6);
+    transform: scale(1.6);
+    box-shadow: inset 0 0 1px 1px rgba(217, 83, 83, 0);
+  }
+}
+@media only screen and (min-width: 600px) {
+  /* line 294, ../scss/partials/_diagram.scss */
+  .cd-single-point .cd-more-info {
+    position: absolute;
+    width: 220px;
+    height: 240px;
+    padding: 1em;
+    overflow-y: visible;
+    line-height: 1.4;
+    border-radius: 0.25em;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+  /* line 303, ../scss/partials/_diagram.scss */
+  .cd-single-point .cd-more-info::before {
+    display: block;
+  }
+  /* line 306, ../scss/partials/_diagram.scss */
+  .cd-single-point .cd-more-info.cd-left, .cd-single-point .cd-more-info.cd-right, .cd-single-point .cd-more-info.cd-left::before, .cd-single-point .cd-more-info.cd-right::before {
+    top: 50%;
+    bottom: auto;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  /* line 315, ../scss/partials/_diagram.scss */
+  .cd-single-point .cd-more-info.cd-left {
+    right: 160%;
+    left: auto;
+  }
+  /* line 318, ../scss/partials/_diagram.scss */
+  .cd-single-point .cd-more-info.cd-left::before {
+    border-left-color: rgba(255, 255, 255, 0.95);
+    left: 100%;
+  }
+  /* line 323, ../scss/partials/_diagram.scss */
+  .cd-single-point .cd-more-info.cd-right {
+    left: 160%;
+  }
+  /* line 325, ../scss/partials/_diagram.scss */
+  .cd-single-point .cd-more-info.cd-right::before {
+    border-right-color: rgba(255, 255, 255, 0.95);
+    right: 100%;
+  }
+  /* line 330, ../scss/partials/_diagram.scss */
+  .cd-single-point .cd-more-info.cd-top, .cd-single-point .cd-more-info.cd-bottom, .cd-single-point .cd-more-info.cd-top::before, .cd-single-point .cd-more-info.cd-bottom::before {
+    left: 50%;
+    right: auto;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  /* line 339, ../scss/partials/_diagram.scss */
+  .cd-single-point .cd-more-info.cd-top {
+    bottom: 160%;
+    top: auto;
+  }
+  /* line 342, ../scss/partials/_diagram.scss */
+  .cd-single-point .cd-more-info.cd-top::before {
+    border-top-color: rgba(255, 255, 255, 0.95);
+    top: 100%;
+  }
+  /* line 347, ../scss/partials/_diagram.scss */
+  .cd-single-point .cd-more-info.cd-bottom {
+    top: 160%;
+  }
+  /* line 349, ../scss/partials/_diagram.scss */
+  .cd-single-point .cd-more-info.cd-bottom::before {
+    border-bottom-color: rgba(255, 255, 255, 0.95);
+    bottom: 100%;
+  }
+  /* line 354, ../scss/partials/_diagram.scss */
+  .cd-single-point .cd-more-info h2 {
+    font-size: 20px;
+    font-size: 1.25rem;
+    margin-bottom: 0;
+  }
+  /* line 359, ../scss/partials/_diagram.scss */
+  .cd-single-point .cd-more-info p {
+    font-size: 14px;
+    font-size: 0.875rem;
+  }
+}
+/* close the interest point description - only on mobile */
+/* line 368, ../scss/partials/_diagram.scss */
+.cd-close-info {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 44px;
+  width: 44px;
+}
+/* line 374, ../scss/partials/_diagram.scss */
+.cd-close-info::after, .cd-close-info:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  -moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  -o-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  background-color: #475f74;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+/* line 394, ../scss/partials/_diagram.scss */
+.cd-close-info::after {
+  height: 2px;
+  width: 16px;
+}
+/* line 398, ../scss/partials/_diagram.scss */
+.cd-close-info::before {
+  height: 16px;
+  width: 2px;
+}
+
+@media only screen and (min-width: 600px) {
+  /* line 405, ../scss/partials/_diagram.scss */
+  .cd-close-info {
+    display: none;
+  }
+}
 /* line 3, ../scss/sections/category/_main.scss */
 .category-image {
   background-position: top center;
@@ -15167,7 +15603,7 @@ tr.summary-details-excluded {
   padding: 8px 13px;
 }
 
-/* line 62, ../scss/styles.scss */
+/* line 63, ../scss/styles.scss */
 .divider {
   background: url("../images/divider.png");
   background-position: center center;
@@ -15177,7 +15613,7 @@ tr.summary-details-excluded {
   width: 100%;
 }
 
-/* line 73, ../scss/styles.scss */
+/* line 74, ../scss/styles.scss */
 .header-container #header-top .links {
   border-bottom: 1px dashed #BBB;
   float: left;
@@ -15187,133 +15623,134 @@ tr.summary-details-excluded {
   text-transform: uppercase;
   width: 100%;
 }
-/* line 81, ../scss/styles.scss */
+/* line 82, ../scss/styles.scss */
 .header-container #header-top .links ul {
   margin-bottom: 0;
 }
-/* line 86, ../scss/styles.scss */
+/* line 87, ../scss/styles.scss */
 .header-container #header-middle h1 img, .header-container #header-middle h3 img {
   max-width: 100%;
 }
 
 /* Homepage */
-/* line 94, ../scss/styles.scss */
+/* line 95, ../scss/styles.scss */
 #homepage {
   margin: -50px 0 -25px 0;
   /* Tweets Block */
 }
-/* line 99, ../scss/styles.scss */
+/* line 100, ../scss/styles.scss */
 #homepage #categories figure {
   text-align: center;
   margin: 20px 0 10px 0;
 }
-/* line 102, ../scss/styles.scss */
+/* line 103, ../scss/styles.scss */
 #homepage #categories figure img {
   opacity: 0.8;
   margin: 0 auto;
 }
-/* line 105, ../scss/styles.scss */
+/* line 106, ../scss/styles.scss */
 #homepage #categories figure img:hover {
   opacity: 1;
 }
-/* line 110, ../scss/styles.scss */
+/* line 111, ../scss/styles.scss */
 #homepage #categories figure figcaption h3 {
   font-family: Baskerville, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   font-weight: bold;
   letter-spacing: 1px;
+  margin-top: 15px;
   text-transform: uppercase;
 }
-/* line 116, ../scss/styles.scss */
+/* line 118, ../scss/styles.scss */
 #homepage #categories figure figcaption h3 a {
   color: #333;
 }
-/* line 124, ../scss/styles.scss */
+/* line 126, ../scss/styles.scss */
 #homepage .std .jumbotron-image {
   padding-top: 50px;
 }
-/* line 127, ../scss/styles.scss */
+/* line 129, ../scss/styles.scss */
 #homepage .std .jumbotron {
   margin-bottom: 0;
 }
-/* line 129, ../scss/styles.scss */
+/* line 131, ../scss/styles.scss */
 #homepage .std .jumbotron h2 {
   font-family: Baskerville, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
-/* line 135, ../scss/styles.scss */
+/* line 137, ../scss/styles.scss */
 #homepage .std .jumbotron p {
   font-size: 16px;
 }
-/* line 140, ../scss/styles.scss */
+/* line 142, ../scss/styles.scss */
 #homepage .block-creare-twitter ul {
   margin-top: 15px;
 }
-/* line 142, ../scss/styles.scss */
+/* line 144, ../scss/styles.scss */
 #homepage .block-creare-twitter ul li.item {
   border-left: 3px solid #357ebd;
   margin-bottom: 5px;
   padding-left: 15px;
   text-align: left;
 }
-/* line 150, ../scss/styles.scss */
+/* line 152, ../scss/styles.scss */
 #homepage .block {
   text-align: center;
 }
-/* line 152, ../scss/styles.scss */
+/* line 154, ../scss/styles.scss */
 #homepage .block .block-title {
   margin-bottom: 15px;
   padding-bottom: 15px;
 }
 
-/* line 160, ../scss/styles.scss */
+/* line 162, ../scss/styles.scss */
 footer.container-fluid {
   background: #333;
   margin-top: 25px;
 }
-/* line 164, ../scss/styles.scss */
+/* line 166, ../scss/styles.scss */
 footer .footer-content {
   padding-top: 15px;
   color: #FFF;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
 }
-/* line 169, ../scss/styles.scss */
+/* line 171, ../scss/styles.scss */
 footer .footer-content .entypo, footer .footer-content .entypo-social {
   color: #777;
 }
-/* line 170, ../scss/styles.scss */
+/* line 172, ../scss/styles.scss */
 footer .footer-content .entypo-social {
   display: inline-block;
   text-align: center;
   margin-right: 2px;
   width: 12px;
 }
-/* line 176, ../scss/styles.scss */
+/* line 178, ../scss/styles.scss */
 footer .footer-content h3 {
   color: #f0ad4e;
 }
 
 /* Menu Fix */
-/* line 182, ../scss/styles.scss */
+/* line 184, ../scss/styles.scss */
 .navbar .dropdown:hover .dropdown-menu {
   display: block;
 }
 
 /* Boostrap Grid */
-/* line 188, ../scss/styles.scss */
+/* line 190, ../scss/styles.scss */
 .container-fluid {
   padding: 0 !important;
 }
 
 /* Menu Search */
-/* line 191, ../scss/styles.scss */
+/* line 193, ../scss/styles.scss */
 .search-form-container {
   position: relative;
 }
-/* line 195, ../scss/styles.scss */
+/* line 197, ../scss/styles.scss */
 .search-form-container #search_mini_form {
   left: 0;
   margin-left: 25px;
@@ -15321,18 +15758,18 @@ footer .footer-content h3 {
   top: 0;
   width: 300px;
 }
-/* line 201, ../scss/styles.scss */
+/* line 203, ../scss/styles.scss */
 .search-form-container #search_mini_form button {
   margin-left: 10px;
 }
 @media (max-width: 768px) {
-  /* line 208, ../scss/styles.scss */
+  /* line 210, ../scss/styles.scss */
   .search-form-container #search_mini_form {
     padding: 0;
     margin: 0;
     left: 50px;
   }
-  /* line 212, ../scss/styles.scss */
+  /* line 214, ../scss/styles.scss */
   .search-form-container #search_mini_form input {
     float: left;
     width: 150px;
@@ -15340,7 +15777,7 @@ footer .footer-content h3 {
 }
 
 /* Compare plugin */
-/* line 221, ../scss/styles.scss */
+/* line 223, ../scss/styles.scss */
 .cd-image-container {
   position: relative;
   width: 90%;
@@ -15348,12 +15785,12 @@ footer .footer-content h3 {
   margin: 0em auto;
 }
 
-/* line 227, ../scss/styles.scss */
+/* line 229, ../scss/styles.scss */
 .cd-image-container img {
   display: block;
 }
 
-/* line 231, ../scss/styles.scss */
+/* line 233, ../scss/styles.scss */
 .cd-image-label {
   position: absolute;
   bottom: 0;
@@ -15374,12 +15811,12 @@ footer .footer-content h3 {
   transition: transform 0.3s 0.7s, opacity 0.3s 0.7s;
 }
 
-/* line 250, ../scss/styles.scss */
+/* line 252, ../scss/styles.scss */
 .cd-image-label.is-hidden {
   visibility: hidden;
 }
 
-/* line 253, ../scss/styles.scss */
+/* line 255, ../scss/styles.scss */
 .is-visible .cd-image-label {
   opacity: 1;
   -webkit-transform: translateY(0);
@@ -15389,7 +15826,7 @@ footer .footer-content h3 {
   transform: translateY(0);
 }
 
-/* line 262, ../scss/styles.scss */
+/* line 264, ../scss/styles.scss */
 .cd-resize-img {
   position: absolute;
   top: 0;
@@ -15407,7 +15844,7 @@ footer .footer-content h3 {
   backface-visibility: hidden;
 }
 
-/* line 278, ../scss/styles.scss */
+/* line 280, ../scss/styles.scss */
 .cd-resize-img img {
   position: absolute;
   left: 0;
@@ -15418,13 +15855,13 @@ footer .footer-content h3 {
   max-width: none;
 }
 
-/* line 287, ../scss/styles.scss */
+/* line 289, ../scss/styles.scss */
 .cd-resize-img .cd-image-label {
   right: auto;
   left: 0;
 }
 
-/* line 291, ../scss/styles.scss */
+/* line 293, ../scss/styles.scss */
 .is-visible .cd-resize-img {
   width: 50%;
   /* bounce in animation of the modified image */
@@ -15466,7 +15903,7 @@ footer .footer-content h3 {
     width: 50%;
   }
 }
-/* line 332, ../scss/styles.scss */
+/* line 334, ../scss/styles.scss */
 .cd-handle {
   position: absolute;
   height: 44px;
@@ -15488,13 +15925,13 @@ footer .footer-content h3 {
   transform: translate3d(0, 0, 0) scale(0);
 }
 
-/* line 352, ../scss/styles.scss */
+/* line 354, ../scss/styles.scss */
 .cd-handle.draggable {
   /* change background color when element is active */
   background-color: #445b7c;
 }
 
-/* line 356, ../scss/styles.scss */
+/* line 358, ../scss/styles.scss */
 .is-visible .cd-handle {
   opacity: 1;
   -webkit-transform: translate3d(0, 0, 0) scale(1);
