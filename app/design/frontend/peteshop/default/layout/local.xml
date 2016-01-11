@@ -46,10 +46,23 @@
                 <href>https://plus.google.com/109737528236830106730/</href>
             </action>
             <!-- <action method="addItem"><type>skin_js</type><name>js/plugins/jquery/jquery-2.2.0.js</name></action> -->
-            <action method="addJs"><script>js/plugins/jquery/jquery-2.2.0.js</script></action>
+            <!-- <action method="addJs"><script>js/plugins/jquery/jquery-2.2.0.js</script></action> -->
             <action method="addItem"><type>skin_js</type><name>js/build/bootstrap.min.js</name></action>
             <action method="addItem"><type>skin_js</type><name>js/build/global.min.js</name></action>
         </reference>
+
+		<reference name="head">
+		    <action method="addItem">
+		        <type>skin_js</type>
+		        <script>js/plugins/jquery/jquery-2.2.0.js</script>
+		    </action>
+		    <block type="core/text" name="jquery.noconflict">
+		        <action method="setText">
+		            <text><![CDATA[<script type="text/javascript">var $j = jQuery.noConflict();</script>]]>
+		            </text>
+		        </action>
+		    </block>
+		</reference>
 
         <reference name="header">
             <block type="core/text_list" name="top.menu" as="topMenu" translate="label">
