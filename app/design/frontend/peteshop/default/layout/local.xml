@@ -138,11 +138,6 @@
 			</reference>
 		</block>
         <!-- optional -->
-        <!--
-        <reference name="site.bottom.css.js">
-            <action method="addItem"><type>skin_js</type><name>js/build/category.min.js</name></action>
-        </reference>
-        -->
     </catalogsearch_result_index>
 
     <!-- Empty result -->
