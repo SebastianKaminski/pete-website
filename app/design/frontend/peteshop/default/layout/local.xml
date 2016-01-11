@@ -21,6 +21,16 @@
 		<remove name="linksblock" />
 
 		<reference name="head">
+			<!-- Add jQuery -->
+			<action method="addItem">
+		        <type>skin_js</type>
+		        <script>js/plugins/jquery/jquery-2.2.0.js</script>
+		    </action>
+		    <block type="core/text" name="jquery.noconflict">
+		        <action method="setText">
+		            <text><![CDATA[<script type="text/javascript">jQuery.noConflict();</script>]]></text>
+		        </action>
+		    </block>
 			<!-- remove some items set in the page.xml we don't need. if you want to add any back in simply remove them. -->
             <action method="removeItem"><type>skin_css</type><name>css/widgets.css</name></action>
             <action method="removeItem"><type>skin_css</type><name>css/print.css</name></action>
@@ -50,19 +60,6 @@
             <action method="addItem"><type>skin_js</type><name>js/build/bootstrap.min.js</name></action>
             <action method="addItem"><type>skin_js</type><name>js/build/global.min.js</name></action>
         </reference>
-
-		<reference name="head">
-		    <action method="addItem">
-		        <type>skin_js</type>
-		        <script>js/plugins/jquery/jquery-2.2.0.js</script>
-		    </action>
-		    <block type="core/text" name="jquery.noconflict">
-		        <action method="setText">
-		            <text><![CDATA[<script type="text/javascript">var $j = jQuery.noConflict();</script>]]>
-		            </text>
-		        </action>
-		    </block>
-		</reference>
 
         <reference name="header">
             <block type="core/text_list" name="top.menu" as="topMenu" translate="label">
