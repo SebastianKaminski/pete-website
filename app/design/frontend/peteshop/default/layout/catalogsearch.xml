@@ -63,10 +63,10 @@
                     <action method="addColumnCountLayoutDepend"><layout>two_columns_right</layout><count>4</count></action>
                     <action method="addColumnCountLayoutDepend"><layout>three_columns</layout><count>3</count></action>
                     <action method="setToolbarBlockName"><name>product_list_toolbar</name></action>
-                    <action method="setColumnCount"><columns>4</columns></action>
-                    <block type="catalog/product_list_toolbar" name="product_list_toolbar" template="catalog/product/list/toolbar.phtml">
-                        <block type="page/html_pager" name="product_list_toolbar_pager"/>
-                    </block>
+                </block>
+                <action method="setColumnCount"><columns>4</columns></action>
+                <block type="catalog/product_list_toolbar" name="product_list_toolbar" template="catalog/product/list/toolbar.phtml">
+                    <block type="page/html_pager" name="product_list_toolbar_pager"/>
                 </block>
                 <action method="setListOrders"/>
                 <action method="setListModes"/>
