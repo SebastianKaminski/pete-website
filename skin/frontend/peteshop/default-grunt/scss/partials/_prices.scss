@@ -1,13 +1,13 @@
 // Prices
 // --------------------------------------------------
-.price { 
+.price {
 	white-space:nowrap !important;
 }
 
-.price-box { 
+.price-box {
 	margin:5px 0;
 
-	.price, .label { 
+	.price, .label {
 		font-weight:normal;
 		font-size: 12px;
 	}
@@ -19,24 +19,24 @@
 // Regular price
 // --------------------------------------------------
 // .regular-price {
-// 	.price { 
-// 		font-weight:bold; 
-// 		font-size:13px; 
+// 	.price {
+// 		font-weight:bold;
+// 		font-size:13px;
 // 	}
 // }
 
 
 // Old price
 // --------------------------------------------------
-.old-price { 
-	margin:0; 
+.old-price {
+	margin:0;
 
-	.price-label { 
-		white-space:nowrap; 
+	.price-label {
+		white-space:nowrap;
 	}
-	
-	.price { 
-		// font-weight:bold; 
+
+	.price {
+		// font-weight:bold;
 		text-decoration:line-through;
 		color: $brandDanger;
 		display: inline-block;
@@ -47,18 +47,18 @@
 
 // Special price
 // --------------------------------------------------
-// .special-price	{ 
-// 	margin:0; 
+// .special-price	{
+// 	margin:0;
 // 	padding:3px 0;
 
-// 	.price-label { 
-// 		font-size:13px; 
+// 	.price-label {
+// 		font-size:13px;
 // 		font-weight:bold;
 // 		white-space:nowrap;
 // 	}
-	
-// 	.price { 
-// 		font-size:13px; 
+
+// 	.price {
+// 		font-size:13px;
 // 		font-weight:bold;
 // 	}
 // }
@@ -66,19 +66,19 @@
 
 // Minimal price (as low as)
 // --------------------------------------------------
-.minimal-price { 
+.minimal-price {
 	margin:0;
 
-	.price-label { 
-		font-weight:bold; 
+	.price-label {
+		font-weight:bold;
 		white-space:nowrap;
 	}
 }
 
-.minimal-price-link { 
+.minimal-price-link {
 	display:block;
 
-	.price { 
+	.price {
 		font-weight:normal;
 	}
 }
@@ -86,14 +86,14 @@
 
 // Excluding tax
 // --------------------------------------------------
-.price-excluding-tax { 
+.price-excluding-tax {
 	display:block;
 
-	.label { 
+	.label {
 		white-space:nowrap;
 	}
 
-	.price { 
+	.price {
 		font-size:13px;
 		font-weight:normal;
 	}
@@ -102,28 +102,28 @@
 
 // Including tax
 // --------------------------------------------------
-.price-including-tax { 
-	display:block; 
+.price-including-tax {
+	display:block;
 
 	.label {
 		white-space:nowrap;
 	}
-	
-	.price { 
-		font-size:13px; 
-		font-weight:bold; 
+
+	.price {
+		font-size:13px;
+		font-weight:bold;
 	}
 }
 
 
 // FPT
 // --------------------------------------------------
-.weee { 
-	display:block; 
-	font-size:11px; 
+.weee {
+	display:block;
+	font-size:11px;
 
-	.price { 
-		font-size:11px; 
+	.price {
+		font-size:11px;
 		font-weight:normal;
 	}
 }
@@ -131,15 +131,15 @@
 
 // Excl tax (for order tables)
 // --------------------------------------------------
-.price-excl-tax { 
+.price-excl-tax {
 	display:block;
 
-	.label { 
-		display:block; 
+	.label {
+		display:block;
 		white-space:nowrap;
 	}
-	
-	.price { 
+
+	.price {
 		display:block;
 	}
 }
@@ -147,16 +147,16 @@
 
 // Incl tax (for order tables)
 // --------------------------------------------------
-.price-incl-tax { 
-	display:block; 
+.price-incl-tax {
+	display:block;
 
-	.label { 
-		display:block; 
+	.label {
+		display:block;
 		white-space:nowrap;
 	}
 
-	.price { 
-		display:block; 
+	.price {
+		display:block;
 		font-weight:bold;
 	}
 }
@@ -164,21 +164,22 @@
 
 // Price range
 // --------------------------------------------------
-.price-from { 
+.price-from {
 	margin:0;
 
-	.price-label { 
-		font-weight:bold; 
+	.price-label {
+		font-size: 12px;
+		font-weight:bold;
 		white-space:nowrap;
 	}
 }
 
-.price-to { 
+.price-to {
 	margin:0;
 	display: none;
 
-	.price-label { 
-		font-weight:bold; 
+	.price-label {
+		font-weight:bold;
 		white-space:nowrap;
 	}
 }
@@ -186,31 +187,31 @@
 
 // Price notice next to the options
 // --------------------------------------------------
-.price-notice { 
-	padding-left:10px; 
+.price-notice {
+	padding-left:10px;
 
-	.price { 
-		font-weight:bold; 
+	.price {
+		font-weight:bold;
 	}
 }
 
 
 // Price as configured
 // --------------------------------------------------
-.price-as-configured { 
-	margin:0; 
+.price-as-configured {
+	margin:0;
 
-	.price-label { 
-		font-weight:bold; 
+	.price-label {
+		font-weight:bold;
 		white-space:nowrap;
 	}
 }
 
-.price-box-bundle { 
+.price-box-bundle {
 	padding:0 0 10px 0;
 
-	.price-box { 
-		margin:0 !important; 
+	.price-box {
+		margin:0 !important;
 		padding:0 !important;
 	}
 }
@@ -218,33 +219,33 @@
 
 // Tier Prices
 // --------------------------------------------------
-.tier-prices { 
-	margin:10px 0; 
-	padding:10px; 
-	background-color:#f4f7f7; 
-	border:1px solid #dadddd; 
+.tier-prices {
+	margin:10px 0;
+	padding:10px;
+	background-color:#f4f7f7;
+	border:1px solid #dadddd;
 
-	li { 
-		line-height:1.4; 
-		background:url(../images/i_tier.gif) no-repeat 0 3px; 
-		padding:2px 0 2px 10px; 
+	li {
+		line-height:1.4;
+		background:url(../images/i_tier.gif) no-repeat 0 3px;
+		padding:2px 0 2px 10px;
 	}
 
-	.benefit { 
-		font-style:italic; 
+	.benefit {
+		font-style:italic;
 		font-weight:bold;
 	}
 
-	.price { 
+	.price {
 		font-weight:bold;
 	}
 }
 
 .tier-prices-grouped {
-	li { 
-		padding:2px 0; 
+	li {
+		padding:2px 0;
 
-		.price { 
+		.price {
 			font-weight:bold;
 		}
 	}

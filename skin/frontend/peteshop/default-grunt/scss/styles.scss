@@ -195,7 +195,13 @@ footer {
 			margin-right: 2px;
 			width: 12px;
 		}
-		h3 { color: $orange; }
+		strong {
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 24px;
+            font-weight: 500;
+            color: $orange; 
+        }
 	}
 }
 
