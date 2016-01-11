@@ -12913,9 +12913,12 @@ header h1 {
   padding: 12px 0 50px;
   height: 380px;
 }
-/* line 41, ../scss/sections/category/_main.scss */
-.products-grid li.item.col-sm-2 .actions {
+/* line 40, ../scss/sections/category/_main.scss */
+.products-grid li.item.col-sm-2 {
   height: 280px;
+}
+/* line 42, ../scss/sections/category/_main.scss */
+.products-grid li.item.col-sm-2 .actions {
   display: none;
 }
 /* line 47, ../scss/sections/category/_main.scss */
