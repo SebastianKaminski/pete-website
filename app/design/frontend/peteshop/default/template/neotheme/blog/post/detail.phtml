@@ -33,7 +33,7 @@
     <article class="post">
     	<div class="page-title post-title"><h1><?php echo $this->getPost()->getTitle(); ?></h1></div>
 
-        <li class="post-metadata list-inline">
+        <ul class="post-metadata list-inline">
             <li class="post-time">
                 <small>
                     <?php echo $this->__('Posted On: ');?>
@@ -44,7 +44,7 @@
             <?php if ($this->getPost()->getAuthor()): ?>
                 <li class="post-author"><small><i><?php echo $this->__('by'); ?> <?php echo $this->getPost()->getAuthor(); ?></i></small></li>
             <?php endif;?>
-        </li>
+        </ul>
 
         <div class="post-content">
             <?php echo $this->getPost()->getContentHtml();?>
