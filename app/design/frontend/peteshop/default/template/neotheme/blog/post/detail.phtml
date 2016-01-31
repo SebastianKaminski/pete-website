@@ -33,20 +33,18 @@
     <article class="post">
     	<div class="page-title post-title"><h1><?php echo $this->getPost()->getTitle(); ?></h1></div>
 
-        <div class="post-metadata">
-            <ul>
-                <li class="post-time">
-                    <small>
-                        <?php echo $this->__('Posted On: ');?>
-                        <?php $date = ($this->getPost()->getPostDate() != NULL)? $this->getPost()->getPostDate()  : $this->getPost()->getCreatedAt() ; ?>
-                        <?php  echo  Mage::app()->getLocale()->date($date)->toString($format); ?>
-                    </small>
-                </li>
-                <?php if ($this->getPost()->getAuthor()): ?>
-                    <div class="post-author"><small><i><?php echo $this->__('by'); ?> <?php echo $this->getPost()->getAuthor(); ?></i></small></div>
-                <?php endif;?>
-            </ul>
-        </div>
+        <li class="post-metadata list-inline">
+            <li class="post-time">
+                <small>
+                    <?php echo $this->__('Posted On: ');?>
+                    <?php $date = ($this->getPost()->getPostDate() != NULL)? $this->getPost()->getPostDate()  : $this->getPost()->getCreatedAt() ; ?>
+                    <?php  echo  Mage::app()->getLocale()->date($date)->toString($format); ?>
+                </small>
+            </li>
+            <?php if ($this->getPost()->getAuthor()): ?>
+                <li class="post-author"><small><i><?php echo $this->__('by'); ?> <?php echo $this->getPost()->getAuthor(); ?></i></small></li>
+            <?php endif;?>
+        </li>
 
         <div class="post-content">
             <?php echo $this->getPost()->getContentHtml();?>
