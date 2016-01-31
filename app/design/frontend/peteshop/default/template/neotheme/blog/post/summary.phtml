@@ -28,55 +28,31 @@
     Mage::app()->getLocale()->getDateTimeFormat($formatType):
     Mage::getStoreConfig(NeoTheme_Blog_Helper_Data::XPATH_CONFIG_DATETIME_CUSTOM_FORMAT);
 ?>
+
 <article class="post">
     <div class="page-title post-title"><h2><a href="<?php echo $this->getPost()->getReadMoreUrl(); ?>"><?php echo $this->getPost()->getTitle(); ?></a></h2></div>
 
-    <div class="post-metadata">
-        <div class="post-time">
+    <ul class="post-metadata">
+        <li class="post-time">
             <small>
                 <?php echo $this->__('Posted On: ');?>
                 <?php $date = ($this->getPost()->getPostDate() != NULL)? $this->getPost()->getPostDate()  : $this->getPost()->getCreatedAt() ; ?>
                 <?php  echo Mage::app()->getLocale()->date($date)->toString($format); ?>
             </small>
-        </div>
+        </li>
         <?php if ($authorName = $this->getPost()->getAuthor()) :?>
-        <div class="post-author"><small><?php echo $this->__('by'); ?> <?php echo $authorName; ?></small></div>
+            <li class="post-author"><small><?php echo $this->__('by'); ?> <?php echo $authorName; ?></small></li>
         <?php endif;?>
-    </div>
+    </ul>
 
     <div class="post-summary">
 		<?php echo $this->getPost()->getSummary(); ?>
-        <div class="read-more"><a href="<?php echo $this->getPost()->getReadMoreUrl(); ?>" class="btn btn-default">Read more</a></div>
+        <div class="read-more"><a href="<?php echo $this->getPost()->getReadMoreUrl(); ?>" class="btn btn-success">Read more</a></div>
     </div>
 
     <div class="post-info">
-	<?php if ( (int) $this->getPost()->getStatus() == NeoTheme_Blog_Model_Post::STATUS_DRAFT) : ?>
+	    <?php if ( (int) $this->getPost()->getStatus() == NeoTheme_Blog_Model_Post::STATUS_DRAFT) : ?>
         	<h3 style="color:red;"><?php echo $this->__('[Draft] (not visible publicly)');?></h3>
         <?php endif; ?>
-
-        <!--
-        <?php if ($this->getPost()->getCategories()->count() > 0):?>
-        <ul class="post-categories">
-            <?php echo $this->__('Posted In: ');?>
-            <?php $i = 0; ?>
-            <?php foreach($this->getPost()->getCategories() as $category):?>
-                <?php $catName =  ($i > 0)? ',' . $category->getName() : $category->getName(); ?>
-                    <li><a href="<?php echo $category->getListUrl();?>"><?php echo $catName; ?></a></li>
-                <?php $i++; ?>
-            <?php endforeach; ?>
-        </ul>
-        <?php endif; ?>
-        -->
-        <?php if ( Mage::helper('neotheme_blog')->isDefaultCommentingEnabled()) : ?>
-        <?php
-         $commentCount = $this->getPost()->getComments()->count();
-         $commentText =  ($commentCount == 1) ? $this->__("comment"):$this->__("comments");
-        ?>
-        <ul>
-            <li class="post-comments"><?php echo $commentCount; ?> <?php echo $commentText;?></li>
-        </ul>
-        <?php endif; ?>
     </div>
-
-    <div class="clr"></div>
 </article>
