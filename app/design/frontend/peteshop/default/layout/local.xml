@@ -82,8 +82,7 @@
 
 		<!-- BTU Calculator -->
 		<reference name="content">
-			<block type="core/template" name="calculator.basic" template="calculator/basic-btu.phtml" as="calculator_basic">
-			</block>
+			<block type="core/template" name="calculator.basic" as="calculatorBasic" template="calculator/basic-btu.phtml" />
 		</reference>
 	</default>
 
