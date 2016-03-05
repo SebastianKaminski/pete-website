@@ -79,6 +79,12 @@
                 <action method="removeLinkByUrl"><url helper="customer/getAccountUrl"/></action>
             </reference>
 		</reference>
+
+		<!-- BTU Calculator -->
+		<reference name="content">
+			<block type="core/template" name="calculator.basic" template="calculator/basic-btu.phtml" as="calculator_basic">
+			</block>
+		</reference>
 	</default>
 
     <cms_index_index>
