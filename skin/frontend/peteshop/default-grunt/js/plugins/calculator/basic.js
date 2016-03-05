@@ -1,6 +1,9 @@
 var getValue = function (input, div) {
 	var value = 0,
 		divider = div === undefined ? 1 : div;
+
+    console.log(input, document.querySelectorAll(input.selector)[0].type);
+
 	switch(document.querySelectorAll(input.selector)[0].type) {
 		case "select-one":
 			value = parseFloat(input.children("option:selected").val());
@@ -21,8 +24,8 @@ var getValue = function (input, div) {
 }
 
 window.calculate = function () {
-	var length = getValue($("input[name='room-length']")),
-    	width = getValue($("input[name='room-width']")),
+	var length = getValue($("input[name='room-length']"), 100),
+    	width = getValue($("input[name='room-width']"), 100),
     	height = getValue($("select[name='room-height']")),
     	ftype = getValue($("select[name='floor-type']")),
     	rtype = getValue($("select[name='room-type']")),
@@ -32,8 +35,6 @@ window.calculate = function () {
     	owalls = getValue($("select[name='outside-walls']")),
     	ctype = getValue($("select[name='comfort-type']")),
     	btu = length * width * height * ftype * rtype * gtype * nfacing * fwindow * owalls * ctype;
-
-	// getValue($("select[name='glazing-type']"));
 
 	if (btu > 0) {
 		$("#result").html("Total BTUs: " + Number(btu).toFixed(2));
