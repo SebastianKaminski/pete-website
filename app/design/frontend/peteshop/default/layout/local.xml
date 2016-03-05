@@ -79,6 +79,7 @@
                 <action method="removeLinkByUrl"><url helper="customer/getAccountUrl"/></action>
             </reference>
 		</reference>
+
 	</default>
 
     <cms_index_index>
