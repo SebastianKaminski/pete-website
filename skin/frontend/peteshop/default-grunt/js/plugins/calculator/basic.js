@@ -12,26 +12,26 @@ var getValue = function (input, div) {
 			value = 0;
 	}
 	if (value == 0 || value === undefined) {
-		input.parent().addClass("has-error");
+		input.parent().parent().addClass("has-error");
 	} else {
-		input.parent().removeClass("has-error");
+		input.parent().parent().removeClass("has-error");
 	}
 	return value / divider;
 
 }
 
 window.calculate = function () {
-	var length = $("input[name='room-length']").val();
-	var width = $("input[name='room-width']").val();
-	var height = $("select[name='room-height'] option:selected").val();
-	var ftype = $("select[name='floor-type'] option:selected").val();
-	var rtype = $("select[name='room-type'] option:selected").val();
-	var gtype = $("select[name='glazing-type'] option:selected").val();
-	var nfacing = $("input[name='north-facing']").val();
-	var fwindow = $("input[name='french-windows']").val();
-	var owalls = $("select[name='outside-walls'] option:selected").val();
-	var ctype = $("select[name='comfort-type'] option:selected").val();
-	var btu = length * width * height * ftype * rtype * gtype * nfacing * fwindow * owalls * ctype;
+	var length = getValue($("input[name='room-length']")),
+    	width = getValue($("input[name='room-width']")),
+    	height = getValue($("select[name='room-height']")),
+    	ftype = getValue($("select[name='floor-type']")),
+    	rtype = getValue($("select[name='room-type']")),
+    	gtype = getValue($("select[name='glazing-type']")),
+    	nfacing = getValue($("input[name='north-facing']")),
+    	fwindow = getValue($("input[name='french-windows']")),
+    	owalls = getValue($("select[name='outside-walls']")),
+    	ctype = getValue($("select[name='comfort-type']")),
+    	btu = length * width * height * ftype * rtype * gtype * nfacing * fwindow * owalls * ctype;
 
 	// getValue($("select[name='glazing-type']"));
 
