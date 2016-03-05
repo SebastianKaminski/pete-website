@@ -24,20 +24,20 @@ var getValue = function (input, div) {
 }
 
 window.calculate = function () {
-	var length = getValue($("input[name='room-length']"), 100),
-    	width = getValue($("input[name='room-width']"), 100),
-    	height = getValue($("select[name='room-height']")),
-    	ftype = getValue($("select[name='floor-type']")),
-    	rtype = getValue($("select[name='room-type']")),
-    	gtype = getValue($("select[name='glazing-type']")),
-    	nfacing = getValue($("input[name='north-facing']")),
-    	fwindow = getValue($("input[name='french-windows']")),
-    	owalls = getValue($("select[name='outside-walls']")),
-    	ctype = getValue($("select[name='comfort-type']")),
+	var length = getValue(jQuery("input[name='room-length']"), 100),
+    	width = getValue(jQuery("input[name='room-width']"), 100),
+    	height = getValue(jQuery("select[name='room-height']")),
+    	ftype = getValue(jQuery("select[name='floor-type']")),
+    	rtype = getValue(jQuery("select[name='room-type']")),
+    	gtype = getValue(jQuery("select[name='glazing-type']")),
+    	nfacing = getValue(jQuery("input[name='north-facing']")),
+    	fwindow = getValue(jQuery("input[name='french-windows']")),
+    	owalls = getValue(jQuery("select[name='outside-walls']")),
+    	ctype = getValue(jQuery("select[name='comfort-type']")),
     	btu = length * width * height * ftype * rtype * gtype * nfacing * fwindow * owalls * ctype;
 
 	if (btu > 0) {
-		$("#result").html("Total BTUs: " + Number(btu).toFixed(2));
+		jQuery("#result").html("Total BTUs: " + Number(btu).toFixed(2));
 	} else {
 		alert("Please check form!");
 	}
