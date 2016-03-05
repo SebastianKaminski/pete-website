@@ -2,8 +2,6 @@ var getValue = function (input, div) {
 	var value = 0,
 		divider = div === undefined ? 1 : div;
 
-    console.log(input, document.querySelectorAll(input.selector)[0].type);
-
 	switch(document.querySelectorAll(input.selector)[0].type) {
 		case "select-one":
 			value = parseFloat(input.children("option:selected").val());
@@ -17,14 +15,14 @@ var getValue = function (input, div) {
 		default:
 			value = 0;
 	}
-	if (value == 0 || value === NaN) {
+	if (value == 0 || isNaN(value)) {
         value = 0;
 		input.parent().parent().addClass("has-error");
 	} else {
 		input.parent().parent().removeClass("has-error");
 	}
-	return value / divider;
 
+	return value / divider;
 }
 
 window.calculate = function () {
@@ -43,7 +41,7 @@ window.calculate = function () {
 	if (btu > 0) {
 		jQuery("#result").html("Total BTUs: " + Number(btu).toFixed(2));
 	} else {
-		alert("Please check form!");
+		alert("Error found, please check form!");
 	}
 
 	console.log(length, width, height, ftype, rtype, gtype, nfacing, fwindow, owalls, ctype, btu);
