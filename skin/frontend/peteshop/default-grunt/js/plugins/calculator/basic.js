@@ -11,10 +11,14 @@ var getValue = function (input, div) {
 		case "text":
 			value = parseFloat(input.val());
 			break;
+        case "checkbox":
+			value = parseFloat(input.val());
+			break;
 		default:
 			value = 0;
 	}
-	if (value == 0 || value === undefined) {
+	if (value == 0 || value === NaN) {
+        value = 0;
 		input.parent().parent().addClass("has-error");
 	} else {
 		input.parent().parent().removeClass("has-error");
