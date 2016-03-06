@@ -10,6 +10,7 @@ var getValue = function (input, div) {
 			value = parseFloat(input.val());
 			break;
         case "checkbox":
+			console.log("Debug: ",input.val());
 			value = parseFloat(input.val() || 1);
 			break;
 		default:
