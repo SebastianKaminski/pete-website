@@ -10,9 +10,7 @@ var getValue = function (input, div) {
 			value = parseFloat(input.val());
 			break;
         case "checkbox":
-			console.log("Debug: ", input.val());
 			value = parseFloat(jQuery(input.selector+":checked").val() || 1);
-			console.log("Debug2: ", value);
 			break;
 		default:
 			value = 0;
@@ -44,8 +42,6 @@ window.calculate = function () {
 	if (btu > 0) {
 		jQuery("#result").html("Total BTUs: " + Number(btu).toFixed(2));
 	} else {
-		alert("Error found, please check form!");
+		alert("Error found, please check calculation form!");
 	}
-
-	console.log(length, width, height, ftype, rtype, gtype, nfacing, fwindow, owalls, ctype, btu);
 };
