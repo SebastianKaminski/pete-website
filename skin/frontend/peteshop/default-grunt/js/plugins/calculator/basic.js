@@ -10,11 +10,12 @@ var getValue = function (input, div) {
 			value = parseFloat(input.val());
 			break;
         case "checkbox":
-			value = parseFloat(input.val());
+			value = parseFloat(input.val() || 1);
 			break;
 		default:
 			value = 0;
 	}
+
 	if (value == 0 || isNaN(value)) {
         value = 0;
 		input.parent().parent().addClass("has-error");
@@ -32,8 +33,8 @@ window.calculate = function () {
     	ftype = getValue(jQuery("select[name='floor-type']")),
     	rtype = getValue(jQuery("select[name='room-type']")),
     	gtype = getValue(jQuery("select[name='glazing-type']")),
-    	nfacing = getValue(jQuery("input[name='north-facing']")),
-    	fwindow = getValue(jQuery("input[name='french-windows']")),
+    	nfacing = getValue(jQuery("input[name='north-facing']:checked")),
+    	fwindow = getValue(jQuery("input[name='french-windows']:checked")),
     	owalls = getValue(jQuery("select[name='outside-walls']")),
     	ctype = getValue(jQuery("select[name='comfort-type']")),
     	btu = length * width * height * ftype * rtype * gtype * nfacing * fwindow * owalls * ctype;
