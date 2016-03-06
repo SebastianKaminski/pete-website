@@ -10,8 +10,8 @@ var getValue = function (input, div) {
 			value = parseFloat(input.val());
 			break;
         case "checkbox":
-			console.log("Debug: ",input.val());
-			value = parseFloat($(input.selector+":checked").val() || 1);
+			console.log("Debug: ", input.val());
+			value = parseFloat(jQuery(input.selector+":checked").val() || 1);
 			break;
 		default:
 			value = 0;
