@@ -15669,10 +15669,6 @@ tr.summary-details-excluded {
   letter-spacing: 1px;
   text-transform: uppercase;
 }
-/* line 111, ../scss/styles.scss */
-#homepage #boxes .panel .panel-body p {
-  font-weight: 200;
-}
 /* line 119, ../scss/styles.scss */
 #homepage #categories figure {
   text-align: center;
