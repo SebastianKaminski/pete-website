@@ -100,7 +100,8 @@ $c-grey: #BBB;
     #boxes {
         .panel {
             padding: 20px 0;
-            min-height: 250px;
+            // min-height: 250px;
+            border: none;
             .panel-heading {
                 background-color: transparent;
                 border-color: transparent;
