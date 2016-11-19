@@ -15662,28 +15662,41 @@ tr.summary-details-excluded {
 #homepage {
   margin: -50px 0 -25px 0;
 }
-/* line 103, ../scss/styles.scss */
+/* line 102, ../scss/styles.scss */
+#homepage #boxes .panel .panel-heading {
+  background-color: transparent;
+}
+/* line 104, ../scss/styles.scss */
 #homepage #boxes .panel .panel-heading h3 {
-  font-family: Baskerville, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   letter-spacing: 1px;
   text-transform: uppercase;
+  color: #f5f5f5;
+  font-family: Baskerville, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 24px;
 }
-/* line 119, ../scss/styles.scss */
+/* line 114, ../scss/styles.scss */
+#homepage #boxes .panel .panel-body p {
+  color: #f5f5f5;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+/* line 125, ../scss/styles.scss */
 #homepage #categories figure {
   text-align: center;
   margin: 20px 0 10px 0;
 }
-/* line 122, ../scss/styles.scss */
+/* line 128, ../scss/styles.scss */
 #homepage #categories figure img {
   opacity: 0.8;
   margin: 0 auto;
 }
-/* line 125, ../scss/styles.scss */
+/* line 131, ../scss/styles.scss */
 #homepage #categories figure img:hover {
   opacity: 1;
 }
-/* line 130, ../scss/styles.scss */
+/* line 136, ../scss/styles.scss */
 #homepage #categories figure figcaption h3 {
   font-family: Baskerville, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -15692,19 +15705,19 @@ tr.summary-details-excluded {
   margin-top: 15px;
   text-transform: uppercase;
 }
-/* line 137, ../scss/styles.scss */
+/* line 143, ../scss/styles.scss */
 #homepage #categories figure figcaption h3 a {
   color: #333;
 }
-/* line 145, ../scss/styles.scss */
+/* line 151, ../scss/styles.scss */
 #homepage .std .jumbotron-image {
   padding-top: 50px;
 }
-/* line 148, ../scss/styles.scss */
+/* line 154, ../scss/styles.scss */
 #homepage .std .jumbotron {
   margin-bottom: 0;
 }
-/* line 150, ../scss/styles.scss */
+/* line 156, ../scss/styles.scss */
 #homepage .std .jumbotron h2 {
   font-family: Baskerville, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
@@ -15712,44 +15725,44 @@ tr.summary-details-excluded {
   text-transform: uppercase;
   margin-bottom: 30px;
 }
-/* line 157, ../scss/styles.scss */
+/* line 163, ../scss/styles.scss */
 #homepage .std .jumbotron p {
   font-size: 16px;
 }
-/* line 172, ../scss/styles.scss */
+/* line 178, ../scss/styles.scss */
 #homepage .block {
   text-align: center;
 }
-/* line 174, ../scss/styles.scss */
+/* line 180, ../scss/styles.scss */
 #homepage .block .block-title {
   margin-bottom: 15px;
   padding-bottom: 15px;
 }
 
-/* line 182, ../scss/styles.scss */
+/* line 188, ../scss/styles.scss */
 footer.container-fluid {
   background: #333;
   margin-top: 25px;
 }
-/* line 186, ../scss/styles.scss */
+/* line 192, ../scss/styles.scss */
 footer .footer-content {
   padding-top: 15px;
   color: #FFF;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
 }
-/* line 191, ../scss/styles.scss */
+/* line 197, ../scss/styles.scss */
 footer .footer-content .entypo, footer .footer-content .entypo-social {
   color: #777;
 }
-/* line 192, ../scss/styles.scss */
+/* line 198, ../scss/styles.scss */
 footer .footer-content .entypo-social {
   display: inline-block;
   text-align: center;
   margin-right: 2px;
   width: 12px;
 }
-/* line 198, ../scss/styles.scss */
+/* line 204, ../scss/styles.scss */
 footer .footer-content strong {
   margin-top: 0;
   margin-bottom: 10px;
@@ -15759,23 +15772,23 @@ footer .footer-content strong {
 }
 
 /* Menu Fix */
-/* line 210, ../scss/styles.scss */
+/* line 216, ../scss/styles.scss */
 .navbar .dropdown:hover .dropdown-menu {
   display: block;
 }
 
 /* Boostrap Grid */
-/* line 216, ../scss/styles.scss */
+/* line 222, ../scss/styles.scss */
 .container-fluid {
   padding: 0 !important;
 }
 
 /* Menu Search */
-/* line 219, ../scss/styles.scss */
+/* line 225, ../scss/styles.scss */
 .search-form-container {
   position: relative;
 }
-/* line 223, ../scss/styles.scss */
+/* line 229, ../scss/styles.scss */
 .search-form-container #search_mini_form {
   left: 0;
   margin-left: 25px;
@@ -15783,18 +15796,18 @@ footer .footer-content strong {
   top: 0;
   width: 300px;
 }
-/* line 229, ../scss/styles.scss */
+/* line 235, ../scss/styles.scss */
 .search-form-container #search_mini_form button {
   margin-left: 10px;
 }
 @media (max-width: 768px) {
-  /* line 236, ../scss/styles.scss */
+  /* line 242, ../scss/styles.scss */
   .search-form-container #search_mini_form {
     padding: 0;
     margin: 0;
     left: 50px;
   }
-  /* line 240, ../scss/styles.scss */
+  /* line 246, ../scss/styles.scss */
   .search-form-container #search_mini_form input {
     float: left;
     width: 150px;
@@ -15802,7 +15815,7 @@ footer .footer-content strong {
 }
 
 /* Compare plugin */
-/* line 249, ../scss/styles.scss */
+/* line 255, ../scss/styles.scss */
 .cd-image-container {
   position: relative;
   width: 90%;
@@ -15810,12 +15823,12 @@ footer .footer-content strong {
   margin: 0em auto;
 }
 
-/* line 255, ../scss/styles.scss */
+/* line 261, ../scss/styles.scss */
 .cd-image-container img {
   display: block;
 }
 
-/* line 259, ../scss/styles.scss */
+/* line 265, ../scss/styles.scss */
 .cd-image-label {
   position: absolute;
   bottom: 0;
@@ -15836,12 +15849,12 @@ footer .footer-content strong {
   transition: transform 0.3s 0.7s, opacity 0.3s 0.7s;
 }
 
-/* line 278, ../scss/styles.scss */
+/* line 284, ../scss/styles.scss */
 .cd-image-label.is-hidden {
   visibility: hidden;
 }
 
-/* line 281, ../scss/styles.scss */
+/* line 287, ../scss/styles.scss */
 .is-visible .cd-image-label {
   opacity: 1;
   -webkit-transform: translateY(0);
@@ -15851,7 +15864,7 @@ footer .footer-content strong {
   transform: translateY(0);
 }
 
-/* line 290, ../scss/styles.scss */
+/* line 296, ../scss/styles.scss */
 .cd-resize-img {
   position: absolute;
   top: 0;
@@ -15869,7 +15882,7 @@ footer .footer-content strong {
   backface-visibility: hidden;
 }
 
-/* line 306, ../scss/styles.scss */
+/* line 312, ../scss/styles.scss */
 .cd-resize-img img {
   position: absolute;
   left: 0;
@@ -15880,13 +15893,13 @@ footer .footer-content strong {
   max-width: none;
 }
 
-/* line 315, ../scss/styles.scss */
+/* line 321, ../scss/styles.scss */
 .cd-resize-img .cd-image-label {
   right: auto;
   left: 0;
 }
 
-/* line 319, ../scss/styles.scss */
+/* line 325, ../scss/styles.scss */
 .is-visible .cd-resize-img {
   width: 50%;
   /* bounce in animation of the modified image */
@@ -15928,7 +15941,7 @@ footer .footer-content strong {
     width: 50%;
   }
 }
-/* line 360, ../scss/styles.scss */
+/* line 366, ../scss/styles.scss */
 .cd-handle {
   position: absolute;
   height: 44px;
@@ -15950,13 +15963,13 @@ footer .footer-content strong {
   transform: translate3d(0, 0, 0) scale(0);
 }
 
-/* line 380, ../scss/styles.scss */
+/* line 386, ../scss/styles.scss */
 .cd-handle.draggable {
   /* change background color when element is active */
   background-color: #445b7c;
 }
 
-/* line 384, ../scss/styles.scss */
+/* line 390, ../scss/styles.scss */
 .is-visible .cd-handle {
   opacity: 1;
   -webkit-transform: translate3d(0, 0, 0) scale(1);

@@ -100,16 +100,22 @@ $c-grey: #BBB;
     #boxes {
         .panel {
             .panel-heading {
+                background-color: transparent;
                 h3 {
-                    font-family: $fontBase3;
     				font-weight: bold;
     				letter-spacing: 1px;
     				text-transform: uppercase;
+                    color: #f5f5f5;
+                    font-family: $fontBase3;
+                    font-size: 24px;
                 }
             }
             .panel-body {
                 p {
-                    // font-weight: 200;
+                    color: #f5f5f5;
+                    font-weight: 300;
+                    letter-spacing: 1px;
+                    margin-bottom: 15px;
                 }
             }
         }
