@@ -15666,52 +15666,50 @@ tr.summary-details-excluded {
 #homepage #boxes .panel {
   padding: 20px 0;
   border: none;
+  background-size: cover;
 }
-/* line 105, ../scss/styles.scss */
+/* line 107, ../scss/styles.scss */
 #homepage #boxes .panel .panel-heading {
   background-color: transparent;
   border-color: transparent;
 }
-/* line 108, ../scss/styles.scss */
+/* line 110, ../scss/styles.scss */
 #homepage #boxes .panel .panel-heading h3 {
   font-weight: bold;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #FFF;
   font-family: Baskerville, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 24px;
 }
-/* line 117, ../scss/styles.scss */
+/* line 118, ../scss/styles.scss */
 #homepage #boxes .panel .panel-body {
   padding-top: 0;
 }
-/* line 119, ../scss/styles.scss */
+/* line 120, ../scss/styles.scss */
 #homepage #boxes .panel .panel-body p {
-  color: #f5f5f5;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 1px;
   margin: 15px 0;
-  text-shadow: 0 0 1px rgba(0, 0, 0, 0.75);
 }
-/* line 126, ../scss/styles.scss */
+/* line 125, ../scss/styles.scss */
 #homepage #boxes .panel .panel-body .btn {
   text-transform: uppercase;
 }
-/* line 134, ../scss/styles.scss */
+/* line 133, ../scss/styles.scss */
 #homepage #categories figure {
   text-align: center;
   margin: 20px 0 10px 0;
 }
-/* line 137, ../scss/styles.scss */
+/* line 136, ../scss/styles.scss */
 #homepage #categories figure img {
   opacity: 0.8;
   margin: 0 auto;
 }
-/* line 140, ../scss/styles.scss */
+/* line 139, ../scss/styles.scss */
 #homepage #categories figure img:hover {
   opacity: 1;
 }
-/* line 145, ../scss/styles.scss */
+/* line 144, ../scss/styles.scss */
 #homepage #categories figure figcaption h3 {
   font-family: Baskerville, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -15720,19 +15718,19 @@ tr.summary-details-excluded {
   margin-top: 15px;
   text-transform: uppercase;
 }
-/* line 152, ../scss/styles.scss */
+/* line 151, ../scss/styles.scss */
 #homepage #categories figure figcaption h3 a {
   color: #333;
 }
-/* line 160, ../scss/styles.scss */
+/* line 159, ../scss/styles.scss */
 #homepage .std .jumbotron-image {
   padding-top: 50px;
 }
-/* line 163, ../scss/styles.scss */
+/* line 162, ../scss/styles.scss */
 #homepage .std .jumbotron {
   margin-bottom: 0;
 }
-/* line 165, ../scss/styles.scss */
+/* line 164, ../scss/styles.scss */
 #homepage .std .jumbotron h2 {
   font-family: Baskerville, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
@@ -15740,44 +15738,44 @@ tr.summary-details-excluded {
   text-transform: uppercase;
   margin-bottom: 30px;
 }
-/* line 172, ../scss/styles.scss */
+/* line 171, ../scss/styles.scss */
 #homepage .std .jumbotron p {
   font-size: 16px;
 }
-/* line 187, ../scss/styles.scss */
+/* line 186, ../scss/styles.scss */
 #homepage .block {
   text-align: center;
 }
-/* line 189, ../scss/styles.scss */
+/* line 188, ../scss/styles.scss */
 #homepage .block .block-title {
   margin-bottom: 15px;
   padding-bottom: 15px;
 }
 
-/* line 197, ../scss/styles.scss */
+/* line 196, ../scss/styles.scss */
 footer.container-fluid {
   background: #333;
   margin-top: 25px;
 }
-/* line 201, ../scss/styles.scss */
+/* line 200, ../scss/styles.scss */
 footer .footer-content {
   padding-top: 15px;
   color: #FFF;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
 }
-/* line 206, ../scss/styles.scss */
+/* line 205, ../scss/styles.scss */
 footer .footer-content .entypo, footer .footer-content .entypo-social {
   color: #777;
 }
-/* line 207, ../scss/styles.scss */
+/* line 206, ../scss/styles.scss */
 footer .footer-content .entypo-social {
   display: inline-block;
   text-align: center;
   margin-right: 2px;
   width: 12px;
 }
-/* line 213, ../scss/styles.scss */
+/* line 212, ../scss/styles.scss */
 footer .footer-content strong {
   margin-top: 0;
   margin-bottom: 10px;
@@ -15787,23 +15785,23 @@ footer .footer-content strong {
 }
 
 /* Menu Fix */
-/* line 225, ../scss/styles.scss */
+/* line 224, ../scss/styles.scss */
 .navbar .dropdown:hover .dropdown-menu {
   display: block;
 }
 
 /* Boostrap Grid */
-/* line 231, ../scss/styles.scss */
+/* line 230, ../scss/styles.scss */
 .container-fluid {
   padding: 0 !important;
 }
 
 /* Menu Search */
-/* line 234, ../scss/styles.scss */
+/* line 233, ../scss/styles.scss */
 .search-form-container {
   position: relative;
 }
-/* line 238, ../scss/styles.scss */
+/* line 237, ../scss/styles.scss */
 .search-form-container #search_mini_form {
   left: 0;
   margin-left: 25px;
@@ -15811,18 +15809,18 @@ footer .footer-content strong {
   top: 0;
   width: 300px;
 }
-/* line 244, ../scss/styles.scss */
+/* line 243, ../scss/styles.scss */
 .search-form-container #search_mini_form button {
   margin-left: 10px;
 }
 @media (max-width: 768px) {
-  /* line 251, ../scss/styles.scss */
+  /* line 250, ../scss/styles.scss */
   .search-form-container #search_mini_form {
     padding: 0;
     margin: 0;
     left: 50px;
   }
-  /* line 255, ../scss/styles.scss */
+  /* line 254, ../scss/styles.scss */
   .search-form-container #search_mini_form input {
     float: left;
     width: 150px;
@@ -15830,7 +15828,7 @@ footer .footer-content strong {
 }
 
 /* Compare plugin */
-/* line 264, ../scss/styles.scss */
+/* line 263, ../scss/styles.scss */
 .cd-image-container {
   position: relative;
   width: 90%;
@@ -15838,12 +15836,12 @@ footer .footer-content strong {
   margin: 0em auto;
 }
 
-/* line 270, ../scss/styles.scss */
+/* line 269, ../scss/styles.scss */
 .cd-image-container img {
   display: block;
 }
 
-/* line 274, ../scss/styles.scss */
+/* line 273, ../scss/styles.scss */
 .cd-image-label {
   position: absolute;
   bottom: 0;
@@ -15864,12 +15862,12 @@ footer .footer-content strong {
   transition: transform 0.3s 0.7s, opacity 0.3s 0.7s;
 }
 
-/* line 293, ../scss/styles.scss */
+/* line 292, ../scss/styles.scss */
 .cd-image-label.is-hidden {
   visibility: hidden;
 }
 
-/* line 296, ../scss/styles.scss */
+/* line 295, ../scss/styles.scss */
 .is-visible .cd-image-label {
   opacity: 1;
   -webkit-transform: translateY(0);
@@ -15879,7 +15877,7 @@ footer .footer-content strong {
   transform: translateY(0);
 }
 
-/* line 305, ../scss/styles.scss */
+/* line 304, ../scss/styles.scss */
 .cd-resize-img {
   position: absolute;
   top: 0;
@@ -15897,7 +15895,7 @@ footer .footer-content strong {
   backface-visibility: hidden;
 }
 
-/* line 321, ../scss/styles.scss */
+/* line 320, ../scss/styles.scss */
 .cd-resize-img img {
   position: absolute;
   left: 0;
@@ -15908,13 +15906,13 @@ footer .footer-content strong {
   max-width: none;
 }
 
-/* line 330, ../scss/styles.scss */
+/* line 329, ../scss/styles.scss */
 .cd-resize-img .cd-image-label {
   right: auto;
   left: 0;
 }
 
-/* line 334, ../scss/styles.scss */
+/* line 333, ../scss/styles.scss */
 .is-visible .cd-resize-img {
   width: 50%;
   /* bounce in animation of the modified image */
@@ -15956,7 +15954,7 @@ footer .footer-content strong {
     width: 50%;
   }
 }
-/* line 375, ../scss/styles.scss */
+/* line 374, ../scss/styles.scss */
 .cd-handle {
   position: absolute;
   height: 44px;
@@ -15978,13 +15976,13 @@ footer .footer-content strong {
   transform: translate3d(0, 0, 0) scale(0);
 }
 
-/* line 395, ../scss/styles.scss */
+/* line 394, ../scss/styles.scss */
 .cd-handle.draggable {
   /* change background color when element is active */
   background-color: #445b7c;
 }
 
-/* line 399, ../scss/styles.scss */
+/* line 398, ../scss/styles.scss */
 .is-visible .cd-handle {
   opacity: 1;
   -webkit-transform: translate3d(0, 0, 0) scale(1);
