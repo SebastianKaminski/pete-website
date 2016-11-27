@@ -103,14 +103,6 @@ $c-grey: #BBB;
             // min-height: 250px;
             border: none;
             position: relative; 
-            img {
-                height: 100%;
-                max-width: none;
-                opacity: 0.1;
-                position: absolute;
-                right: 0;
-                top: 0;
-            }
             .panel-heading {
                 background-color: transparent;
                 border-color: transparent;
@@ -135,6 +127,15 @@ $c-grey: #BBB;
                 .btn {
                     text-transform: uppercase;
                 }
+            }
+
+            & > img {
+                height: 100%;
+                max-width: none;
+                opacity: 0.1;
+                position: absolute;
+                right: 0;
+                top: 0;
             }
         }
     }
