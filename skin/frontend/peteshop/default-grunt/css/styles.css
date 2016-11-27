@@ -15702,7 +15702,7 @@ tr.summary-details-excluded {
   text-transform: uppercase;
 }
 /* line 132, ../scss/styles.scss */
-#homepage #boxes .panel > img {
+#homepage #boxes .panel .panel-bg {
   height: 100%;
   max-width: none;
   opacity: 0.1;
