@@ -87,6 +87,13 @@
                     <?php endif; ?>
                 <?php endif; ?>
 
+                <?php if ($_product->getAttributeText('item_type') == "Towel Radiator"):?>
+                    <ul class="no-bullet">
+                        <li>Heat output: <?php echo $_product->getResource()->getAttribute('heat_output')->getFrontend()->getValue($_product); ?></li>
+                        <li>Weight: <?php echo $_product->getAttributeText('weight'); ?>kg</li>
+                    </ul>
+                <?php endif;?>
+
                 <?php if ($_product->getAttributeText('item_type') == "Radiator"):?>
                     <div class="radiator-dimensions-table">
                         <table class="table table-condensed table-bordered">
@@ -145,8 +152,6 @@
                 <?php endif; ?>
 
                 <?php echo $this->getChildHtml('other');?>
-
-                Heat output: <?php echo $_product->getResource()->getAttribute('heat_output')->getFrontend()->getValue($_product); ?>
 
                 <?php if ($_product->isSaleable() && $this->hasOptions()):?>
                     <?php echo $this->getChildChildHtml('container1', '', true, true) ?>
