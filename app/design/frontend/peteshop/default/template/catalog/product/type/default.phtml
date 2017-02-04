@@ -36,3 +36,4 @@
 <?php endif; ?>
 <?php echo $this->getChildHtml('product_type_data_extra') ?>
 <?php echo $this->getPriceHtml($_product) ?>
+Heat output: <?php echo $_product->getResource()->getAttribute('heat_output')->getFrontend()->getValue($_product); ?>
