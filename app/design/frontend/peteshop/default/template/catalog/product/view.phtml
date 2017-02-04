@@ -146,6 +146,8 @@
 
                 <?php echo $this->getChildHtml('other');?>
 
+                Heat output: <?php echo $_product->getResource()->getAttribute('heat_output')->getFrontend()->getValue($_product); ?>
+
                 <?php if ($_product->isSaleable() && $this->hasOptions()):?>
                     <?php echo $this->getChildChildHtml('container1', '', true, true) ?>
                 <?php endif;?>
