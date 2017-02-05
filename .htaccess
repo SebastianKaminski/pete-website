@@ -59,14 +59,6 @@
 
 	### RewriteCond %{HTTP_HOST} ^radrestore.co.uk$ [NC]
 	### RewriteRule ^(.*)$ http://www.radrestore.co.uk/$1 [R=301,L]
-
-	RewriteCond %{HTTPS} off
-	RewriteCond %{HTTP_HOST} !^www\.(.*)$ [NC]
-	RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
-
-	RewriteCond %{HTTPS} on
-	RewriteCond %{HTTP_HOST} !^www\.(.*)$ [NC]
-	RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [R=301,L]
 </IfModule>
 
 
