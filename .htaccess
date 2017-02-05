@@ -30,9 +30,6 @@
 ##### Necessary redirects and rewrites for search engines #####
 
 <IfModule mod_rewrite.c>
-	#RewriteCond %{HTTP_HOST} !^www.radrestore.co.uk$ [NC]
-	#RewriteRule ^(.*)$ http://www.radrestore.co.uk/$1 [R=301,L]
-
 	### RewriteCond %{HTTP_HOST} ^www.radrestore.co.uk [NC]
 	### RewriteRule ^(.*)$ http://radrestore.co.uk/$1 [L,R=301]
 
@@ -45,7 +42,7 @@
 	### RewriteCond %{THE_REQUEST} ^.*/index.php
 	### RewriteRule ^(.*)index.php$ http://www.radrestore.co.uk/$1 [R=301,L]
 
-  	##### Please note - http://www. if not using www simply use http://
+  	### Please note - http://www. if not using www simply use http://
 	### redirect 301 /home http://www.radrestore.co.uk
 
 	### RewriteCond %{HTTP_HOST} ^185\.23\.21\.18
@@ -58,10 +55,18 @@
 	RewriteCond %{REQUEST_FILENAME} !-f
 	RewriteCond %{REQUEST_FILENAME} !-d
 	RewriteCond %{REQUEST_FILENAME} !-l
-	RewriteRule .* index.php [L]
+	### RewriteRule .* index.php [L]
 
-	RewriteCond %{HTTP_HOST} ^radrestore.co.uk$ [NC]
-	RewriteRule ^(.*)$ http://www.radrestore.co.uk/$1 [R=301,L]
+	### RewriteCond %{HTTP_HOST} ^radrestore.co.uk$ [NC]
+	### RewriteRule ^(.*)$ http://www.radrestore.co.uk/$1 [R=301,L]
+
+	RewriteCond %{HTTPS} off
+	RewriteCond %{HTTP_HOST} !^www\.(.*)$ [NC]
+	RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+
+	RewriteCond %{HTTPS} on
+	RewriteCond %{HTTP_HOST} !^www\.(.*)$ [NC]
+	RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [R=301,L]
 </IfModule>
 
 
