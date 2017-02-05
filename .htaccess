@@ -48,6 +48,9 @@
 	RewriteCond %{HTTP_HOST} ^185\.23\.21\.18
 	RewriteRule (.*) http://www.radrestore.co.uk/$1 [R=301,L]
 
+	RewriteCond %{HTTP_HOST} ^www.radrestore.co.uk [NC] 
+	RewriteRule ^(.*)$ http://radrestore.co.uk/$1 [L,R=301]
+
 	Options +FollowSymLinks
 	RewriteEngine on
 	RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
