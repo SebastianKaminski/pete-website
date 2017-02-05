@@ -33,23 +33,23 @@
 	#RewriteCond %{HTTP_HOST} !^www.radrestore.co.uk$ [NC]
 	#RewriteRule ^(.*)$ http://www.radrestore.co.uk/$1 [R=301,L]
 
+	### RewriteCond %{HTTP_HOST} ^www.radrestore.co.uk [NC]
+	### RewriteRule ^(.*)$ http://radrestore.co.uk/$1 [L,R=301]
+
 	##### Redirect away from /index.php and /home
 	##### Warning: This index.php rewrite will prevent Magento
 	##### Connect from working. Simply comment out the
 	##### following two lines of code when using Connect.
 	##### Please note - http://www. if not using www simply use http://
 
-	RewriteCond %{THE_REQUEST} ^.*/index.php
-	RewriteRule ^(.*)index.php$ http://www.radrestore.co.uk/$1 [R=301,L]
+	### RewriteCond %{THE_REQUEST} ^.*/index.php
+	### RewriteRule ^(.*)index.php$ http://www.radrestore.co.uk/$1 [R=301,L]
 
   	##### Please note - http://www. if not using www simply use http://
-	redirect 301 /home http://www.radrestore.co.uk
+	### redirect 301 /home http://www.radrestore.co.uk
 
-	RewriteCond %{HTTP_HOST} ^185\.23\.21\.18
-	RewriteRule (.*) http://www.radrestore.co.uk/$1 [R=301,L]
-
-	### RewriteCond %{HTTP_HOST} ^www.radrestore.co.uk [NC] 
-	### RewriteRule ^(.*)$ http://radrestore.co.uk/$1 [L,R=301]
+	### RewriteCond %{HTTP_HOST} ^185\.23\.21\.18
+	### RewriteRule (.*) http://www.radrestore.co.uk/$1 [R=301,L]
 
 	Options +FollowSymLinks
 	RewriteEngine on
