@@ -59,6 +59,9 @@
 	RewriteCond %{REQUEST_FILENAME} !-d
 	RewriteCond %{REQUEST_FILENAME} !-l
 	RewriteRule .* index.php [L]
+
+	RewriteCond %{HTTP_HOST} ^radrestore.co.uk$ [NC]
+	RewriteRule ^(.*)$ http://www.radrestore.co.uk/$1 [R=301,L]
 </IfModule>
 
 
